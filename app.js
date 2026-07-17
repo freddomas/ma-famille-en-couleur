@@ -335,7 +335,7 @@ function renderSheet(catalogue, pageNumber) {
     >
       <header class="sheet-header">
         <span class="sheet-header__brand">
-          <strong>Les Masiala en couleur</strong>
+          <strong>Ma famille en couleur</strong>
           <small>Mon catalogue de coloriage</small>
         </span>
         <span class="sheet-header__meta">

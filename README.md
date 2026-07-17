@@ -1,4 +1,4 @@
-# Les Masiala en couleur
+# Ma famille en couleur
 
 Application web statique de catalogues de coloriage pour enfants de 2 à 3 ans.
 
