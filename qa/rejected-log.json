@@ -1,0 +1,93 @@
+{
+  "rejectedImages": 22,
+  "entries": [
+    {
+      "catalogueId": "animaux",
+      "page": 2,
+      "attempt": 1,
+      "count": 4,
+      "reason": "La planche 2 x 2 ne séparait pas correctement les cases : les ossicônes de la girafe entraient dans le recadrage du lion.",
+      "evidence": "qa/rejected/animaux-page-02-attempt-01/source.png"
+    },
+    {
+      "catalogueId": "animaux",
+      "page": 2,
+      "attempt": 2,
+      "count": 1,
+      "reason": "Le zèbre a échoué V3 et V4 : rayures trop nombreuses et zones trop étroites pour les enfants de 2 à 3 ans.",
+      "evidence": "qa/rejected/animaux-page-02-attempt-02/08-zebre-raye-too-detailed.png"
+    },
+    {
+      "catalogueId": "animaux",
+      "page": 9,
+      "attempt": 1,
+      "count": 3,
+      "reason": "Audit indépendant : paon trop géométrique, papillon sans six pattes et coccinelle avec huit pattes.",
+      "evidence": "qa/rejected/animaux-independent-audit-01"
+    },
+    {
+      "catalogueId": "animaux",
+      "page": 10,
+      "attempt": 1,
+      "count": 1,
+      "reason": "Audit indépendant : abeille avec seulement quatre pattes distinctes.",
+      "evidence": "qa/rejected/animaux-independent-audit-01"
+    },
+    {
+      "catalogueId": "animaux",
+      "page": 9,
+      "attempt": 2,
+      "count": 1,
+      "reason": "La coccinelle corrective montre huit points au lieu des sept exigés.",
+      "evidence": "qa/rejected/animaux-independent-audit-01/36-eight-spots-attempt-02.png"
+    },
+    {
+      "catalogueId": "animaux",
+      "page": 9,
+      "attempt": 3,
+      "count": 1,
+      "reason": "La coccinelle a sept points et six appendices, mais ceux-ci ressemblent à des bras humains terminés par des mains.",
+      "evidence": "qa/rejected/animaux-independent-audit-01/36-human-hands-attempt-03.png"
+    },
+    {
+      "catalogueId": "animaux",
+      "page": 9,
+      "attempt": 4,
+      "count": 1,
+      "reason": "Anatomie et comptage corrects, mais rendu trop schématique et pictogrammatique par rapport au GOLD MASTER.",
+      "evidence": "qa/rejected/animaux-independent-audit-01/36-too-schematic-attempt-04.png"
+    },
+    {
+      "catalogueId": "animaux",
+      "page": 9,
+      "attempt": 5,
+      "count": 1,
+      "reason": "Rendu organique accepté, mais seulement cinq pattes distinctes sont visibles.",
+      "evidence": "qa/rejected/animaux-independent-audit-01/36-five-legs-attempt-05.png"
+    },
+    {
+      "catalogueId": "vehicules",
+      "page": "3 et 10",
+      "attempt": 1,
+      "count": 6,
+      "reason": "Audit indépendant : fragments parasites, roues ou accessoires coupés et détails trop denses sur les illustrations 09, 10, 11, 12, 39 et 40.",
+      "evidence": "qa/rejected/vehicules-independent-audit-01"
+    },
+    {
+      "catalogueId": "chiffres",
+      "page": 3,
+      "attempt": 1,
+      "count": 1,
+      "reason": "Les trois papillons étaient présents, mais aucune patte n'était visible.",
+      "evidence": "qa/rejected/chiffres-visual-audit-01/11-butterflies-no-legs.png"
+    },
+    {
+      "catalogueId": "vehicules",
+      "page": 3,
+      "attempt": 2,
+      "count": 2,
+      "reason": "Le tracteur conservait un fragment en bordure et la moissonneuse restait coupée au niveau de la barre de coupe.",
+      "evidence": "qa/rejected/vehicules-independent-audit-02"
+    }
+  ]
+}

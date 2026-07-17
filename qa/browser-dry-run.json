@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "initial": {
+    "catalogues": 10,
+    "sheets": 1,
+    "drawingImages": 4,
+    "counter": "0 / 40 images chargées",
+    "previews": 0,
+    "openDisabled": true,
+    "printDisabled": true,
+    "appError": false
+  },
+  "normalPages": {
+    "checked": 100,
+    "decodedImages": 400,
+    "horizontalOverflowPages": 0
+  },
+  "completed": {
+    "counter": "40 / 40 images chargées",
+    "previews": 40,
+    "progress": "40",
+    "uniqueSelectedIds": 40,
+    "recordedProgressStates": 41,
+    "synchronizedProgressStates": true
+  },
+  "surpriseOpen": {
+    "title": "Mon catalogue surprise",
+    "pages": 10,
+    "images": 4
+  },
+  "print": {
+    "normalPageSheets": 1,
+    "normalCatalogueSheets": 10,
+    "surpriseSheets": 10,
+    "files": [
+      "qa/rendered/normal-page-01.pdf",
+      "qa/rendered/normal-catalogue-10-pages.pdf",
+      "qa/rendered/surprise-10-pages.pdf"
+    ]
+  },
+  "mobile": {
+    "innerWidth": 360,
+    "scrollWidth": 360,
+    "images": 4
+  },
+  "invalid": {
+    "counter": 35,
+    "previews": 35,
+    "error": "Échec : chargement impossible pour assets/coloring/active/image-volontairement-absente.png",
+    "openDisabled": true,
+    "printDisabled": true,
+    "ready": false
+  },
+  "normalConsoleErrors": [],
+  "expectedInvalidConsoleErrors": [
+    {
+      "entry": {
+        "source": "network",
+        "level": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+        "timestamp": 1784328754538.322,
+        "url": "http://127.0.0.1:8080/assets/coloring/active/image-volontairement-absente.png",
+        "networkRequestId": "34164.692"
+      }
+    }
+  ],
+  "unexpectedConsoleErrors": []
+}

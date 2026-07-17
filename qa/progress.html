@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Progression — Ma famille en couleur</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f4efe6;
+        color: #17231e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      main {
+        width: min(760px, 100%);
+        padding: clamp(24px, 6vw, 54px);
+        background: #fff;
+        border: 1px solid #ded7ca;
+        border-radius: 28px;
+        box-shadow: 0 28px 70px rgb(57 45 31 / 12%);
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: #b54b39;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Georgia, serif;
+        font-size: clamp(2rem, 7vw, 4.5rem);
+        line-height: 0.98;
+      }
+
+      .counter {
+        margin: 38px 0 12px;
+        font-size: clamp(2.2rem, 8vw, 5rem);
+        font-weight: 850;
+        letter-spacing: -0.06em;
+      }
+
+      .counter small {
+        font-size: 0.32em;
+        letter-spacing: 0;
+      }
+
+      .track {
+        height: 22px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: #ebe5da;
+      }
+
+      .bar {
+        width: 0;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #e85d45, #f3a43b);
+        transition: width 240ms ease-out;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .stat {
+        padding: 18px;
+        border-radius: 18px;
+        background: #f8f5ef;
+      }
+
+      .stat strong,
+      .stat span {
+        display: block;
+      }
+
+      .stat strong {
+        font-size: 1.65rem;
+      }
+
+      .stat span {
+        margin-top: 4px;
+        color: #6d746f;
+        font-size: 0.84rem;
+      }
+
+      .status {
+        min-height: 1.5em;
+        margin: 22px 0 0;
+        color: #54605a;
+      }
+
+      .status.error {
+        color: #a62f22;
+        font-weight: 700;
+      }
+
+      @media (max-width: 540px) {
+        .stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Production réelle des actifs</p>
+      <h1>Ma famille en couleur</h1>
+      <div class="counter" aria-live="polite">
+        <span id="validated">0</span> <small>/ 400 illustrations validées</small>
+      </div>
+      <div
+        class="track"
+        role="progressbar"
+        aria-label="Illustrations validées"
+        aria-valuemin="0"
+        aria-valuemax="400"
+        aria-valuenow="0"
+      >
+        <div class="bar" id="bar"></div>
+      </div>
+      <section class="stats" aria-label="Détails de la progression">
+        <div class="stat">
+          <strong id="percent">0 %</strong>
+          <span>avancement</span>
+        </div>
+        <div class="stat">
+          <strong id="pages">0</strong>
+          <span>pages complètes / 100</span>
+        </div>
+        <div class="stat">
+          <strong id="rejected">0</strong>
+          <span>images rejetées</span>
+        </div>
+      </section>
+      <p class="status" id="status" aria-live="polite">Connexion au manifeste…</p>
+    </main>
+    <script>
+      const expected = 400;
+
+      function countCompletePages(entries) {
+        const pages = new Map();
+        for (const entry of entries) {
+          const key = `${entry.catalogueId}:${entry.page}`;
+          pages.set(key, (pages.get(key) ?? 0) + 1);
+        }
+        return [...pages.values()].filter((count) => count === 4).length;
+      }
+
+      async function refresh() {
+        const status = document.querySelector("#status");
+        try {
+          const stamp = Date.now();
+          const [manifestResponse, rejectedResponse] = await Promise.all([
+            fetch(`../assets/coloring/manifest.json?t=${stamp}`, { cache: "no-store" }),
+            fetch(`rejected-log.json?t=${stamp}`, { cache: "no-store" }),
+          ]);
+
+          if (!manifestResponse.ok || !rejectedResponse.ok) {
+            throw new Error(`HTTP ${manifestResponse.status}/${rejectedResponse.status}`);
+          }
+
+          const [manifest, rejectedLog] = await Promise.all([
+            manifestResponse.json(),
+            rejectedResponse.json(),
+          ]);
+          const validated = manifest.entries.filter(
+            (entry) => entry.validationStatus === "validated",
+          ).length;
+          const percent = Math.min(100, (validated / expected) * 100);
+          const completePages = countCompletePages(manifest.entries);
+
+          document.querySelector("#validated").textContent = validated;
+          document.querySelector("#percent").textContent = `${percent.toFixed(1)} %`;
+          document.querySelector("#pages").textContent = completePages;
+          document.querySelector("#rejected").textContent = rejectedLog.rejectedImages;
+          document.querySelector("#bar").style.width = `${percent}%`;
+
+          const progress = document.querySelector('[role="progressbar"]');
+          progress.setAttribute("aria-valuenow", String(validated));
+          progress.setAttribute("aria-valuetext", `${validated} illustrations validées sur ${expected}`);
+
+          const time = new Date().toLocaleTimeString("fr-FR");
+          status.textContent = manifest.complete
+            ? `Production complète — manifeste vérifié à ${time}.`
+            : `Actualisé à ${time} — ${manifest.missing.length} actifs restent à produire.`;
+          status.classList.remove("error");
+        } catch (error) {
+          status.textContent = `Compteur indisponible : ${error.message}`;
+          status.classList.add("error");
+        }
+      }
+
+      refresh();
+      setInterval(refresh, 2000);
+    </script>
+  </body>
+</html>

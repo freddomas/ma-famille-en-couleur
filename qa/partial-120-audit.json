@@ -1,0 +1,56 @@
+{
+  "status": "partial-stop-authorized",
+  "checkedAt": "2026-07-17T21:20:14.8402621+01:00",
+  "target": 120,
+  "manifest": {
+    "entries": 120,
+    "validated": 120,
+    "missingFromFinal400": 280,
+    "complete": false,
+    "uniqueIds": 120,
+    "uniquePaths": 120,
+    "uniqueSha256": 120,
+    "decodingErrors": 0
+  },
+  "catalogueCounts": {
+    "animaux": 40,
+    "chiffres": 12,
+    "formes": 4,
+    "fruits": 4,
+    "legumes": 4,
+    "maison": 4,
+    "metiers": 4,
+    "nature": 4,
+    "vehicules": 40,
+    "ville": 4
+  },
+  "visualQa": {
+    "rejectedImages": 22,
+    "independentValidator": "sub-agent validate_first_batch",
+    "lastValidated": [
+      {
+        "id": "vehicules-11",
+        "title": "Le tracteur du fermier",
+        "verdict": "PASS"
+      },
+      {
+        "id": "vehicules-12",
+        "title": "La moissonneuse",
+        "verdict": "PASS"
+      }
+    ]
+  },
+  "progressEndpoint": {
+    "url": "http://127.0.0.1:8080/qa/progress.html",
+    "httpStatus": 200,
+    "servedManifestEntries": 120
+  },
+  "remaining": {
+    "illustrations": 280,
+    "applicationIntegrationComplete": false,
+    "randomCatalogueImplemented": false,
+    "fullTestSuiteComplete": false,
+    "gitCommitted": false,
+    "gitPushed": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "catalogues": 10,
+  "activeImages": 400,
+  "reserveImages": 80,
+  "decodedPng": 480,
+  "uniqueIds": 480,
+  "uniquePaths": 480,
+  "uniqueSha256": 480,
+  "randomRuns": 100,
+  "distinctRandomSelections": 100,
+  "invalidImageScenario": {
+    "failedAsExpected": true,
+    "loadedCounter": 16,
+    "visiblePreviews": 16,
+    "ready": false,
+    "printingEnabled": false
+  }
+}

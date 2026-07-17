@@ -1,0 +1,361 @@
+index,category,title
+1,vehicules-air-eau,L’hélicoptère
+2,animaux-sauvages,Le lion
+3,fruits-gourmandises,La fraise
+4,vehicules-air-eau,Le voilier
+5,nature-jardin,Le soleil
+6,vehicules-terre,Le camion de livraison
+7,maison-objets,Le fauteuil
+8,apprentissage,Le chiffre 5
+9,animaux-familiers,La vache
+10,batiments-lieux,La maison
+11,loisirs-decouvertes,Le sac à dos
+12,animaux-sauvages,Le papillon
+13,maison-objets,L’horloge
+14,fruits-gourmandises,Les bananes
+15,animaux-sauvages,La tortue
+16,vehicules-air-eau,L’avion
+17,nature-jardin,La fleur
+18,loisirs-decouvertes,Les livres
+19,animaux-sauvages,Le dinosaure
+20,fruits-gourmandises,La glace
+21,vehicules-air-eau,L’hélicoptère
+22,vehicules-air-eau,Le voilier
+23,batiments-lieux,L’école
+24,nature-jardin,L’arbre
+25,maison-objets,Le fauteuil
+26,maison-objets,Le réfrigérateur
+27,fruits-gourmandises,Les bananes
+28,apprentissage,L’étoile
+29,apprentissage,Le chiffre 3
+30,apprentissage,La lettre A
+31,animaux-familiers,Le lapin
+32,animaux-familiers,Le chat
+33,animaux-familiers,Le chien
+34,vehicules-air-eau,Le bateau
+35,vehicules-air-eau,L’hélicoptère
+36,vehicules-terre,La trottinette
+37,fruits-gourmandises,Le raisin
+38,nature-jardin,Le maïs
+39,fruits-gourmandises,La poire
+40,animaux-sauvages,Le lion
+41,animaux-sauvages,L’éléphant
+42,animaux-sauvages,Le pingouin
+43,animaux-sauvages,La tortue
+44,vehicules-terre,Le camion de pompiers
+45,vehicules-terre,Le tracteur
+46,vehicules-air-eau,La fusée
+47,vehicules-air-eau,La montgolfière
+48,fruits-gourmandises,L’orange
+49,fruits-gourmandises,La pastèque
+50,nature-jardin,Le brocoli
+51,nature-jardin,La tomate
+52,maison-objets,Le lit
+53,maison-objets,La bibliothèque
+54,batiments-lieux,La maison
+55,batiments-lieux,Le phare
+56,nature-jardin,Le soleil
+57,nature-jardin,Le nuage
+58,apprentissage,Le chiffre 2
+59,apprentissage,La lettre A
+60,animaux-sauvages,La girafe
+61,animaux-familiers,La vache
+62,animaux-familiers,Le canard
+63,animaux-sauvages,Le dauphin
+64,vehicules-terre,L’ambulance
+65,vehicules-terre,La moto
+66,vehicules-air-eau,La soucoupe volante
+67,vehicules-terre,Le bulldozer
+68,fruits-gourmandises,La pêche
+69,fruits-gourmandises,Le citron
+70,nature-jardin,L’aubergine
+71,nature-jardin,Les petits pois
+72,maison-objets,L’armoire
+73,maison-objets,Le tabouret
+74,batiments-lieux,La cabane dans l’arbre
+75,batiments-lieux,Le pont
+76,loisirs-decouvertes,Le cerf-volant
+77,nature-jardin,La fleur en pot
+78,apprentissage,Le chiffre 5
+79,apprentissage,La lettre D
+80,animaux-sauvages,Le zèbre
+81,animaux-familiers,Le cheval
+82,animaux-familiers,Le cochon
+83,animaux-sauvages,Le phoque
+84,vehicules-terre,Le taxi
+85,vehicules-terre,Le tramway
+86,vehicules-terre,La jeep
+87,vehicules-air-eau,Le canoë
+88,fruits-gourmandises,La mangue
+89,fruits-gourmandises,La noix de coco
+90,nature-jardin,Le chou
+91,nature-jardin,La betterave
+92,maison-objets,Le banc
+93,maison-objets,La commode
+94,batiments-lieux,Le garage
+95,batiments-lieux,La tour
+96,apprentissage,Le cœur
+97,maison-objets,Le parapluie
+98,apprentissage,Le chiffre 1
+99,apprentissage,La lettre F
+100,animaux-familiers,Le hamster
+101,animaux-familiers,La souris
+102,animaux-sauvages,Le perroquet
+103,animaux-sauvages,Le crabe
+104,vehicules-terre,Le pick-up
+105,vehicules-terre,Le bus
+106,vehicules-air-eau,La barque
+107,vehicules-air-eau,Le dirigeable
+108,fruits-gourmandises,L’avocat
+109,fruits-gourmandises,Les myrtilles
+110,nature-jardin,Le chou-fleur
+111,nature-jardin,La pomme de terre
+112,maison-objets,La table de nuit
+113,maison-objets,La bibliothèque
+114,batiments-lieux,La maison
+115,loisirs-decouvertes,La tente
+116,apprentissage,La note de musique
+117,loisirs-decouvertes,Le ballon
+118,apprentissage,Le chiffre 6
+119,apprentissage,La lettre H
+120,animaux-sauvages,Le paresseux
+121,animaux-sauvages,La chauve-souris
+122,animaux-sauvages,Le paon
+123,animaux-sauvages,L’étoile de mer
+124,vehicules-terre,Le minibus
+125,vehicules-terre,Le train
+126,loisirs-decouvertes,Le skateboard
+127,vehicules-air-eau,L’hélicoptère de secours
+128,fruits-gourmandises,La grenade
+129,fruits-gourmandises,La papaye
+130,nature-jardin,Le chou
+131,nature-jardin,L’ail
+132,maison-objets,Le lit de bébé
+133,loisirs-decouvertes,Le piano
+134,batiments-lieux,Le gratte-ciel
+135,nature-jardin,L’éolienne
+136,fruits-gourmandises,Le cupcake
+137,loisirs-decouvertes,Le cadeau
+138,apprentissage,Le chiffre 3
+139,apprentissage,La lettre J
+140,animaux-sauvages,Le chameau
+141,animaux-sauvages,Le cygne
+142,animaux-familiers,Le coq
+143,animaux-sauvages,Le requin
+144,fruits-gourmandises,La figue
+145,fruits-gourmandises,La framboise
+146,nature-jardin,La courgette
+147,nature-jardin,Le navet
+148,maison-objets,Le miroir
+149,maison-objets,Le lit superposé
+150,batiments-lieux,La pagode
+151,batiments-lieux,Le moulin
+152,nature-jardin,L’arc-en-ciel
+153,loisirs-decouvertes,Le tambour
+154,apprentissage,Le chiffre 0
+155,apprentissage,La lettre K
+156,animaux-familiers,Le chat
+157,animaux-familiers,Le chien
+158,animaux-sauvages,La tortue
+159,animaux-sauvages,Le perroquet
+160,vehicules-terre,La voiture
+161,vehicules-terre,Le camion-benne
+162,vehicules-air-eau,La fusée
+163,vehicules-air-eau,L’avion
+164,vehicules-terre,Le vélo
+165,vehicules-air-eau,Le voilier
+166,vehicules-air-eau,La montgolfière
+167,vehicules-terre,Le train
+168,batiments-lieux,La maison
+169,batiments-lieux,L’église
+170,batiments-lieux,L’école
+171,batiments-lieux,Le château
+172,apprentissage,L’étoile
+173,nature-jardin,La lune
+174,nature-jardin,La fleur
+175,loisirs-decouvertes,L’ours en peluche
+176,animaux-familiers,Le chat
+177,animaux-familiers,Le chien
+178,animaux-familiers,Le lapin
+179,animaux-familiers,La vache
+180,animaux-sauvages,Le lion
+181,batiments-lieux,La maison
+182,batiments-lieux,L’école
+183,batiments-lieux,L’hôpital
+184,batiments-lieux,Le magasin
+185,batiments-lieux,Le château
+186,maison-objets,La table
+187,maison-objets,Le lit
+188,maison-objets,Le canapé
+189,maison-objets,L’armoire
+190,maison-objets,La baignoire
+191,loisirs-decouvertes,Les livres
+192,loisirs-decouvertes,Le crayon
+193,loisirs-decouvertes,Le sac à dos
+194,maison-objets,La brosse à dents
+195,nature-jardin,Le soleil
+196,animaux-familiers,Le chien
+197,animaux-familiers,Le chat
+198,animaux-sauvages,Le lion
+199,vehicules-air-eau,L’avion
+200,apprentissage,L’étoile
+201,animaux-sauvages,La tortue
+202,vehicules-air-eau,Le voilier
+203,animaux-familiers,Le mouton
+204,fruits-gourmandises,La glace
+205,batiments-lieux,La maison
+206,animaux-sauvages,Le dinosaure
+207,vehicules-terre,Le vélo
+208,animaux-sauvages,L’abeille
+209,vehicules-terre,La voiture
+210,vehicules-air-eau,La montgolfière
+211,nature-jardin,La fleur
+212,loisirs-decouvertes,Le xylophone
+213,animaux-sauvages,La grenouille
+214,batiments-lieux,Le phare
+215,loisirs-decouvertes,L’ours en peluche
+216,loisirs-decouvertes,Le sac à dos
+217,vehicules-air-eau,La fusée
+218,fruits-gourmandises,Le gâteau
+219,animaux-familiers,Le lapin
+220,loisirs-decouvertes,Le tambour
+221,nature-jardin,L’arbre
+222,fruits-gourmandises,La pastèque
+223,maison-objets,Le réveil
+224,vehicules-terre,La pelleteuse
+225,nature-jardin,Le soleil
+226,animaux-familiers,Le chien
+227,animaux-familiers,Le chat
+228,animaux-sauvages,Le dinosaure
+229,animaux-familiers,Le lapin
+230,animaux-sauvages,Le hibou
+231,animaux-familiers,La vache
+232,animaux-sauvages,Le lion
+233,loisirs-decouvertes,L’ours en peluche
+234,animaux-sauvages,La tortue
+235,animaux-sauvages,La coccinelle
+236,vehicules-terre,Le camion de pompiers
+237,vehicules-terre,La voiture de police
+238,vehicules-air-eau,L’avion
+239,vehicules-air-eau,La fusée
+240,vehicules-air-eau,Le bateau
+241,vehicules-terre,Le vélo
+242,vehicules-terre,Le camion-benne
+243,vehicules-terre,Le tracteur
+244,vehicules-air-eau,La montgolfière
+245,vehicules-terre,Le scooter
+246,maison-objets,Le lit
+247,maison-objets,La table
+248,maison-objets,Le réfrigérateur
+249,maison-objets,Le fauteuil
+250,maison-objets,La bibliothèque
+251,apprentissage,L’étoile
+252,fruits-gourmandises,La glace
+253,fruits-gourmandises,Le raisin
+254,loisirs-decouvertes,Le cadeau
+255,loisirs-decouvertes,Le crayon
+256,animaux-familiers,La vache
+257,animaux-familiers,Le mouton
+258,animaux-familiers,Le cheval
+259,animaux-sauvages,Le pingouin
+260,animaux-sauvages,La coccinelle
+261,animaux-sauvages,Le papillon
+262,animaux-sauvages,L’écureuil
+263,loisirs-decouvertes,L’ours en peluche
+264,vehicules-terre,Le vélo
+265,vehicules-air-eau,La fusée
+266,vehicules-terre,Le camion-toupie
+267,vehicules-air-eau,L’hélicoptère
+268,maison-objets,La chaise
+269,maison-objets,La table
+270,maison-objets,Le lit
+271,maison-objets,La lampe
+272,fruits-gourmandises,La pomme
+273,fruits-gourmandises,Les bananes
+274,loisirs-decouvertes,Le ballon de football
+275,apprentissage,L’étoile
+276,animaux-familiers,Le chien
+277,animaux-familiers,Le chat
+278,animaux-familiers,Le lapin
+279,animaux-sauvages,La tortue
+280,vehicules-air-eau,Le parachute
+281,vehicules-terre,Le vélo
+282,vehicules-terre,La voiture de police
+283,vehicules-air-eau,La fusée
+284,vehicules-air-eau,La montgolfière
+285,vehicules-terre,Le camion-toupie
+286,animaux-sauvages,Le dinosaure
+287,animaux-familiers,Le poussin
+288,animaux-sauvages,Le lion
+289,animaux-sauvages,Le crocodile
+290,animaux-sauvages,La coccinelle
+291,vehicules-air-eau,L’avion
+292,vehicules-air-eau,Le bateau
+293,vehicules-terre,Le camion de pompiers
+294,batiments-lieux,La maison
+295,batiments-lieux,Le moulin
+296,nature-jardin,La fleur
+297,loisirs-decouvertes,Le crayon
+298,loisirs-decouvertes,Le sac à dos
+299,loisirs-decouvertes,L’ours en peluche
+300,loisirs-decouvertes,Le tambour
+301,maison-objets,Le réveil
+302,fruits-gourmandises,La glace
+303,fruits-gourmandises,Le gâteau
+304,apprentissage,L’étoile
+305,fruits-gourmandises,Le raisin
+306,animaux-sauvages,Le koala
+307,animaux-sauvages,Le tigre
+308,vehicules-air-eau,La montgolfière
+309,apprentissage,L’étoile
+310,vehicules-air-eau,L’avion
+311,animaux-sauvages,La tortue
+312,loisirs-decouvertes,Le cheval à bascule
+313,animaux-sauvages,La baleine
+314,loisirs-decouvertes,L’appareil photo
+315,animaux-familiers,Le chat
+316,vehicules-terre,La pelleteuse
+317,vehicules-air-eau,La fusée
+318,loisirs-decouvertes,Le sac à dos
+319,fruits-gourmandises,Le raisin
+320,nature-jardin,L’arc-en-ciel
+321,animaux-familiers,Le canard
+322,maison-objets,Le lit
+323,nature-jardin,La fleur
+324,animaux-sauvages,Le hibou
+325,vehicules-air-eau,Le voilier
+326,animaux-familiers,Le chat
+327,animaux-familiers,Le chien
+328,animaux-familiers,Le lapin
+329,animaux-sauvages,La tortue
+330,animaux-sauvages,Le poisson
+331,animaux-sauvages,Le lion
+332,animaux-sauvages,Le panda
+333,animaux-sauvages,Le koala
+334,animaux-familiers,Le poussin
+335,animaux-familiers,Le mouton
+336,vehicules-terre,La voiture
+337,vehicules-terre,Le bus
+338,vehicules-air-eau,L’avion
+339,vehicules-terre,Le train
+340,vehicules-air-eau,Le voilier
+341,vehicules-terre,Le vélo
+342,vehicules-air-eau,La fusée
+343,vehicules-air-eau,La montgolfière
+344,vehicules-terre,Le camion-benne
+345,vehicules-terre,Le tracteur
+346,batiments-lieux,La maison
+347,batiments-lieux,Le château
+348,batiments-lieux,Le magasin
+349,loisirs-decouvertes,Le sac à dos
+350,loisirs-decouvertes,Les crayons
+351,fruits-gourmandises,La pomme
+352,fruits-gourmandises,Le raisin
+353,fruits-gourmandises,La pastèque
+354,apprentissage,L’étoile
+355,loisirs-decouvertes,Le ballon de plage
+356,apprentissage,Le chiffre 1
+357,apprentissage,Le chiffre 2
+358,apprentissage,Le chiffre 3
+359,apprentissage,La lettre A
+360,apprentissage,La lettre B

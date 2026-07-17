@@ -1,0 +1,38 @@
+{
+  "mode": "apply",
+  "source": {
+    "existing": 120,
+    "extracted": 360,
+    "total": 480
+  },
+  "allocation": {
+    "active": 400,
+    "reserve": 80,
+    "perCategory": {
+      "animaux-familiers": 48,
+      "animaux-sauvages": 75,
+      "apprentissage": 41,
+      "batiments-lieux": 40,
+      "fruits-gourmandises": 40,
+      "loisirs-decouvertes": 40,
+      "maison-objets": 40,
+      "nature-jardin": 40,
+      "vehicules-air-eau": 48,
+      "vehicules-terre": 68
+    }
+  },
+  "generatedAt": "2026-07-17T22:26:09.686158+00:00",
+  "sharpness": {
+    "method": "Pillow UnsharpMask",
+    "radius": 1.0,
+    "percent": 95,
+    "threshold": 3,
+    "contentChanges": "sharpness-only",
+    "processedExtractedFiles": 360
+  },
+  "output": {
+    "manifestEntries": 400,
+    "reserveEntries": 80,
+    "catalogues": 10
+  }
+}
