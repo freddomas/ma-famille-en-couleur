@@ -20,14 +20,16 @@ if (-not $resolvedProfile.StartsWith($resolvedRoot, [System.StringComparison]::O
 New-Item -ItemType Directory -Force -Path $profile | Out-Null
 
 $arguments = @(
-  "--headless=new",
-  "--disable-gpu",
-  "--no-first-run",
-  "--no-default-browser-check",
-  "--remote-debugging-port=$Port",
-  "--user-data-dir=`"$profile`"",
+  "--headless=new"
+  "--disable-gpu"
+  "--disable-crash-reporter"
+  "--no-first-run"
+  "--no-default-browser-check"
+  "--remote-debugging-address=127.0.0.1"
+  "--remote-debugging-port=$Port"
+  "--user-data-dir=`"$profile`""
   "about:blank"
-)
+) -join " "
 
 $chromeProcess = Start-Process `
   -FilePath $chrome `

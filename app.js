@@ -19,6 +19,7 @@ const state = {
     startX: 0,
     startY: 0,
   },
+  colorGuidePreloads: new Map(),
 };
 
 if (typeof window !== "undefined") {
@@ -594,10 +595,25 @@ function guideImageFromTarget(target) {
 }
 
 function preloadColoredGuide(image) {
-  if (!image || image.dataset.colorPreloaded === "true") return;
+  if (!image?.dataset.coloredSrc) return Promise.resolve();
+  const source = image.dataset.coloredSrc;
+  const cached = state.colorGuidePreloads.get(source);
+  if (cached) return cached.promise;
+
   const preload = new Image();
-  preload.src = image.dataset.coloredSrc;
-  image.dataset.colorPreloaded = "true";
+  const promise = new Promise((resolve, reject) => {
+    preload.addEventListener("load", () => {
+      image.dataset.colorPreloaded = "true";
+      resolve();
+    }, { once: true });
+    preload.addEventListener("error", () => {
+      state.colorGuidePreloads.delete(source);
+      reject(new Error(`Guide coloré indisponible : ${source}`));
+    }, { once: true });
+  });
+  state.colorGuidePreloads.set(source, { image: preload, promise });
+  preload.src = source;
+  return promise;
 }
 
 function showColoredGuide(image, pointerId = null) {
@@ -605,9 +621,21 @@ function showColoredGuide(image, pointerId = null) {
   restoreColoredGuide();
   state.colorGuide.image = image;
   state.colorGuide.pointerId = pointerId;
-  image.src = image.dataset.coloredSrc;
   image.closest(".drawing-card__art, .catalogue-card__media, .surprise__preview")
     ?.classList.add("is-showing-color-guide");
+  preloadColoredGuide(image)
+    .then(() => {
+      if (
+        state.colorGuide.image === image &&
+        state.colorGuide.pointerId === pointerId
+      ) {
+        image.src = image.dataset.coloredSrc;
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+      if (state.colorGuide.image === image) restoreColoredGuide();
+    });
 }
 
 function restoreColoredGuide() {

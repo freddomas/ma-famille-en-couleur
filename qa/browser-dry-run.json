@@ -38,10 +38,31 @@
       "qa/rendered/surprise-10-pages.pdf"
     ]
   },
+  "colorGuide": {
+    "desktopRightHoldShown": true,
+    "desktopReleaseRestored": true,
+    "mobileLongPressShown": true,
+    "mobileReleaseRestored": true,
+    "printUsesLineArt": true
+  },
   "mobile": {
     "innerWidth": 360,
     "scrollWidth": 360,
-    "images": 4
+    "images": 4,
+    "openedCatalogue": "animaux-sauvages",
+    "overlayOpen": true,
+    "pageScrollPreserved": true,
+    "viewerTop": 218,
+    "backButtonFocused": true,
+    "sheetTop": 494,
+    "sheetHeight": 994,
+    "sheetBackground": "rgb(255, 255, 255)",
+    "sheetVisibility": "visible",
+    "sheetHeaderTop": 506,
+    "firstDrawingTop": 581,
+    "firstDrawingHeight": 415,
+    "decodedImages": 4,
+    "previewObjectFit": "contain"
   },
   "invalid": {
     "counter": 35,
@@ -58,9 +79,9 @@
         "source": "network",
         "level": "error",
         "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
-        "timestamp": 1784328754538.322,
+        "timestamp": 1784390719783.741,
         "url": "http://127.0.0.1:8080/assets/coloring/active/image-volontairement-absente.png",
-        "networkRequestId": "34164.692"
+        "networkRequestId": "23364.1105"
       }
     }
   ],

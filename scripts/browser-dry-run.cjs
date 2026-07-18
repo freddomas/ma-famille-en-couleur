@@ -179,8 +179,14 @@ async function main() {
       clickCount: 1,
     });
     await waitFor(
-      `document.querySelector(".drawing-card__image").getAttribute("src") === ${JSON.stringify(mouseGuideTarget.colored)}`,
+      `(() => {
+        const image = document.querySelector(".drawing-card__image");
+        return image.getAttribute("src") === ${JSON.stringify(mouseGuideTarget.colored)}
+          && image.complete
+          && image.naturalWidth > 0;
+      })()`,
     );
+    await delay(200);
     await screenshot("desktop-color-guide.png");
     await call("Input.dispatchMouseEvent", {
       type: "mouseReleased",
@@ -403,6 +409,7 @@ async function main() {
     assert.equal(mobile.previewObjectFit, "contain");
     const touchGuideTarget = await evaluate(`(() => {
       const image = document.querySelector(".drawing-card__image");
+      image.scrollIntoView({ block: "center", behavior: "instant" });
       const rect = image.getBoundingClientRect();
       return {
         x: rect.left + rect.width / 2,
@@ -423,9 +430,15 @@ async function main() {
       }],
     });
     await waitFor(
-      `document.querySelector(".drawing-card__image").getAttribute("src") === ${JSON.stringify(touchGuideTarget.colored)}`,
+      `(() => {
+        const image = document.querySelector(".drawing-card__image");
+        return image.getAttribute("src") === ${JSON.stringify(touchGuideTarget.colored)}
+          && image.complete
+          && image.naturalWidth > 0;
+      })()`,
       2000,
     );
+    await delay(200);
     await screenshot("mobile-color-guide.png");
     await call("Input.dispatchTouchEvent", {
       type: "touchEnd",
