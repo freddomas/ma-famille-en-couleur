@@ -17,14 +17,15 @@ from PIL import Image, ImageFilter
 
 
 ROOT = Path(__file__).resolve().parents[1]
+PUBLIC_ROOT = ROOT / "public"
 EXTRACT_DIR = ROOT / "output" / "Extract"
-SOURCE_MANIFEST = ROOT / "assets" / "coloring" / "manifest.json"
-METADATA_CSV = ROOT / "data" / "extracted-assets.csv"
-ACTIVE_DIR = ROOT / "assets" / "coloring" / "active"
-RESERVE_DIR = ROOT / "assets" / "coloring" / "reserve"
-FINAL_MANIFEST = ROOT / "assets" / "coloring" / "manifest.json"
+SOURCE_MANIFEST = PUBLIC_ROOT / "assets" / "coloring" / "manifest.json"
+METADATA_CSV = PUBLIC_ROOT / "data" / "extracted-assets.csv"
+ACTIVE_DIR = PUBLIC_ROOT / "assets" / "coloring" / "active"
+RESERVE_DIR = PUBLIC_ROOT / "assets" / "coloring" / "reserve"
+FINAL_MANIFEST = PUBLIC_ROOT / "assets" / "coloring" / "manifest.json"
 RESERVE_MANIFEST = RESERVE_DIR / "manifest.json"
-CATALOGUES_JSON = ROOT / "data" / "catalogues.json"
+CATALOGUES_JSON = PUBLIC_ROOT / "data" / "catalogues.json"
 REPORT_JSON = ROOT / "qa" / "import-report.json"
 
 EXPECTED_EXTRACTED = 360
@@ -218,7 +219,7 @@ def slugify(value: str) -> str:
 
 
 def relative(path: Path) -> str:
-    return path.relative_to(ROOT).as_posix()
+    return path.relative_to(PUBLIC_ROOT).as_posix()
 
 
 def sha256(path: Path) -> str:
@@ -279,7 +280,7 @@ def load_existing_records() -> list[dict]:
             {
                 "sourceKind": "existing",
                 "sourceName": entry["sourceName"],
-                "sourcePath": ROOT / entry["path"],
+                "sourcePath": PUBLIC_ROOT / entry["path"],
                 "categoryId": entry.get("catalogueId") or entry.get("categoryId"),
                 "title": entry["title"],
                 "origin": entry["origin"],
@@ -321,7 +322,7 @@ def load_existing_records() -> list[dict]:
         else:
             raise RuntimeError(f"Catalogue source non géré : {catalogue_id}")
 
-        source_path = ROOT / entry["path"]
+        source_path = PUBLIC_ROOT / entry["path"]
         if not source_path.is_file():
             raise RuntimeError(f"Actif existant manquant : {source_path}")
         records.append(

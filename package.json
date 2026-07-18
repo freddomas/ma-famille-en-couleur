@@ -1,0 +1,32 @@
+{
+  "name": "ma-famille-en-couleur",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate-delivery.cjs",
+    "dry-run": "powershell -ExecutionPolicy Bypass -File scripts/run-browser-dry-run.ps1"
+  },
+  "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^5.2.8",
+    "@fontsource/bree-serif": "^5.2.8",
+    "@supabase/ssr": "^0.12.3",
+    "@supabase/supabase-js": "^2.110.7",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8.5.19",
+    "typescript": "~5.9.3"
+  },
+  "overrides": {
+    "postcss": "$postcss"
+  }
+}

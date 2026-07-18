@@ -4,8 +4,9 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const dataPath = path.join(root, "data", "catalogues.json");
-const manifestPath = path.join(root, "assets", "coloring", "manifest.json");
+const publicRoot = path.join(root, "public");
+const dataPath = path.join(publicRoot, "data", "catalogues.json");
+const manifestPath = path.join(publicRoot, "assets", "coloring", "manifest.json");
 const data = JSON.parse(await readFile(dataPath, "utf8"));
 
 function pngDimensions(buffer, filePath) {
@@ -31,7 +32,7 @@ for (const catalogue of data.catalogues) {
     const relativePath = path
       .join("assets", "coloring", "items", catalogue.id, `${String(index + 1).padStart(2, "0")}.png`)
       .replaceAll("\\", "/");
-    const absolutePath = path.join(root, relativePath);
+    const absolutePath = path.join(publicRoot, relativePath);
 
     if (!existsSync(absolutePath)) {
       missing.push(relativePath);

@@ -15,8 +15,9 @@ from scipy import ndimage
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST_PATH = ROOT / "assets" / "coloring" / "manifest.json"
-COLORED_ROOT = ROOT / "assets" / "coloring" / "colored"
+PUBLIC_ROOT = ROOT / "public"
+MANIFEST_PATH = PUBLIC_ROOT / "assets" / "coloring" / "manifest.json"
+COLORED_ROOT = PUBLIC_ROOT / "assets" / "coloring" / "colored"
 CONTACT_SHEET = ROOT / "qa" / "colored-guides-contact-sheet.jpg"
 
 Color = tuple[int, int, int]
@@ -219,7 +220,7 @@ def build_contact_sheet(entries: list[dict]) -> None:
     for index, entry in enumerate(samples):
         x = (index % columns) * tile
         y = (index // columns) * (tile + caption)
-        image = Image.open(ROOT / entry["coloredPath"]).convert("RGB")
+        image = Image.open(PUBLIC_ROOT / entry["coloredPath"]).convert("RGB")
         image.thumbnail((tile - 18, tile - 18), Image.Resampling.LANCZOS)
         sheet.paste(image, (x + (tile - image.width) // 2, y + (tile - image.height) // 2))
         draw.text((x + 8, y + tile + 4), entry["title"], fill=(22, 48, 42), font=font)
@@ -240,12 +241,12 @@ def main() -> int:
     for index, entry in enumerate(selected, start=1):
         destination = colored_path_for(entry)
         result = colorize(
-            ROOT / entry["path"],
+            PUBLIC_ROOT / entry["path"],
             destination,
             entry["title"],
             entry["catalogueId"],
         )
-        entry["coloredPath"] = destination.relative_to(ROOT).as_posix()
+        entry["coloredPath"] = destination.relative_to(PUBLIC_ROOT).as_posix()
         report.append({"id": entry["id"], "coloredPath": entry["coloredPath"], **result})
         if index % 40 == 0 or index == len(selected):
             print(f"{index}/{len(selected)} guides colorés")

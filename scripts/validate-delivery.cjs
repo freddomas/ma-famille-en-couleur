@@ -8,7 +8,7 @@ const {
   buildPages,
   loadEntriesProgressively,
   validateData,
-} = require("../app.js");
+} = require("../public/catalogue-runtime.js");
 
 const root = path.resolve(__dirname, "..");
 const readJson = (relativePath) =>
@@ -17,7 +17,7 @@ const sha256 = (buffer) => crypto.createHash("sha256").update(buffer).digest("he
 const check = (condition, message) => assert.ok(condition, message);
 
 function readPng(relativePath) {
-  const absolutePath = path.join(root, ...relativePath.split("/"));
+  const absolutePath = path.join(root, "public", ...relativePath.split("/"));
   const buffer = fs.readFileSync(absolutePath);
   check(
     buffer.subarray(0, 8).equals(
@@ -34,12 +34,16 @@ function readPng(relativePath) {
 }
 
 async function main() {
-  const data = readJson("data/catalogues.json");
-  const manifest = readJson("assets/coloring/manifest.json");
-  const reserve = readJson("assets/coloring/reserve/manifest.json");
-  const appSource = fs.readFileSync(path.join(root, "app.js"), "utf8");
-  const indexSource = fs.readFileSync(path.join(root, "index.html"), "utf8");
-  const stylesSource = fs.readFileSync(path.join(root, "styles.css"), "utf8");
+  const data = readJson("public/data/catalogues.json");
+  const manifest = readJson("public/assets/coloring/manifest.json");
+  const reserve = readJson("public/assets/coloring/reserve/manifest.json");
+  const appSource = fs.readFileSync(
+    path.join(root, "public", "catalogue-runtime.js"),
+    "utf8",
+  );
+  const pageSource = fs.readFileSync(path.join(root, "app", "page.tsx"), "utf8");
+  const stylesSource = fs.readFileSync(path.join(root, "app", "globals.css"), "utf8");
+  const packageJson = readJson("package.json");
 
   validateData(data, manifest);
   assert.equal(data.catalogues.length, 10, "10 catalogues requis");
@@ -101,8 +105,8 @@ async function main() {
   check(/image\.decode/.test(appSource), "image.decode requis");
   check(/Créer un catalogue surprise/.test(appSource), "Commande surprise absente");
   check(/aria-live/.test(appSource), "Zone aria-live surprise absente");
-  check(/id="print-page"/.test(indexSource), "Bouton impression page absent");
-  check(/id="print-catalogue"/.test(indexSource), "Bouton impression catalogue absent");
+  check(/id="print-page"/.test(pageSource), "Bouton impression page absent");
+  check(/id="print-catalogue"/.test(pageSource), "Bouton impression catalogue absent");
   check(/data-color-flip/.test(appSource), "Commande de retournement absente");
   check(/handleColorFlipClick/.test(appSource), "Alternance au clic absente");
   check(/rotateY\(180deg\)/.test(stylesSource), "Rotation verticale 180° absente");
@@ -123,7 +127,10 @@ async function main() {
       check(manifestIds.has(entry.id), `ID hors manifeste : ${entry.id}`);
       assert.equal(entry.validationStatus, "validated");
       check(entry.title.length > 0, `Titre absent : ${entry.id}`);
-      check(fs.existsSync(path.join(root, ...entry.path.split("/"))), entry.path);
+      check(
+        fs.existsSync(path.join(root, "public", ...entry.path.split("/"))),
+        entry.path,
+      );
     });
     assert.equal(buildPages({ entries: selection }).length, 10);
     buildPages({ entries: selection }).forEach((page) =>
@@ -155,9 +162,16 @@ async function main() {
   assert.equal(loadedCounter, 16, "Le compteur ne doit pas dépasser les succès");
   assert.equal(visiblePreviews, loadedCounter, "Aperçus et compteur désynchronisés");
   check(loadedCounter < 40, "Le catalogue invalide ne doit pas être prêt");
+  assert.equal(packageJson.dependencies.next.startsWith("^16."), true, "Next.js 16 requis");
+  check(/createServerClient/.test(fs.readFileSync(path.join(root, "lib", "supabase", "server.ts"), "utf8")), "Client Supabase serveur absent");
+  check(/Chaque semaine/.test(pageSource), "Promesse hebdomadaire absente");
+  check(/Nouvelles catégories/.test(pageSource), "Nouvelles catégories absentes");
+  check(/Nouvelles images/.test(pageSource), "Nouvelles images absentes");
+  check(!/stripe/i.test(pageSource), "Stripe ne doit pas être intégré pour l’instant");
 
   const report = {
     status: "passed",
+    framework: "Next.js",
     catalogues: data.catalogues.length,
     activeImages: manifest.entries.length,
     reserveImages: reserve.entries.length,

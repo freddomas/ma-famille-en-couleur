@@ -4,6 +4,7 @@ const path = require("node:path");
 
 const endpoint = process.argv[2];
 if (!endpoint) throw new Error("Endpoint Chrome DevTools manquant.");
+const appUrl = process.argv[3] || "http://127.0.0.1:8080/";
 
 const root = path.resolve(__dirname, "..");
 const outputDir = path.join(root, "qa", "rendered");
@@ -95,7 +96,7 @@ async function main() {
     await call("Page.enable");
     await call("Runtime.enable");
     await call("Log.enable");
-    await call("Page.navigate", { url: "http://127.0.0.1:8080/" });
+    await call("Page.navigate", { url: appUrl });
     await waitFor(
       `document.readyState === "complete" && document.querySelectorAll(".catalogue-card").length === 10`,
     );
@@ -120,7 +121,35 @@ async function main() {
       printDisabled: true,
       appError: false,
     });
+    const health = await evaluate(
+      `fetch("/api/health", { cache: "no-store" }).then((response) => response.json())`,
+    );
+    assert.equal(health.status, "ok");
+    assert.equal(health.framework, "nextjs");
+
+    const weeklyPromise = await evaluate(`(() => {
+      const section = document.querySelector("#nouveautes");
+      const text = section.textContent.replace(/\\s+/g, " ").trim();
+      return {
+        present: Boolean(section),
+        mentionsWeeklyUpdate: /chaque semaine/i.test(text),
+        mentionsNewCategories: /nouvelles catégories/i.test(text),
+        mentionsNewImages: /nouvelles images/i.test(text),
+        horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth
+      };
+    })()`);
+    assert.deepEqual(weeklyPromise, {
+      present: true,
+      mentionsWeeklyUpdate: true,
+      mentionsNewCategories: true,
+      mentionsNewImages: true,
+      horizontalOverflow: false,
+    });
     await screenshot("desktop-normal.png");
+    await evaluate(
+      `document.querySelector("#nouveautes").scrollIntoView({ block: "center", behavior: "instant" })`,
+    );
+    await screenshot("desktop-weekly-promise.png");
     await evaluate(
       `document.querySelector(".catalogue-card").scrollIntoView({ block: "start", behavior: "instant" })`,
     );
@@ -331,6 +360,18 @@ async function main() {
       enabled: true,
       maxTouchPoints: 5,
     });
+    await evaluate(
+      `document.querySelector("#nouveautes").scrollIntoView({ block: "start", behavior: "instant" })`,
+    );
+    const mobileWeekly = await evaluate(`(() => ({
+      horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth,
+      headingVisible: document.querySelector("#weekly-title").getBoundingClientRect().height > 0
+    }))()`);
+    assert.deepEqual(mobileWeekly, {
+      horizontalOverflow: false,
+      headingVisible: true,
+    });
+    await screenshot("mobile-weekly-promise.png");
     await evaluate(`selectCatalogue(state.catalogues[0].id)`);
     await evaluate(`document.querySelector("#catalogues").scrollIntoView()`);
     await evaluate(
@@ -539,7 +580,10 @@ async function main() {
 
     const report = {
       status: "passed",
+      health,
       initial,
+      weeklyPromise,
+      mobileWeekly,
       normalPages: {
         checked: normalPages.length,
         decodedImages: normalPages.reduce((sum, page) => sum + page.decoded, 0),

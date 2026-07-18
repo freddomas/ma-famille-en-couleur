@@ -19,7 +19,7 @@ $ErrorActionPreference = "Stop"
 
 Add-Type -AssemblyName System.Drawing
 
-$data = Get-Content -Raw -Encoding UTF8 -LiteralPath "data/catalogues.json" | ConvertFrom-Json
+$data = Get-Content -Raw -Encoding UTF8 -LiteralPath "public/data/catalogues.json" | ConvertFrom-Json
 $catalogue = $data.catalogues | Where-Object { $_.id -eq $CatalogueId }
 if (-not $catalogue) {
     throw "Catalogue inconnu : '$CatalogueId'."
@@ -28,7 +28,7 @@ if (-not $catalogue) {
 $source = (Resolve-Path -LiteralPath $SourcePath).Path
 $sourceDirectory = Join-Path "qa/sources" $CatalogueId
 $contactDirectory = Join-Path "qa/contact-sheets" $CatalogueId
-$itemDirectory = Join-Path "assets/coloring/items" $CatalogueId
+$itemDirectory = Join-Path "public/assets/coloring/items" $CatalogueId
 New-Item -ItemType Directory -Force -Path $sourceDirectory, $contactDirectory, $itemDirectory | Out-Null
 
 $sourceEvidence = Join-Path $sourceDirectory ("page-{0:D2}-attempt-{1:D2}.png" -f $Page, $Attempt)

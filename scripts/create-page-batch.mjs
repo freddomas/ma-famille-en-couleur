@@ -10,7 +10,9 @@ if (!catalogueId || !Number.isInteger(page) || page < 2 || page > 10) {
 }
 
 const root = process.cwd();
-const data = JSON.parse(await readFile(path.join(root, "data", "catalogues.json"), "utf8"));
+const data = JSON.parse(
+  await readFile(path.join(root, "public", "data", "catalogues.json"), "utf8"),
+);
 const catalogue = data.catalogues.find((entry) => entry.id === catalogueId);
 
 if (!catalogue) {

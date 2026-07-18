@@ -1,5 +1,6 @@
 {
   "status": "passed",
+  "framework": "Next.js",
   "catalogues": 10,
   "activeImages": 400,
   "reserveImages": 80,

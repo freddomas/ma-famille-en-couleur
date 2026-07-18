@@ -2,9 +2,20 @@
 output/
 tmp/
 
+# Build et dépendances Next.js
+node_modules/
+.next/
+.vercel/
+*.tsbuildinfo
+
+# Secrets locaux
+.env
+.env.local
+.env.*.local
+
 # Intermédiaires des anciennes générations
-assets/coloring/generated/
-assets/coloring/items/
+public/assets/coloring/generated/
+public/assets/coloring/items/
 
 # Planches d’inventaire temporaires utilisées pour le classement
 qa/inventory/

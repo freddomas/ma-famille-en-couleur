@@ -63,7 +63,7 @@ if (-not $DryRun) {
 
     & "$PSScriptRoot/prepare-coloring-assets.ps1" -InputPath $paths
 
-    $data = Get-Content -Raw -Encoding UTF8 -LiteralPath "data/catalogues.json" | ConvertFrom-Json
+    $data = Get-Content -Raw -Encoding UTF8 -LiteralPath "public/data/catalogues.json" | ConvertFrom-Json
     $catalogue = $data.catalogues | Where-Object { $_.id -eq $CatalogueId }
     $titles = @($catalogue.items[(($Page - 1) * 4)..(($Page * 4) - 1)])
     $contactPath = Join-Path "qa/contact-sheets/$CatalogueId" ("page-{0:D2}-candidate.png" -f $Page)

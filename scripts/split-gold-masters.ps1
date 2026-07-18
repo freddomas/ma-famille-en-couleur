@@ -7,18 +7,18 @@ $ErrorActionPreference = "Stop"
 
 Add-Type -AssemblyName System.Drawing
 
-$catalogueData = Get-Content -Raw -Encoding UTF8 -LiteralPath "data/catalogues.json" | ConvertFrom-Json
+$catalogueData = Get-Content -Raw -Encoding UTF8 -LiteralPath "public/data/catalogues.json" | ConvertFrom-Json
 $spriteByType = @{
-    animal = "assets/coloring/animals-toddlers.png"
-    vehicle = "assets/coloring/vehicles-toddlers.png"
-    number = "assets/coloring/numbers-toddlers.png"
-    shape = "assets/coloring/shapes-toddlers.png"
-    fruit = "assets/coloring/fruits-toddlers.png"
-    vegetable = "assets/coloring/vegetables-toddlers.png"
-    home = "assets/coloring/home-toddlers.png"
-    building = "assets/coloring/buildings-toddlers.png"
-    nature = "assets/coloring/nature-toddlers.png"
-    people = "assets/coloring/people-toddlers.png"
+    animal = "public/assets/coloring/animals-toddlers.png"
+    vehicle = "public/assets/coloring/vehicles-toddlers.png"
+    number = "public/assets/coloring/numbers-toddlers.png"
+    shape = "public/assets/coloring/shapes-toddlers.png"
+    fruit = "public/assets/coloring/fruits-toddlers.png"
+    vegetable = "public/assets/coloring/vegetables-toddlers.png"
+    home = "public/assets/coloring/home-toddlers.png"
+    building = "public/assets/coloring/buildings-toddlers.png"
+    nature = "public/assets/coloring/nature-toddlers.png"
+    people = "public/assets/coloring/people-toddlers.png"
 }
 
 foreach ($catalogue in $catalogueData.catalogues) {
@@ -27,7 +27,7 @@ foreach ($catalogue in $catalogueData.catalogues) {
     }
 
     $sourcePath = (Resolve-Path -LiteralPath $spriteByType[$catalogue.type]).Path
-    $outputDirectory = Join-Path "assets/coloring/items" $catalogue.id
+    $outputDirectory = Join-Path "public/assets/coloring/items" $catalogue.id
     New-Item -ItemType Directory -Force -Path $outputDirectory | Out-Null
 
     $source = [System.Drawing.Bitmap]::FromFile($sourcePath)
