@@ -159,14 +159,13 @@ async function main() {
     });
 
     const mouseGuideTarget = await evaluate(`(() => {
-      const image = document.querySelector(".drawing-card__image");
-      image.scrollIntoView({ block: "center", behavior: "instant" });
-      const rect = image.getBoundingClientRect();
+      const card = document.querySelector(".drawing-card .color-flip-card");
+      card.scrollIntoView({ block: "center", behavior: "instant" });
+      const rect = card.getBoundingClientRect();
       return {
         x: rect.left + rect.width / 2,
         y: rect.top + rect.height / 2,
-        lineArt: image.dataset.lineArtSrc,
-        colored: image.dataset.coloredSrc
+        colored: card.querySelector(".color-flip-card__back").getAttribute("src")
       };
     })()`);
     assert.match(mouseGuideTarget.colored, /assets\/coloring\/colored\//);
@@ -174,30 +173,36 @@ async function main() {
       type: "mousePressed",
       x: mouseGuideTarget.x,
       y: mouseGuideTarget.y,
-      button: "right",
-      buttons: 2,
+      button: "left",
+      buttons: 1,
       clickCount: 1,
     });
-    await waitFor(
-      `(() => {
-        const image = document.querySelector(".drawing-card__image");
-        return image.getAttribute("src") === ${JSON.stringify(mouseGuideTarget.colored)}
-          && image.complete
-          && image.naturalWidth > 0;
-      })()`,
-    );
-    await delay(200);
-    await screenshot("desktop-color-guide.png");
     await call("Input.dispatchMouseEvent", {
       type: "mouseReleased",
       x: mouseGuideTarget.x,
       y: mouseGuideTarget.y,
-      button: "right",
+      button: "left",
       buttons: 0,
       clickCount: 1,
     });
     await waitFor(
-      `document.querySelector(".drawing-card__image").getAttribute("src") === ${JSON.stringify(mouseGuideTarget.lineArt)}`,
+      `document.querySelector(".drawing-card .color-flip-card").getAttribute("aria-pressed") === "true"`,
+    );
+    await delay(220);
+    const desktopMidTransform = await evaluate(
+      `getComputedStyle(document.querySelector(".drawing-card .color-flip-card__inner")).transform`,
+    );
+    assert.notEqual(desktopMidTransform, "none");
+    await screenshot("desktop-card-flipping.png");
+    await delay(430);
+    await screenshot("desktop-color-guide.png");
+    await evaluate(`document.querySelector(".drawing-card .color-flip-card").click()`);
+    await delay(650);
+    assert.equal(
+      await evaluate(
+        `document.querySelector(".drawing-card .color-flip-card").getAttribute("aria-pressed")`,
+      ),
+      "false",
     );
 
     await evaluate(`(() => {
@@ -213,8 +218,12 @@ async function main() {
       1,
     );
     assert.equal(
-      await evaluate(`[...document.querySelectorAll("#print-area img")]
-        .every((image) => image.getAttribute("src") === image.dataset.lineArtSrc)`),
+      await evaluate(`[...document.querySelectorAll("#print-area .color-flip-card")]
+        .every((card) =>
+          !card.classList.contains("is-color-visible")
+          && !card.querySelector(".color-flip-card__front").getAttribute("src").includes("/colored/")
+          && card.querySelector(".color-flip-card__back").getAttribute("src").includes("/colored/")
+        )`),
       true,
       "L'impression doit conserver les dessins noir et blanc",
     );
@@ -408,14 +417,12 @@ async function main() {
     assert.equal(mobile.backButtonFocused, true);
     assert.equal(mobile.previewObjectFit, "contain");
     const touchGuideTarget = await evaluate(`(() => {
-      const image = document.querySelector(".drawing-card__image");
-      image.scrollIntoView({ block: "center", behavior: "instant" });
-      const rect = image.getBoundingClientRect();
+      const card = document.querySelector(".drawing-card .color-flip-card");
+      card.scrollIntoView({ block: "center", behavior: "instant" });
+      const rect = card.getBoundingClientRect();
       return {
         x: rect.left + rect.width / 2,
-        y: rect.top + rect.height / 2,
-        lineArt: image.dataset.lineArtSrc,
-        colored: image.dataset.coloredSrc
+        y: rect.top + rect.height / 2
       };
     })()`);
     await call("Input.dispatchTouchEvent", {
@@ -429,25 +436,35 @@ async function main() {
         id: 1,
       }],
     });
-    await waitFor(
-      `(() => {
-        const image = document.querySelector(".drawing-card__image");
-        return image.getAttribute("src") === ${JSON.stringify(touchGuideTarget.colored)}
-          && image.complete
-          && image.naturalWidth > 0;
-      })()`,
-      2000,
-    );
-    await delay(200);
-    await screenshot("mobile-color-guide.png");
     await call("Input.dispatchTouchEvent", {
       type: "touchEnd",
       touchPoints: [],
     });
     await waitFor(
-      `document.querySelector(".drawing-card__image").getAttribute("src") === ${JSON.stringify(touchGuideTarget.lineArt)}`,
+      `document.querySelector(".drawing-card .color-flip-card").getAttribute("aria-pressed") === "true"`,
+      2000,
     );
-    await delay(250);
+    await delay(650);
+    await screenshot("mobile-color-guide.png");
+    await call("Input.dispatchTouchEvent", {
+      type: "touchStart",
+      touchPoints: [{
+        x: touchGuideTarget.x,
+        y: touchGuideTarget.y,
+        radiusX: 2,
+        radiusY: 2,
+        force: 1,
+        id: 1,
+      }],
+    });
+    await call("Input.dispatchTouchEvent", {
+      type: "touchEnd",
+      touchPoints: [],
+    });
+    await waitFor(
+      `document.querySelector(".drawing-card .color-flip-card").getAttribute("aria-pressed") === "false"`,
+    );
+    await delay(650);
     await screenshot("mobile-normal.png");
     await evaluate(`document.querySelector("#close-catalogue").click()`);
     await waitFor(
@@ -551,11 +568,13 @@ async function main() {
           "qa/rendered/surprise-10-pages.pdf",
         ],
       },
-      colorGuide: {
-        desktopRightHoldShown: true,
-        desktopReleaseRestored: true,
-        mobileLongPressShown: true,
-        mobileReleaseRestored: true,
+      colorFlip: {
+        desktopFirstClickColored: true,
+        desktopSecondClickLineArt: true,
+        mobileFirstTapColored: true,
+        mobileSecondTapLineArt: true,
+        rotationDegrees: 180,
+        desktopMidTransform,
         printUsesLineArt: true,
       },
       mobile,

@@ -12,14 +12,6 @@ const state = {
   surpriseGeneration: 0,
   toastTimer: null,
   catalogueReturnTarget: null,
-  colorGuide: {
-    image: null,
-    pointerId: null,
-    timer: null,
-    startX: 0,
-    startY: 0,
-  },
-  colorGuidePreloads: new Map(),
 };
 
 if (typeof window !== "undefined") {
@@ -236,18 +228,8 @@ function bindGlobalEvents() {
   document
     .getElementById("close-catalogue")
     ?.addEventListener("click", closeCatalogueViewer);
-  document.addEventListener("pointerover", (event) => {
-    preloadColoredGuide(guideImageFromTarget(event.target));
-  });
-  document.addEventListener("pointerdown", handleGuidePointerDown);
-  document.addEventListener("pointermove", handleGuidePointerMove);
-  document.addEventListener("pointerup", handleGuidePointerEnd);
-  document.addEventListener("pointercancel", handleGuidePointerEnd);
-  document.addEventListener("contextmenu", (event) => {
-    if (guideImageFromTarget(event.target)) event.preventDefault();
-  });
-  window.addEventListener("blur", restoreColoredGuide);
-  window.addEventListener("beforeprint", restoreColoredGuide);
+  document.addEventListener("click", handleColorFlipClick);
+  window.addEventListener("beforeprint", resetColorFlips);
   window.addEventListener("afterprint", clearPrintArea);
   document.addEventListener(
     "error",
@@ -457,12 +439,7 @@ function renderWorkspace() {
   renderCatalogueInfo(catalogue);
   renderPageNavigation();
   const viewer = document.getElementById("page-viewer");
-  if (viewer) {
-    viewer.innerHTML = renderSheet(catalogue, state.selectedPage);
-    viewer
-      .querySelectorAll("img[data-colored-src]")
-      .forEach((image) => preloadColoredGuide(image));
-  }
+  if (viewer) viewer.innerHTML = renderSheet(catalogue, state.selectedPage);
   const previous = document.getElementById("previous-page");
   const next = document.getElementById("next-page");
   if (previous) previous.disabled = state.selectedPage === 1;
@@ -549,11 +526,11 @@ function renderSheet(catalogue, pageNumber) {
             (entry) => `
               <section class="drawing-card">
                 <div class="drawing-card__art">
-                  ${imageMarkup(entry, "drawing-card__image")}
+                  ${colorFlipMarkup(entry, "drawing-card__image")}
                 </div>
                 <div class="drawing-card__footer">
                   <strong>${escapeHtml(entry.title)}</strong>
-                  <span>Maintiens pour voir les couleurs</span>
+                  <span>Clique pour retourner la carte</span>
                 </div>
               </section>
             `,
@@ -586,108 +563,62 @@ function imageMarkup(entry, className) {
   `;
 }
 
-function guideImageFromTarget(target) {
-  if (!(target instanceof Element)) return null;
-  const image = target.closest(
-    ".drawing-card__image[data-colored-src], .surprise__preview-image[data-colored-src]",
+function colorFlipMarkup(entry, imageClass) {
+  if (!entry?.path || !entry?.coloredPath) {
+    return `<p class="asset-error" role="alert">Paire d’images manquante.</p>`;
+  }
+  return `
+    <button
+      class="color-flip-card"
+      type="button"
+      data-color-flip
+      aria-pressed="false"
+      aria-label="Afficher la version coloriée de ${escapeAttribute(entry.title)}"
+    >
+      <span class="color-flip-card__inner">
+        <img
+          class="${escapeAttribute(imageClass)} color-flip-card__face color-flip-card__front"
+          src="${escapeAttribute(entry.path)}"
+          alt="${escapeAttribute(entry.title)}"
+          data-asset-id="${escapeAttribute(entry.id)}"
+          loading="eager"
+          decoding="async"
+        />
+        <img
+          class="color-flip-card__image color-flip-card__face color-flip-card__back"
+          src="${escapeAttribute(entry.coloredPath)}"
+          alt=""
+          aria-hidden="true"
+          data-asset-id="${escapeAttribute(entry.id)}-color"
+          loading="eager"
+          decoding="async"
+        />
+      </span>
+    </button>
+  `;
+}
+
+function handleColorFlipClick(event) {
+  if (!(event.target instanceof Element)) return;
+  const card = event.target.closest("[data-color-flip]");
+  if (!card) return;
+  const showColor = !card.classList.contains("is-color-visible");
+  card.classList.toggle("is-color-visible", showColor);
+  card.setAttribute("aria-pressed", String(showColor));
+  const title = card.querySelector(".color-flip-card__front")?.alt || "l’image";
+  card.setAttribute(
+    "aria-label",
+    showColor
+      ? `Afficher la version noir et blanc de ${title}`
+      : `Afficher la version coloriée de ${title}`,
   );
-  return image?.dataset.coloredSrc ? image : null;
 }
 
-function preloadColoredGuide(image) {
-  if (!image?.dataset.coloredSrc) return Promise.resolve();
-  const source = image.dataset.coloredSrc;
-  const cached = state.colorGuidePreloads.get(source);
-  if (cached) return cached.promise;
-
-  const preload = new Image();
-  const promise = new Promise((resolve, reject) => {
-    preload.addEventListener("load", () => {
-      image.dataset.colorPreloaded = "true";
-      resolve();
-    }, { once: true });
-    preload.addEventListener("error", () => {
-      state.colorGuidePreloads.delete(source);
-      reject(new Error(`Guide coloré indisponible : ${source}`));
-    }, { once: true });
+function resetColorFlips() {
+  document.querySelectorAll("[data-color-flip].is-color-visible").forEach((card) => {
+    card.classList.remove("is-color-visible");
+    card.setAttribute("aria-pressed", "false");
   });
-  state.colorGuidePreloads.set(source, { image: preload, promise });
-  preload.src = source;
-  return promise;
-}
-
-function showColoredGuide(image, pointerId = null) {
-  if (!image?.dataset.coloredSrc) return;
-  restoreColoredGuide();
-  state.colorGuide.image = image;
-  state.colorGuide.pointerId = pointerId;
-  image.closest(".drawing-card__art, .catalogue-card__media, .surprise__preview")
-    ?.classList.add("is-showing-color-guide");
-  preloadColoredGuide(image)
-    .then(() => {
-      if (
-        state.colorGuide.image === image &&
-        state.colorGuide.pointerId === pointerId
-      ) {
-        image.src = image.dataset.coloredSrc;
-      }
-    })
-    .catch((error) => {
-      console.error(error);
-      if (state.colorGuide.image === image) restoreColoredGuide();
-    });
-}
-
-function restoreColoredGuide() {
-  const guide = state.colorGuide;
-  if (guide.timer) window.clearTimeout(guide.timer);
-  if (guide.image?.isConnected) {
-    guide.image.src = guide.image.dataset.lineArtSrc;
-    guide.image
-      .closest(".drawing-card__art, .catalogue-card__media, .surprise__preview")
-      ?.classList.remove("is-showing-color-guide");
-  }
-  guide.image = null;
-  guide.pointerId = null;
-  guide.timer = null;
-}
-
-function handleGuidePointerDown(event) {
-  const image = guideImageFromTarget(event.target);
-  if (!image) return;
-
-  if (event.pointerType === "mouse") {
-    if (event.button !== 2) return;
-    event.preventDefault();
-    showColoredGuide(image, event.pointerId);
-    return;
-  }
-
-  if (!event.isPrimary) return;
-  restoreColoredGuide();
-  preloadColoredGuide(image);
-  state.colorGuide.image = image;
-  state.colorGuide.pointerId = event.pointerId;
-  state.colorGuide.startX = event.clientX;
-  state.colorGuide.startY = event.clientY;
-  state.colorGuide.timer = window.setTimeout(() => {
-    const activeImage = state.colorGuide.image;
-    const pointerId = state.colorGuide.pointerId;
-    state.colorGuide.timer = null;
-    showColoredGuide(activeImage, pointerId);
-  }, 420);
-}
-
-function handleGuidePointerMove(event) {
-  const guide = state.colorGuide;
-  if (event.pointerId !== guide.pointerId || !guide.timer) return;
-  if (Math.hypot(event.clientX - guide.startX, event.clientY - guide.startY) > 12) {
-    restoreColoredGuide();
-  }
-}
-
-function handleGuidePointerEnd(event) {
-  if (event.pointerId === state.colorGuide.pointerId) restoreColoredGuide();
 }
 
 async function generateSurpriseCatalogue() {
@@ -837,7 +768,7 @@ function appendSurprisePreview(entry) {
   const figure = document.createElement("figure");
   figure.className = "surprise__preview";
   figure.innerHTML = `
-    ${imageMarkup(entry, "surprise__preview-image")}
+    ${colorFlipMarkup(entry, "surprise__preview-image")}
     <figcaption>
       <strong>${escapeHtml(entry.title)}</strong>
       <span>${escapeHtml(entry.catalogueTitle)}</span>

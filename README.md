@@ -36,10 +36,10 @@ de `output/Extract` sont préservées. Les 120 illustrations antérieures n’on
 
 ## Guide des couleurs
 
-Sur ordinateur, maintenir le bouton droit sur une illustration affiche son
-jumeau coloré ; le relâchement rétablit immédiatement le dessin au trait. Sur
-smartphone ou tablette, le même résultat s’obtient par un appui long maintenu.
-Un mouvement annule l’appui long afin de préserver le défilement tactile.
+Un clic ou toucher normal retourne l’illustration de 180 degrés autour de son
+axe vertical et affiche son jumeau coloré. Le clic suivant retourne à nouveau
+la carte et rétablit le dessin au trait. L’alternance fonctionne sans limite,
+sur ordinateur comme sur smartphone ou tablette.
 
 Les pages imprimables utilisent toujours les sources noir et blanc. Les jumeaux
 colorés peuvent être régénérés de manière déterministe avec :

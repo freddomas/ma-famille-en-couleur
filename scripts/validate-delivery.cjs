@@ -39,6 +39,7 @@ async function main() {
   const reserve = readJson("assets/coloring/reserve/manifest.json");
   const appSource = fs.readFileSync(path.join(root, "app.js"), "utf8");
   const indexSource = fs.readFileSync(path.join(root, "index.html"), "utf8");
+  const stylesSource = fs.readFileSync(path.join(root, "styles.css"), "utf8");
 
   validateData(data, manifest);
   assert.equal(data.catalogues.length, 10, "10 catalogues requis");
@@ -102,9 +103,11 @@ async function main() {
   check(/aria-live/.test(appSource), "Zone aria-live surprise absente");
   check(/id="print-page"/.test(indexSource), "Bouton impression page absent");
   check(/id="print-catalogue"/.test(indexSource), "Bouton impression catalogue absent");
-  check(/data-colored-src/.test(appSource), "Source colorée absente du rendu");
-  check(/pointerType === "mouse"/.test(appSource), "Maintien souris absent");
-  check(/setTimeout\(\(\) =>/.test(appSource), "Appui long tactile absent");
+  check(/data-color-flip/.test(appSource), "Commande de retournement absente");
+  check(/handleColorFlipClick/.test(appSource), "Alternance au clic absente");
+  check(/rotateY\(180deg\)/.test(stylesSource), "Rotation verticale 180° absente");
+  check(!/pointerType === "mouse"/.test(appSource), "Ancien maintien souris encore actif");
+  check(!/handleGuidePointerDown/.test(appSource), "Ancien appui long encore actif");
 
   const manifestIds = new Set(manifest.entries.map((entry) => entry.id));
   const signatures = new Set();

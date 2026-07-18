@@ -38,11 +38,13 @@
       "qa/rendered/surprise-10-pages.pdf"
     ]
   },
-  "colorGuide": {
-    "desktopRightHoldShown": true,
-    "desktopReleaseRestored": true,
-    "mobileLongPressShown": true,
-    "mobileReleaseRestored": true,
+  "colorFlip": {
+    "desktopFirstClickColored": true,
+    "desktopSecondClickLineArt": true,
+    "mobileFirstTapColored": true,
+    "mobileSecondTapLineArt": true,
+    "rotationDegrees": 180,
+    "desktopMidTransform": "matrix3d(-0.902715, 0, -0.430239, 0, 0, 1, 0, 0, 0.430239, 0, -0.902715, 0, 0, 0, 0, 1)",
     "printUsesLineArt": true
   },
   "mobile": {
@@ -65,8 +67,8 @@
     "previewObjectFit": "contain"
   },
   "invalid": {
-    "counter": 35,
-    "previews": 35,
+    "counter": 9,
+    "previews": 9,
     "error": "Échec : chargement impossible pour assets/coloring/active/image-volontairement-absente.png",
     "openDisabled": true,
     "printDisabled": true,
@@ -79,9 +81,9 @@
         "source": "network",
         "level": "error",
         "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
-        "timestamp": 1784390719783.741,
+        "timestamp": 1784404352830.061,
         "url": "http://127.0.0.1:8080/assets/coloring/active/image-volontairement-absente.png",
-        "networkRequestId": "23364.1105"
+        "networkRequestId": "24756.1201"
       }
     }
   ],
