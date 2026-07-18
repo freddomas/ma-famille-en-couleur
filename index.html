@@ -10,7 +10,7 @@
     />
     <title>Ma famille en couleur — Catalogues de coloriage</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260718-2" />
+    <link rel="stylesheet" href="styles.css?v=20260718-3" />
   </head>
   <body>
     <a class="skip-link" href="#catalogues">Aller aux catalogues</a>
@@ -144,6 +144,13 @@
 
       <section id="atelier" class="atelier-section" aria-labelledby="atelier-title">
         <div class="section-shell">
+          <div class="catalogue-viewer__back">
+            <button id="close-catalogue" class="button button--paper" type="button">
+              <span aria-hidden="true">←</span>
+              Retour vers les catalogues
+            </button>
+          </div>
+
           <div class="section-heading section-heading--light">
             <div>
               <p class="eyebrow"><span></span> L’atelier d’impression</p>
@@ -247,6 +254,6 @@
     <div id="status-toast" class="status-toast" role="status" aria-live="polite"></div>
     <div id="print-area" class="print-area" aria-hidden="true"></div>
 
-    <script src="app.js?v=20260718-2"></script>
+    <script src="app.js?v=20260718-3"></script>
   </body>
 </html>

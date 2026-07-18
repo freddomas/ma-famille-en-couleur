@@ -11,6 +11,7 @@ const state = {
   surpriseCatalogue: null,
   surpriseGeneration: 0,
   toastTimer: null,
+  catalogueReturnTarget: null,
 };
 
 if (typeof window !== "undefined") {
@@ -189,13 +190,12 @@ function installSurpriseGenerator() {
   document
     .getElementById("create-surprise")
     ?.addEventListener("click", generateSurpriseCatalogue);
-  document.getElementById("open-surprise")?.addEventListener("click", () => {
+  document.getElementById("open-surprise")?.addEventListener("click", (event) => {
     if (!state.surpriseCatalogue) return;
-    state.selectedCatalogueId = state.surpriseCatalogue.id;
-    state.selectedPage = 1;
-    renderCatalogueMenu();
-    renderWorkspace();
-    document.getElementById("atelier")?.scrollIntoView({ behavior: "smooth" });
+    selectCatalogue(state.surpriseCatalogue.id, {
+      open: true,
+      trigger: event.currentTarget,
+    });
   });
   document.getElementById("print-surprise")?.addEventListener("click", async () => {
     if (!state.surpriseCatalogue) return;
@@ -222,6 +222,9 @@ function bindGlobalEvents() {
     const catalogue = selectedCatalogue();
     if (catalogue) await printEntries(catalogue, "catalogue");
   });
+  document
+    .getElementById("close-catalogue")
+    ?.addEventListener("click", closeCatalogueViewer);
   window.addEventListener("afterprint", clearPrintArea);
   document.addEventListener(
     "error",
@@ -236,6 +239,14 @@ function bindGlobalEvents() {
     true,
   );
   document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      document.getElementById("atelier")?.classList.contains("is-catalogue-open")
+    ) {
+      event.preventDefault();
+      closeCatalogueViewer();
+      return;
+    }
     const tag = document.activeElement?.tagName;
     if (tag === "INPUT" || tag === "TEXTAREA") return;
     if (event.key === "ArrowLeft") selectPage(state.selectedPage - 1);
@@ -293,7 +304,10 @@ function renderLibrary() {
 
   list.querySelectorAll("[data-catalogue-id]").forEach((button) => {
     bindPressActivation(button, () => {
-      selectCatalogue(button.dataset.catalogueId, { scroll: true });
+      selectCatalogue(button.dataset.catalogueId, {
+        open: true,
+        trigger: button,
+      });
     });
   });
 }
@@ -371,24 +385,39 @@ function selectCatalogue(id, options = {}) {
   state.selectedPage = 1;
   renderCatalogueMenu();
   renderWorkspace();
-  if (options.scroll) {
-    const isMobile = window.matchMedia("(max-width: 900px)").matches;
-    const target = isMobile
-      ? document.querySelector(".viewer")
-      : document.getElementById("atelier");
-    const reduceMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
+  if (options.open) openCatalogueViewer(options.trigger);
+}
 
-    window.requestAnimationFrame(() => {
-      target?.scrollIntoView({
-        behavior: isMobile || reduceMotion ? "auto" : "smooth",
-        block: "start",
-      });
-      if (isMobile && target instanceof HTMLElement) {
-        target.focus({ preventScroll: true });
-      }
-    });
+function openCatalogueViewer(trigger) {
+  const atelier = document.getElementById("atelier");
+  const closeButton = document.getElementById("close-catalogue");
+  if (!atelier) return;
+
+  state.catalogueReturnTarget =
+    trigger instanceof HTMLElement ? trigger : document.activeElement;
+  atelier.classList.add("is-catalogue-open");
+  atelier.setAttribute("role", "dialog");
+  atelier.setAttribute("aria-modal", "true");
+  document.body.classList.add("catalogue-viewer-open");
+
+  window.requestAnimationFrame(() => {
+    closeButton?.focus({ preventScroll: true });
+  });
+}
+
+function closeCatalogueViewer() {
+  const atelier = document.getElementById("atelier");
+  if (!atelier?.classList.contains("is-catalogue-open")) return;
+
+  atelier.classList.remove("is-catalogue-open");
+  atelier.removeAttribute("role");
+  atelier.removeAttribute("aria-modal");
+  document.body.classList.remove("catalogue-viewer-open");
+
+  const returnTarget = state.catalogueReturnTarget;
+  state.catalogueReturnTarget = null;
+  if (returnTarget instanceof HTMLElement && returnTarget.isConnected) {
+    returnTarget.focus({ preventScroll: true });
   }
 }
 

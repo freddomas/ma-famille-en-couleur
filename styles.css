@@ -1086,6 +1086,49 @@ svg {
   color: var(--white);
 }
 
+.catalogue-viewer__back {
+  display: none;
+}
+
+body.catalogue-viewer-open {
+  overflow: hidden;
+}
+
+.atelier-section.is-catalogue-open {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 0 40px;
+}
+
+.atelier-section.is-catalogue-open .section-shell {
+  width: min(calc(100% - 40px), 1280px);
+}
+
+.atelier-section.is-catalogue-open .catalogue-viewer__back {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  padding: 14px 0;
+  background: linear-gradient(var(--ink) 72%, transparent);
+}
+
+.atelier-section.is-catalogue-open .catalogue-viewer__back .button {
+  min-height: 44px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.atelier-section.is-catalogue-open .section-heading--light {
+  display: none;
+}
+
+.atelier-section.is-catalogue-open .workspace {
+  min-height: calc(100vh - 78px);
+}
+
 .section-heading--light .eyebrow {
   color: #f2bd3c;
 }
