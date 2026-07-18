@@ -1,0 +1,10 @@
+.git
+.next
+.vercel
+node_modules
+output
+tmp
+qa
+*.tsbuildinfo
+.env*
+!.env.example
