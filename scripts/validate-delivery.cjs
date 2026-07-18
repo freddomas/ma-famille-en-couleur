@@ -45,6 +45,11 @@ async function main() {
   assert.equal(manifest.entries.length, 400, "400 actifs requis");
   assert.equal(reserve.entries.length, 80, "80 réserves requises");
   assert.equal(manifest.complete, true, "Le manifeste actif doit être complet");
+  assert.equal(
+    new Set(manifest.entries.map((entry) => entry.coloredPath)).size,
+    400,
+    "400 chemins colorés uniques requis",
+  );
 
   const allEntries = [...manifest.entries, ...reserve.entries];
   assert.equal(new Set(allEntries.map((entry) => entry.id)).size, 480);
@@ -57,6 +62,19 @@ async function main() {
     assert.equal(decoded.width, entry.width, `Largeur incohérente : ${entry.id}`);
     assert.equal(decoded.height, entry.height, `Hauteur incohérente : ${entry.id}`);
     assert.equal(decoded.hash, entry.sha256, `SHA-256 incohérent : ${entry.id}`);
+  }
+
+  for (const entry of manifest.entries) {
+    check(entry.coloredPath, `Jumeau coloré absent : ${entry.id}`);
+    check(
+      entry.coloredPath.startsWith("assets/coloring/colored/"),
+      `Chemin coloré invalide : ${entry.id}`,
+    );
+    const lineArt = readPng(entry.path);
+    const colored = readPng(entry.coloredPath);
+    assert.equal(colored.width, lineArt.width, `Largeur colorée : ${entry.id}`);
+    assert.equal(colored.height, lineArt.height, `Hauteur colorée : ${entry.id}`);
+    check(colored.hash !== lineArt.hash, `Jumeau coloré identique : ${entry.id}`);
   }
 
   for (const catalogue of data.catalogues) {
@@ -84,6 +102,9 @@ async function main() {
   check(/aria-live/.test(appSource), "Zone aria-live surprise absente");
   check(/id="print-page"/.test(indexSource), "Bouton impression page absent");
   check(/id="print-catalogue"/.test(indexSource), "Bouton impression catalogue absent");
+  check(/data-colored-src/.test(appSource), "Source colorée absente du rendu");
+  check(/pointerType === "mouse"/.test(appSource), "Maintien souris absent");
+  check(/setTimeout\(\(\) =>/.test(appSource), "Appui long tactile absent");
 
   const manifestIds = new Set(manifest.entries.map((entry) => entry.id));
   const signatures = new Set();
@@ -137,6 +158,7 @@ async function main() {
     catalogues: data.catalogues.length,
     activeImages: manifest.entries.length,
     reserveImages: reserve.entries.length,
+    coloredTwins: manifest.entries.length,
     decodedPng: allEntries.length,
     uniqueIds: new Set(allEntries.map((entry) => entry.id)).size,
     uniquePaths: new Set(allEntries.map((entry) => entry.path)).size,

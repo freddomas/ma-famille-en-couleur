@@ -38,8 +38,36 @@
 }
 
 .drawing-card__art {
+  position: relative;
   overflow: hidden;
   background: #fff;
+}
+
+img[data-colored-src] {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+.catalogue-card__media,
+.surprise__preview {
+  position: relative;
+}
+
+.is-showing-color-guide::after {
+  position: absolute;
+  z-index: 3;
+  top: 0.55rem;
+  right: 0.55rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  color: #fff;
+  background: rgb(23 51 45 / 90%);
+  box-shadow: 0 4px 14px rgb(23 51 45 / 18%);
+  content: "Guide couleurs";
+  font: 700 0.68rem/1 var(--sans);
+  letter-spacing: 0.03em;
+  pointer-events: none;
 }
 
 .asset-error {

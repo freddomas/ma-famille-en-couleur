@@ -3,6 +3,7 @@
   "catalogues": 10,
   "activeImages": 400,
   "reserveImages": 80,
+  "coloredTwins": 400,
   "decodedPng": 480,
   "uniqueIds": 480,
   "uniquePaths": 480,

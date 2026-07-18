@@ -158,6 +158,42 @@ async function main() {
       assert.equal(page.horizontalOverflow, false);
     });
 
+    const mouseGuideTarget = await evaluate(`(() => {
+      const image = document.querySelector(".drawing-card__image");
+      image.scrollIntoView({ block: "center", behavior: "instant" });
+      const rect = image.getBoundingClientRect();
+      return {
+        x: rect.left + rect.width / 2,
+        y: rect.top + rect.height / 2,
+        lineArt: image.dataset.lineArtSrc,
+        colored: image.dataset.coloredSrc
+      };
+    })()`);
+    assert.match(mouseGuideTarget.colored, /assets\/coloring\/colored\//);
+    await call("Input.dispatchMouseEvent", {
+      type: "mousePressed",
+      x: mouseGuideTarget.x,
+      y: mouseGuideTarget.y,
+      button: "right",
+      buttons: 2,
+      clickCount: 1,
+    });
+    await waitFor(
+      `document.querySelector(".drawing-card__image").getAttribute("src") === ${JSON.stringify(mouseGuideTarget.colored)}`,
+    );
+    await screenshot("desktop-color-guide.png");
+    await call("Input.dispatchMouseEvent", {
+      type: "mouseReleased",
+      x: mouseGuideTarget.x,
+      y: mouseGuideTarget.y,
+      button: "right",
+      buttons: 0,
+      clickCount: 1,
+    });
+    await waitFor(
+      `document.querySelector(".drawing-card__image").getAttribute("src") === ${JSON.stringify(mouseGuideTarget.lineArt)}`,
+    );
+
     await evaluate(`(() => {
       const catalogue = selectedCatalogue();
       const target = document.querySelector("#print-area");
@@ -169,6 +205,12 @@ async function main() {
     assert.equal(
       await evaluate(`document.querySelectorAll("#print-area .colouring-sheet").length`),
       1,
+    );
+    assert.equal(
+      await evaluate(`[...document.querySelectorAll("#print-area img")]
+        .every((image) => image.getAttribute("src") === image.dataset.lineArtSrc)`),
+      true,
+      "L'impression doit conserver les dessins noir et blanc",
     );
     await printPdf("normal-page-01.pdf");
     await evaluate(`clearPrintArea()`);
@@ -359,6 +401,39 @@ async function main() {
     assert.ok(mobile.firstDrawingHeight > 0);
     assert.equal(mobile.backButtonFocused, true);
     assert.equal(mobile.previewObjectFit, "contain");
+    const touchGuideTarget = await evaluate(`(() => {
+      const image = document.querySelector(".drawing-card__image");
+      const rect = image.getBoundingClientRect();
+      return {
+        x: rect.left + rect.width / 2,
+        y: rect.top + rect.height / 2,
+        lineArt: image.dataset.lineArtSrc,
+        colored: image.dataset.coloredSrc
+      };
+    })()`);
+    await call("Input.dispatchTouchEvent", {
+      type: "touchStart",
+      touchPoints: [{
+        x: touchGuideTarget.x,
+        y: touchGuideTarget.y,
+        radiusX: 2,
+        radiusY: 2,
+        force: 1,
+        id: 1,
+      }],
+    });
+    await waitFor(
+      `document.querySelector(".drawing-card__image").getAttribute("src") === ${JSON.stringify(touchGuideTarget.colored)}`,
+      2000,
+    );
+    await screenshot("mobile-color-guide.png");
+    await call("Input.dispatchTouchEvent", {
+      type: "touchEnd",
+      touchPoints: [],
+    });
+    await waitFor(
+      `document.querySelector(".drawing-card__image").getAttribute("src") === ${JSON.stringify(touchGuideTarget.lineArt)}`,
+    );
     await delay(250);
     await screenshot("mobile-normal.png");
     await evaluate(`document.querySelector("#close-catalogue").click()`);
@@ -462,6 +537,13 @@ async function main() {
           "qa/rendered/normal-catalogue-10-pages.pdf",
           "qa/rendered/surprise-10-pages.pdf",
         ],
+      },
+      colorGuide: {
+        desktopRightHoldShown: true,
+        desktopReleaseRestored: true,
+        mobileLongPressShown: true,
+        mobileReleaseRestored: true,
+        printUsesLineArt: true,
       },
       mobile,
       invalid,

@@ -8,6 +8,7 @@ Application web statique de catalogues de coloriage pour enfants de 2 à 3 ans.
 - 10 pages A4 par catalogue ;
 - 4 illustrations par page ;
 - 400 illustrations locales actives ;
+- 400 jumeaux colorés servant de guides réalistes ;
 - 80 illustrations locales classées dans la réserve hebdomadaire ;
 - catalogue surprise de 40 images distinctes, sélectionnées sans remise ;
 - compteur lié au chargement et au décodage réels des 40 images ;
@@ -22,6 +23,8 @@ de génération SVG procédurale ni de fallback silencieux.
   injectées dans les dix catalogues ;
 - `assets/coloring/reserve/<categorie>/` : les 80 illustrations destinées aux
   rotations futures ;
+- `assets/coloring/colored/<categorie>/` : le jumeau coloré de chacune des
+  400 illustrations actives ;
 - `assets/coloring/reserve/manifest.json` : inventaire de la réserve ;
 - `data/extracted-assets.csv` : association vérifiée entre les 360 fichiers
   provenant de `output/Extract`, leur sujet et leur catégorie.
@@ -30,6 +33,20 @@ Les 360 PNG importés ont reçu uniquement un traitement de netteté non destruc
 avec `Pillow UnsharpMask` (`radius=1.0`, `percent=95`, `threshold=3`). Les sources
 de `output/Extract` sont préservées. Les 120 illustrations antérieures n’ont pas
 été retouchées.
+
+## Guide des couleurs
+
+Sur ordinateur, maintenir le bouton droit sur une illustration affiche son
+jumeau coloré ; le relâchement rétablit immédiatement le dessin au trait. Sur
+smartphone ou tablette, le même résultat s’obtient par un appui long maintenu.
+Un mouvement annule l’appui long afin de préserver le défilement tactile.
+
+Les pages imprimables utilisent toujours les sources noir et blanc. Les jumeaux
+colorés peuvent être régénérés de manière déterministe avec :
+
+```powershell
+python scripts\generate-colored-twins.py
+```
 
 ## Lancer l’application
 

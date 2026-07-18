@@ -1,0 +1,2807 @@
+{
+  "status": "passed",
+  "generated": 400,
+  "contactSheet": "qa/colored-guides-contact-sheet.jpg",
+  "entries": [
+    {
+      "id": "animaux-familiers-01",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/001-le-chat-curieux-existing-animaux-01-png-colored.png",
+      "regionsColored": 13,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-familiers-02",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/002-le-chien-joueur-existing-animaux-02-png-colored.png",
+      "regionsColored": 12,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-familiers-03",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/003-le-lapin-aux-longues-oreilles-existing-animaux-03-png-colored.png",
+      "regionsColored": 22,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-familiers-04",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/004-la-poule-et-ses-plumes-existing-animaux-04-png-colored.png",
+      "regionsColored": 16,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-familiers-05",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/005-le-cheval-au-galop-existing-animaux-17-png-colored.png",
+      "regionsColored": 17,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-familiers-06",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/006-la-vache-de-la-ferme-existing-animaux-18-png-colored.png",
+      "regionsColored": 24,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-familiers-07",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/007-la-chevre-sur-le-rocher-existing-animaux-19-png-colored.png",
+      "regionsColored": 25,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-familiers-08",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/008-le-mouton-frise-existing-animaux-20-png-colored.png",
+      "regionsColored": 18,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-familiers-09",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/009-le-canard-sur-letang-existing-animaux-33-png-colored.png",
+      "regionsColored": 9,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-familiers-10",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/010-la-vache-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-009-pn-colored.png",
+      "regionsColored": 20,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-11",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/011-le-lapin-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-001--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-12",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/012-le-chat-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-002--colored.png",
+      "regionsColored": 17,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-13",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/013-le-chien-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-003--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-14",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/014-la-vache-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-002--colored.png",
+      "regionsColored": 29,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-15",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/015-le-canard-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-003--colored.png",
+      "regionsColored": 9,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-16",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/016-le-cheval-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-002--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-17",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/017-le-cochon-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-003--colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-18",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/018-le-hamster-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-001--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-19",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/019-la-souris-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-002--colored.png",
+      "regionsColored": 11,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-20",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/020-le-coq-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-003-colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-21",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/021-le-chat-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-001--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-22",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/022-le-chien-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-002--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-23",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/023-le-chat-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-001--colored.png",
+      "regionsColored": 17,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-24",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/024-le-chien-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-002--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-25",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/025-le-lapin-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-003--colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-26",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/026-la-vache-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-004--colored.png",
+      "regionsColored": 30,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-27",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/027-le-chien-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-001--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-28",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/028-le-chat-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-002--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-29",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/029-le-mouton-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-008--colored.png",
+      "regionsColored": 19,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-30",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/030-le-lapin-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-024--colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-31",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/031-le-chien-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-001--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-32",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/032-le-chat-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-002--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-33",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/033-le-lapin-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-004--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-34",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/034-la-vache-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-006--colored.png",
+      "regionsColored": 17,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-35",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/035-la-vache-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-001--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-36",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/036-le-mouton-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-002--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-37",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/037-le-cheval-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-003--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-38",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/038-le-chien-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-001--colored.png",
+      "regionsColored": 11,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-39",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/039-le-chat-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-002--colored.png",
+      "regionsColored": 24,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-familiers-40",
+      "coloredPath": "assets/coloring/colored/animaux-familiers/040-le-lapin-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-003--colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-01",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png-colored.png",
+      "regionsColored": 19,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-02",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/042-lelephant-de-la-savane-existing-animaux-06-png-colored.png",
+      "regionsColored": 24,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-03",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/043-la-girafe-au-long-cou-existing-animaux-07-png-colored.png",
+      "regionsColored": 33,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-04",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/044-le-zebre-raye-existing-animaux-08-png-colored.png",
+      "regionsColored": 29,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-05",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/045-lhippopotame-dans-leau-existing-animaux-09-png-colored.png",
+      "regionsColored": 16,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-06",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/046-le-rhinoceros-tranquille-existing-animaux-10-png-colored.png",
+      "regionsColored": 18,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-07",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/047-le-singe-acrobate-existing-animaux-11-png-colored.png",
+      "regionsColored": 21,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-08",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/048-le-gorille-de-la-foret-existing-animaux-12-png-colored.png",
+      "regionsColored": 10,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-09",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/049-le-panda-gourmand-existing-animaux-13-png-colored.png",
+      "regionsColored": 27,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-10",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/050-lours-au-grand-cur-existing-animaux-14-png-colored.png",
+      "regionsColored": 11,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-11",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/051-le-renard-malin-existing-animaux-15-png-colored.png",
+      "regionsColored": 15,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-12",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/052-le-herisson-piquant-existing-animaux-16-png-colored.png",
+      "regionsColored": 8,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-13",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/053-le-crocodile-du-fleuve-existing-animaux-21-png-colored.png",
+      "regionsColored": 36,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-14",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/054-la-tortue-patiente-existing-animaux-22-png-colored.png",
+      "regionsColored": 38,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-15",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/055-le-cameleon-sur-sa-branche-existing-animaux-23-png-colored.png",
+      "regionsColored": 32,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-16",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/056-le-serpent-en-spirale-existing-animaux-24-png-colored.png",
+      "regionsColored": 27,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-17",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/057-le-dauphin-bondissant-existing-animaux-25-png-colored.png",
+      "regionsColored": 4,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-18",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/058-la-baleine-et-son-jet-deau-existing-animaux-26-png-colored.png",
+      "regionsColored": 6,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-19",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/059-le-poisson-tropical-existing-animaux-27-png-colored.png",
+      "regionsColored": 12,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-20",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/060-lhippocampe-gracieux-existing-animaux-28-png-colored.png",
+      "regionsColored": 9,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-21",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/061-le-perroquet-colore-existing-animaux-29-png-colored.png",
+      "regionsColored": 22,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-22",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/062-le-hibou-aux-grands-yeux-existing-animaux-30-png-colored.png",
+      "regionsColored": 15,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-23",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/063-laigle-en-plein-vol-existing-animaux-31-png-colored.png",
+      "regionsColored": 15,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-24",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/064-le-flamant-rose-existing-animaux-32-png-colored.png",
+      "regionsColored": 8,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-25",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/065-le-paon-et-sa-grande-roue-existing-animaux-34-png-colored.png",
+      "regionsColored": 48,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-26",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/066-le-papillon-symetrique-existing-animaux-35-png-colored.png",
+      "regionsColored": 64,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-27",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/067-la-coccinelle-a-sept-points-existing-animaux-36-png-colored.png",
+      "regionsColored": 40,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-28",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/068-labeille-et-la-fleur-existing-animaux-37-png-colored.png",
+      "regionsColored": 33,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-29",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/069-la-libellule-legere-existing-animaux-38-png-colored.png",
+      "regionsColored": 38,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-30",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/070-la-grenouille-sur-son-nenuphar-existing-animaux-39-png-colored.png",
+      "regionsColored": 25,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-31",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/071-lescargot-voyageur-existing-animaux-40-png-colored.png",
+      "regionsColored": 8,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "animaux-sauvages-32",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/072-le-lion-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-002-pn-colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-33",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/073-la-tortue-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-015-pn-colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-34",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/074-le-dinosaure-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-019-pn-colored.png",
+      "regionsColored": 20,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-35",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/075-le-lion-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-001--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-36",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/076-lelephant-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-002--colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-37",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/077-la-tortue-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-004--colored.png",
+      "regionsColored": 28,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-38",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/078-la-girafe-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-001--colored.png",
+      "regionsColored": 19,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-39",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/079-le-dauphin-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-004--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "animaux-sauvages-40",
+      "coloredPath": "assets/coloring/colored/animaux-sauvages/080-le-zebre-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-001--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-01",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/081-la-petite-voiture-existing-vehicules-01-png-colored.png",
+      "regionsColored": 24,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-02",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/082-le-bus-scolaire-existing-vehicules-02-png-colored.png",
+      "regionsColored": 38,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-03",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/083-le-camion-de-livraison-existing-vehicules-03-png-colored.png",
+      "regionsColored": 28,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-04",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/084-le-camion-de-pompiers-existing-vehicules-04-png-colored.png",
+      "regionsColored": 61,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-05",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/085-le-taxi-de-la-ville-existing-vehicules-05-png-colored.png",
+      "regionsColored": 31,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-06",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/086-le-minibus-colore-existing-vehicules-06-png-colored.png",
+      "regionsColored": 32,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-07",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/087-le-camion-benne-existing-vehicules-07-png-colored.png",
+      "regionsColored": 51,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-08",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/088-lambulance-existing-vehicules-08-png-colored.png",
+      "regionsColored": 33,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-09",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/089-la-voiture-de-police-existing-vehicules-09-png-colored.png",
+      "regionsColored": 32,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-10",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/090-le-44-daventure-existing-vehicules-10-png-colored.png",
+      "regionsColored": 35,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-11",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/091-le-tracteur-du-fermier-existing-vehicules-11-png-colored.png",
+      "regionsColored": 25,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-12",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/092-la-moissonneuse-existing-vehicules-12-png-colored.png",
+      "regionsColored": 38,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-13",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/093-la-pelleteuse-existing-vehicules-13-png-colored.png",
+      "regionsColored": 57,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-14",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/094-le-bulldozer-existing-vehicules-14-png-colored.png",
+      "regionsColored": 55,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-15",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/095-la-grue-de-chantier-existing-vehicules-15-png-colored.png",
+      "regionsColored": 60,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-16",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/096-le-camion-toupie-existing-vehicules-16-png-colored.png",
+      "regionsColored": 50,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-17",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/097-le-velo-avec-panier-existing-vehicules-17-png-colored.png",
+      "regionsColored": 55,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-18",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/098-le-velo-tout-terrain-existing-vehicules-18-png-colored.png",
+      "regionsColored": 61,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-19",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/099-la-moto-de-course-existing-vehicules-19-png-colored.png",
+      "regionsColored": 43,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-20",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/100-le-scooter-existing-vehicules-20-png-colored.png",
+      "regionsColored": 33,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-21",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/101-le-train-de-voyageurs-existing-vehicules-21-png-colored.png",
+      "regionsColored": 50,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-22",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/102-le-train-a-vapeur-existing-vehicules-22-png-colored.png",
+      "regionsColored": 80,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-23",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/103-le-metro-existing-vehicules-23-png-colored.png",
+      "regionsColored": 44,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-24",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/104-le-tramway-existing-vehicules-24-png-colored.png",
+      "regionsColored": 48,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-25",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/105-la-trottinette-existing-vehicules-37-png-colored.png",
+      "regionsColored": 24,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-26",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/106-le-pousse-pousse-existing-vehicules-38-png-colored.png",
+      "regionsColored": 74,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-27",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/107-le-kart-de-course-existing-vehicules-39-png-colored.png",
+      "regionsColored": 43,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-28",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/108-le-camion-de-safari-existing-vehicules-40-png-colored.png",
+      "regionsColored": 69,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-terre-29",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/109-le-camion-de-livraison-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-006-pn-colored.png",
+      "regionsColored": 22,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-30",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/110-la-trottinette-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-006--colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-31",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/111-le-camion-de-pompiers-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-005--colored.png",
+      "regionsColored": 66,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-32",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/112-le-tracteur-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-006--colored.png",
+      "regionsColored": 41,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-33",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/113-lambulance-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-005--colored.png",
+      "regionsColored": 32,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-34",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/114-la-moto-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-006--colored.png",
+      "regionsColored": 76,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-35",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/115-le-bulldozer-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-008--colored.png",
+      "regionsColored": 39,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-36",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/116-le-taxi-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-005--colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-37",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/117-le-tramway-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-006--colored.png",
+      "regionsColored": 28,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-38",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/118-la-jeep-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-007--colored.png",
+      "regionsColored": 32,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-39",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/119-le-pick-up-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-005--colored.png",
+      "regionsColored": 28,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-terre-40",
+      "coloredPath": "assets/coloring/colored/vehicules-terre/120-le-bus-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-006--colored.png",
+      "regionsColored": 24,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-01",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/121-la-pirogue-existing-vehicules-25-png-colored.png",
+      "regionsColored": 15,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-02",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/122-le-voilier-existing-vehicules-26-png-colored.png",
+      "regionsColored": 15,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-03",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/123-le-bateau-de-peche-existing-vehicules-27-png-colored.png",
+      "regionsColored": 27,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-04",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/124-le-ferry-existing-vehicules-28-png-colored.png",
+      "regionsColored": 20,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-05",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/125-le-sous-marin-existing-vehicules-29-png-colored.png",
+      "regionsColored": 32,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-06",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/126-lhydravion-existing-vehicules-30-png-colored.png",
+      "regionsColored": 48,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-07",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/127-lavion-de-ligne-existing-vehicules-31-png-colored.png",
+      "regionsColored": 24,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-08",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/128-le-petit-avion-existing-vehicules-32-png-colored.png",
+      "regionsColored": 26,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-09",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/129-lhelicoptere-existing-vehicules-33-png-colored.png",
+      "regionsColored": 25,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-10",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/130-la-montgolfiere-existing-vehicules-34-png-colored.png",
+      "regionsColored": 22,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-11",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/131-la-fusee-existing-vehicules-35-png-colored.png",
+      "regionsColored": 19,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-12",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/132-le-rover-spatial-existing-vehicules-36-png-colored.png",
+      "regionsColored": 87,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "vehicules-air-eau-13",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/133-lhelicoptere-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-001-pn-colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-14",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/134-le-voilier-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-004-pn-colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-15",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/135-lavion-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-016-pn-colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-16",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/136-lhelicoptere-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-001-pn-colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-17",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/137-le-voilier-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-002-pn-colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-18",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/138-le-bateau-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-004--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-19",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/139-lhelicoptere-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-005--colored.png",
+      "regionsColored": 24,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-20",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/140-la-montgolfiere-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-008--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-21",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/141-le-canoe-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-008--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-22",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/142-la-barque-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-007--colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-23",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/143-le-dirigeable-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-008--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-24",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/144-lhelicoptere-de-secours-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-008--colored.png",
+      "regionsColored": 27,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-25",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/145-lavion-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-008--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-26",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/146-le-voilier-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-010--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-27",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/147-la-montgolfiere-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-011--colored.png",
+      "regionsColored": 20,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-28",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/148-lavion-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-004--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-29",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/149-le-voilier-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-007--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-30",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/150-la-montgolfiere-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-015--colored.png",
+      "regionsColored": 25,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-31",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/151-lavion-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-013--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-32",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/152-la-fusee-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-014--colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-33",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/153-le-bateau-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-015--colored.png",
+      "regionsColored": 19,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-34",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/154-la-montgolfiere-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-019--colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-35",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/155-lhelicoptere-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-012--colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-36",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/156-le-parachute-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-005--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-37",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/157-la-fusee-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-008--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-38",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/158-la-montgolfiere-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-009--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-39",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/159-lavion-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-016--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "vehicules-air-eau-40",
+      "coloredPath": "assets/coloring/colored/vehicules-air-eau/160-le-bateau-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-017--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-01",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/161-la-pomme-existing-fruits-01-png-colored.png",
+      "regionsColored": 4,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "fruits-gourmandises-02",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/162-la-poire-existing-fruits-02-png-colored.png",
+      "regionsColored": 3,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "fruits-gourmandises-03",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/163-la-grappe-de-raisin-existing-fruits-03-png-colored.png",
+      "regionsColored": 16,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "fruits-gourmandises-04",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/164-les-cerises-existing-fruits-04-png-colored.png",
+      "regionsColored": 8,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "fruits-gourmandises-05",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/165-la-fraise-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-003-pn-colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-06",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/166-les-bananes-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-014-pn-colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-07",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/167-la-glace-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-020-pn-colored.png",
+      "regionsColored": 33,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-08",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/168-les-bananes-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-007-pn-colored.png",
+      "regionsColored": 6,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-09",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/169-le-raisin-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-007--colored.png",
+      "regionsColored": 17,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-10",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/170-le-mais-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-008--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-11",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/171-la-poire-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-009--colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-12",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/172-lorange-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-009--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-13",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/173-la-pasteque-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-010--colored.png",
+      "regionsColored": 6,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-14",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/174-le-brocoli-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-011--colored.png",
+      "regionsColored": 9,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-15",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/175-la-tomate-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-012--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-16",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/176-la-peche-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-009--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-17",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/177-le-citron-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-010--colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-18",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/178-la-mangue-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-009--colored.png",
+      "regionsColored": 9,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-19",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/179-la-noix-de-coco-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-010--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-20",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/180-lavocat-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-009--colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-21",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/181-les-myrtilles-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-010--colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-22",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/182-la-grenade-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-009--colored.png",
+      "regionsColored": 59,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-23",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/183-la-papaye-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-010--colored.png",
+      "regionsColored": 37,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-24",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/184-le-cupcake-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-017--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-25",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/185-la-figue-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-005-colored.png",
+      "regionsColored": 45,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-26",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/186-la-framboise-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-006-colored.png",
+      "regionsColored": 25,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-27",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/187-la-glace-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-009--colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-28",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/188-le-gateau-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-023--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-29",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/189-la-pasteque-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-027--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-30",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/190-la-glace-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-027--colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-31",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/191-le-raisin-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-028--colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-32",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/192-la-pomme-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-017--colored.png",
+      "regionsColored": 3,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-33",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/193-les-bananes-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-018--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-34",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/194-la-glace-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-027--colored.png",
+      "regionsColored": 17,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-35",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/195-le-gateau-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-028--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-36",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/196-le-raisin-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-030--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-37",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/197-le-raisin-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-014--colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-38",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/198-la-pomme-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-026--colored.png",
+      "regionsColored": 3,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-39",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/199-le-raisin-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-027--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "fruits-gourmandises-40",
+      "coloredPath": "assets/coloring/colored/fruits-gourmandises/200-la-pasteque-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-028--colored.png",
+      "regionsColored": 3,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-01",
+      "coloredPath": "assets/coloring/colored/nature-jardin/201-la-carotte-existing-legumes-01-png-colored.png",
+      "regionsColored": 4,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "nature-jardin-02",
+      "coloredPath": "assets/coloring/colored/nature-jardin/202-la-tomate-existing-legumes-02-png-colored.png",
+      "regionsColored": 3,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "nature-jardin-03",
+      "coloredPath": "assets/coloring/colored/nature-jardin/203-laubergine-existing-legumes-03-png-colored.png",
+      "regionsColored": 3,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "nature-jardin-04",
+      "coloredPath": "assets/coloring/colored/nature-jardin/204-le-poivron-existing-legumes-04-png-colored.png",
+      "regionsColored": 6,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "nature-jardin-05",
+      "coloredPath": "assets/coloring/colored/nature-jardin/205-le-soleil-rayonnant-existing-nature-01-png-colored.png",
+      "regionsColored": 11,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "nature-jardin-06",
+      "coloredPath": "assets/coloring/colored/nature-jardin/206-le-croissant-de-lune-existing-nature-02-png-colored.png",
+      "regionsColored": 4,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "nature-jardin-07",
+      "coloredPath": "assets/coloring/colored/nature-jardin/207-le-nuage-leger-existing-nature-03-png-colored.png",
+      "regionsColored": 4,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "nature-jardin-08",
+      "coloredPath": "assets/coloring/colored/nature-jardin/208-larc-en-ciel-existing-nature-04-png-colored.png",
+      "regionsColored": 4,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "nature-jardin-09",
+      "coloredPath": "assets/coloring/colored/nature-jardin/209-le-soleil-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-005-pn-colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-10",
+      "coloredPath": "assets/coloring/colored/nature-jardin/210-le-papillon-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-012-pn-colored.png",
+      "regionsColored": 19,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-11",
+      "coloredPath": "assets/coloring/colored/nature-jardin/211-la-fleur-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-017-pn-colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-12",
+      "coloredPath": "assets/coloring/colored/nature-jardin/212-larbre-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-004-pn-colored.png",
+      "regionsColored": 2,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-13",
+      "coloredPath": "assets/coloring/colored/nature-jardin/213-le-soleil-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-017--colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-14",
+      "coloredPath": "assets/coloring/colored/nature-jardin/214-le-nuage-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-018--colored.png",
+      "regionsColored": 3,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-15",
+      "coloredPath": "assets/coloring/colored/nature-jardin/215-laubergine-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-011--colored.png",
+      "regionsColored": 3,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-16",
+      "coloredPath": "assets/coloring/colored/nature-jardin/216-les-petits-pois-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-012--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-17",
+      "coloredPath": "assets/coloring/colored/nature-jardin/217-la-fleur-en-pot-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-018--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-18",
+      "coloredPath": "assets/coloring/colored/nature-jardin/218-le-chou-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-011--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-19",
+      "coloredPath": "assets/coloring/colored/nature-jardin/219-la-betterave-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-012--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-20",
+      "coloredPath": "assets/coloring/colored/nature-jardin/220-le-chou-fleur-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-011--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-21",
+      "coloredPath": "assets/coloring/colored/nature-jardin/221-la-pomme-de-terre-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-012--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-22",
+      "coloredPath": "assets/coloring/colored/nature-jardin/222-le-chou-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-011--colored.png",
+      "regionsColored": 9,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-23",
+      "coloredPath": "assets/coloring/colored/nature-jardin/223-lail-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-012--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-24",
+      "coloredPath": "assets/coloring/colored/nature-jardin/224-leolienne-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-016--colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-25",
+      "coloredPath": "assets/coloring/colored/nature-jardin/225-la-courgette-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-007-colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-26",
+      "coloredPath": "assets/coloring/colored/nature-jardin/226-le-navet-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-008-colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-27",
+      "coloredPath": "assets/coloring/colored/nature-jardin/227-larc-en-ciel-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-013-colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-28",
+      "coloredPath": "assets/coloring/colored/nature-jardin/228-la-lune-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-018--colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-29",
+      "coloredPath": "assets/coloring/colored/nature-jardin/229-la-fleur-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-019--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-30",
+      "coloredPath": "assets/coloring/colored/nature-jardin/230-le-soleil-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-020--colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-31",
+      "coloredPath": "assets/coloring/colored/nature-jardin/231-labeille-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-013--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-32",
+      "coloredPath": "assets/coloring/colored/nature-jardin/232-la-fleur-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-016--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-33",
+      "coloredPath": "assets/coloring/colored/nature-jardin/233-larbre-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-026--colored.png",
+      "regionsColored": 2,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-34",
+      "coloredPath": "assets/coloring/colored/nature-jardin/234-le-soleil-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-030--colored.png",
+      "regionsColored": 3,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-35",
+      "coloredPath": "assets/coloring/colored/nature-jardin/235-la-coccinelle-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-010--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-36",
+      "coloredPath": "assets/coloring/colored/nature-jardin/236-la-coccinelle-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-005--colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-37",
+      "coloredPath": "assets/coloring/colored/nature-jardin/237-le-papillon-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-006--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-38",
+      "coloredPath": "assets/coloring/colored/nature-jardin/238-la-fleur-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-021--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-39",
+      "coloredPath": "assets/coloring/colored/nature-jardin/239-larc-en-ciel-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-015--colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nature-jardin-40",
+      "coloredPath": "assets/coloring/colored/nature-jardin/240-la-fleur-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-018--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-01",
+      "coloredPath": "assets/coloring/colored/maison-objets/241-la-chaise-existing-maison-01-png-colored.png",
+      "regionsColored": 15,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "maison-objets-02",
+      "coloredPath": "assets/coloring/colored/maison-objets/242-la-table-ronde-existing-maison-02-png-colored.png",
+      "regionsColored": 6,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "maison-objets-03",
+      "coloredPath": "assets/coloring/colored/maison-objets/243-le-fauteuil-existing-maison-03-png-colored.png",
+      "regionsColored": 11,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "maison-objets-04",
+      "coloredPath": "assets/coloring/colored/maison-objets/244-le-canape-existing-maison-04-png-colored.png",
+      "regionsColored": 12,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "maison-objets-05",
+      "coloredPath": "assets/coloring/colored/maison-objets/245-le-fauteuil-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-007-pn-colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-06",
+      "coloredPath": "assets/coloring/colored/maison-objets/246-la-maison-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-010-pn-colored.png",
+      "regionsColored": 22,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-07",
+      "coloredPath": "assets/coloring/colored/maison-objets/247-lhorloge-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-013-pn-colored.png",
+      "regionsColored": 9,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-08",
+      "coloredPath": "assets/coloring/colored/maison-objets/248-le-fauteuil-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-005-pn-colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-09",
+      "coloredPath": "assets/coloring/colored/maison-objets/249-le-refrigerateur-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-006-pn-colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-10",
+      "coloredPath": "assets/coloring/colored/maison-objets/250-le-lit-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-013--colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-11",
+      "coloredPath": "assets/coloring/colored/maison-objets/251-la-bibliotheque-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-014--colored.png",
+      "regionsColored": 29,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-12",
+      "coloredPath": "assets/coloring/colored/maison-objets/252-la-maison-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-015--colored.png",
+      "regionsColored": 29,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-13",
+      "coloredPath": "assets/coloring/colored/maison-objets/253-larmoire-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-013--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-14",
+      "coloredPath": "assets/coloring/colored/maison-objets/254-le-tabouret-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-014--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-15",
+      "coloredPath": "assets/coloring/colored/maison-objets/255-le-banc-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-013--colored.png",
+      "regionsColored": 20,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-16",
+      "coloredPath": "assets/coloring/colored/maison-objets/256-la-commode-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-014--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-17",
+      "coloredPath": "assets/coloring/colored/maison-objets/257-le-parapluie-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-018--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-18",
+      "coloredPath": "assets/coloring/colored/maison-objets/258-la-table-de-nuit-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-013--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-19",
+      "coloredPath": "assets/coloring/colored/maison-objets/259-la-bibliotheque-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-014--colored.png",
+      "regionsColored": 31,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-20",
+      "coloredPath": "assets/coloring/colored/maison-objets/260-le-lit-de-bebe-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-013--colored.png",
+      "regionsColored": 47,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-21",
+      "coloredPath": "assets/coloring/colored/maison-objets/261-le-miroir-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-009-colored.png",
+      "regionsColored": 9,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-22",
+      "coloredPath": "assets/coloring/colored/maison-objets/262-le-lit-superpose-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-010-colored.png",
+      "regionsColored": 38,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-23",
+      "coloredPath": "assets/coloring/colored/maison-objets/263-la-table-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-011--colored.png",
+      "regionsColored": 11,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-24",
+      "coloredPath": "assets/coloring/colored/maison-objets/264-le-lit-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-012--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-25",
+      "coloredPath": "assets/coloring/colored/maison-objets/265-le-canape-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-013--colored.png",
+      "regionsColored": 11,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-26",
+      "coloredPath": "assets/coloring/colored/maison-objets/266-larmoire-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-014--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-27",
+      "coloredPath": "assets/coloring/colored/maison-objets/267-la-baignoire-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-015--colored.png",
+      "regionsColored": 11,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-28",
+      "coloredPath": "assets/coloring/colored/maison-objets/268-la-brosse-a-dents-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-019--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-29",
+      "coloredPath": "assets/coloring/colored/maison-objets/269-le-reveil-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-028--colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-30",
+      "coloredPath": "assets/coloring/colored/maison-objets/270-le-lit-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-021--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-31",
+      "coloredPath": "assets/coloring/colored/maison-objets/271-la-table-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-022--colored.png",
+      "regionsColored": 9,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-32",
+      "coloredPath": "assets/coloring/colored/maison-objets/272-le-refrigerateur-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-023--colored.png",
+      "regionsColored": 6,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-33",
+      "coloredPath": "assets/coloring/colored/maison-objets/273-le-fauteuil-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-024--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-34",
+      "coloredPath": "assets/coloring/colored/maison-objets/274-la-bibliotheque-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-025--colored.png",
+      "regionsColored": 31,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-35",
+      "coloredPath": "assets/coloring/colored/maison-objets/275-la-chaise-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-013--colored.png",
+      "regionsColored": 11,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-36",
+      "coloredPath": "assets/coloring/colored/maison-objets/276-la-table-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-014--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-37",
+      "coloredPath": "assets/coloring/colored/maison-objets/277-le-lit-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-015--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-38",
+      "coloredPath": "assets/coloring/colored/maison-objets/278-la-lampe-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-016--colored.png",
+      "regionsColored": 6,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-39",
+      "coloredPath": "assets/coloring/colored/maison-objets/279-le-reveil-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-026--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "maison-objets-40",
+      "coloredPath": "assets/coloring/colored/maison-objets/280-le-lit-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-017--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-01",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/281-la-petite-maison-existing-ville-01-png-colored.png",
+      "regionsColored": 15,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "batiments-lieux-02",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/282-la-maison-a-etage-existing-ville-02-png-colored.png",
+      "regionsColored": 23,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "batiments-lieux-03",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/283-limmeuble-existing-ville-03-png-colored.png",
+      "regionsColored": 21,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "batiments-lieux-04",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/284-lecole-existing-ville-04-png-colored.png",
+      "regionsColored": 27,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "batiments-lieux-05",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/285-le-sac-a-dos-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-011-pn-colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-06",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/286-les-livres-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-018-pn-colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-07",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/287-lecole-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-003-pn-colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-08",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/288-le-phare-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-016--colored.png",
+      "regionsColored": 27,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-09",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/289-la-cabane-dans-larbre-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-015--colored.png",
+      "regionsColored": 34,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-10",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/290-le-pont-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-016--colored.png",
+      "regionsColored": 42,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-11",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/291-le-garage-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-015--colored.png",
+      "regionsColored": 19,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-12",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/292-la-tour-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-016--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-13",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/293-la-maison-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-015--colored.png",
+      "regionsColored": 68,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-14",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/294-le-gratte-ciel-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-015--colored.png",
+      "regionsColored": 38,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-15",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/295-la-pagode-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-011-colored.png",
+      "regionsColored": 112,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-16",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/296-le-moulin-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-012-colored.png",
+      "regionsColored": 65,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-17",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/297-la-maison-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-013--colored.png",
+      "regionsColored": 24,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-18",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/298-leglise-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-014--colored.png",
+      "regionsColored": 19,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-19",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/299-lecole-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-015--colored.png",
+      "regionsColored": 53,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-20",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/300-le-chateau-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-016--colored.png",
+      "regionsColored": 36,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-21",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/301-la-maison-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-006--colored.png",
+      "regionsColored": 26,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-22",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/302-lecole-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-007--colored.png",
+      "regionsColored": 26,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-23",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/303-lhopital-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-008--colored.png",
+      "regionsColored": 23,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-24",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/304-le-magasin-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-009--colored.png",
+      "regionsColored": 33,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-25",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/305-le-chateau-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-010--colored.png",
+      "regionsColored": 19,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-26",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/306-les-livres-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-016--colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-27",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/307-le-crayon-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-017--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-28",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/308-le-sac-a-dos-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-018--colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-29",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/309-la-maison-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-010--colored.png",
+      "regionsColored": 18,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-30",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/310-le-phare-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-019--colored.png",
+      "regionsColored": 22,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-31",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/311-le-sac-a-dos-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-021--colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-32",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/312-le-crayon-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-030--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-33",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/313-la-maison-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-019--colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-34",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/314-le-moulin-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-020--colored.png",
+      "regionsColored": 47,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-35",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/315-le-crayon-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-022--colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-36",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/316-le-sac-a-dos-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-023--colored.png",
+      "regionsColored": 14,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-37",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/317-le-sac-a-dos-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-013--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-38",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/318-la-maison-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-021--colored.png",
+      "regionsColored": 20,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-39",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/319-le-chateau-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-022--colored.png",
+      "regionsColored": 22,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "batiments-lieux-40",
+      "coloredPath": "assets/coloring/colored/batiments-lieux/320-le-magasin-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-023--colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-01",
+      "coloredPath": "assets/coloring/colored/apprentissage/321-le-grand-chiffre-1-existing-chiffres-01-png-colored.png",
+      "regionsColored": 1,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-02",
+      "coloredPath": "assets/coloring/colored/apprentissage/322-1-soleil-existing-chiffres-02-png-colored.png",
+      "regionsColored": 4,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-03",
+      "coloredPath": "assets/coloring/colored/apprentissage/323-1-ballon-existing-chiffres-03-png-colored.png",
+      "regionsColored": 6,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-04",
+      "coloredPath": "assets/coloring/colored/apprentissage/324-1-tambour-existing-chiffres-04-png-colored.png",
+      "regionsColored": 14,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-05",
+      "coloredPath": "assets/coloring/colored/apprentissage/325-le-grand-chiffre-2-existing-chiffres-05-png-colored.png",
+      "regionsColored": 1,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-06",
+      "coloredPath": "assets/coloring/colored/apprentissage/326-2-poissons-existing-chiffres-06-png-colored.png",
+      "regionsColored": 12,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-07",
+      "coloredPath": "assets/coloring/colored/apprentissage/327-2-chaussures-existing-chiffres-07-png-colored.png",
+      "regionsColored": 18,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-08",
+      "coloredPath": "assets/coloring/colored/apprentissage/328-2-oiseaux-existing-chiffres-08-png-colored.png",
+      "regionsColored": 16,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-09",
+      "coloredPath": "assets/coloring/colored/apprentissage/329-le-grand-chiffre-3-existing-chiffres-09-png-colored.png",
+      "regionsColored": 1,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-10",
+      "coloredPath": "assets/coloring/colored/apprentissage/330-3-mangues-existing-chiffres-10-png-colored.png",
+      "regionsColored": 6,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-11",
+      "coloredPath": "assets/coloring/colored/apprentissage/331-3-papillons-existing-chiffres-11-png-colored.png",
+      "regionsColored": 30,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-12",
+      "coloredPath": "assets/coloring/colored/apprentissage/332-3-petites-voitures-existing-chiffres-12-png-colored.png",
+      "regionsColored": 27,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-13",
+      "coloredPath": "assets/coloring/colored/apprentissage/333-le-grand-cercle-existing-formes-01-png-colored.png",
+      "regionsColored": 1,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-14",
+      "coloredPath": "assets/coloring/colored/apprentissage/334-le-carre-bien-droit-existing-formes-02-png-colored.png",
+      "regionsColored": 1,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-15",
+      "coloredPath": "assets/coloring/colored/apprentissage/335-le-triangle-pointu-existing-formes-03-png-colored.png",
+      "regionsColored": 1,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-16",
+      "coloredPath": "assets/coloring/colored/apprentissage/336-le-rectangle-allonge-existing-formes-04-png-colored.png",
+      "regionsColored": 1,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "apprentissage-17",
+      "coloredPath": "assets/coloring/colored/apprentissage/337-le-chiffre-5-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-008-pn-colored.png",
+      "regionsColored": 11,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-18",
+      "coloredPath": "assets/coloring/colored/apprentissage/338-le-chiffre-3-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-009-pn-colored.png",
+      "regionsColored": 1,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-19",
+      "coloredPath": "assets/coloring/colored/apprentissage/339-la-lettre-a-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-010-pn-colored.png",
+      "regionsColored": 2,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-20",
+      "coloredPath": "assets/coloring/colored/apprentissage/340-le-chiffre-2-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-019--colored.png",
+      "regionsColored": 3,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-21",
+      "coloredPath": "assets/coloring/colored/apprentissage/341-la-lettre-a-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-020--colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-22",
+      "coloredPath": "assets/coloring/colored/apprentissage/342-le-chiffre-5-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-019--colored.png",
+      "regionsColored": 1,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-23",
+      "coloredPath": "assets/coloring/colored/apprentissage/343-la-lettre-d-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-020--colored.png",
+      "regionsColored": 2,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-24",
+      "coloredPath": "assets/coloring/colored/apprentissage/344-le-cur-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-017--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-25",
+      "coloredPath": "assets/coloring/colored/apprentissage/345-le-chiffre-1-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-019--colored.png",
+      "regionsColored": 3,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-26",
+      "coloredPath": "assets/coloring/colored/apprentissage/346-la-lettre-f-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-020--colored.png",
+      "regionsColored": 3,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-27",
+      "coloredPath": "assets/coloring/colored/apprentissage/347-la-note-de-musique-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-017--colored.png",
+      "regionsColored": 1,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-28",
+      "coloredPath": "assets/coloring/colored/apprentissage/348-le-chiffre-6-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-019--colored.png",
+      "regionsColored": 2,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-29",
+      "coloredPath": "assets/coloring/colored/apprentissage/349-la-lettre-h-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-020--colored.png",
+      "regionsColored": 1,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-30",
+      "coloredPath": "assets/coloring/colored/apprentissage/350-le-chiffre-3-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-019--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-31",
+      "coloredPath": "assets/coloring/colored/apprentissage/351-la-lettre-j-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-020--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-32",
+      "coloredPath": "assets/coloring/colored/apprentissage/352-le-chiffre-0-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-015-colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-33",
+      "coloredPath": "assets/coloring/colored/apprentissage/353-la-lettre-k-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-016-colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-34",
+      "coloredPath": "assets/coloring/colored/apprentissage/354-letoile-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-029--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-35",
+      "coloredPath": "assets/coloring/colored/apprentissage/355-letoile-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-004--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-36",
+      "coloredPath": "assets/coloring/colored/apprentissage/356-letoile-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-029--colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-37",
+      "coloredPath": "assets/coloring/colored/apprentissage/357-le-chiffre-1-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-031--colored.png",
+      "regionsColored": 1,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-38",
+      "coloredPath": "assets/coloring/colored/apprentissage/358-le-chiffre-2-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-032--colored.png",
+      "regionsColored": 1,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-39",
+      "coloredPath": "assets/coloring/colored/apprentissage/359-le-chiffre-3-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-033--colored.png",
+      "regionsColored": 1,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "apprentissage-40",
+      "coloredPath": "assets/coloring/colored/apprentissage/360-la-lettre-a-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-034--colored.png",
+      "regionsColored": 2,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-01",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/361-la-maitresse-decole-existing-metiers-01-png-colored.png",
+      "regionsColored": 24,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "loisirs-decouvertes-02",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/362-le-maitre-decole-existing-metiers-02-png-colored.png",
+      "regionsColored": 35,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "loisirs-decouvertes-03",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/363-la-medecin-existing-metiers-03-png-colored.png",
+      "regionsColored": 24,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "loisirs-decouvertes-04",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/364-linfirmier-existing-metiers-04-png-colored.png",
+      "regionsColored": 21,
+      "width": 627,
+      "height": 627
+    },
+    {
+      "id": "loisirs-decouvertes-05",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/365-letoile-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-008-pn-colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-06",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/366-le-pingouin-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-003--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-07",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/367-la-fusee-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-007--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-08",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/368-la-soucoupe-volante-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-007--colored.png",
+      "regionsColored": 22,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-09",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/369-le-cerf-volant-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-017--colored.png",
+      "regionsColored": 20,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-10",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/370-le-perroquet-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-003--colored.png",
+      "regionsColored": 23,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-11",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/371-la-tente-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-016--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-12",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/372-le-ballon-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-018--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-13",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/373-la-chauve-souris-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-002--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-14",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/374-letoile-de-mer-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-004--colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-15",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/375-le-skateboard-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-007--colored.png",
+      "regionsColored": 9,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-16",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/376-le-piano-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-014--colored.png",
+      "regionsColored": 51,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-17",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/377-le-cadeau-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-018--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-18",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/378-le-tambour-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-014-colored.png",
+      "regionsColored": 29,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-19",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/379-la-fusee-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-007--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-20",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/380-letoile-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-017--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-21",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/381-lours-en-peluche-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-020--colored.png",
+      "regionsColored": 23,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-22",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/382-letoile-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-005--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-23",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/383-le-xylophone-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-017--colored.png",
+      "regionsColored": 39,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-24",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/384-lours-en-peluche-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-020--colored.png",
+      "regionsColored": 21,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-25",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/385-la-fusee-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-022--colored.png",
+      "regionsColored": 12,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-26",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/386-le-tambour-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-025--colored.png",
+      "regionsColored": 20,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-27",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/387-lours-en-peluche-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-008--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-28",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/388-letoile-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-026--colored.png",
+      "regionsColored": 5,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-29",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/389-le-cadeau-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-029--colored.png",
+      "regionsColored": 25,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-30",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/390-lours-en-peluche-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-008--colored.png",
+      "regionsColored": 17,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-31",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/391-la-fusee-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-010--colored.png",
+      "regionsColored": 15,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-32",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/392-le-ballon-de-football-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-019--colored.png",
+      "regionsColored": 10,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-33",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/393-letoile-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-020--colored.png",
+      "regionsColored": 4,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-34",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/394-lours-en-peluche-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-024--colored.png",
+      "regionsColored": 13,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-35",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/395-le-tambour-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-025--colored.png",
+      "regionsColored": 17,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-36",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/396-le-cheval-a-bascule-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-007--colored.png",
+      "regionsColored": 17,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-37",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/397-lappareil-photo-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-009--colored.png",
+      "regionsColored": 8,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-38",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/398-le-sac-a-dos-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-024--colored.png",
+      "regionsColored": 16,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-39",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/399-les-crayons-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-025--colored.png",
+      "regionsColored": 25,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "loisirs-decouvertes-40",
+      "coloredPath": "assets/coloring/colored/loisirs-decouvertes/400-le-ballon-de-plage-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-030--colored.png",
+      "regionsColored": 7,
+      "width": 1254,
+      "height": 1254
+    }
+  ]
+}

@@ -12,6 +12,13 @@ const state = {
   surpriseGeneration: 0,
   toastTimer: null,
   catalogueReturnTarget: null,
+  colorGuide: {
+    image: null,
+    pointerId: null,
+    timer: null,
+    startX: 0,
+    startY: 0,
+  },
 };
 
 if (typeof window !== "undefined") {
@@ -82,6 +89,9 @@ function validateData(data, manifest) {
     }
     if (!entry.path || paths.has(entry.path)) {
       throw new Error(`Chemin dupliqué ou absent : ${entry.path || "inconnu"}.`);
+    }
+    if (!entry.coloredPath) {
+      throw new Error(`Jumeau coloré absent : ${entry.id}.`);
     }
     ids.add(entry.id);
     paths.add(entry.path);
@@ -225,6 +235,18 @@ function bindGlobalEvents() {
   document
     .getElementById("close-catalogue")
     ?.addEventListener("click", closeCatalogueViewer);
+  document.addEventListener("pointerover", (event) => {
+    preloadColoredGuide(guideImageFromTarget(event.target));
+  });
+  document.addEventListener("pointerdown", handleGuidePointerDown);
+  document.addEventListener("pointermove", handleGuidePointerMove);
+  document.addEventListener("pointerup", handleGuidePointerEnd);
+  document.addEventListener("pointercancel", handleGuidePointerEnd);
+  document.addEventListener("contextmenu", (event) => {
+    if (guideImageFromTarget(event.target)) event.preventDefault();
+  });
+  window.addEventListener("blur", restoreColoredGuide);
+  window.addEventListener("beforeprint", restoreColoredGuide);
   window.addEventListener("afterprint", clearPrintArea);
   document.addEventListener(
     "error",
@@ -434,7 +456,12 @@ function renderWorkspace() {
   renderCatalogueInfo(catalogue);
   renderPageNavigation();
   const viewer = document.getElementById("page-viewer");
-  if (viewer) viewer.innerHTML = renderSheet(catalogue, state.selectedPage);
+  if (viewer) {
+    viewer.innerHTML = renderSheet(catalogue, state.selectedPage);
+    viewer
+      .querySelectorAll("img[data-colored-src]")
+      .forEach((image) => preloadColoredGuide(image));
+  }
   const previous = document.getElementById("previous-page");
   const next = document.getElementById("next-page");
   if (previous) previous.disabled = state.selectedPage === 1;
@@ -525,7 +552,7 @@ function renderSheet(catalogue, pageNumber) {
                 </div>
                 <div class="drawing-card__footer">
                   <strong>${escapeHtml(entry.title)}</strong>
-                  <span>Colorie à ta façon</span>
+                  <span>Maintiens pour voir les couleurs</span>
                 </div>
               </section>
             `,
@@ -550,10 +577,89 @@ function imageMarkup(entry, className) {
       src="${escapeAttribute(entry.path)}"
       alt="${escapeAttribute(entry.title)}"
       data-asset-id="${escapeAttribute(entry.id)}"
+      data-line-art-src="${escapeAttribute(entry.path)}"
+      data-colored-src="${escapeAttribute(entry.coloredPath || "")}"
       loading="eager"
       decoding="async"
     />
   `;
+}
+
+function guideImageFromTarget(target) {
+  if (!(target instanceof Element)) return null;
+  const image = target.closest(
+    ".drawing-card__image[data-colored-src], .surprise__preview-image[data-colored-src]",
+  );
+  return image?.dataset.coloredSrc ? image : null;
+}
+
+function preloadColoredGuide(image) {
+  if (!image || image.dataset.colorPreloaded === "true") return;
+  const preload = new Image();
+  preload.src = image.dataset.coloredSrc;
+  image.dataset.colorPreloaded = "true";
+}
+
+function showColoredGuide(image, pointerId = null) {
+  if (!image?.dataset.coloredSrc) return;
+  restoreColoredGuide();
+  state.colorGuide.image = image;
+  state.colorGuide.pointerId = pointerId;
+  image.src = image.dataset.coloredSrc;
+  image.closest(".drawing-card__art, .catalogue-card__media, .surprise__preview")
+    ?.classList.add("is-showing-color-guide");
+}
+
+function restoreColoredGuide() {
+  const guide = state.colorGuide;
+  if (guide.timer) window.clearTimeout(guide.timer);
+  if (guide.image?.isConnected) {
+    guide.image.src = guide.image.dataset.lineArtSrc;
+    guide.image
+      .closest(".drawing-card__art, .catalogue-card__media, .surprise__preview")
+      ?.classList.remove("is-showing-color-guide");
+  }
+  guide.image = null;
+  guide.pointerId = null;
+  guide.timer = null;
+}
+
+function handleGuidePointerDown(event) {
+  const image = guideImageFromTarget(event.target);
+  if (!image) return;
+
+  if (event.pointerType === "mouse") {
+    if (event.button !== 2) return;
+    event.preventDefault();
+    showColoredGuide(image, event.pointerId);
+    return;
+  }
+
+  if (!event.isPrimary) return;
+  restoreColoredGuide();
+  preloadColoredGuide(image);
+  state.colorGuide.image = image;
+  state.colorGuide.pointerId = event.pointerId;
+  state.colorGuide.startX = event.clientX;
+  state.colorGuide.startY = event.clientY;
+  state.colorGuide.timer = window.setTimeout(() => {
+    const activeImage = state.colorGuide.image;
+    const pointerId = state.colorGuide.pointerId;
+    state.colorGuide.timer = null;
+    showColoredGuide(activeImage, pointerId);
+  }, 420);
+}
+
+function handleGuidePointerMove(event) {
+  const guide = state.colorGuide;
+  if (event.pointerId !== guide.pointerId || !guide.timer) return;
+  if (Math.hypot(event.clientX - guide.startX, event.clientY - guide.startY) > 12) {
+    restoreColoredGuide();
+  }
+}
+
+function handleGuidePointerEnd(event) {
+  if (event.pointerId === state.colorGuide.pointerId) restoreColoredGuide();
 }
 
 async function generateSurpriseCatalogue() {
