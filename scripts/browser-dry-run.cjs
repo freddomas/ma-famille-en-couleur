@@ -121,6 +121,14 @@ async function main() {
       appError: false,
     });
     await screenshot("desktop-normal.png");
+    await evaluate(
+      `document.querySelector(".catalogue-card").scrollIntoView({ block: "start", behavior: "instant" })`,
+    );
+    await waitFor(
+      `[...document.querySelectorAll(".catalogue-card__image")]
+        .every((image) => image.complete && image.naturalWidth > 0)`,
+    );
+    await screenshot("desktop-catalogues.png");
 
     const normalPages = await evaluate(`(async () => {
       const results = [];
@@ -262,11 +270,78 @@ async function main() {
       deviceScaleFactor: 1,
       mobile: true,
     });
+    await call("Emulation.setTouchEmulationEnabled", {
+      enabled: true,
+      maxTouchPoints: 5,
+    });
     await evaluate(`selectCatalogue(state.catalogues[0].id)`);
+    await evaluate(`document.querySelector("#catalogues").scrollIntoView()`);
+    await evaluate(
+      `document.querySelector(".catalogue-card").scrollIntoView({ block: "start", behavior: "instant" })`,
+    );
+    await waitFor(
+      `[...document.querySelectorAll(".catalogue-card__image")]
+        .every((image) => image.complete && image.naturalWidth > 0)`,
+    );
+    await screenshot("mobile-catalogues.png");
+    const touchTarget = await evaluate(`(() => {
+      const card = document.querySelectorAll(".catalogue-card")[1];
+      card.scrollIntoView({ block: "center", behavior: "instant" });
+      const rect = card.getBoundingClientRect();
+      return {
+        catalogueId: card.dataset.catalogueId,
+        x: rect.left + rect.width / 2,
+        y: rect.top + Math.min(rect.height / 2, 180)
+      };
+    })()`);
+    await delay(100);
+    await call("Input.synthesizeTapGesture", {
+      x: touchTarget.x,
+      y: touchTarget.y,
+      duration: 80,
+      gestureSourceType: "touch",
+    });
+    await waitFor(`state.selectedCatalogueId === ${JSON.stringify(touchTarget.catalogueId)}`);
+    await waitFor(
+      `Math.abs(document.querySelector(".viewer").getBoundingClientRect().top) <= 2`,
+    );
+    await waitFor(
+      `[...document.querySelectorAll(".drawing-card__image")]
+        .every((image) => image.complete && image.naturalWidth > 0)`,
+    );
     const mobile = await evaluate(`(() => ({
       innerWidth: window.innerWidth,
       scrollWidth: document.documentElement.scrollWidth,
-      images: document.querySelectorAll(".drawing-card__image").length
+      images: document.querySelectorAll(".drawing-card__image").length,
+      openedCatalogue: state.selectedCatalogueId,
+      viewerTop: Math.round(document.querySelector(".viewer").getBoundingClientRect().top),
+      viewerFocused: document.activeElement === document.querySelector(".viewer"),
+      sheetTop: Math.round(
+        document.querySelector(".colouring-sheet").getBoundingClientRect().top
+      ),
+      sheetHeight: Math.round(
+        document.querySelector(".colouring-sheet").getBoundingClientRect().height
+      ),
+      sheetBackground: getComputedStyle(
+        document.querySelector(".colouring-sheet")
+      ).backgroundColor,
+      sheetVisibility: getComputedStyle(
+        document.querySelector(".colouring-sheet")
+      ).visibility,
+      sheetHeaderTop: Math.round(
+        document.querySelector(".sheet-header").getBoundingClientRect().top
+      ),
+      firstDrawingTop: Math.round(
+        document.querySelector(".drawing-card").getBoundingClientRect().top
+      ),
+      firstDrawingHeight: Math.round(
+        document.querySelector(".drawing-card").getBoundingClientRect().height
+      ),
+      decodedImages: [...document.querySelectorAll(".drawing-card__image")]
+        .filter((image) => image.naturalWidth > 0).length,
+      previewObjectFit: getComputedStyle(
+        document.querySelector(".catalogue-card__image")
+      ).objectFit
     }))()`);
     assert.equal(mobile.innerWidth, 360);
     assert.ok(
@@ -274,7 +349,21 @@ async function main() {
       `Débordement mobile : ${mobile.scrollWidth} > ${mobile.innerWidth}`,
     );
     assert.equal(mobile.images, 4);
+    assert.equal(mobile.decodedImages, 4);
+    assert.equal(mobile.openedCatalogue, touchTarget.catalogueId);
+    assert.ok(
+      Math.abs(mobile.viewerTop) <= 2,
+      `Le catalogue ouvert n'est pas cadré dans le viewport mobile : ${mobile.viewerTop}px`,
+    );
+    assert.ok(mobile.sheetHeight >= 400, `Planche mobile trop basse : ${mobile.sheetHeight}px`);
+    assert.equal(mobile.sheetBackground, "rgb(255, 255, 255)");
+    assert.equal(mobile.sheetVisibility, "visible");
+    assert.ok(mobile.firstDrawingHeight > 0);
+    assert.equal(mobile.viewerFocused, true);
+    assert.equal(mobile.previewObjectFit, "contain");
+    await delay(250);
     await screenshot("mobile-normal.png");
+    await call("Emulation.setTouchEmulationEnabled", { enabled: false });
     await call("Emulation.clearDeviceMetricsOverride");
 
     const normalConsoleErrors = events

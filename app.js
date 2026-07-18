@@ -283,7 +283,7 @@ function renderLibrary() {
     .join("");
 
   list.querySelectorAll("[data-catalogue-id]").forEach((button) => {
-    button.addEventListener("click", () => {
+    bindPressActivation(button, () => {
       selectCatalogue(button.dataset.catalogueId, { scroll: true });
     });
   });
@@ -317,7 +317,39 @@ function renderCatalogueMenu() {
     })
     .join("");
   menu.querySelectorAll("[data-menu-id]").forEach((button) => {
-    button.addEventListener("click", () => selectCatalogue(button.dataset.menuId));
+    bindPressActivation(button, () => selectCatalogue(button.dataset.menuId));
+  });
+}
+
+function bindPressActivation(button, activate) {
+  let touchStart = null;
+  let lastTouchActivation = 0;
+
+  button.addEventListener("pointerdown", (event) => {
+    if (event.pointerType !== "touch" || !event.isPrimary) return;
+    touchStart = { x: event.clientX, y: event.clientY };
+  });
+
+  button.addEventListener("pointercancel", () => {
+    touchStart = null;
+  });
+
+  button.addEventListener("pointerup", (event) => {
+    if (event.pointerType !== "touch" || !event.isPrimary || !touchStart) return;
+    const distance = Math.hypot(
+      event.clientX - touchStart.x,
+      event.clientY - touchStart.y,
+    );
+    touchStart = null;
+    if (distance > 12) return;
+    lastTouchActivation = Date.now();
+    activate();
+  });
+
+  button.addEventListener("click", (event) => {
+    const isSyntheticTouchClick =
+      event.detail > 0 && Date.now() - lastTouchActivation < 700;
+    if (!isSyntheticTouchClick) activate();
   });
 }
 
@@ -331,7 +363,23 @@ function selectCatalogue(id, options = {}) {
   renderCatalogueMenu();
   renderWorkspace();
   if (options.scroll) {
-    document.getElementById("atelier")?.scrollIntoView({ behavior: "smooth" });
+    const isMobile = window.matchMedia("(max-width: 900px)").matches;
+    const target = isMobile
+      ? document.querySelector(".viewer")
+      : document.getElementById("atelier");
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    window.requestAnimationFrame(() => {
+      target?.scrollIntoView({
+        behavior: isMobile || reduceMotion ? "auto" : "smooth",
+        block: "start",
+      });
+      if (isMobile && target instanceof HTMLElement) {
+        target.focus({ preventScroll: true });
+      }
+    });
   }
 }
 

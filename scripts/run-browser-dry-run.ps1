@@ -11,7 +11,7 @@ if (-not (Test-Path -LiteralPath $chrome -PathType Leaf)) {
   throw "Google Chrome est introuvable : $chrome"
 }
 
-$profile = Join-Path $root "tmp\chrome-dry-run"
+$profile = Join-Path $root "tmp\chrome-dry-run-$Port"
 $resolvedRoot = [System.IO.Path]::GetFullPath($root)
 $resolvedProfile = [System.IO.Path]::GetFullPath($profile)
 if (-not $resolvedProfile.StartsWith($resolvedRoot, [System.StringComparison]::OrdinalIgnoreCase)) {
