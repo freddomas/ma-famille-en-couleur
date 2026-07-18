@@ -124,9 +124,16 @@ function renderStats() {
 
 function renderHeroDrawing() {
   const target = document.getElementById("hero-drawing");
-  const entry = state.catalogues[0]?.entries[0];
-  if (!target || !entry) return;
-  target.innerHTML = imageMarkup(entry, "hero-drawing__image");
+  if (!target) return;
+  target.innerHTML = `
+    <img
+      class="hero-drawing__image"
+      src="assets/hero/enfants-coloriage.png"
+      alt=""
+      loading="eager"
+      decoding="async"
+    />
+  `;
 }
 
 function installSurpriseGenerator() {
@@ -267,7 +274,9 @@ function renderLibrary() {
           aria-label="Ouvrir le catalogue ${escapeAttribute(catalogue.title)}"
         >
           <span class="catalogue-card__visual">
-            ${imageMarkup(catalogue.entries[0], "catalogue-card__image")}
+            <span class="catalogue-card__media">
+              ${imageMarkup(catalogue.entries[0], "catalogue-card__image")}
+            </span>
           </span>
           <span class="catalogue-card__body">
             <span class="catalogue-card__eyebrow">${escapeHtml(catalogue.eyebrow)}</span>
