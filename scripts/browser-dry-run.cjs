@@ -138,7 +138,12 @@ async function main() {
       marginRight: 0,
       preferCSSPageSize: true,
     });
-    fs.writeFileSync(path.join(outputDir, name), Buffer.from(result.data, "base64"));
+    const pdf = Buffer.from(result.data, "base64");
+    assert.ok(
+      pdf.length > 10_000,
+      `Le PDF ${name} est vide ou incomplet (${pdf.length} octets).`,
+    );
+    fs.writeFileSync(path.join(outputDir, name), pdf);
   };
 
   try {
@@ -725,13 +730,27 @@ async function main() {
       false,
     );
 
-    const touchGuideTarget = await evaluate(`(() => {
+    const touchGuideTarget = await evaluate(`(async () => {
       const card = document.querySelector(".drawing-card .color-flip-card");
-      card.scrollIntoView({ block: "center", behavior: "instant" });
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = "auto";
+      card.scrollIntoView({ block: "center", behavior: "auto" });
+      await new Promise((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(resolve))
+      );
       const rect = card.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+      const hitTarget = document.elementFromPoint(x, y);
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+      if (!hitTarget || hitTarget.closest("[data-color-flip]") !== card) {
+        throw new Error(
+          "La carte de guide coloriée n'est pas la cible tactile au centre du viewport."
+        );
+      }
       return {
-        x: rect.left + rect.width / 2,
-        y: rect.top + rect.height / 2
+        x,
+        y
       };
     })()`);
     await call("Input.dispatchTouchEvent", {
@@ -751,7 +770,7 @@ async function main() {
     });
     await waitFor(
       `document.querySelector(".drawing-card .color-flip-card").getAttribute("aria-pressed") === "true"`,
-      2000,
+      5000,
     );
     await delay(650);
     await screenshot("mobile-color-guide.png");
