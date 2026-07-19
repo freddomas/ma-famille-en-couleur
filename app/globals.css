@@ -5683,12 +5683,15 @@ body {
 }
 
 .weekly-promise__stamp {
+  isolation: isolate;
   min-height: 280px;
   padding: 32px;
   box-shadow: 6px 6px 0 var(--ink);
 }
 
 .weekly-promise__stamp strong {
+  position: relative;
+  z-index: 1;
   max-width: 9ch;
   font-size: clamp(2.75rem, 3.8vw, 3.8rem);
   letter-spacing: -0.03em;
@@ -5697,7 +5700,26 @@ body {
 
 .weekly-promise__stamp span,
 .weekly-promise__stamp small {
+  position: relative;
+  z-index: 1;
   font-size: 0.9rem;
+}
+
+.weekly-promise__stamp small {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.weekly-promise__stamp::after {
+  right: -108px;
+  bottom: -128px;
+  z-index: 0;
+  width: 120px;
+  height: 120px;
+  border-width: 22px;
+  pointer-events: none;
 }
 
 .weekly-promise__copy h2 {
@@ -5905,6 +5927,10 @@ body {
     width: 100%;
     min-height: 210px;
     padding: 28px;
+  }
+
+  .weekly-promise__stamp::after {
+    display: none;
   }
 
   .weekly-promise__stamp strong {

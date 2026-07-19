@@ -59,6 +59,16 @@ Le mouvement est volontairement fonctionnel : rotation verticale en 520 ms,
 retours de pression courts, aucune chorégraphie décorative de page. Les
 transitions sont neutralisées par `prefers-reduced-motion`.
 
+## Correctif du cartouche hebdomadaire
+
+- Le sous-texte utilise explicitement le vert profond, avec un contraste mesuré
+  à `10,39:1` sur le jaune.
+- L’anneau corail reste cantonné à l’angle sur laptop et desktop.
+- Sous `820px`, l’anneau purement décoratif est supprimé afin de garantir une
+  composition sans chevauchement.
+- Playwright mesure désormais le contraste calculé et l’intersection géométrique
+  entre la décoration et chacun des trois textes.
+
 ## Matrice Playwright
 
 La passe stricte a été exécutée sur :

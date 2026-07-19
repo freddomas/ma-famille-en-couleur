@@ -1,6 +1,6 @@
 {
   "phase": "after",
-  "generatedAt": "2026-07-19T13:07:12.361Z",
+  "generatedAt": "2026-07-19T13:24:29.188Z",
   "status": "passed",
   "results": [
     {
@@ -35,13 +35,33 @@
         },
         "weeklyStampRect": {
           "left": 12,
-          "top": 1865.359375,
+          "top": 1867.359375,
           "right": 312,
-          "bottom": 2054,
+          "bottom": 2052,
           "width": 300,
-          "height": 188.640625
+          "height": 184.640625
         },
         "weeklyStampClipped": false,
+        "weeklyStampContrast": [
+          {
+            "tag": "span",
+            "text": "Rendez-vous",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "strong",
+            "text": "Chaque semaine",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "small",
+            "text": "52 semaines de découvertes",
+            "ratio": 10.391626616696373
+          }
+        ],
+        "weeklyStampMinContrast": 10.391626616696373,
+        "weeklyDecorationRect": null,
+        "weeklyDecorationOverlaps": false,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -59,11 +79,11 @@
           {
             "id": "open-coloring-studio",
             "left": 12,
-            "top": 277.8619689941406,
+            "top": 278.796875,
             "right": 308,
-            "bottom": 329.8619384765625,
+            "bottom": 330.796875,
             "width": 296,
-            "height": 51.999969482421875
+            "height": 52
           },
           {
             "id": "print-page",
@@ -97,18 +117,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 39.14448928833008,
-          "top": -1.047937035560608,
-          "right": 283.774600982666,
-          "bottom": 247.92294919490814,
-          "width": 244.63011169433594,
-          "height": 248.97088623046875
+          "left": 39.1407356262207,
+          "top": -1.0459330081939697,
+          "right": 283.7744789123535,
+          "bottom": 247.92092490196228,
+          "width": 244.6337432861328,
+          "height": 248.96685791015625
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.99429, 0, -0.106714, 0, 0, 1, 0, 0, 0.106714, 0, -0.99429, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994305, 0, -0.106572, 0, 0, 1, 0, 0, 0.106572, 0, -0.994305, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -151,13 +171,33 @@
         },
         "weeklyStampRect": {
           "left": 12,
-          "top": 1842.75,
+          "top": 1844.75,
           "right": 312,
-          "bottom": 2037.546875,
+          "bottom": 2035.546875,
           "width": 300,
-          "height": 194.796875
+          "height": 190.796875
         },
         "weeklyStampClipped": false,
+        "weeklyStampContrast": [
+          {
+            "tag": "span",
+            "text": "Rendez-vous",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "strong",
+            "text": "Chaque semaine",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "small",
+            "text": "52 semaines de découvertes",
+            "ratio": 10.391626616696373
+          }
+        ],
+        "weeklyStampMinContrast": 10.391626616696373,
+        "weeklyDecorationRect": null,
+        "weeklyDecorationOverlaps": false,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -213,18 +253,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 40.28289031982422,
-          "top": 478.9725036621094,
-          "right": 354.54467010498047,
-          "bottom": 799.9024658203125,
-          "width": 314.26177978515625,
-          "height": 320.9299621582031
+          "left": 40.27235412597656,
+          "top": 478.9788818359375,
+          "right": 354.5430450439453,
+          "bottom": 799.8961181640625,
+          "width": 314.27069091796875,
+          "height": 320.917236328125
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994265, 0, -0.106948, 0, 0, 1, 0, 0, 0.106948, 0, -0.994265, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994294, 0, -0.106675, 0, 0, 1, 0, 0, 0.106675, 0, -0.994294, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -267,13 +307,33 @@
         },
         "weeklyStampRect": {
           "left": 12,
-          "top": 1668.21875,
+          "top": 1670.21875,
           "right": 312,
-          "bottom": 1887.453125,
+          "bottom": 1885.453125,
           "width": 300,
-          "height": 219.234375
+          "height": 215.234375
         },
         "weeklyStampClipped": false,
+        "weeklyStampContrast": [
+          {
+            "tag": "span",
+            "text": "Rendez-vous",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "strong",
+            "text": "Chaque semaine",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "small",
+            "text": "52 semaines de découvertes",
+            "ratio": 10.391626616696373
+          }
+        ],
+        "weeklyStampMinContrast": 10.391626616696373,
+        "weeklyDecorationRect": null,
+        "weeklyDecorationOverlaps": false,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -329,18 +389,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 64.2403335571289,
-          "top": 49.898414611816406,
-          "right": 315.3356399536133,
-          "bottom": 324.13285064697266,
-          "width": 251.09530639648438,
-          "height": 274.23443603515625
+          "left": 64.23794555664062,
+          "top": 49.89979934692383,
+          "right": 315.3355407714844,
+          "bottom": 324.1314277648926,
+          "width": 251.09759521484375,
+          "height": 274.23162841796875
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994288, 0, -0.106734, 0, 0, 1, 0, 0, 0.106734, 0, -0.994288, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994297, 0, -0.106647, 0, 0, 1, 0, 0, 0.106647, 0, -0.994297, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -383,13 +443,33 @@
         },
         "weeklyStampRect": {
           "left": 12,
-          "top": 1582.765625,
+          "top": 1584.765625,
           "right": 312,
-          "bottom": 1802.4375,
+          "bottom": 1800.4375,
           "width": 300,
-          "height": 219.671875
+          "height": 215.671875
         },
         "weeklyStampClipped": false,
+        "weeklyStampContrast": [
+          {
+            "tag": "span",
+            "text": "Rendez-vous",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "strong",
+            "text": "Chaque semaine",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "small",
+            "text": "52 semaines de découvertes",
+            "ratio": 10.391626616696373
+          }
+        ],
+        "weeklyStampMinContrast": 10.391626616696373,
+        "weeklyDecorationRect": null,
+        "weeklyDecorationOverlaps": false,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -445,18 +525,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 65.04256439208984,
-          "top": 495.60504150390625,
-          "right": 366.3812789916992,
-          "bottom": 830.3949584960938,
-          "width": 301.3387145996094,
-          "height": 334.7899169921875
+          "left": 65.05064392089844,
+          "top": 495.5998229980469,
+          "right": 366.3823699951172,
+          "bottom": 830.400146484375,
+          "width": 301.33172607421875,
+          "height": 334.8003234863281
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994303, 0, -0.106592, 0, 0, 1, 0, 0, 0.106592, 0, -0.994303, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994279, 0, -0.106815, 0, 0, 1, 0, 0, 0.106815, 0, -0.994279, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -506,6 +586,33 @@
           "height": 280
         },
         "weeklyStampClipped": false,
+        "weeklyStampContrast": [
+          {
+            "tag": "span",
+            "text": "Rendez-vous",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "strong",
+            "text": "Chaque semaine",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "small",
+            "text": "52 semaines de découvertes",
+            "ratio": 10.391626616696373
+          }
+        ],
+        "weeklyStampMinContrast": 10.391626616696373,
+        "weeklyDecorationRect": {
+          "left": 324.671875,
+          "right": 488.671875,
+          "top": 1383.15625,
+          "bottom": 1547.15625,
+          "width": 164,
+          "height": 164
+        },
+        "weeklyDecorationOverlaps": false,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -561,18 +668,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 312.8879089355469,
-          "top": 452.10614013671875,
-          "right": 604.2647094726562,
-          "bottom": 770.5032348632812,
-          "width": 291.3768005371094,
-          "height": 318.3970947265625
+          "left": 312.878662109375,
+          "top": 452.1119384765625,
+          "right": 604.2636108398438,
+          "bottom": 770.4974365234375,
+          "width": 291.38494873046875,
+          "height": 318.385498046875
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994258, 0, -0.107009, 0, 0, 1, 0, 0, 0.107009, 0, -0.994258, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994287, 0, -0.10674, 0, 0, 1, 0, 0, 0.10674, 0, -0.994287, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -622,6 +729,33 @@
           "height": 280
         },
         "weeklyStampClipped": false,
+        "weeklyStampContrast": [
+          {
+            "tag": "span",
+            "text": "Rendez-vous",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "strong",
+            "text": "Chaque semaine",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "small",
+            "text": "52 semaines de découvertes",
+            "ratio": 10.391626616696373
+          }
+        ],
+        "weeklyStampMinContrast": 10.391626616696373,
+        "weeklyDecorationRect": {
+          "left": 500.015625,
+          "right": 664.015625,
+          "top": 1335.96875,
+          "bottom": 1499.96875,
+          "width": 164,
+          "height": 164
+        },
+        "weeklyDecorationOverlaps": false,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -677,18 +811,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 518.1805419921875,
-          "top": 503.61224365234375,
-          "right": 827.4794311523438,
-          "bottom": 839.2471313476562,
-          "width": 309.29888916015625,
-          "height": 335.6348876953125
+          "left": 518.1683349609375,
+          "top": 503.6200866699219,
+          "right": 827.4775390625,
+          "bottom": 839.2392578125,
+          "width": 309.3092041015625,
+          "height": 335.6191711425781
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994304, 0, -0.106578, 0, 0, 1, 0, 0, 0.106578, 0, -0.994304, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994339, 0, -0.106253, 0, 0, 1, 0, 0, 0.106253, 0, -0.994339, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -738,6 +872,33 @@
           "height": 280
         },
         "weeklyStampClipped": false,
+        "weeklyStampContrast": [
+          {
+            "tag": "span",
+            "text": "Rendez-vous",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "strong",
+            "text": "Chaque semaine",
+            "ratio": 10.391626616696373
+          },
+          {
+            "tag": "small",
+            "text": "52 semaines de découvertes",
+            "ratio": 10.391626616696373
+          }
+        ],
+        "weeklyStampMinContrast": 10.391626616696373,
+        "weeklyDecorationRect": {
+          "left": 740.015625,
+          "right": 904.015625,
+          "top": 1399.625,
+          "bottom": 1563.625,
+          "width": 164,
+          "height": 164
+        },
+        "weeklyDecorationOverlaps": false,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -793,18 +954,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 757.1289672851562,
-          "top": 440.3231506347656,
-          "right": 1067.243896484375,
-          "bottom": 774.5362548828125,
-          "width": 310.11492919921875,
-          "height": 334.2131042480469
+          "left": 758.1723022460938,
+          "top": 439.6175231933594,
+          "right": 1067.4781494140625,
+          "bottom": 775.2418212890625,
+          "width": 309.30584716796875,
+          "height": 335.6242980957031
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.997036, 0, -0.0769367, 0, 0, 1, 0, 0, 0.0769367, 0, -0.997036, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994328, 0, -0.106359, 0, 0, 1, 0, 0, 0.106359, 0, -0.994328, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },

@@ -76,6 +76,41 @@ async function inspectHome(page) {
           }
         : null;
     };
+    const colorCanvas = document.createElement("canvas");
+    colorCanvas.width = 1;
+    colorCanvas.height = 1;
+    const colorContext = colorCanvas.getContext("2d", { willReadFrequently: true });
+    const rgb = (value) => {
+      if (!colorContext) return null;
+      colorContext.clearRect(0, 0, 1, 1);
+      colorContext.fillStyle = "#000";
+      colorContext.fillStyle = value;
+      colorContext.fillRect(0, 0, 1, 1);
+      return [...colorContext.getImageData(0, 0, 1, 1).data.slice(0, 3)];
+    };
+    const luminance = (value) => {
+      const channels = rgb(value);
+      if (!channels) return null;
+      const linear = channels.map((channel) => {
+        const normalized = channel / 255;
+        return normalized <= 0.04045
+          ? normalized / 12.92
+          : ((normalized + 0.055) / 1.055) ** 2.4;
+      });
+      return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2];
+    };
+    const contrast = (foreground, background) => {
+      const foregroundLuminance = luminance(foreground);
+      const backgroundLuminance = luminance(background);
+      if (foregroundLuminance === null || backgroundLuminance === null) return null;
+      return (Math.max(foregroundLuminance, backgroundLuminance) + 0.05)
+        / (Math.min(foregroundLuminance, backgroundLuminance) + 0.05);
+    };
+    const intersects = (first, second) =>
+      first.left < second.right
+      && first.right > second.left
+      && first.top < second.bottom
+      && first.bottom > second.top;
     const clippedText = [...document.querySelectorAll("h1, h2, h3, p, a, button, span")]
       .filter(visible)
       .filter((element) => {
@@ -127,6 +162,43 @@ async function inspectHome(page) {
             || value.bottom > stampRect.bottom + 1;
         })
       : true;
+    const stampText = stamp
+      ? [...stamp.querySelectorAll("span, strong, small")]
+      : [];
+    const stampBackground = stamp ? getComputedStyle(stamp).backgroundColor : null;
+    const weeklyStampContrast = stampText.map((element) => ({
+      tag: element.tagName.toLowerCase(),
+      text: element.textContent.trim(),
+      ratio: contrast(getComputedStyle(element).color, stampBackground),
+    }));
+    const pseudo = stamp ? getComputedStyle(stamp, "::after") : null;
+    const pseudoVisible = pseudo
+      && pseudo.display !== "none"
+      && pseudo.content !== "none"
+      && Number.parseFloat(pseudo.width) > 0
+      && Number.parseFloat(pseudo.height) > 0;
+    const pseudoWidth = pseudoVisible
+      ? Number.parseFloat(pseudo.width)
+        + Number.parseFloat(pseudo.borderLeftWidth)
+        + Number.parseFloat(pseudo.borderRightWidth)
+      : 0;
+    const pseudoHeight = pseudoVisible
+      ? Number.parseFloat(pseudo.height)
+        + Number.parseFloat(pseudo.borderTopWidth)
+        + Number.parseFloat(pseudo.borderBottomWidth)
+      : 0;
+    const weeklyDecorationRect = pseudoVisible ? {
+      left: stampRect.right - Number.parseFloat(pseudo.right) - pseudoWidth,
+      right: stampRect.right - Number.parseFloat(pseudo.right),
+      top: stampRect.bottom - Number.parseFloat(pseudo.bottom) - pseudoHeight,
+      bottom: stampRect.bottom - Number.parseFloat(pseudo.bottom),
+      width: pseudoWidth,
+      height: pseudoHeight,
+    } : null;
+    const weeklyDecorationOverlaps = weeklyDecorationRect
+      ? stampText.some((element) =>
+          intersects(element.getBoundingClientRect(), weeklyDecorationRect))
+      : false;
     const hero = document.querySelector(".hero");
     const brand = document.querySelector(".brand");
     const brandLink = brand?.closest("a");
@@ -142,6 +214,12 @@ async function inspectHome(page) {
       heroRect: rect(hero),
       weeklyStampRect: rect(stamp),
       weeklyStampClipped: stampTextClipped,
+      weeklyStampContrast,
+      weeklyStampMinContrast: Math.min(
+        ...weeklyStampContrast.map((item) => item.ratio ?? 0),
+      ),
+      weeklyDecorationRect,
+      weeklyDecorationOverlaps,
       clippedText,
       smallText,
       verticalGaps,
@@ -395,9 +473,18 @@ async function main() {
     if (strict) {
       for (const result of results) {
         assert.equal(result.home.horizontalOverflow, false, `${result.viewport.name}: accueil déborde`);
-        assert.equal(result.home.brandClickable, true, `${result.viewport.name}: marque non cliquable`);
-        assert.equal(result.home.brandHref, "/", `${result.viewport.name}: destination marque incorrecte`);
-        assert.equal(result.home.weeklyStampClipped, false, `${result.viewport.name}: promesse rognée`);
+      assert.equal(result.home.brandClickable, true, `${result.viewport.name}: marque non cliquable`);
+      assert.equal(result.home.brandHref, "/", `${result.viewport.name}: destination marque incorrecte`);
+      assert.equal(result.home.weeklyStampClipped, false, `${result.viewport.name}: promesse rognée`);
+      assert.equal(
+        result.home.weeklyDecorationOverlaps,
+        false,
+        `${result.viewport.name}: décoration superposée au texte hebdomadaire`,
+      );
+      assert.ok(
+        result.home.weeklyStampMinContrast >= 4.5,
+        `${result.viewport.name}: contraste hebdomadaire insuffisant`,
+      );
         assert.deepEqual(result.home.clippedText, [], `${result.viewport.name}: texte rogné`);
         assert.deepEqual(result.home.verticalGaps, [], `${result.viewport.name}: vide vertical excessif`);
         assert.equal(result.home.catalogueCards, 10, `${result.viewport.name}: catalogues manquants`);
@@ -453,9 +540,11 @@ async function main() {
           name: result.viewport.name,
           bodyHeight: result.home.bodyHeight,
           smallText: result.home.smallText.length,
-          clippedText: result.home.clippedText.length,
-          verticalGaps: result.home.verticalGaps.length,
-          thumbnails: result.home.visibleThumbnails,
+        clippedText: result.home.clippedText.length,
+        verticalGaps: result.home.verticalGaps.length,
+        weeklyContrast: Number(result.home.weeklyStampMinContrast.toFixed(2)),
+        weeklyOverlap: result.home.weeklyDecorationOverlaps,
+        thumbnails: result.home.visibleThumbnails,
         coloredGuide: result.coloredGuide.decoded
           && result.coloredGuide.visible
           && result.coloredGuide.frontBackface === "hidden"
