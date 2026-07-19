@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Mem Skill"
+  short_description: "Recall cross-session context with evidence"
+  default_prompt: "Use $codex-mem-skill to recover the relevant prior context before continuing this task."

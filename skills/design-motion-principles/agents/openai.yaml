@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Motion Principles"
+  short_description: "Create and audit purposeful interface motion"
+  default_prompt: "Use $design-motion-principles to create or audit motion for this interface with accessible, performant behavior."

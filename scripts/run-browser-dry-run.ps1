@@ -1,15 +1,49 @@
 param(
-  [int]$Port = 9223,
-  [int]$AppPort = 8080
+    [int]$Port = 9223,
+    [int]$AppPort = 8080,
+    [string]$ChromePath = $env:AGENT_BROWSER_EXECUTABLE_PATH
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
 $root = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
-$chrome = "C:\Program Files\Google\Chrome\Application\chrome.exe"
-if (-not (Test-Path -LiteralPath $chrome -PathType Leaf)) {
-  throw "Google Chrome est introuvable : $chrome"
+
+$chromeCandidates = @()
+if ($ChromePath) {
+    $chromeCandidates += $ChromePath
+}
+
+$agentBrowserCommand = Get-Command "agent-browser" -ErrorAction SilentlyContinue
+if ($agentBrowserCommand) {
+    $npmBin = Split-Path -Parent $agentBrowserCommand.Source
+    $profileRoot = Split-Path -Parent (
+        Split-Path -Parent (
+            Split-Path -Parent $npmBin
+        )
+    )
+    $agentBrowserBrowsers = Join-Path $profileRoot ".agent-browser\browsers"
+    if (Test-Path -LiteralPath $agentBrowserBrowsers -PathType Container) {
+        $chromeCandidates += Get-ChildItem `
+            -LiteralPath $agentBrowserBrowsers `
+            -Directory `
+            -Filter "chrome-*" |
+            Sort-Object LastWriteTime -Descending |
+            ForEach-Object { Join-Path $_.FullName "chrome.exe" }
+    }
+}
+
+$chromeCandidates += @(
+    (Join-Path $env:ProgramFiles "Google\Chrome\Application\chrome.exe"),
+    (Join-Path ${env:ProgramFiles(x86)} "Google\Chrome\Application\chrome.exe")
+)
+
+$chrome = $chromeCandidates |
+    Where-Object { $_ -and (Test-Path -LiteralPath $_ -PathType Leaf) } |
+    Select-Object -First 1
+
+if (-not $chrome) {
+    throw "Chrome est introuvable. Exécutez 'agent-browser install' ou fournissez -ChromePath."
 }
 
 $runId = [System.Guid]::NewGuid().ToString("N")
@@ -57,9 +91,10 @@ if (-not $appReady) {
 }
 
 $arguments = @(
-  "--headless=new"
-  "--disable-gpu"
-  "--disable-crash-reporter"
+    "--headless=new"
+    "--disable-gpu"
+    "--disable-gpu-sandbox"
+    "--disable-crash-reporter"
   "--disable-extensions"
   "--disable-background-networking"
   "--no-first-run"
@@ -110,10 +145,13 @@ try {
     throw "Le DRY_RUN navigateur a échoué avec le code $LASTEXITCODE."
   }
 } finally {
-  if (-not $chromeProcess.HasExited) {
-    Stop-Process -Id $chromeProcess.Id -Force
-  }
-  if (-not $nextProcess.HasExited) {
-    Stop-Process -Id $nextProcess.Id -Force
-  }
+    if (-not $chromeProcess.HasExited) {
+        Stop-Process -Id $chromeProcess.Id -Force
+    }
+    if (-not $nextProcess.HasExited) {
+        Stop-Process -Id $nextProcess.Id -Force
+    }
+    if (Test-Path -LiteralPath $profile -PathType Container) {
+        Remove-Item -LiteralPath $profile -Recurse -Force
+    }
 }

@@ -1,5 +1,19 @@
 # Règles du dépôt
 
+## Mémoire toujours active
+
+- Au début de chaque session et avant chaque tâche, charger et suivre
+  `C:\Users\frede\.codex\skills\codex-mem-skill\SKILL.md`, même si le skill
+  n’est pas nommé explicitement.
+- Si le skill global n’est pas disponible, utiliser la source versionnée
+  `skills/codex-mem-skill/SKILL.md`.
+- Appliquer la recherche mémoire en couches et le contrôle de fraîcheur dans
+  tout contexte couvert par ce dépôt. Pour une demande entièrement autonome et
+  triviale, charger le protocole mais autoriser le gate du skill à éviter une
+  recherche inutile.
+- Ne jamais traiter la mémoire comme une autorisation d’action ni comme une
+  preuve plus forte que l’état courant du dépôt, du runtime ou des sources.
+
 ## Portée
 
 Cette application utilise Next.js App Router, TypeScript et Supabase. Le moteur

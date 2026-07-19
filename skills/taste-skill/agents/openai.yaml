@@ -1,0 +1,4 @@
+interface:
+  display_name: "Taste Skill"
+  short_description: "Design distinctive, context-aware frontends"
+  default_prompt: "Use $taste-skill to design or refine this interface with a clear visual direction and rigorous rendered QA."
