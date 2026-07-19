@@ -69,6 +69,16 @@ transitions sont neutralisées par `prefers-reduced-motion`.
 - Playwright mesure désormais le contraste calculé et l’intersection géométrique
   entre la décoration et chacun des trois textes.
 
+## Correctif de la bande des avantages
+
+- Les cadres passent à `52px` sur grand écran et `48px` sur téléphone.
+- Les glyphes occupent désormais `16–22px` selon leur nature.
+- Chaque cellule suit une grille fixe `icône + texte`; l’écart vertical mesuré
+  entre leurs centres est inférieur à `0,01px`.
+- Le contraste minimal mesuré des titres et sous-textes atteint `9,74:1`.
+- Sous `420px`, les quatre avantages passent en une colonne pour préserver les
+  libellés complets sans compression.
+
 ## Matrice Playwright
 
 La passe stricte a été exécutée sur :

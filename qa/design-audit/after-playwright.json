@@ -1,6 +1,6 @@
 {
   "phase": "after",
-  "generatedAt": "2026-07-19T13:24:29.188Z",
+  "generatedAt": "2026-07-19T13:33:21.106Z",
   "status": "passed",
   "results": [
     {
@@ -14,7 +14,7 @@
         "horizontalOverflow": false,
         "documentWidth": 477,
         "viewportWidth": 477,
-        "bodyHeight": 9224,
+        "bodyHeight": 9311,
         "brandClickable": true,
         "brandHref": "/",
         "brandRect": {
@@ -35,9 +35,9 @@
         },
         "weeklyStampRect": {
           "left": 12,
-          "top": 1867.359375,
+          "top": 1953.53125,
           "right": 312,
-          "bottom": 2052,
+          "bottom": 2138.171875,
           "width": 300,
           "height": 184.640625
         },
@@ -62,6 +62,42 @@
         "weeklyStampMinContrast": 10.391626616696373,
         "weeklyDecorationRect": null,
         "weeklyDecorationOverlaps": false,
+        "trustItems": [
+          {
+            "iconWidth": 48,
+            "iconHeight": 48,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0.0078125,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 48,
+            "iconHeight": 48,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0.0078125,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 48,
+            "iconHeight": 48,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0.0078125,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 48,
+            "iconHeight": 48,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0.0078125,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          }
+        ],
+        "trustMinContrast": 9.742707373425098,
+        "trustMaxAlignmentDelta": 0.0078125,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -117,18 +153,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 39.1407356262207,
-          "top": -1.0459330081939697,
-          "right": 283.7744789123535,
-          "bottom": 247.92092490196228,
-          "width": 244.6337432861328,
-          "height": 248.96685791015625
+          "left": 39.14480209350586,
+          "top": -1.048104166984558,
+          "right": 283.7745933532715,
+          "bottom": 247.92311775684357,
+          "width": 244.62979125976562,
+          "height": 248.97122192382812
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994305, 0, -0.106572, 0, 0, 1, 0, 0, 0.106572, 0, -0.994305, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994288, 0, -0.106726, 0, 0, 1, 0, 0, 0.106726, 0, -0.994288, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -150,7 +186,7 @@
         "horizontalOverflow": false,
         "documentWidth": 505,
         "viewportWidth": 505,
-        "bodyHeight": 9118,
+        "bodyHeight": 9245,
         "brandClickable": true,
         "brandHref": "/",
         "brandRect": {
@@ -171,9 +207,9 @@
         },
         "weeklyStampRect": {
           "left": 12,
-          "top": 1844.75,
+          "top": 1971.6875,
           "right": 312,
-          "bottom": 2035.546875,
+          "bottom": 2162.484375,
           "width": 300,
           "height": 190.796875
         },
@@ -198,6 +234,42 @@
         "weeklyStampMinContrast": 10.391626616696373,
         "weeklyDecorationRect": null,
         "weeklyDecorationOverlaps": false,
+        "trustItems": [
+          {
+            "iconWidth": 48,
+            "iconHeight": 48,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0.0078125,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 48,
+            "iconHeight": 48,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0.0078125,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 48,
+            "iconHeight": 48,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0.0078125,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 48,
+            "iconHeight": 48,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0.0078125,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          }
+        ],
+        "trustMinContrast": 9.742707373425098,
+        "trustMaxAlignmentDelta": 0.0078125,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -253,18 +325,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 40.27235412597656,
-          "top": 478.9788818359375,
-          "right": 354.5430450439453,
-          "bottom": 799.8961181640625,
-          "width": 314.27069091796875,
-          "height": 320.917236328125
+          "left": 40.266944885253906,
+          "top": 478.982177734375,
+          "right": 354.5421829223633,
+          "bottom": 799.892822265625,
+          "width": 314.2752380371094,
+          "height": 320.91064453125
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994294, 0, -0.106675, 0, 0, 1, 0, 0, 0.106675, 0, -0.994294, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994309, 0, -0.106535, 0, 0, 1, 0, 0, 0.106535, 0, -0.994309, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -286,7 +358,7 @@
         "horizontalOverflow": false,
         "documentWidth": 667,
         "viewportWidth": 667,
-        "bodyHeight": 9527,
+        "bodyHeight": 9539,
         "brandClickable": true,
         "brandHref": "/",
         "brandRect": {
@@ -307,9 +379,9 @@
         },
         "weeklyStampRect": {
           "left": 12,
-          "top": 1670.21875,
+          "top": 1682.21875,
           "right": 312,
-          "bottom": 1885.453125,
+          "bottom": 1897.453125,
           "width": 300,
           "height": 215.234375
         },
@@ -334,6 +406,42 @@
         "weeklyStampMinContrast": 10.391626616696373,
         "weeklyDecorationRect": null,
         "weeklyDecorationOverlaps": false,
+        "trustItems": [
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          }
+        ],
+        "trustMinContrast": 9.742707373425098,
+        "trustMaxAlignmentDelta": 0,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -389,18 +497,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 64.23794555664062,
-          "top": 49.89979934692383,
-          "right": 315.3355407714844,
-          "bottom": 324.1314277648926,
-          "width": 251.09759521484375,
-          "height": 274.23162841796875
+          "left": 64.24402618408203,
+          "top": 49.896270751953125,
+          "right": 315.3357620239258,
+          "bottom": 324.1349792480469,
+          "width": 251.09173583984375,
+          "height": 274.23870849609375
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994297, 0, -0.106647, 0, 0, 1, 0, 0, 0.106647, 0, -0.994297, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994273, 0, -0.106869, 0, 0, 1, 0, 0, 0.106869, 0, -0.994273, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -422,7 +530,7 @@
         "horizontalOverflow": false,
         "documentWidth": 768,
         "viewportWidth": 768,
-        "bodyHeight": 9354,
+        "bodyHeight": 9366,
         "brandClickable": true,
         "brandHref": "/",
         "brandRect": {
@@ -443,9 +551,9 @@
         },
         "weeklyStampRect": {
           "left": 12,
-          "top": 1584.765625,
+          "top": 1596.765625,
           "right": 312,
-          "bottom": 1800.4375,
+          "bottom": 1812.4375,
           "width": 300,
           "height": 215.671875
         },
@@ -470,6 +578,42 @@
         "weeklyStampMinContrast": 10.391626616696373,
         "weeklyDecorationRect": null,
         "weeklyDecorationOverlaps": false,
+        "trustItems": [
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          }
+        ],
+        "trustMinContrast": 9.742707373425098,
+        "trustMaxAlignmentDelta": 0,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -525,18 +669,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 65.05064392089844,
-          "top": 495.5998229980469,
-          "right": 366.3823699951172,
-          "bottom": 830.400146484375,
-          "width": 301.33172607421875,
-          "height": 334.8003234863281
+          "left": 65.0440673828125,
+          "top": 495.60406494140625,
+          "right": 366.3814697265625,
+          "bottom": 830.3959350585938,
+          "width": 301.33740234375,
+          "height": 334.7918701171875
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994279, 0, -0.106815, 0, 0, 1, 0, 0, 0.106815, 0, -0.994279, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994298, 0, -0.106633, 0, 0, 1, 0, 0, 0.106633, 0, -0.994298, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -558,7 +702,7 @@
         "horizontalOverflow": false,
         "documentWidth": 1024,
         "viewportWidth": 1024,
-        "bodyHeight": 6714,
+        "bodyHeight": 6723,
         "brandClickable": true,
         "brandHref": "/",
         "brandRect": {
@@ -579,9 +723,9 @@
         },
         "weeklyStampRect": {
           "left": 24,
-          "top": 1139.15625,
+          "top": 1148.15625,
           "right": 380.671875,
-          "bottom": 1419.15625,
+          "bottom": 1428.15625,
           "width": 356.671875,
           "height": 280
         },
@@ -607,12 +751,48 @@
         "weeklyDecorationRect": {
           "left": 324.671875,
           "right": 488.671875,
-          "top": 1383.15625,
-          "bottom": 1547.15625,
+          "top": 1392.15625,
+          "bottom": 1556.15625,
           "width": 164,
           "height": 164
         },
         "weeklyDecorationOverlaps": false,
+        "trustItems": [
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          }
+        ],
+        "trustMinContrast": 9.742707373425098,
+        "trustMaxAlignmentDelta": 0,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -668,18 +848,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 312.878662109375,
-          "top": 452.1119384765625,
-          "right": 604.2636108398438,
-          "bottom": 770.4974365234375,
-          "width": 291.38494873046875,
-          "height": 318.385498046875
+          "left": 312.86083984375,
+          "top": 452.12310791015625,
+          "right": 604.2615356445312,
+          "bottom": 770.4862670898438,
+          "width": 291.40069580078125,
+          "height": 318.3631591796875
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994287, 0, -0.10674, 0, 0, 1, 0, 0, 0.10674, 0, -0.994287, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994343, 0, -0.106221, 0, 0, 1, 0, 0, 0.106221, 0, -0.994343, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -701,7 +881,7 @@
         "horizontalOverflow": false,
         "documentWidth": 1440,
         "viewportWidth": 1440,
-        "bodyHeight": 6654,
+        "bodyHeight": 6658,
         "brandClickable": true,
         "brandHref": "/",
         "brandRect": {
@@ -722,9 +902,9 @@
         },
         "weeklyStampRect": {
           "left": 120,
-          "top": 1091.96875,
+          "top": 1095.96875,
           "right": 556.015625,
-          "bottom": 1371.96875,
+          "bottom": 1375.96875,
           "width": 436.015625,
           "height": 280
         },
@@ -750,12 +930,48 @@
         "weeklyDecorationRect": {
           "left": 500.015625,
           "right": 664.015625,
-          "top": 1335.96875,
-          "bottom": 1499.96875,
+          "top": 1339.96875,
+          "bottom": 1503.96875,
           "width": 164,
           "height": 164
         },
         "weeklyDecorationOverlaps": false,
+        "trustItems": [
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          }
+        ],
+        "trustMinContrast": 9.742707373425098,
+        "trustMaxAlignmentDelta": 0,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -811,18 +1027,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 518.1683349609375,
-          "top": 503.6200866699219,
-          "right": 827.4775390625,
-          "bottom": 839.2392578125,
-          "width": 309.3092041015625,
-          "height": 335.6191711425781
+          "left": 518.181884765625,
+          "top": 503.61138916015625,
+          "right": 827.4796142578125,
+          "bottom": 839.2479858398438,
+          "width": 309.2977294921875,
+          "height": 335.6365966796875
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994339, 0, -0.106253, 0, 0, 1, 0, 0, 0.106253, 0, -0.994339, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994301, 0, -0.106614, 0, 0, 1, 0, 0, 0.106614, 0, -0.994301, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },
@@ -844,7 +1060,7 @@
         "horizontalOverflow": false,
         "documentWidth": 1920,
         "viewportWidth": 1920,
-        "bodyHeight": 6738,
+        "bodyHeight": 6742,
         "brandClickable": true,
         "brandHref": "/",
         "brandRect": {
@@ -865,9 +1081,9 @@
         },
         "weeklyStampRect": {
           "left": 360,
-          "top": 1155.625,
+          "top": 1159.625,
           "right": 796.015625,
-          "bottom": 1435.625,
+          "bottom": 1439.625,
           "width": 436.015625,
           "height": 280
         },
@@ -893,12 +1109,48 @@
         "weeklyDecorationRect": {
           "left": 740.015625,
           "right": 904.015625,
-          "top": 1399.625,
-          "bottom": 1563.625,
+          "top": 1403.625,
+          "bottom": 1567.625,
           "width": 164,
           "height": 164
         },
         "weeklyDecorationOverlaps": false,
+        "trustItems": [
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 16,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          },
+          {
+            "iconWidth": 52,
+            "iconHeight": 52,
+            "iconGlyphSize": 21.6,
+            "copyCenterDelta": 0,
+            "strongContrast": 14.42869700007943,
+            "smallContrast": 9.742707373425098
+          }
+        ],
+        "trustMinContrast": 9.742707373425098,
+        "trustMaxAlignmentDelta": 0,
         "clippedText": [],
         "smallText": [],
         "verticalGaps": [],
@@ -954,18 +1206,18 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 758.1723022460938,
-          "top": 439.6175231933594,
-          "right": 1067.4781494140625,
-          "bottom": 775.2418212890625,
-          "width": 309.30584716796875,
-          "height": 335.6242980957031
+          "left": 758.17578125,
+          "top": 439.61529541015625,
+          "right": 1067.478759765625,
+          "bottom": 775.2440795898438,
+          "width": 309.302978515625,
+          "height": 335.6287841796875
         },
         "frontOpacity": 1,
         "backOpacity": 1,
         "frontBackface": "hidden",
         "backBackface": "hidden",
-        "innerTransform": "matrix3d(-0.994328, 0, -0.106359, 0, 0, 1, 0, 0, 0.106359, 0, -0.994328, 0, 0, 0, 0, 1)",
+        "innerTransform": "matrix3d(-0.994318, 0, -0.106452, 0, 0, 1, 0, 0, 0.106452, 0, -0.994318, 0, 0, 0, 0, 1)",
         "innerOverflow": "visible",
         "rotationSettled": true
       },

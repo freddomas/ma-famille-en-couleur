@@ -202,6 +202,34 @@ async function inspectHome(page) {
     const hero = document.querySelector(".hero");
     const brand = document.querySelector(".brand");
     const brandLink = brand?.closest("a");
+    const trustBackground = getComputedStyle(document.body).backgroundColor;
+    const trustItems = [...document.querySelectorAll(".trust-strip > div")].map(
+      (item) => {
+        const icon = item.querySelector(".trust-strip__icon");
+        const copy = item.querySelector("p");
+        const strong = item.querySelector("strong");
+        const small = item.querySelector("small");
+        const iconRect = icon.getBoundingClientRect();
+        const copyRect = copy.getBoundingClientRect();
+        return {
+          iconWidth: iconRect.width,
+          iconHeight: iconRect.height,
+          iconGlyphSize: Number.parseFloat(getComputedStyle(icon).fontSize),
+          copyCenterDelta: Math.abs(
+            iconRect.top + iconRect.height / 2
+            - (copyRect.top + copyRect.height / 2),
+          ),
+          strongContrast: contrast(
+            getComputedStyle(strong).color,
+            trustBackground,
+          ),
+          smallContrast: contrast(
+            getComputedStyle(small).color,
+            trustBackground,
+          ),
+        };
+      },
+    );
     const thumbnails = [...document.querySelectorAll(".catalogue-card__image")];
     return {
       horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth,
@@ -220,6 +248,16 @@ async function inspectHome(page) {
       ),
       weeklyDecorationRect,
       weeklyDecorationOverlaps,
+      trustItems,
+      trustMinContrast: Math.min(
+        ...trustItems.flatMap((item) => [
+          item.strongContrast ?? 0,
+          item.smallContrast ?? 0,
+        ]),
+      ),
+      trustMaxAlignmentDelta: Math.max(
+        ...trustItems.map((item) => item.copyCenterDelta),
+      ),
       clippedText,
       smallText,
       verticalGaps,
@@ -403,6 +441,11 @@ async function main() {
       path: path.join(outputDir, `${phase}-${viewport.name}-home-viewport.png`),
       fullPage: false,
     });
+    await page.locator(".trust-strip").scrollIntoViewIfNeeded();
+    await page.screenshot({
+      path: path.join(outputDir, `${phase}-${viewport.name}-trust-viewport.png`),
+      fullPage: false,
+    });
     await page.locator("#nouveautes").scrollIntoViewIfNeeded();
     await page.screenshot({
       path: path.join(outputDir, `${phase}-${viewport.name}-weekly-viewport.png`),
@@ -485,6 +528,26 @@ async function main() {
         result.home.weeklyStampMinContrast >= 4.5,
         `${result.viewport.name}: contraste hebdomadaire insuffisant`,
       );
+      assert.equal(
+        result.home.trustItems.length,
+        4,
+        `${result.viewport.name}: avantages manquants`,
+      );
+      assert.ok(
+        result.home.trustItems.every((item) =>
+          item.iconWidth >= 48
+          && item.iconHeight >= 48
+          && item.iconGlyphSize >= 15),
+        `${result.viewport.name}: pictogramme des avantages trop petit`,
+      );
+      assert.ok(
+        result.home.trustMaxAlignmentDelta <= 1,
+        `${result.viewport.name}: texte des avantages mal aligné`,
+      );
+      assert.ok(
+        result.home.trustMinContrast >= 4.5,
+        `${result.viewport.name}: contraste des avantages insuffisant`,
+      );
         assert.deepEqual(result.home.clippedText, [], `${result.viewport.name}: texte rogné`);
         assert.deepEqual(result.home.verticalGaps, [], `${result.viewport.name}: vide vertical excessif`);
         assert.equal(result.home.catalogueCards, 10, `${result.viewport.name}: catalogues manquants`);
@@ -544,6 +607,8 @@ async function main() {
         verticalGaps: result.home.verticalGaps.length,
         weeklyContrast: Number(result.home.weeklyStampMinContrast.toFixed(2)),
         weeklyOverlap: result.home.weeklyDecorationOverlaps,
+        trustContrast: Number(result.home.trustMinContrast.toFixed(2)),
+        trustAlignment: Number(result.home.trustMaxAlignmentDelta.toFixed(2)),
         thumbnails: result.home.visibleThumbnails,
         coloredGuide: result.coloredGuide.decoded
           && result.coloredGuide.visible

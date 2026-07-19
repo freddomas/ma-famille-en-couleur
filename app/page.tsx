@@ -105,7 +105,7 @@ export default function Home() {
 
         <section className="trust-strip" aria-label="Avantages">
           <div>
-            <span className="trust-strip__icon" aria-hidden="true">
+          <span className="trust-strip__icon trust-strip__icon--text" aria-hidden="true">
               A4
             </span>
             <p>
@@ -114,7 +114,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <span className="trust-strip__icon" aria-hidden="true">
+          <span className="trust-strip__icon trust-strip__icon--symbol" aria-hidden="true">
               ✎
             </span>
             <p>
@@ -123,7 +123,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <span className="trust-strip__icon" aria-hidden="true">
+          <span className="trust-strip__icon trust-strip__icon--text" aria-hidden="true">
               40
             </span>
             <p>
@@ -132,7 +132,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <span className="trust-strip__icon" aria-hidden="true">
+          <span className="trust-strip__icon trust-strip__icon--symbol" aria-hidden="true">
               ♡
             </span>
             <p>
