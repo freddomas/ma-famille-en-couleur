@@ -25,6 +25,8 @@ Stripe n’est pas intégré dans cette version.
 - 80 illustrations classées dans la réserve hebdomadaire ;
 - catalogue surprise de 40 images distinctes, sélectionnées sans remise ;
 - compteur lié au chargement et au décodage réels des images ;
+- atelier de coloriage tactile : sélection de 1 à 4 dessins, huit couleurs,
+  deux tailles de crayon, gomme, annulation, modèle coloré et export PNG ;
 - impression d’une page ou d’un catalogue complet.
 
 Le rendu utilise exclusivement `public/assets/coloring/manifest.json`. Il

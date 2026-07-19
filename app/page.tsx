@@ -263,6 +263,17 @@ export default function Home() {
                   </div>
 
                   <div className="print-actions">
+                    <button
+                      id="open-coloring-studio"
+                      className="button button--coloring"
+                      type="button"
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m14.5 4.5 5 5M5 19l3.2-.7L19 7.5a2.1 2.1 0 0 0-3-3L5.7 14.8 5 19Z" />
+                        <path d="m12.8 7.2 4 4" />
+                      </svg>
+                      Colorier ici
+                    </button>
                     <button id="print-page" className="button button--paper" type="button">
                       <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
@@ -323,6 +334,204 @@ export default function Home() {
       </footer>
 
       <div id="status-toast" className="status-toast" role="status" aria-live="polite" />
+      <dialog
+        id="coloring-studio"
+        className="coloring-studio"
+        aria-labelledby="coloring-studio-title"
+      >
+        <div className="coloring-studio__shell">
+          <header className="coloring-studio__header">
+            <button
+              id="close-coloring-studio"
+              className="studio-icon-button"
+              type="button"
+              aria-label="Fermer l’atelier de coloriage"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 6 12 12M18 6 6 18" />
+              </svg>
+            </button>
+            <div>
+              <p className="coloring-studio__brand">Ma famille en couleur</p>
+              <h2 id="coloring-studio-title">Mon atelier de coloriage</h2>
+            </div>
+            <button
+              id="restart-coloring-selection"
+              className="studio-text-button"
+              type="button"
+              hidden
+            >
+              Changer de dessins
+            </button>
+          </header>
+
+          <section
+            id="coloring-selection"
+            className="coloring-selection"
+            aria-labelledby="coloring-selection-title"
+          >
+            <div className="coloring-selection__intro">
+              <span className="coloring-step" aria-hidden="true">1</span>
+              <div>
+                <h3 id="coloring-selection-title">Choisis tes dessins</h3>
+                <p>Touche un ou plusieurs dessins de cette planche.</p>
+              </div>
+            </div>
+            <div
+              id="coloring-choice-grid"
+              className="coloring-choice-grid"
+              aria-label="Dessins disponibles"
+            />
+            <div className="coloring-selection__footer">
+              <p id="coloring-selection-status" role="status" aria-live="polite">
+                Aucun dessin choisi
+              </p>
+              <button
+                id="start-coloring"
+                className="button button--coloring button--studio-start"
+                type="button"
+                disabled
+              >
+                Commencer à colorier
+              </button>
+            </div>
+          </section>
+
+          <section
+            id="coloring-workspace"
+            className="coloring-workspace"
+            aria-labelledby="coloring-drawing-title"
+            hidden
+          >
+            <nav
+              id="coloring-drawing-tabs"
+              className="coloring-drawing-tabs"
+              aria-label="Dessins choisis"
+            />
+
+            <div className="coloring-canvas-panel">
+              <div className="coloring-canvas-heading">
+                <div>
+                  <span className="coloring-step" aria-hidden="true">2</span>
+                  <h3 id="coloring-drawing-title">À toi de colorier !</h3>
+                </div>
+                <button
+                  id="toggle-coloring-guide"
+                  className="studio-text-button"
+                  type="button"
+                  aria-pressed="false"
+                >
+                  Voir le modèle
+                </button>
+              </div>
+
+              <div id="coloring-canvas-frame" className="coloring-canvas-frame">
+                <canvas
+                  id="coloring-canvas"
+                  width="627"
+                  height="627"
+                  aria-label="Zone de coloriage interactive"
+                />
+                <canvas
+                  id="coloring-line-art-layer"
+                  className="coloring-line-art-layer"
+                  width="627"
+                  height="627"
+                  aria-hidden="true"
+                />
+                <img
+                  id="coloring-line-art"
+                  className="coloring-source-image"
+                  alt=""
+                  draggable="false"
+                  hidden
+                />
+                <img
+                  id="coloring-guide-image"
+                  className="coloring-guide-image"
+                  alt=""
+                  draggable="false"
+                  hidden
+                />
+                <p id="coloring-canvas-error" className="asset-error" role="alert" hidden />
+              </div>
+            </div>
+
+            <div className="coloring-controls">
+              <fieldset className="coloring-palette">
+                <legend>Choisis une couleur</legend>
+                <div id="coloring-colors" className="coloring-colors" />
+              </fieldset>
+
+              <div className="coloring-tools" aria-label="Outils de coloriage">
+                <button
+                  className="coloring-tool is-active"
+                  type="button"
+                  data-coloring-tool="brush"
+                  aria-pressed="true"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m14.5 4.5 5 5M5 19l3.2-.7L19 7.5a2.1 2.1 0 0 0-3-3L5.7 14.8 5 19Z" />
+                  </svg>
+                  Crayon
+                </button>
+                <button
+                  className="coloring-tool"
+                  type="button"
+                  data-coloring-tool="eraser"
+                  aria-pressed="false"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m7 17-3-3L14.5 3.5a2.1 2.1 0 0 1 3 0l3 3a2.1 2.1 0 0 1 0 3L11 19H7l-3-3" />
+                    <path d="M11 19h10" />
+                  </svg>
+                  Gomme
+                </button>
+                <div className="coloring-sizes" aria-label="Taille du crayon">
+                  <button
+                    className="coloring-size"
+                    type="button"
+                    data-coloring-size="24"
+                    aria-label="Crayon fin"
+                    aria-pressed="false"
+                  >
+                    <span className="coloring-size__dot coloring-size__dot--small" />
+                  </button>
+                  <button
+                    className="coloring-size is-active"
+                    type="button"
+                    data-coloring-size="48"
+                    aria-label="Gros crayon"
+                    aria-pressed="true"
+                  >
+                    <span className="coloring-size__dot coloring-size__dot--large" />
+                  </button>
+                </div>
+                <button id="undo-coloring" className="coloring-tool" type="button" disabled>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9 8 4 12l5 4M5 12h8a6 6 0 0 1 6 6" />
+                  </svg>
+                  Annuler
+                </button>
+                <button id="clear-coloring" className="coloring-tool" type="button" disabled>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13" />
+                  </svg>
+                  Effacer
+                </button>
+                <button id="download-coloring" className="coloring-tool" type="button">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3v12m-4-4 4 4 4-4M5 20h14" />
+                  </svg>
+                  Garder
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <p id="coloring-live-status" className="sr-only" role="status" aria-live="polite" />
+        </div>
+      </dialog>
       <div id="print-area" className="print-area" aria-hidden="true" />
 
       <Script src="/catalogue-runtime.js" strategy="afterInteractive" />

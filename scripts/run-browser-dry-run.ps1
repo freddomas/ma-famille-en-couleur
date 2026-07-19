@@ -12,9 +12,12 @@ if (-not (Test-Path -LiteralPath $chrome -PathType Leaf)) {
   throw "Google Chrome est introuvable : $chrome"
 }
 
-$profile = Join-Path $root "tmp\chrome-dry-run-$Port"
+$runId = [System.Guid]::NewGuid().ToString("N")
+$profile = Join-Path $root "tmp\chrome-dry-run-$Port-$runId"
 $nextStdout = Join-Path $root "tmp\next-dry-run.stdout.log"
 $nextStderr = Join-Path $root "tmp\next-dry-run.stderr.log"
+$chromeStdout = Join-Path $root "tmp\chrome-dry-run.stdout.log"
+$chromeStderr = Join-Path $root "tmp\chrome-dry-run.stderr.log"
 $resolvedRoot = [System.IO.Path]::GetFullPath($root)
 $resolvedProfile = [System.IO.Path]::GetFullPath($profile)
 if (-not $resolvedProfile.StartsWith($resolvedRoot, [System.StringComparison]::OrdinalIgnoreCase)) {
@@ -57,6 +60,8 @@ $arguments = @(
   "--headless=new"
   "--disable-gpu"
   "--disable-crash-reporter"
+  "--disable-extensions"
+  "--disable-background-networking"
   "--no-first-run"
   "--no-default-browser-check"
   "--remote-debugging-address=127.0.0.1"
@@ -68,6 +73,8 @@ $arguments = @(
 $chromeProcess = Start-Process `
   -FilePath $chrome `
   -ArgumentList $arguments `
+  -RedirectStandardOutput $chromeStdout `
+  -RedirectStandardError $chromeStderr `
   -WindowStyle Hidden `
   -PassThru
 
@@ -88,7 +95,12 @@ try {
     }
   }
   if (-not $ready) {
-    throw "Chrome DevTools n'a pas démarré sur le port $Port."
+    $chromeDetails = if (Test-Path -LiteralPath $chromeStderr) {
+      (Get-Content -LiteralPath $chromeStderr -Raw).Trim()
+    } else {
+      "Aucun journal Chrome disponible."
+    }
+    throw "Chrome DevTools indisponible sur le port $Port. $chromeDetails"
   }
   & node `
     (Join-Path $PSScriptRoot "browser-dry-run.cjs") `

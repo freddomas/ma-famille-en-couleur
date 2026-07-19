@@ -62,8 +62,37 @@
     "mobileFirstTapColored": true,
     "mobileSecondTapLineArt": true,
     "rotationDegrees": 180,
-    "desktopMidTransform": "matrix3d(-0.902596, 0, -0.430488, 0, 0, 1, 0, 0, 0.430488, 0, -0.902596, 0, 0, 0, 0, 1)",
+    "desktopMidTransform": "matrix3d(-0.866566, 0, -0.499062, 0, 0, 1, 0, 0, 0.499062, 0, -0.866566, 0, 0, 0, 0, 1)",
     "printUsesLineArt": true
+  },
+  "coloringStudio": {
+    "selection": {
+      "choices": 4,
+      "decodedChoices": 4,
+      "startDisabled": true,
+      "horizontalOverflow": false,
+      "minChoiceWidth": 162
+    },
+    "workspace": {
+      "tabs": 2,
+      "canvasWidth": 768,
+      "canvasHeight": 768,
+      "frameWidth": 336,
+      "frameHeight": 336,
+      "decodedLineArt": true,
+      "decodedGuide": true,
+      "lineArtInkPixels": 46241,
+      "lineArtLayerVisible": true,
+      "minControlWidth": 48,
+      "minControlHeight": 48,
+      "horizontalOverflow": false
+    },
+    "touchStrokePixels": 17319,
+    "pixelsAfterUndo": 0,
+    "restoredPixels": 17319,
+    "selectedDrawings": 2,
+    "guideToggle": true,
+    "focusReturned": true
   },
   "mobile": {
     "innerWidth": 360,
@@ -72,21 +101,21 @@
     "openedCatalogue": "animaux-sauvages",
     "overlayOpen": true,
     "pageScrollPreserved": true,
-    "viewerTop": 218,
+    "viewerTop": 71,
     "backButtonFocused": true,
-    "sheetTop": 494,
-    "sheetHeight": 994,
+    "sheetTop": 339,
+    "sheetHeight": 1569,
     "sheetBackground": "rgb(255, 255, 255)",
     "sheetVisibility": "visible",
-    "sheetHeaderTop": 506,
-    "firstDrawingTop": 581,
-    "firstDrawingHeight": 415,
+    "sheetHeaderTop": 351,
+    "firstDrawingTop": 392,
+    "firstDrawingHeight": 363,
     "decodedImages": 4,
     "previewObjectFit": "contain"
   },
   "invalid": {
-    "counter": 26,
-    "previews": 26,
+    "counter": 34,
+    "previews": 34,
     "error": "Échec : chargement impossible pour assets/coloring/active/image-volontairement-absente.png",
     "openDisabled": true,
     "printDisabled": true,
@@ -99,9 +128,9 @@
         "source": "network",
         "level": "error",
         "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "timestamp": 1784412617864.179,
+        "timestamp": 1784422931503.279,
         "url": "http://127.0.0.1:8080/assets/coloring/active/image-volontairement-absente.png",
-        "networkRequestId": "27516.1311"
+        "networkRequestId": "30708.1352"
       }
     }
   ],

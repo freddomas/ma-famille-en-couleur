@@ -12,6 +12,23 @@ const state = {
   surpriseGeneration: 0,
   toastTimer: null,
   catalogueReturnTarget: null,
+  coloring: {
+    returnTarget: null,
+    pageKey: null,
+    pageEntries: [],
+    selectedIds: new Set(),
+    entries: [],
+    activeIndex: 0,
+    activeColor: "#ef3f4f",
+    tool: "brush",
+    size: 48,
+    drawing: false,
+    lastPoint: null,
+    snapshots: new Map(),
+    histories: new Map(),
+    dirtyIds: new Set(),
+    loadToken: 0,
+  },
 };
 
 if (typeof window !== "undefined") {
@@ -228,6 +245,37 @@ function bindGlobalEvents() {
   document
     .getElementById("close-catalogue")
     ?.addEventListener("click", closeCatalogueViewer);
+  document
+    .getElementById("open-coloring-studio")
+    ?.addEventListener("click", openColoringStudio);
+  document
+    .getElementById("close-coloring-studio")
+    ?.addEventListener("click", closeColoringStudio);
+  document
+    .getElementById("restart-coloring-selection")
+    ?.addEventListener("click", showColoringSelection);
+  document
+    .getElementById("start-coloring")
+    ?.addEventListener("click", startColoring);
+  document
+    .getElementById("toggle-coloring-guide")
+    ?.addEventListener("click", toggleColoringGuide);
+  document
+    .getElementById("undo-coloring")
+    ?.addEventListener("click", undoColoring);
+  document
+    .getElementById("clear-coloring")
+    ?.addEventListener("click", clearColoring);
+  document
+    .getElementById("download-coloring")
+    ?.addEventListener("click", downloadColoring);
+  document
+    .getElementById("coloring-studio")
+    ?.addEventListener("cancel", (event) => {
+      event.preventDefault();
+      closeColoringStudio();
+    });
+  bindColoringCanvas();
   document.addEventListener("click", handleColorFlipClick);
   window.addEventListener("beforeprint", resetColorFlips);
   window.addEventListener("afterprint", clearPrintArea);
@@ -244,6 +292,7 @@ function bindGlobalEvents() {
     true,
   );
   document.addEventListener("keydown", (event) => {
+    if (document.getElementById("coloring-studio")?.open) return;
     if (
       event.key === "Escape" &&
       document.getElementById("atelier")?.classList.contains("is-catalogue-open")
@@ -424,6 +473,607 @@ function closeCatalogueViewer() {
   if (returnTarget instanceof HTMLElement && returnTarget.isConnected) {
     returnTarget.focus({ preventScroll: true });
   }
+}
+
+const COLORING_COLORS = [
+  { value: "#ef3f4f", label: "Rouge fraise" },
+  { value: "#f47a2a", label: "Orange mandarine" },
+  { value: "#f3c623", label: "Jaune soleil" },
+  { value: "#39a86b", label: "Vert feuille" },
+  { value: "#2684e8", label: "Bleu ciel" },
+  { value: "#7454c7", label: "Violet" },
+  { value: "#e84d9b", label: "Rose" },
+  { value: "#875135", label: "Brun" },
+];
+
+function openColoringStudio(event) {
+  const dialog = document.getElementById("coloring-studio");
+  const catalogue = selectedCatalogue();
+  const page = catalogue ? buildPages(catalogue)[state.selectedPage - 1] : null;
+  if (!(dialog instanceof HTMLDialogElement) || !page) return;
+
+  const pageKey = `${catalogue.id}:${state.selectedPage}`;
+  state.coloring.returnTarget =
+    event?.currentTarget instanceof HTMLElement
+      ? event.currentTarget
+      : document.activeElement;
+  state.coloring.pageKey = pageKey;
+  state.coloring.pageEntries = page.entries;
+  state.coloring.selectedIds = new Set();
+  state.coloring.entries = [];
+  state.coloring.activeIndex = 0;
+  state.coloring.snapshots = new Map();
+  state.coloring.histories = new Map();
+  state.coloring.dirtyIds = new Set();
+  state.coloring.loadToken += 1;
+
+  renderColoringPalette();
+  renderColoringSelection();
+  showColoringSelection();
+  const atelier = document.getElementById("atelier");
+  if (atelier?.classList.contains("is-catalogue-open")) {
+    atelier.setAttribute("aria-hidden", "true");
+  }
+  dialog.showModal();
+  document.body.classList.add("coloring-studio-open");
+  window.requestAnimationFrame(() => {
+    document.querySelector("[data-coloring-choice]")?.focus({
+      preventScroll: true,
+    });
+  });
+}
+
+function closeColoringStudio() {
+  const dialog = document.getElementById("coloring-studio");
+  if (!(dialog instanceof HTMLDialogElement) || !dialog.open) return;
+  stopColoringStroke();
+  saveCurrentColoringSnapshot();
+  dialog.close();
+  document.body.classList.remove("coloring-studio-open");
+  hideColoringGuide();
+  document
+    .getElementById("atelier")
+    ?.removeAttribute("aria-hidden");
+
+  const returnTarget = state.coloring.returnTarget;
+  state.coloring.returnTarget = null;
+  if (returnTarget instanceof HTMLElement && returnTarget.isConnected) {
+    returnTarget.focus({ preventScroll: true });
+  }
+}
+
+function renderColoringSelection() {
+  const target = document.getElementById("coloring-choice-grid");
+  if (!target) return;
+  target.innerHTML = state.coloring.pageEntries
+    .map(
+      (entry, index) => `
+        <button
+          class="coloring-choice"
+          type="button"
+          data-coloring-choice="${escapeAttribute(entry.id)}"
+          aria-pressed="false"
+          aria-label="Choisir ${escapeAttribute(entry.title)}"
+        >
+          <span class="coloring-choice__number" aria-hidden="true">${index + 1}</span>
+          <span class="coloring-choice__image-wrap">
+            <img
+              src="${escapeAttribute(entry.path)}"
+              alt="${escapeAttribute(entry.title)}"
+              data-asset-id="${escapeAttribute(entry.id)}-studio-choice"
+              loading="eager"
+              decoding="async"
+            />
+          </span>
+          <strong>${escapeHtml(entry.title)}</strong>
+          <span class="coloring-choice__check" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></svg>
+          </span>
+        </button>
+      `,
+    )
+    .join("");
+
+  target.querySelectorAll("[data-coloring-choice]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.dataset.coloringChoice;
+      if (!id) return;
+      if (state.coloring.selectedIds.has(id)) {
+        state.coloring.selectedIds.delete(id);
+      } else {
+        state.coloring.selectedIds.add(id);
+      }
+      const selected = state.coloring.selectedIds.has(id);
+      button.classList.toggle("is-selected", selected);
+      button.setAttribute("aria-pressed", String(selected));
+      updateColoringSelectionStatus();
+    });
+  });
+
+  target.querySelectorAll("img").forEach((image) => {
+    image.addEventListener("error", () => {
+      const choice = image.closest(".coloring-choice");
+      if (!choice) return;
+      choice.disabled = true;
+      choice.classList.add("has-error");
+      image.parentElement.innerHTML =
+        '<p class="asset-error" role="alert">Ce dessin est indisponible.</p>';
+    });
+  });
+  updateColoringSelectionStatus();
+}
+
+function updateColoringSelectionStatus() {
+  const count = state.coloring.selectedIds.size;
+  const status = document.getElementById("coloring-selection-status");
+  const startButton = document.getElementById("start-coloring");
+  if (status) {
+    status.textContent =
+      count === 0
+        ? "Aucun dessin choisi"
+        : `${count} dessin${count > 1 ? "s" : ""} choisi${count > 1 ? "s" : ""}`;
+  }
+  if (startButton) startButton.disabled = count === 0;
+}
+
+function showColoringSelection() {
+  saveCurrentColoringSnapshot();
+  stopColoringStroke();
+  const selection = document.getElementById("coloring-selection");
+  const workspace = document.getElementById("coloring-workspace");
+  const restart = document.getElementById("restart-coloring-selection");
+  if (selection) selection.hidden = false;
+  if (workspace) workspace.hidden = true;
+  if (restart) restart.hidden = true;
+  hideColoringGuide();
+  document.querySelector("[data-coloring-choice]")?.focus({
+    preventScroll: true,
+  });
+}
+
+function startColoring() {
+  const entries = state.coloring.pageEntries.filter((entry) =>
+    state.coloring.selectedIds.has(entry.id),
+  );
+  if (!entries.length) return;
+
+  state.coloring.entries = entries;
+  state.coloring.activeIndex = Math.min(
+    state.coloring.activeIndex,
+    entries.length - 1,
+  );
+  const selection = document.getElementById("coloring-selection");
+  const workspace = document.getElementById("coloring-workspace");
+  const restart = document.getElementById("restart-coloring-selection");
+  if (selection) selection.hidden = true;
+  if (workspace) workspace.hidden = false;
+  if (restart) restart.hidden = false;
+  renderColoringTabs();
+  loadActiveColoring();
+}
+
+function renderColoringTabs() {
+  const target = document.getElementById("coloring-drawing-tabs");
+  if (!target) return;
+  target.innerHTML = state.coloring.entries
+    .map(
+      (entry, index) => `
+        <button
+          class="coloring-drawing-tab ${index === state.coloring.activeIndex ? "is-active" : ""}"
+          type="button"
+          data-coloring-index="${index}"
+          aria-current="${index === state.coloring.activeIndex ? "true" : "false"}"
+          aria-label="Colorier ${escapeAttribute(entry.title)}"
+        >
+          <img src="${escapeAttribute(entry.path)}" alt="" aria-hidden="true" />
+          <span>${index + 1}</span>
+        </button>
+      `,
+    )
+    .join("");
+  target.querySelectorAll("[data-coloring-index]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const index = Number(button.dataset.coloringIndex);
+      if (!Number.isInteger(index) || index === state.coloring.activeIndex) return;
+      saveCurrentColoringSnapshot();
+      state.coloring.activeIndex = index;
+      renderColoringTabs();
+      loadActiveColoring();
+    });
+  });
+}
+
+function renderColoringPalette() {
+  const target = document.getElementById("coloring-colors");
+  if (!target) return;
+  target.innerHTML = COLORING_COLORS.map(
+    (color) => `
+      <button
+        class="coloring-color ${color.value === state.coloring.activeColor ? "is-active" : ""}"
+        type="button"
+        data-coloring-color="${escapeAttribute(color.value)}"
+        style="--coloring-swatch:${escapeAttribute(color.value)}"
+        aria-label="${escapeAttribute(color.label)}"
+        aria-pressed="${color.value === state.coloring.activeColor}"
+      ><span aria-hidden="true"></span></button>
+    `,
+  ).join("");
+
+  target.querySelectorAll("[data-coloring-color]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.coloring.activeColor = button.dataset.coloringColor;
+      setColoringTool("brush");
+      target.querySelectorAll("[data-coloring-color]").forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      announceColoring(
+        button.getAttribute("aria-label") || "Nouvelle couleur choisie",
+      );
+    });
+  });
+
+  document.querySelectorAll("[data-coloring-tool]").forEach((button) => {
+    if (button.dataset.coloringBound === "true") return;
+    button.dataset.coloringBound = "true";
+    button.addEventListener("click", () => {
+      setColoringTool(button.dataset.coloringTool);
+    });
+  });
+  document.querySelectorAll("[data-coloring-size]").forEach((button) => {
+    if (button.dataset.coloringBound === "true") return;
+    button.dataset.coloringBound = "true";
+    button.addEventListener("click", () => {
+      const size = Number(button.dataset.coloringSize);
+      if (!Number.isFinite(size)) return;
+      state.coloring.size = size;
+      document.querySelectorAll("[data-coloring-size]").forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      announceColoring(size <= 24 ? "Crayon fin" : "Gros crayon");
+    });
+  });
+}
+
+function setColoringTool(tool) {
+  if (tool !== "brush" && tool !== "eraser") return;
+  state.coloring.tool = tool;
+  document.querySelectorAll("[data-coloring-tool]").forEach((button) => {
+    const active = button.dataset.coloringTool === tool;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+  announceColoring(tool === "eraser" ? "Gomme choisie" : "Crayon choisi");
+}
+
+function activeColoringEntry() {
+  return state.coloring.entries[state.coloring.activeIndex] || null;
+}
+
+async function loadActiveColoring() {
+  const entry = activeColoringEntry();
+  const canvas = document.getElementById("coloring-canvas");
+  const lineArt = document.getElementById("coloring-line-art");
+  const lineArtLayer = document.getElementById("coloring-line-art-layer");
+  const guide = document.getElementById("coloring-guide-image");
+  const error = document.getElementById("coloring-canvas-error");
+  if (
+    !entry ||
+    !(canvas instanceof HTMLCanvasElement) ||
+    !(lineArt instanceof HTMLImageElement) ||
+    !(lineArtLayer instanceof HTMLCanvasElement) ||
+    !(guide instanceof HTMLImageElement)
+  ) {
+    return;
+  }
+
+  const loadToken = ++state.coloring.loadToken;
+  stopColoringStroke();
+  hideColoringGuide();
+  if (error) error.hidden = true;
+  canvas.hidden = true;
+  lineArtLayer.hidden = true;
+  lineArt.hidden = true;
+  guide.hidden = true;
+  lineArt.src = "";
+  guide.src = "";
+  lineArt.alt = "";
+  guide.alt = `Modèle coloré : ${entry.title}`;
+
+  try {
+    await Promise.all([
+      loadImageElement(lineArt, entry.path),
+      loadImageElement(guide, entry.coloredPath),
+    ]);
+    if (loadToken !== state.coloring.loadToken) return;
+    const sourceWidth = entry.width || lineArt.naturalWidth || 627;
+    const sourceHeight = entry.height || lineArt.naturalHeight || 627;
+    const canvasScale = Math.min(1, 768 / Math.max(sourceWidth, sourceHeight));
+    canvas.width = Math.round(sourceWidth * canvasScale);
+    canvas.height = Math.round(sourceHeight * canvasScale);
+    lineArtLayer.width = canvas.width;
+    lineArtLayer.height = canvas.height;
+    const inkPixels = renderColoringLineArt(lineArt, lineArtLayer);
+    if (inkPixels < 100) {
+      throw new Error("le dessin ne contient pas de tracé visible");
+    }
+    await restoreColoringSnapshot(entry.id);
+    canvas.hidden = false;
+    lineArtLayer.hidden = false;
+    updateColoringControls();
+    document.getElementById("coloring-drawing-title").textContent = entry.title;
+    announceColoring(`${entry.title} est prêt à colorier`);
+  } catch (loadError) {
+    if (loadToken !== state.coloring.loadToken) return;
+    if (error) {
+      error.hidden = false;
+      error.textContent = `Ce dessin ne peut pas être chargé : ${loadError.message}`;
+    }
+    updateColoringControls(true);
+  }
+}
+
+function loadImageElement(image, path) {
+  return new Promise((resolve, reject) => {
+    if (!path) {
+      reject(new Error("chemin manquant"));
+      return;
+    }
+    image.onload = async () => {
+      try {
+        if (typeof image.decode === "function") await image.decode();
+        resolve();
+      } catch (error) {
+        reject(new Error(`${path} ne peut pas être décodée`));
+      }
+    };
+    image.onerror = () => reject(new Error(`chargement impossible pour ${path}`));
+    image.src = path;
+  });
+}
+
+function renderColoringLineArt(image, target) {
+  const context = target.getContext("2d", { willReadFrequently: true });
+  if (!context) return 0;
+  context.clearRect(0, 0, target.width, target.height);
+  context.drawImage(image, 0, 0, target.width, target.height);
+  const pixels = context.getImageData(0, 0, target.width, target.height);
+  let inkPixels = 0;
+  for (let index = 0; index < pixels.data.length; index += 4) {
+    const sourceAlpha = pixels.data[index + 3] / 255;
+    const luminance =
+      pixels.data[index] * 0.2126 +
+      pixels.data[index + 1] * 0.7152 +
+      pixels.data[index + 2] * 0.0722;
+    const ink = Math.max(0, Math.min(1, (238 - luminance) / 205));
+    const alpha = Math.round(255 * ink * sourceAlpha);
+    pixels.data[index] = 24;
+    pixels.data[index + 1] = 39;
+    pixels.data[index + 2] = 35;
+    pixels.data[index + 3] = alpha;
+    if (alpha > 24) inkPixels += 1;
+  }
+  context.putImageData(pixels, 0, 0);
+  target.dataset.inkPixels = String(inkPixels);
+  return inkPixels;
+}
+
+function bindColoringCanvas() {
+  const canvas = document.getElementById("coloring-canvas");
+  if (!(canvas instanceof HTMLCanvasElement)) return;
+  canvas.addEventListener("pointerdown", startColoringStroke);
+  canvas.addEventListener("pointermove", continueColoringStroke);
+  canvas.addEventListener("pointerup", stopColoringStroke);
+  canvas.addEventListener("pointercancel", stopColoringStroke);
+  canvas.addEventListener("lostpointercapture", stopColoringStroke);
+}
+
+function startColoringStroke(event) {
+  if (event.button !== undefined && event.button !== 0) return;
+  const canvas = event.currentTarget;
+  if (!(canvas instanceof HTMLCanvasElement) || canvas.hidden) return;
+  event.preventDefault();
+  const entry = activeColoringEntry();
+  if (!entry) return;
+  pushColoringHistory(entry.id, canvas);
+  state.coloring.drawing = true;
+  state.coloring.lastPoint = coloringPoint(event, canvas);
+  canvas.setPointerCapture?.(event.pointerId);
+  drawColoringSegment(canvas, state.coloring.lastPoint, state.coloring.lastPoint);
+}
+
+function continueColoringStroke(event) {
+  if (!state.coloring.drawing) return;
+  const canvas = event.currentTarget;
+  if (!(canvas instanceof HTMLCanvasElement)) return;
+  event.preventDefault();
+  const nextPoint = coloringPoint(event, canvas);
+  drawColoringSegment(canvas, state.coloring.lastPoint, nextPoint);
+  state.coloring.lastPoint = nextPoint;
+}
+
+function stopColoringStroke(event) {
+  if (!state.coloring.drawing) return;
+  if (event?.currentTarget instanceof HTMLCanvasElement) {
+    if (event.currentTarget.hasPointerCapture?.(event.pointerId)) {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    }
+  }
+  state.coloring.drawing = false;
+  state.coloring.lastPoint = null;
+  const entry = activeColoringEntry();
+  if (entry) state.coloring.dirtyIds.add(entry.id);
+  updateColoringControls();
+}
+
+function coloringPoint(event, canvas) {
+  const rect = canvas.getBoundingClientRect();
+  return {
+    x: ((event.clientX - rect.left) / rect.width) * canvas.width,
+    y: ((event.clientY - rect.top) / rect.height) * canvas.height,
+  };
+}
+
+function drawColoringSegment(canvas, from, to) {
+  if (!from || !to) return;
+  const context = canvas.getContext("2d");
+  if (!context) return;
+  const scale = canvas.width / 627;
+  context.save();
+  context.globalCompositeOperation =
+    state.coloring.tool === "eraser" ? "destination-out" : "source-over";
+  context.strokeStyle = state.coloring.activeColor;
+  context.fillStyle = state.coloring.activeColor;
+  context.lineWidth = state.coloring.size * scale;
+  context.lineCap = "round";
+  context.lineJoin = "round";
+  context.beginPath();
+  context.moveTo(from.x, from.y);
+  context.lineTo(to.x, to.y);
+  context.stroke();
+  if (from.x === to.x && from.y === to.y) {
+    context.beginPath();
+    context.arc(to.x, to.y, context.lineWidth / 2, 0, Math.PI * 2);
+    context.fill();
+  }
+  context.restore();
+}
+
+function pushColoringHistory(id, canvas) {
+  const context = canvas.getContext("2d");
+  if (!context) return;
+  const history = state.coloring.histories.get(id) || [];
+  history.push(context.getImageData(0, 0, canvas.width, canvas.height));
+  if (history.length > 4) history.shift();
+  state.coloring.histories.set(id, history);
+}
+
+function undoColoring() {
+  const entry = activeColoringEntry();
+  const canvas = document.getElementById("coloring-canvas");
+  if (!entry || !(canvas instanceof HTMLCanvasElement)) return;
+  const history = state.coloring.histories.get(entry.id) || [];
+  const previous = history.pop();
+  if (!previous) return;
+  const context = canvas.getContext("2d");
+  context?.putImageData(previous, 0, 0);
+  state.coloring.histories.set(entry.id, history);
+  state.coloring.dirtyIds.add(entry.id);
+  updateColoringControls();
+  announceColoring("Dernier trait annulé");
+}
+
+function clearColoring() {
+  const entry = activeColoringEntry();
+  const canvas = document.getElementById("coloring-canvas");
+  if (!entry || !(canvas instanceof HTMLCanvasElement)) return;
+  pushColoringHistory(entry.id, canvas);
+  canvas.getContext("2d")?.clearRect(0, 0, canvas.width, canvas.height);
+  state.coloring.dirtyIds.delete(entry.id);
+  updateColoringControls();
+  announceColoring("Le dessin est de nouveau blanc");
+}
+
+function saveCurrentColoringSnapshot() {
+  const entry = activeColoringEntry();
+  const canvas = document.getElementById("coloring-canvas");
+  if (!entry || !(canvas instanceof HTMLCanvasElement) || canvas.hidden) return;
+  state.coloring.snapshots.set(entry.id, canvas.toDataURL("image/png"));
+}
+
+async function restoreColoringSnapshot(id) {
+  const canvas = document.getElementById("coloring-canvas");
+  if (!(canvas instanceof HTMLCanvasElement)) return;
+  const context = canvas.getContext("2d");
+  context?.clearRect(0, 0, canvas.width, canvas.height);
+  const snapshot = state.coloring.snapshots.get(id);
+  if (!snapshot || !context) return;
+  const image = new Image();
+  await new Promise((resolve, reject) => {
+    image.onload = resolve;
+    image.onerror = reject;
+    image.src = snapshot;
+  });
+  context.drawImage(image, 0, 0, canvas.width, canvas.height);
+}
+
+function toggleColoringGuide() {
+  const button = document.getElementById("toggle-coloring-guide");
+  const guide = document.getElementById("coloring-guide-image");
+  if (!button || !(guide instanceof HTMLImageElement) || !guide.complete) return;
+  const show = guide.hidden;
+  guide.hidden = !show;
+  button.setAttribute("aria-pressed", String(show));
+  button.textContent = show ? "Reprendre mon dessin" : "Voir le modèle";
+  announceColoring(show ? "Modèle coloré affiché" : "Ton coloriage est affiché");
+}
+
+function hideColoringGuide() {
+  const button = document.getElementById("toggle-coloring-guide");
+  const guide = document.getElementById("coloring-guide-image");
+  if (guide) guide.hidden = true;
+  if (button) {
+    button.setAttribute("aria-pressed", "false");
+    button.textContent = "Voir le modèle";
+  }
+}
+
+function updateColoringControls(disabled = false) {
+  const entry = activeColoringEntry();
+  const history = entry ? state.coloring.histories.get(entry.id) || [] : [];
+  const undo = document.getElementById("undo-coloring");
+  const clear = document.getElementById("clear-coloring");
+  const download = document.getElementById("download-coloring");
+  if (undo) undo.disabled = disabled || history.length === 0;
+  if (clear) {
+    clear.disabled =
+      disabled || !entry || !state.coloring.dirtyIds.has(entry.id);
+  }
+  if (download) download.disabled = disabled || !entry;
+}
+
+async function downloadColoring() {
+  const entry = activeColoringEntry();
+  const source = document.getElementById("coloring-canvas");
+  const lineArt = document.getElementById("coloring-line-art-layer");
+  if (
+    !entry ||
+    !(source instanceof HTMLCanvasElement) ||
+    !(lineArt instanceof HTMLCanvasElement) ||
+    lineArt.hidden
+  ) {
+    return;
+  }
+
+  const output = document.createElement("canvas");
+  output.width = source.width;
+  output.height = source.height;
+  const context = output.getContext("2d");
+  if (!context) return;
+  context.fillStyle = "#ffffff";
+  context.fillRect(0, 0, output.width, output.height);
+  context.drawImage(source, 0, 0);
+  context.drawImage(lineArt, 0, 0, output.width, output.height);
+
+  const link = document.createElement("a");
+  link.download = `mon-coloriage-${slugify(entry.title)}.png`;
+  link.href = output.toDataURL("image/png");
+  link.click();
+  announceColoring("Ton coloriage est enregistré");
+}
+
+function announceColoring(message) {
+  const target = document.getElementById("coloring-live-status");
+  if (target) target.textContent = message;
+}
+
+function slugify(value) {
+  return normalizeText(value)
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 }
 
 function selectPage(page) {

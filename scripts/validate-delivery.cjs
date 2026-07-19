@@ -107,8 +107,29 @@ async function main() {
   check(/aria-live/.test(appSource), "Zone aria-live surprise absente");
   check(/id="print-page"/.test(pageSource), "Bouton impression page absent");
   check(/id="print-catalogue"/.test(pageSource), "Bouton impression catalogue absent");
+  check(
+    /id="open-coloring-studio"/.test(pageSource),
+    "Bouton de coloriage interactif absent",
+  );
+  check(
+    /id="coloring-choice-grid"/.test(pageSource),
+    "Sélection des quatre dessins absente",
+  );
+  check(/id="coloring-canvas"/.test(pageSource), "Canevas de coloriage absent");
   check(/data-color-flip/.test(appSource), "Commande de retournement absente");
   check(/handleColorFlipClick/.test(appSource), "Alternance au clic absente");
+  check(/openColoringStudio/.test(appSource), "Ouverture de l’atelier absente");
+  check(/startColoringStroke/.test(appSource), "Dessin tactile absent");
+  check(/destination-out/.test(appSource), "Gomme du canevas absente");
+  check(/downloadColoring/.test(appSource), "Export du coloriage absent");
+  check(
+    /touch-action:\s*none/.test(stylesSource),
+    "Le canevas doit neutraliser le défilement tactile",
+  );
+  check(
+    /grid-template-columns:\s*1fr/.test(stylesSource),
+    "Adaptation mobile de la planche absente",
+  );
   check(/rotateY\(180deg\)/.test(stylesSource), "Rotation verticale 180° absente");
   check(!/pointerType === "mouse"/.test(appSource), "Ancien maintien souris encore actif");
   check(!/handleGuidePointerDown/.test(appSource), "Ancien appui long encore actif");

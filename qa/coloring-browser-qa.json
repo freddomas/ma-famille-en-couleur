@@ -1,0 +1,216 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "viewport": {
+        "name": "phone-320",
+        "width": 320,
+        "height": 568,
+        "mobile": true
+      },
+      "catalogue": {
+        "images": 4,
+        "decoded": 4,
+        "horizontalOverflow": false,
+        "colorButtonWidth": 296,
+        "colorButtonHeight": 56,
+        "sheetWidth": 296,
+        "widestDrawing": 272
+      },
+      "selection": {
+        "choices": 4,
+        "decoded": 4,
+        "horizontalOverflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "frameWidth": 238,
+        "frameHeight": 238,
+        "frameLeft": 41,
+        "frameRight": 279,
+        "canvasWidth": 768,
+        "canvasHeight": 768,
+        "lineArt": 1254,
+        "guide": 1254,
+        "lineArtInkPixels": 46241,
+        "lineArtLayerHidden": false,
+        "lineArtHidden": true,
+        "lineArtDisplay": "none",
+        "lineArtVisibility": "visible",
+        "lineArtOpacity": "1",
+        "lineArtZIndex": "auto",
+        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "viewport": {
+        "name": "phone-390",
+        "width": 390,
+        "height": 844,
+        "mobile": true
+      },
+      "catalogue": {
+        "images": 4,
+        "decoded": 4,
+        "horizontalOverflow": false,
+        "colorButtonWidth": 366,
+        "colorButtonHeight": 56,
+        "sheetWidth": 366,
+        "widestDrawing": 342
+      },
+      "selection": {
+        "choices": 4,
+        "decoded": 4,
+        "horizontalOverflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "frameWidth": 366,
+        "frameHeight": 366,
+        "frameLeft": 12,
+        "frameRight": 378,
+        "canvasWidth": 768,
+        "canvasHeight": 768,
+        "lineArt": 1254,
+        "guide": 1254,
+        "lineArtInkPixels": 46241,
+        "lineArtLayerHidden": false,
+        "lineArtHidden": true,
+        "lineArtDisplay": "none",
+        "lineArtVisibility": "visible",
+        "lineArtOpacity": "1",
+        "lineArtZIndex": "auto",
+        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "viewport": {
+        "name": "phone-landscape",
+        "width": 667,
+        "height": 375,
+        "mobile": true
+      },
+      "catalogue": {
+        "images": 4,
+        "decoded": 4,
+        "horizontalOverflow": false,
+        "colorButtonWidth": 129,
+        "colorButtonHeight": 52,
+        "sheetWidth": 581,
+        "widestDrawing": 259
+      },
+      "selection": {
+        "choices": 4,
+        "decoded": 4,
+        "horizontalOverflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "frameWidth": 259,
+        "frameHeight": 259,
+        "frameLeft": 79,
+        "frameRight": 338,
+        "canvasWidth": 768,
+        "canvasHeight": 768,
+        "lineArt": 1254,
+        "guide": 1254,
+        "lineArtInkPixels": 46241,
+        "lineArtLayerHidden": false,
+        "lineArtHidden": true,
+        "lineArtDisplay": "none",
+        "lineArtVisibility": "visible",
+        "lineArtOpacity": "1",
+        "lineArtZIndex": "auto",
+        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024,
+        "mobile": true
+      },
+      "catalogue": {
+        "images": 4,
+        "decoded": 4,
+        "horizontalOverflow": false,
+        "colorButtonWidth": 129,
+        "colorButtonHeight": 52,
+        "sheetWidth": 682,
+        "widestDrawing": 309
+      },
+      "selection": {
+        "choices": 4,
+        "decoded": 4,
+        "horizontalOverflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "frameWidth": 553,
+        "frameHeight": 553,
+        "frameLeft": 108,
+        "frameRight": 660,
+        "canvasWidth": 768,
+        "canvasHeight": 768,
+        "lineArt": 1254,
+        "guide": 1254,
+        "lineArtInkPixels": 46241,
+        "lineArtLayerHidden": false,
+        "lineArtHidden": true,
+        "lineArtDisplay": "none",
+        "lineArtVisibility": "visible",
+        "lineArtOpacity": "1",
+        "lineArtZIndex": "auto",
+        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "horizontalOverflow": false
+      }
+    },
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "mobile": false
+      },
+      "catalogue": {
+        "images": 4,
+        "decoded": 4,
+        "horizontalOverflow": false,
+        "colorButtonWidth": 129,
+        "colorButtonHeight": 52,
+        "sheetWidth": 740,
+        "widestDrawing": 338
+      },
+      "selection": {
+        "choices": 4,
+        "decoded": 4,
+        "horizontalOverflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "frameWidth": 558,
+        "frameHeight": 558,
+        "frameLeft": 434,
+        "frameRight": 992,
+        "canvasWidth": 768,
+        "canvasHeight": 768,
+        "lineArt": 1254,
+        "guide": 1254,
+        "lineArtInkPixels": 46241,
+        "lineArtLayerHidden": false,
+        "lineArtHidden": true,
+        "lineArtDisplay": "none",
+        "lineArtVisibility": "visible",
+        "lineArtOpacity": "1",
+        "lineArtZIndex": "auto",
+        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "horizontalOverflow": false
+      }
+    }
+  ],
+  "consoleErrors": []
+}

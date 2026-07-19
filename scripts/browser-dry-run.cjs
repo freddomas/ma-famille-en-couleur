@@ -457,6 +457,225 @@ async function main() {
     assert.ok(mobile.firstDrawingHeight > 0);
     assert.equal(mobile.backButtonFocused, true);
     assert.equal(mobile.previewObjectFit, "contain");
+
+    await evaluate(`document.querySelector("#open-coloring-studio").click()`);
+    await waitFor(`document.querySelector("#coloring-studio").open`);
+    await waitFor(
+      `[...document.querySelectorAll(".coloring-choice img")]
+        .every((image) => image.complete && image.naturalWidth > 0)`,
+    );
+    const coloringSelection = await evaluate(`(() => {
+      const choices = [...document.querySelectorAll(".coloring-choice")];
+      return {
+        choices: choices.length,
+        decodedChoices: choices.filter(
+          (choice) => choice.querySelector("img")?.naturalWidth > 0
+        ).length,
+        startDisabled: document.querySelector("#start-coloring").disabled,
+        horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth,
+        minChoiceWidth: Math.round(
+          Math.min(...choices.map((choice) => choice.getBoundingClientRect().width))
+        )
+      };
+    })()`);
+    assert.deepEqual(coloringSelection, {
+      choices: 4,
+      decodedChoices: 4,
+      startDisabled: true,
+      horizontalOverflow: false,
+      minChoiceWidth: coloringSelection.minChoiceWidth,
+    });
+    assert.ok(
+      coloringSelection.minChoiceWidth >= 140,
+      `Choix mobile trop étroit : ${coloringSelection.minChoiceWidth}px`,
+    );
+    await screenshot("mobile-coloring-selection.png");
+
+    await evaluate(`(() => {
+      const choices = document.querySelectorAll(".coloring-choice");
+      choices[0].click();
+      choices[2].click();
+      document.querySelector("#start-coloring").click();
+      return true;
+    })()`);
+    await waitFor(
+      `!document.querySelector("#coloring-workspace").hidden
+        && !document.querySelector("#coloring-canvas").hidden
+        && document.querySelector("#coloring-line-art").naturalWidth > 0`,
+    );
+    const coloringWorkspace = await evaluate(`(() => {
+      const canvas = document.querySelector("#coloring-canvas");
+      const frame = document.querySelector("#coloring-canvas-frame");
+      const controls = [...document.querySelectorAll(
+        ".coloring-color, .coloring-tool, .coloring-size"
+      )];
+      const frameRect = frame.getBoundingClientRect();
+      return {
+        tabs: document.querySelectorAll(".coloring-drawing-tab").length,
+        canvasWidth: canvas.width,
+        canvasHeight: canvas.height,
+        frameWidth: Math.round(frameRect.width),
+        frameHeight: Math.round(frameRect.height),
+        decodedLineArt: document.querySelector("#coloring-line-art").naturalWidth > 0,
+        decodedGuide: document.querySelector("#coloring-guide-image").naturalWidth > 0,
+        lineArtInkPixels: Number(
+          document.querySelector("#coloring-line-art-layer").dataset.inkPixels || 0
+        ),
+        lineArtLayerVisible:
+          !document.querySelector("#coloring-line-art-layer").hidden,
+        minControlWidth: Math.round(
+          Math.min(...controls.map((control) => control.getBoundingClientRect().width))
+        ),
+        minControlHeight: Math.round(
+          Math.min(...controls.map((control) => control.getBoundingClientRect().height))
+        ),
+        horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth
+      };
+    })()`);
+    assert.equal(coloringWorkspace.tabs, 2);
+    assert.equal(coloringWorkspace.canvasWidth, coloringWorkspace.canvasHeight);
+    assert.ok(coloringWorkspace.canvasWidth <= 768);
+    assert.ok(coloringWorkspace.frameWidth >= 220);
+    assert.equal(coloringWorkspace.frameWidth, coloringWorkspace.frameHeight);
+    assert.equal(coloringWorkspace.decodedLineArt, true);
+    assert.equal(coloringWorkspace.decodedGuide, true);
+    assert.ok(coloringWorkspace.lineArtInkPixels > 100);
+    assert.equal(coloringWorkspace.lineArtLayerVisible, true);
+    assert.ok(coloringWorkspace.minControlWidth >= 44);
+    assert.ok(coloringWorkspace.minControlHeight >= 44);
+    assert.equal(coloringWorkspace.horizontalOverflow, false);
+
+    const coloringTarget = await evaluate(`(() => {
+      const canvas = document.querySelector("#coloring-canvas");
+      canvas.scrollIntoView({ block: "center", behavior: "instant" });
+      const rect = canvas.getBoundingClientRect();
+      return {
+        x1: rect.left + rect.width * 0.35,
+        y1: rect.top + rect.height * 0.45,
+        x2: rect.left + rect.width * 0.65,
+        y2: rect.top + rect.height * 0.55
+      };
+    })()`);
+    await call("Input.dispatchTouchEvent", {
+      type: "touchStart",
+      touchPoints: [{
+        x: coloringTarget.x1,
+        y: coloringTarget.y1,
+        radiusX: 3,
+        radiusY: 3,
+        force: 1,
+        id: 2,
+      }],
+    });
+    await call("Input.dispatchTouchEvent", {
+      type: "touchMove",
+      touchPoints: [{
+        x: coloringTarget.x2,
+        y: coloringTarget.y2,
+        radiusX: 3,
+        radiusY: 3,
+        force: 1,
+        id: 2,
+      }],
+    });
+    await call("Input.dispatchTouchEvent", {
+      type: "touchEnd",
+      touchPoints: [],
+    });
+    await waitFor(`state.coloring.dirtyIds.size === 1`);
+    const coloredPixels = await evaluate(`(() => {
+      const canvas = document.querySelector("#coloring-canvas");
+      const data = canvas.getContext("2d").getImageData(
+        0, 0, canvas.width, canvas.height
+      ).data;
+      let pixels = 0;
+      for (let index = 3; index < data.length; index += 4) {
+        if (data[index] > 0) pixels += 1;
+      }
+      return pixels;
+    })()`);
+    assert.ok(coloredPixels > 100, `Trait tactile trop court : ${coloredPixels} pixels`);
+    await screenshot("mobile-coloring-workspace.png");
+
+    await evaluate(`document.querySelector("#undo-coloring").click()`);
+    const pixelsAfterUndo = await evaluate(`(() => {
+      const canvas = document.querySelector("#coloring-canvas");
+      const data = canvas.getContext("2d").getImageData(
+        0, 0, canvas.width, canvas.height
+      ).data;
+      let pixels = 0;
+      for (let index = 3; index < data.length; index += 4) {
+        if (data[index] > 0) pixels += 1;
+      }
+      return pixels;
+    })()`);
+    assert.equal(pixelsAfterUndo, 0);
+
+    await call("Input.dispatchTouchEvent", {
+      type: "touchStart",
+      touchPoints: [{
+        x: coloringTarget.x1,
+        y: coloringTarget.y1,
+        radiusX: 3,
+        radiusY: 3,
+        force: 1,
+        id: 3,
+      }],
+    });
+    await call("Input.dispatchTouchEvent", {
+      type: "touchMove",
+      touchPoints: [{
+        x: coloringTarget.x2,
+        y: coloringTarget.y2,
+        radiusX: 3,
+        radiusY: 3,
+        force: 1,
+        id: 3,
+      }],
+    });
+    await call("Input.dispatchTouchEvent", {
+      type: "touchEnd",
+      touchPoints: [],
+    });
+    await evaluate(`document.querySelector("#toggle-coloring-guide").click()`);
+    assert.equal(
+      await evaluate(`!document.querySelector("#coloring-guide-image").hidden`),
+      true,
+    );
+    await screenshot("mobile-coloring-guide.png");
+    await evaluate(`document.querySelector("#toggle-coloring-guide").click()`);
+    await evaluate(`document.querySelectorAll(".coloring-drawing-tab")[1].click()`);
+    await waitFor(
+      `state.coloring.activeIndex === 1
+        && document.querySelector("#coloring-line-art").naturalWidth > 0`,
+    );
+    await evaluate(`document.querySelectorAll(".coloring-drawing-tab")[0].click()`);
+    await waitFor(`state.coloring.activeIndex === 0`);
+    const restoredPixels = await evaluate(`(() => {
+      const canvas = document.querySelector("#coloring-canvas");
+      const data = canvas.getContext("2d").getImageData(
+        0, 0, canvas.width, canvas.height
+      ).data;
+      let pixels = 0;
+      for (let index = 3; index < data.length; index += 4) {
+        if (data[index] > 0) pixels += 1;
+      }
+      return pixels;
+    })()`);
+    assert.ok(restoredPixels > 100);
+    await evaluate(`document.querySelector("#close-coloring-studio").click()`);
+    await waitFor(`!document.querySelector("#coloring-studio").open`);
+    assert.equal(
+      await evaluate(
+        `document.activeElement === document.querySelector("#open-coloring-studio")`,
+      ),
+      true,
+    );
+    assert.equal(
+      await evaluate(`document.querySelector("#atelier").hasAttribute("aria-hidden")`),
+      false,
+    );
+
     const touchGuideTarget = await evaluate(`(() => {
       const card = document.querySelector(".drawing-card .color-flip-card");
       card.scrollIntoView({ block: "center", behavior: "instant" });
@@ -620,6 +839,16 @@ async function main() {
         rotationDegrees: 180,
         desktopMidTransform,
         printUsesLineArt: true,
+      },
+      coloringStudio: {
+        selection: coloringSelection,
+        workspace: coloringWorkspace,
+        touchStrokePixels: coloredPixels,
+        pixelsAfterUndo,
+        restoredPixels,
+        selectedDrawings: 2,
+        guideToggle: true,
+        focusReturned: true,
       },
       mobile,
       invalid,
