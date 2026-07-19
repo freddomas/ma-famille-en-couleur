@@ -5951,9 +5951,14 @@ body {
   }
 
   .weekly-promise {
+    grid-template-columns: minmax(0, 1fr);
     gap: 34px;
     padding-top: 58px;
     padding-bottom: 64px;
+  }
+
+  .weekly-promise__copy {
+    min-width: 0;
   }
 
   .weekly-promise__stamp {

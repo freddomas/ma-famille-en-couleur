@@ -208,7 +208,13 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="atelier" className="atelier-section" aria-labelledby="atelier-title">
+        <section
+          id="atelier"
+          className="atelier-section"
+          aria-labelledby="atelier-title"
+          aria-hidden="true"
+          hidden
+        >
           <div className="section-shell">
             <div className="catalogue-viewer__back">
               <span className="catalogue-viewer__brand brand-link">

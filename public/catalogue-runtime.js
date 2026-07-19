@@ -16,6 +16,7 @@ const state = {
   surpriseGeneration: 0,
   toastTimer: null,
   catalogueReturnTarget: null,
+  catalogueReturnScrollY: null,
   coloring: {
     returnTarget: null,
     pageKey: null,
@@ -446,34 +447,8 @@ function renderCatalogueMenu() {
 }
 
 function bindPressActivation(button, activate) {
-  let touchStart = null;
-  let lastTouchActivation = 0;
-
-  button.addEventListener("pointerdown", (event) => {
-    if (event.pointerType !== "touch" || !event.isPrimary) return;
-    touchStart = { x: event.clientX, y: event.clientY };
-  });
-
-  button.addEventListener("pointercancel", () => {
-    touchStart = null;
-  });
-
-  button.addEventListener("pointerup", (event) => {
-    if (event.pointerType !== "touch" || !event.isPrimary || !touchStart) return;
-    const distance = Math.hypot(
-      event.clientX - touchStart.x,
-      event.clientY - touchStart.y,
-    );
-    touchStart = null;
-    if (distance > 12) return;
-    lastTouchActivation = Date.now();
+  button.addEventListener("click", () => {
     activate();
-  });
-
-  button.addEventListener("click", (event) => {
-    const isSyntheticTouchClick =
-      event.detail > 0 && Date.now() - lastTouchActivation < 700;
-    if (!isSyntheticTouchClick) activate();
   });
 }
 
@@ -496,13 +471,20 @@ function openCatalogueViewer(trigger) {
 
   state.catalogueReturnTarget =
     trigger instanceof HTMLElement ? trigger : document.activeElement;
+  state.catalogueReturnScrollY = window.scrollY;
   atelier.classList.add("is-catalogue-open");
+  atelier.hidden = false;
+  atelier.removeAttribute("aria-hidden");
   atelier.setAttribute("role", "dialog");
   atelier.setAttribute("aria-modal", "true");
   document.body.classList.add("catalogue-viewer-open");
 
   window.requestAnimationFrame(() => {
-    closeButton?.focus({ preventScroll: true });
+    window.requestAnimationFrame(() => {
+      if (atelier.classList.contains("is-catalogue-open")) {
+        closeButton?.focus({ preventScroll: true });
+      }
+    });
   });
 }
 
@@ -510,15 +492,27 @@ function closeCatalogueViewer() {
   const atelier = document.getElementById("atelier");
   if (!atelier?.classList.contains("is-catalogue-open")) return;
 
+  atelier.hidden = true;
   atelier.classList.remove("is-catalogue-open");
+  atelier.setAttribute("aria-hidden", "true");
   atelier.removeAttribute("role");
   atelier.removeAttribute("aria-modal");
   document.body.classList.remove("catalogue-viewer-open");
 
   const returnTarget = state.catalogueReturnTarget;
+  const returnScrollY = state.catalogueReturnScrollY;
   state.catalogueReturnTarget = null;
+  state.catalogueReturnScrollY = null;
+  if (Number.isFinite(returnScrollY)) {
+    window.scrollTo({ top: returnScrollY, left: 0, behavior: "instant" });
+  }
   if (returnTarget instanceof HTMLElement && returnTarget.isConnected) {
     returnTarget.focus({ preventScroll: true });
+  }
+  if (Number.isFinite(returnScrollY)) {
+    window.requestAnimationFrame(() => {
+      window.scrollTo({ top: returnScrollY, left: 0, behavior: "instant" });
+    });
   }
 }
 
@@ -578,9 +572,10 @@ function closeColoringStudio() {
   dialog.close();
   document.body.classList.remove("coloring-studio-open");
   hideColoringGuide();
-  document
-    .getElementById("atelier")
-    ?.removeAttribute("aria-hidden");
+  const atelier = document.getElementById("atelier");
+  if (atelier?.classList.contains("is-catalogue-open")) {
+    atelier.removeAttribute("aria-hidden");
+  }
 
   const returnTarget = state.coloring.returnTarget;
   state.coloring.returnTarget = null;

@@ -108,6 +108,27 @@ async function main() {
   check(/id="print-page"/.test(pageSource), "Bouton impression page absent");
   check(/id="print-catalogue"/.test(pageSource), "Bouton impression catalogue absent");
   check(
+    /id="atelier"[\s\S]*?aria-hidden="true"[\s\S]*?\bhidden\b[\s\S]*?>/.test(
+      pageSource,
+    ),
+    "Le catalogue doit être masqué avant l’ouverture explicite",
+  );
+  check(
+    /atelier\.hidden\s*=\s*false/.test(appSource)
+      && /atelier\.removeAttribute\("aria-hidden"\)/.test(appSource),
+    "L’ouverture doit rendre le catalogue visible et accessible",
+  );
+  check(
+    /atelier\.hidden\s*=\s*true/.test(appSource)
+      && /atelier\.setAttribute\("aria-hidden",\s*"true"\)/.test(appSource),
+    "La fermeture doit retirer le catalogue du rendu et de l’accessibilité",
+  );
+  check(
+    /catalogueReturnScrollY/.test(appSource)
+      && /window\.scrollTo\(\{\s*top:\s*returnScrollY/.test(appSource),
+    "La fermeture doit restaurer la position de lecture",
+  );
+  check(
     /id="open-coloring-studio"/.test(pageSource),
     "Bouton de coloriage interactif absent",
   );
@@ -148,6 +169,10 @@ async function main() {
   );
   check(!/pointerType === "mouse"/.test(appSource), "Ancien maintien souris encore actif");
   check(!/handleGuidePointerDown/.test(appSource), "Ancien appui long encore actif");
+  check(
+    !/lastTouchActivation|touchStart\s*=/.test(appSource),
+    "L’activation tactile ne doit pas précéder le clic natif",
+  );
 
   const manifestIds = new Set(manifest.entries.map((entry) => entry.id));
   const signatures = new Set();

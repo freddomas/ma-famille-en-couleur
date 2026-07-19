@@ -12,6 +12,7 @@
     "typecheck": "tsc --noEmit",
     "validate": "node scripts/validate-delivery.cjs",
     "dry-run": "powershell -ExecutionPolicy Bypass -File scripts/run-browser-dry-run.ps1",
+    "qa:catalogue-visibility": "node scripts/catalogue-visibility-playwright.cjs",
     "qa:image-framing": "node scripts/image-framing-playwright.cjs",
     "astryx": "node node_modules/@astryxdesign/cli/bin/astryx.mjs"
   },
