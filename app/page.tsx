@@ -1,3 +1,4 @@
+import { Link } from "@astryxdesign/core/Link";
 import Script from "next/script";
 
 function Brand({ footer = false }: { footer?: boolean }) {
@@ -26,9 +27,11 @@ export default function Home() {
       </a>
 
       <header className="site-header">
-        <a className="brand-link" href="#" aria-label="Ma famille en couleur, accueil">
-          <Brand />
-        </a>
+        <span className="brand-link">
+          <Link href="/" label="Ma famille en couleur, accueil" isStandalone>
+            <Brand />
+          </Link>
+        </span>
 
         <nav className="site-nav" aria-label="Navigation principale">
           <a href="#catalogues">Les catalogues</a>
@@ -208,8 +211,10 @@ export default function Home() {
         <section id="atelier" className="atelier-section" aria-labelledby="atelier-title">
           <div className="section-shell">
             <div className="catalogue-viewer__back">
-              <span className="catalogue-viewer__brand">
-                <Brand />
+              <span className="catalogue-viewer__brand brand-link">
+                <Link href="/" label="Retour à l’accueil" isStandalone>
+                  <Brand />
+                </Link>
               </span>
               <button id="close-catalogue" className="button button--paper" type="button">
                 <span aria-hidden="true">←</span>
@@ -343,7 +348,11 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <Brand footer />
+        <span className="brand-link brand-link--footer">
+          <Link href="/" label="Retour à l’accueil" isStandalone>
+            <Brand footer />
+          </Link>
+        </span>
         <p>
           De nouveaux coloriages chaque semaine, pensés avec soin pour les enfants
           curieux.

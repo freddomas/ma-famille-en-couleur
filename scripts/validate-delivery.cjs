@@ -130,7 +130,18 @@ async function main() {
     /grid-template-columns:\s*1fr/.test(stylesSource),
     "Adaptation mobile de la planche absente",
   );
-  check(/rotateY\(180deg\)/.test(stylesSource), "Rotation verticale 180° absente");
+  check(
+    /transition:\s*opacity\s+180ms/.test(stylesSource),
+    "Transition courte du guide coloré absente",
+  );
+  check(
+    /\.color-flip-card\.is-color-visible\s+\.color-flip-card__front\s*\{[^}]*opacity:\s*0/s.test(stylesSource),
+    "La face noir et blanc du guide coloré n’est pas masquée",
+  );
+  check(
+    /\.color-flip-card\.is-color-visible\s+\.color-flip-card__back\s*\{[^}]*opacity:\s*1/s.test(stylesSource),
+    "La face colorée du guide ne devient pas visible",
+  );
   check(!/pointerType === "mouse"/.test(appSource), "Ancien maintien souris encore actif");
   check(!/handleGuidePointerDown/.test(appSource), "Ancien appui long encore actif");
 

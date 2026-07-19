@@ -257,6 +257,28 @@ function bindGlobalEvents() {
   document
     .getElementById("close-catalogue")
     ?.addEventListener("click", closeCatalogueViewer);
+  document.querySelectorAll(".brand-link a").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const destination = new URL(link.href, window.location.href);
+      if (
+        destination.origin !== window.location.origin
+        || destination.pathname !== "/"
+      ) {
+        return;
+      }
+      event.preventDefault();
+      const root = document.documentElement;
+      const previousScrollBehavior = root.style.scrollBehavior;
+      root.style.scrollBehavior = "auto";
+      closeCatalogueViewer();
+      window.history.replaceState(null, "", "/");
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      window.requestAnimationFrame(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        root.style.scrollBehavior = previousScrollBehavior;
+      });
+    });
+  });
   document
     .getElementById("open-coloring-studio")
     ?.addEventListener("click", (event) => {
