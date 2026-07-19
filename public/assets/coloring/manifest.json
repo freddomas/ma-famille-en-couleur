@@ -22,7 +22,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-animaux-01.png",
-      "sha256": "4930afe58774d8b6c99511a7a6c92c0aea003daf3461bd3de1c4c0d7c89f0a29",
+      "sha256": "a584277372b6be85e14771b5a27a781f43f764e38cf949b6cdfdb65a94cd6b2c",
       "coloredPath": "assets/coloring/colored/animaux-familiers/001-le-chat-curieux-existing-animaux-01-png-colored.png"
     },
     {
@@ -38,7 +38,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-animaux-02.png",
-      "sha256": "8a0a933eb51d787fcda27d01fb63f5c71c4f9d62b8741ffdb1fc79869b2281f3",
+      "sha256": "47c39fe5b1b42bfdec3944839a57aa1e45262ef8199bd4203749ef91ffa7744c",
       "coloredPath": "assets/coloring/colored/animaux-familiers/002-le-chien-joueur-existing-animaux-02-png-colored.png"
     },
     {
@@ -54,7 +54,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-animaux-03.png",
-      "sha256": "670f04eaac601b33f516764ef5ce0b216faba50b75cb1eccb7083aa64cde4a51",
+      "sha256": "ba7c0a0df15ee69e74af52f50a1872b8026d62960e88aef0324cd7e02df4387b",
       "coloredPath": "assets/coloring/colored/animaux-familiers/003-le-lapin-aux-longues-oreilles-existing-animaux-03-png-colored.png"
     },
     {
@@ -70,7 +70,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-animaux-04.png",
-      "sha256": "e2cd71e644eb6bfb626124d8f76343a29950fdbfb22609affb57752fd86df7e6",
+      "sha256": "7f5e16451d2cf5bf3effe6825ada057ab0a1b392877944a76c23a77d7599c9a9",
       "coloredPath": "assets/coloring/colored/animaux-familiers/004-la-poule-et-ses-plumes-existing-animaux-04-png-colored.png"
     },
     {
@@ -86,7 +86,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-17.png",
-      "sha256": "426a5cd14c616f7724c8cdd2dcf9429a142c4632965a7f9032c2e892998f439f",
+      "sha256": "2416b47fd84074f1a13e4fb3887ed5b1ee37fc4ec1e8a3799f97453fcca73f14",
       "coloredPath": "assets/coloring/colored/animaux-familiers/005-le-cheval-au-galop-existing-animaux-17-png-colored.png"
     },
     {
@@ -102,7 +102,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-18.png",
-      "sha256": "9801a42aa3155f0f385338f3cc899efe2ef181858d1e493c11a39fcf3d36f8c8",
+      "sha256": "e95fb66410efc047a28fd0e01f469dd9b3492b3c926d586d0e5140d20a6e0e81",
       "coloredPath": "assets/coloring/colored/animaux-familiers/006-la-vache-de-la-ferme-existing-animaux-18-png-colored.png"
     },
     {
@@ -118,7 +118,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-19.png",
-      "sha256": "cf2735c9c5f3d49f1bee7a0e88f3bff3e3013fe7994fc382640f46601609fb3b",
+      "sha256": "9a376b6dfe47643a39696386fb8a8cb634bc353924f75150252ae84a24013feb",
       "coloredPath": "assets/coloring/colored/animaux-familiers/007-la-chevre-sur-le-rocher-existing-animaux-19-png-colored.png"
     },
     {
@@ -134,7 +134,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-20.png",
-      "sha256": "30738a3b59afee99129294ac461accd3b8b8cd3cf9c26d9098de88d9ffe93d93",
+      "sha256": "93f22ad71eecc61c3b86c7f0c2a3cc4b3ea5ef01f57c399e20134d2558e61005",
       "coloredPath": "assets/coloring/colored/animaux-familiers/008-le-mouton-frise-existing-animaux-20-png-colored.png"
     },
     {
@@ -150,7 +150,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-33.png",
-      "sha256": "42b87bc669a5799e0a5cd9e5b41da4a7dc5f5e85744f366700b97e77962e41b6",
+      "sha256": "280546deafdda548b323c8900ef98f07fd2acdd7de3e36aada996fdf131690a6",
       "coloredPath": "assets/coloring/colored/animaux-familiers/009-le-canard-sur-letang-existing-animaux-33-png-colored.png"
     },
     {
@@ -274,7 +274,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_002.png",
-      "sha256": "024ee302969a5315b2744b841af8bddea29269aac99fe15d880baaa083689c76",
+      "sha256": "b5f9800e24a540d7b42764ca9cb3ec1edab39ff3611751781ba7d834b4cba02c",
       "sharpnessBefore": 23.359,
       "sharpnessAfter": 30.019,
       "coloredPath": "assets/coloring/colored/animaux-familiers/016-le-cheval-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-002--colored.png"
@@ -328,7 +328,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-011_ChatGPT_Image_Jul_17_2026_07_37_31_PM_8_002.png",
-      "sha256": "b3238d571f50c9a029c2b7a2660e6eed29cfa1cd195ef9cf0f068c908a48d1b0",
+      "sha256": "e697e476547d4263ac1fad9b9ea1d891ff0b783a255ca360bb0efd23f476f215",
       "sharpnessBefore": 26.292,
       "sharpnessAfter": 33.077,
       "coloredPath": "assets/coloring/colored/animaux-familiers/019-la-souris-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-002--colored.png"
@@ -346,7 +346,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-013_ChatGPT_Image_Jul_17_2026_07_37_32_PM_10_003.png",
-      "sha256": "ce162d1a5eb8770a5280bd5d7da609d6a60b4d3a80fdf9604a11ddcb2620f8c9",
+      "sha256": "bb7ee908a1be82b38fd3d6409d1c0fc835b240009e5e4da5165f2765fc50023b",
       "sharpnessBefore": 30.457,
       "sharpnessAfter": 40.172,
       "coloredPath": "assets/coloring/colored/animaux-familiers/020-le-coq-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-003-colored.png"
@@ -364,7 +364,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-024_ChatGPT_Image_Jul_17_2026_07_53_24_PM_1_001.png",
-      "sha256": "3d4e86ac7b38f72d37a7e9d198be46d27effef63dcb540f5d4d8ccd58f7dbf83",
+      "sha256": "de4984b12c9156ca2a974396f131158d72ce9a2840141bc13addb41416b49bb3",
       "sharpnessBefore": 34.649,
       "sharpnessAfter": 47.554,
       "coloredPath": "assets/coloring/colored/animaux-familiers/021-le-chat-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-001--colored.png"
@@ -400,7 +400,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_001.png",
-      "sha256": "a1229101c6bd035bde01e13392bfd44938b2625b419fe93397c87945d92747cf",
+      "sha256": "71263002a4a2560fbcc71302c50def39fd657b6e4aa1633633f670c4f4f72e73",
       "sharpnessBefore": 25.458,
       "sharpnessAfter": 31.516,
       "coloredPath": "assets/coloring/colored/animaux-familiers/023-le-chat-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-001--colored.png"
@@ -436,7 +436,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_003.png",
-      "sha256": "d035ec50a0d8ce5afbcf7326cc707111efac82475b5169bf7235575a253c164d",
+      "sha256": "44d4ccab4a8ed9828030863f883d543fe4f446a75a853eab896a7e88f7d370dc",
       "sharpnessBefore": 18.375,
       "sharpnessAfter": 23.295,
       "coloredPath": "assets/coloring/colored/animaux-familiers/025-le-lapin-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-003--colored.png"
@@ -454,7 +454,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_004.png",
-      "sha256": "7a650439db3f7bc80fff9e2845fc33dd425b9c8bc7f84ee16f51d2551997b021",
+      "sha256": "c5c5bd71aaf620bab58555c87070f621ea8701f2497ef7472635416253f2c13c",
       "sharpnessBefore": 21.821,
       "sharpnessAfter": 27.831,
       "coloredPath": "assets/coloring/colored/animaux-familiers/026-la-vache-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-004--colored.png"
@@ -490,7 +490,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_002.png",
-      "sha256": "cc353573723760188d9d2e05784ef9a82af103bd10dafefb5931f8bbb4a80986",
+      "sha256": "de9d28b41255f0629347d5ca0f9020dd1d0b3962227b65150947db77af37c8f5",
       "sharpnessBefore": 23.726,
       "sharpnessAfter": 32.179,
       "coloredPath": "assets/coloring/colored/animaux-familiers/028-le-chat-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-002--colored.png"
@@ -508,7 +508,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_008.png",
-      "sha256": "2a447dc6522ce567e00c24cbd64d57521c8b686f26b871c5c691ecd86773dfce",
+      "sha256": "f06468acfd1b604ff6b853ec5957cd529b47c9e15311420c438e177f3c5fed44",
       "sharpnessBefore": 18.013,
       "sharpnessAfter": 23.886,
       "coloredPath": "assets/coloring/colored/animaux-familiers/029-le-mouton-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-008--colored.png"
@@ -526,7 +526,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_024.png",
-      "sha256": "86fd8c10dcea3dd79526e92051e09a62f0329521e3db2c30de37d0107d41e36d",
+      "sha256": "fb3148d854c6025c21bf321ee444f5ce10ba97f9c0ad4393c6bc1443d851cf63",
       "sharpnessBefore": 16.706,
       "sharpnessAfter": 21.236,
       "coloredPath": "assets/coloring/colored/animaux-familiers/030-le-lapin-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-024--colored.png"
@@ -562,7 +562,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-027_ChatGPT_Image_Jul_17_2026_07_53_25_PM_4_002.png",
-      "sha256": "a01e969e2f3b203f2a64ce10280d95999ad69e7200aab4bbeaa132993277120a",
+      "sha256": "6c8c70da00cbb00339025c80236758f09d436a9c9cbc8f8c2278326322684f0b",
       "sharpnessBefore": 25.744,
       "sharpnessAfter": 34.714,
       "coloredPath": "assets/coloring/colored/animaux-familiers/032-le-chat-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-002--colored.png"
@@ -670,7 +670,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_001.png",
-      "sha256": "2d4db1e8b855a572dbf9d106e89116681ad6a76fbc334cd2631f6ca75381a5f6",
+      "sha256": "a445528c52ec9ddada3611c9edce976d3b815e47c3c111598dc9152dc17d3b54",
       "sharpnessBefore": 15.309,
       "sharpnessAfter": 19.141,
       "coloredPath": "assets/coloring/colored/animaux-familiers/038-le-chien-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-001--colored.png"
@@ -688,7 +688,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_002.png",
-      "sha256": "9216988362430276232ce480da8d92cc2d34a2c812a74464b41172ce4a949579",
+      "sha256": "433264951d80a4c0120410bcebfaaf79d98d9e5091e611d113f1165f27ccea70",
       "sharpnessBefore": 21.683,
       "sharpnessAfter": 27.785,
       "coloredPath": "assets/coloring/colored/animaux-familiers/039-le-chat-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-002--colored.png"
@@ -706,7 +706,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_003.png",
-      "sha256": "f34e0712e400906d09a840e3dccfa46849f83c41fa0ad8808f077b4e4e44f32d",
+      "sha256": "daf241cd4a21786dbf35d8abfa74e7ea8b63a4707ad6a09b5d6f1ef88230418b",
       "sharpnessBefore": 15.833,
       "sharpnessAfter": 19.922,
       "coloredPath": "assets/coloring/colored/animaux-familiers/040-le-lapin-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-003--colored.png"
@@ -724,7 +724,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-05.png",
-      "sha256": "b587aaeb81e977c5e1032fe5a0aca4de47007562654556bda89ba73ee28247a5",
+      "sha256": "3b8a9e18e5eb93358186420461ea6b123daa3cfd165a5469c22d35c2ebac572d",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png-colored.png"
     },
     {
@@ -740,7 +740,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-06.png",
-      "sha256": "bf41f76afaa9bab78fc1c4b3bf45ffa6a74534876485a20dc80f56beed11c4e7",
+      "sha256": "10304895b4dc3fe6d9db370101fb55613b04d33c84a7d31c3953f2b61715c3f0",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/042-lelephant-de-la-savane-existing-animaux-06-png-colored.png"
     },
     {
@@ -756,7 +756,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-07.png",
-      "sha256": "cb47f2c1a661297214d368d21124c9d3738d3504bfdf06c0bf3224fd6aaa64e2",
+      "sha256": "249d5d1211e165896ae8a7ace221a203675d3067a7c407661480ca775c6f3880",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/043-la-girafe-au-long-cou-existing-animaux-07-png-colored.png"
     },
     {
@@ -772,7 +772,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-08.png",
-      "sha256": "86d2840374bb3e3571ebdac6f1935b277ac969c500f7d2016fad9efe328deedf",
+      "sha256": "2d8b09689340ccd1294b717ae6ff5a7ae3c8cd79868802660e81bf4143bf75d6",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/044-le-zebre-raye-existing-animaux-08-png-colored.png"
     },
     {
@@ -788,7 +788,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-09.png",
-      "sha256": "a0f13e31a82a62b59a178a5fd1e881390e18605a3de471595b558f6c03539da6",
+      "sha256": "126586f173a6ab240d389ceb5341951660c152939cd84db87bfcfbef51c520fd",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/045-lhippopotame-dans-leau-existing-animaux-09-png-colored.png"
     },
     {
@@ -804,7 +804,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-10.png",
-      "sha256": "6136f96130e06945ab027084f3edbc37c7ea78b3fca1ff22b01c0c3931194695",
+      "sha256": "f4c3f8213e046d648f119feeca0bcdfd7f5e256fe54231acf9faced0a348b241",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/046-le-rhinoceros-tranquille-existing-animaux-10-png-colored.png"
     },
     {
@@ -820,7 +820,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-11.png",
-      "sha256": "a6327228992705e04bbdd82e466e68fc8cbe2b913028bd371cddf17bdba7718a",
+      "sha256": "644f2c0655e35d9f48bbdfe65fce7f530d78e38f985426e7397432fcf3149c34",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/047-le-singe-acrobate-existing-animaux-11-png-colored.png"
     },
     {
@@ -836,7 +836,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-12.png",
-      "sha256": "66ed38fd3028c04c3e9e6742bd030e07c918ca7f0c3fe379edf004de0ffbce66",
+      "sha256": "ebae0088f6f4e79396882bbc06da6854cfb211f7aae4598d7752d1db2f9c1475",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/048-le-gorille-de-la-foret-existing-animaux-12-png-colored.png"
     },
     {
@@ -852,7 +852,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-13.png",
-      "sha256": "ec4ff23e658e26b67603154d1ef9d06fff66b7ffda19f78feb50b8f7b0316360",
+      "sha256": "f642228328a631401477f8d54fd1fdf749628ab2eeca407940d495c42b0deba0",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/049-le-panda-gourmand-existing-animaux-13-png-colored.png"
     },
     {
@@ -868,7 +868,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-14.png",
-      "sha256": "537d1d61962e7bb74d28d24a546a22bef56889bf7dc9ee39b3b69261fc8a2bad",
+      "sha256": "ec07b650b5968975cab15f85a43c47ce2aa4eb3b505093fbe52c5ca73f286c2f",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/050-lours-au-grand-cur-existing-animaux-14-png-colored.png"
     },
     {
@@ -884,7 +884,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-15.png",
-      "sha256": "27b325c98c8815af913ac41e4eae806d657c2231b91af074a0da832dc2d5576f",
+      "sha256": "a322ff3644c32f868f67ecdc03b1d0414421454471cc24a902498048289fde7b",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/051-le-renard-malin-existing-animaux-15-png-colored.png"
     },
     {
@@ -900,7 +900,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-16.png",
-      "sha256": "f9a6bcd3c612f591fd2eddbd44cc2ccc5a5cc5c16df002287402b116cb09ddf7",
+      "sha256": "4436daa68d4bde9142bfe13bf92894406d46b9250b2067c6510ef110aab9165c",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/052-le-herisson-piquant-existing-animaux-16-png-colored.png"
     },
     {
@@ -916,7 +916,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-21.png",
-      "sha256": "e50dd6366f78e505ff874b6af17a7e3ebbfa08ed6486f4e6b495349af8bd1c22",
+      "sha256": "836fdbb48e6d26746790fcc36a7ad2da5f8997a2cf58f4bbe6d48ec9532570ad",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/053-le-crocodile-du-fleuve-existing-animaux-21-png-colored.png"
     },
     {
@@ -932,7 +932,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-22.png",
-      "sha256": "7ed62da34d48a4719057f92279e04886fb355340476c830458174950df96b31a",
+      "sha256": "da532fcf62d3763e50c68a6ddad8517558efef3b1aae66357c050ccb5d718d92",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/054-la-tortue-patiente-existing-animaux-22-png-colored.png"
     },
     {
@@ -948,7 +948,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-23.png",
-      "sha256": "78e298aed3f35207c4f6f9d3eadc8073e174369d50cff28bbac122af5365df45",
+      "sha256": "b78ae269f2bebe2024b38b6a3ca1c281b454a668691281d5b76a077ad708db63",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/055-le-cameleon-sur-sa-branche-existing-animaux-23-png-colored.png"
     },
     {
@@ -964,7 +964,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-24.png",
-      "sha256": "d2530843415c342f309366cf825f3d398840fb6368dfe6f6c3494ee8554a9f1a",
+      "sha256": "9e8920990043499222b06a6e3b8b0140e16134bdfe45e4bc3d21362b65b9322a",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/056-le-serpent-en-spirale-existing-animaux-24-png-colored.png"
     },
     {
@@ -980,7 +980,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-25.png",
-      "sha256": "2d65269f1d6661991126d3f058944e850aa203fe827120b9f0cbb172cb800202",
+      "sha256": "0231757d231d8f415cb728e1beb78d39cfc7322ae143a74e7113c3db4a6bceec",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/057-le-dauphin-bondissant-existing-animaux-25-png-colored.png"
     },
     {
@@ -996,7 +996,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-26.png",
-      "sha256": "cd679506e7e5ae29e65b2ac77d1f77e54caa5721cb92c0ea52b0d7547eb43075",
+      "sha256": "4b32ad07ec549fbd088555826fe524afc4dda2464c12d19ae47610ea105efd7a",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/058-la-baleine-et-son-jet-deau-existing-animaux-26-png-colored.png"
     },
     {
@@ -1012,7 +1012,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-27.png",
-      "sha256": "6e8984ebd9388610c50f887df6992a186dc5b4e57454ee9caa6c326c6841a653",
+      "sha256": "838385d7718373b43adbbf43954f6eb5de422948b1d0bbae6f65d06c5ff3f3cd",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/059-le-poisson-tropical-existing-animaux-27-png-colored.png"
     },
     {
@@ -1028,7 +1028,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-28.png",
-      "sha256": "e8952ce14b27d36b9eb877ffe4b6c9039705ce47d2a00e346de0cd62ca13c3ee",
+      "sha256": "6ee8e1ba3f44f24244cc622514bc5dc0b229672e9b53ae595101a650d9aba49e",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/060-lhippocampe-gracieux-existing-animaux-28-png-colored.png"
     },
     {
@@ -1044,7 +1044,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-29.png",
-      "sha256": "7d27fce48b5704f97c0894093886751e41551046931cba58440736418954ca73",
+      "sha256": "8c7917c6225a0d2bf5fa2fe154014badab1700c208a7980c618b202a4ad21266",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/061-le-perroquet-colore-existing-animaux-29-png-colored.png"
     },
     {
@@ -1060,7 +1060,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-30.png",
-      "sha256": "53dc6545af3eb65e9e88c166357fbb187ed01234073473f50b35dd286d6e3b82",
+      "sha256": "640dbcddd54eddbef16dcbb3b897d31def3e1c8e406518798b180cec6627efe6",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/062-le-hibou-aux-grands-yeux-existing-animaux-30-png-colored.png"
     },
     {
@@ -1076,7 +1076,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-31.png",
-      "sha256": "bfa260746da323b1d6b57984658d415306ad259fbefbb8d7cb14fac631f432dd",
+      "sha256": "1d702266578b048dbee8c4c77a2d32d0576c0dbbf8bb9beb5adde319d6e0a9ec",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/063-laigle-en-plein-vol-existing-animaux-31-png-colored.png"
     },
     {
@@ -1092,7 +1092,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-32.png",
-      "sha256": "f2e468a74fd874a5225ff2ed4bb5c1483cdbdf4782cc8cc874d9da51a0d17127",
+      "sha256": "a3d1872183696b8cbabc911c87a10a4546343ef2d0cceddea4f8464a73e1b302",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/064-le-flamant-rose-existing-animaux-32-png-colored.png"
     },
     {
@@ -1108,7 +1108,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-34.png",
-      "sha256": "2dee093dad29ed17d6ab5624cdb0f592683ee8a5ec07d0cc722bddc5ee5ac393",
+      "sha256": "ddde601a53e3a64982192441aa3cc9116857d6aa28fea93cb305be7e3749921e",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/065-le-paon-et-sa-grande-roue-existing-animaux-34-png-colored.png"
     },
     {
@@ -1124,7 +1124,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-35.png",
-      "sha256": "7bc407e421b469c4c81679e225bda0e4b76b306ec4e0034c54d2f80cf39affa5",
+      "sha256": "8c2cca0a2f033db083b25bac53a4f192517e588c27f647f928142543d58dfea8",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/066-le-papillon-symetrique-existing-animaux-35-png-colored.png"
     },
     {
@@ -1140,7 +1140,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-36.png",
-      "sha256": "effce00fc50e779d0a548d24b6df7f90b1b62784b67d0f238502ffb034b7740e",
+      "sha256": "19b632edb7195630edf0834d9eaf3447e8443a7f94f83f8b4df196310a74a553",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/067-la-coccinelle-a-sept-points-existing-animaux-36-png-colored.png"
     },
     {
@@ -1156,7 +1156,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-37.png",
-      "sha256": "fe13e3a3693cff17208e07bc2d76f7b5582a81e1fb3cf5eaa7d7b7b583b2a739",
+      "sha256": "001c8b1ddf0051412c0ab2c64530e81b40162f19b42623c1af054944c5e08424",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/068-labeille-et-la-fleur-existing-animaux-37-png-colored.png"
     },
     {
@@ -1172,7 +1172,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-38.png",
-      "sha256": "bb132d89f30a17c02231aa01dfff85a17037f1ada610ccc15ee6ac6f4f4f2505",
+      "sha256": "73fa24db0babf4cf98aaeaceaeab914ec1f24f757c5eeec700cd0897c4ff9388",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/069-la-libellule-legere-existing-animaux-38-png-colored.png"
     },
     {
@@ -1188,7 +1188,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-39.png",
-      "sha256": "f83ebf1ae904882e3537f33a36f8aa33a6d58e58b59070abd9e41974d4fa12d7",
+      "sha256": "93b63b5b0ee665adf77c6635d84a8ff4a917c9a83a54dd7e738420423e90a3f4",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/070-la-grenouille-sur-son-nenuphar-existing-animaux-39-png-colored.png"
     },
     {
@@ -1204,7 +1204,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-animaux-40.png",
-      "sha256": "2466afd66214d3755024daa4735e9ed874bc651acfd94b84cc6db8d23076df3c",
+      "sha256": "b548cb1003ff006db36bb43445c87a3a84a08cda0e98caf128cd81c93e14dca0",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/071-lescargot-voyageur-existing-animaux-40-png-colored.png"
     },
     {
@@ -1220,7 +1220,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_002.png",
-      "sha256": "15154f45f81587b66102e0e3a2eb038d7ac243c10365a49e99fa00755703eb5c",
+      "sha256": "4b9f468284d94da8798aba1d3e2b8756b73667453eb93c9c5f89a3ba078967d0",
       "sharpnessBefore": 20.335,
       "sharpnessAfter": 25.452,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/072-le-lion-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-002-pn-colored.png"
@@ -1238,7 +1238,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_015.png",
-      "sha256": "318c9b4f65f7f7fcd5c4d558db4c38081d76037a127de832cca0e0f7993f3e2d",
+      "sha256": "845c2de71454eeaa461bd72f88548e5482708f01d7c35f21bf03e7270b59a2ba",
       "sharpnessBefore": 13.855,
       "sharpnessAfter": 17.099,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/073-la-tortue-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-015-pn-colored.png"
@@ -1274,7 +1274,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_001.png",
-      "sha256": "8b51a96f93a2d6e2bb0688b85167cffc90dde46607d4ec4e507c23c2b12f7446",
+      "sha256": "94aaa611b787a22b2c364c060051318d9ff05f71d8535db65c015d53170f9431",
       "sharpnessBefore": 33.706,
       "sharpnessAfter": 44.771,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/075-le-lion-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-001--colored.png"
@@ -1292,7 +1292,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_002.png",
-      "sha256": "b639dbc5a9790b1034a5552571c1fdbf45275ae11c302d2985e83870c2a66c8c",
+      "sha256": "125fb1de3d93474423aad897cd0bba5da242932d31bbcc09d3c793ff709c240e",
       "sharpnessBefore": 27.272,
       "sharpnessAfter": 34.404,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/076-lelephant-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-002--colored.png"
@@ -1346,7 +1346,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_004.png",
-      "sha256": "98ff699623c87239d9181c230c0632129247e872e2ee305fff60f7958d2bec1d",
+      "sha256": "4a1f4eecf140c410d05474b49cc4773786ce886ae2fa5986b22725f67c1c3d04",
       "sharpnessBefore": 14.099,
       "sharpnessAfter": 17.893,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/079-le-dauphin-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-004--colored.png"
@@ -1364,7 +1364,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_001.png",
-      "sha256": "b43757df032e6b781d672db44665871e6a6e3b273079ca062127e0153c990d46",
+      "sha256": "3c4ec5a90825ac0163a927ea9ac5b770a56e9150a1257bcb6fecf9772711694e",
       "sharpnessBefore": 27.976,
       "sharpnessAfter": 36.265,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/080-le-zebre-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-001--colored.png"
@@ -1382,7 +1382,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-vehicules-01.png",
-      "sha256": "2e256d94fa0cd56fcbfbc253ea31b29cd567c6dbe761e073d084725eae1429d0",
+      "sha256": "560696d9bbdcfc46d445607db1c3a37e66017cefce7e0f8843b670207a560c68",
       "coloredPath": "assets/coloring/colored/vehicules-terre/081-la-petite-voiture-existing-vehicules-01-png-colored.png"
     },
     {
@@ -1398,7 +1398,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-vehicules-02.png",
-      "sha256": "d7c4a17bdce1dc891ff5e209bbac7efdd019c9e2911515cd7ca22609880ef37a",
+      "sha256": "c08de20a6e5b75b068e88cfb1fadc8edc3f4c92a40828aa086d1e4cc1f80854a",
       "coloredPath": "assets/coloring/colored/vehicules-terre/082-le-bus-scolaire-existing-vehicules-02-png-colored.png"
     },
     {
@@ -1414,7 +1414,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-vehicules-03.png",
-      "sha256": "414958e0feeddf6ffcdb6255c46181c1bb7f46ca4a032db630a95deb570c8a3a",
+      "sha256": "2e09c1b85f552e28474d45d2101ed7da77cff22f795b4e2db85c36e5e2d2d089",
       "coloredPath": "assets/coloring/colored/vehicules-terre/083-le-camion-de-livraison-existing-vehicules-03-png-colored.png"
     },
     {
@@ -1430,7 +1430,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-vehicules-04.png",
-      "sha256": "5af274f4e0e9f31d9a8267e6a78aac2acca3b6663868357e3bbd3a3e1ad49588",
+      "sha256": "346673fd0ea274213da9ebe5ddfca4f20188a7be000ab4547d2409f008a83639",
       "coloredPath": "assets/coloring/colored/vehicules-terre/084-le-camion-de-pompiers-existing-vehicules-04-png-colored.png"
     },
     {
@@ -1446,7 +1446,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-05.png",
-      "sha256": "c7f9e15c44456e9bf5f12a0803a93270befd6499094f63ab941e66addb72da9e",
+      "sha256": "322571fbd31d87cd60d76ef106eaca0621589b9156077b513d717657c81f7b71",
       "coloredPath": "assets/coloring/colored/vehicules-terre/085-le-taxi-de-la-ville-existing-vehicules-05-png-colored.png"
     },
     {
@@ -1462,7 +1462,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-06.png",
-      "sha256": "0d72dacedc6ff69f33dad0ca0d9178d9a2633afbb522fb674fba0efbe34e2156",
+      "sha256": "9cdc2b448981f92c26f8ff1c0c218c3d00a5afc70061eba15571ba86a199c2ea",
       "coloredPath": "assets/coloring/colored/vehicules-terre/086-le-minibus-colore-existing-vehicules-06-png-colored.png"
     },
     {
@@ -1478,7 +1478,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-07.png",
-      "sha256": "b8a7e6c35aaa8d252a9c21c1b082cc60faf2c5a1269d867d0faf2119c5b1837f",
+      "sha256": "ee90bd59209a0b9d7587051444b97e73e5d9be9a16bf227d891f196d5edf74f6",
       "coloredPath": "assets/coloring/colored/vehicules-terre/087-le-camion-benne-existing-vehicules-07-png-colored.png"
     },
     {
@@ -1494,7 +1494,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-08.png",
-      "sha256": "ef7ea8bd54a3b454d6b269a467ffd3dcce5d9f32f2798bd24750871feb53d34f",
+      "sha256": "c6b3a9a8972b89630ce2ec800bdc0eb6f59379f11d5d5016973b506b745c62b1",
       "coloredPath": "assets/coloring/colored/vehicules-terre/088-lambulance-existing-vehicules-08-png-colored.png"
     },
     {
@@ -1510,7 +1510,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-09.png",
-      "sha256": "9083f889d70489912c62ff7250831999b5441750b974fb0a161d1b25eff05bf2",
+      "sha256": "5a26fa9393aadb43440010e51f40220b743f25011ed15c797a1dacb1fb00bd7c",
       "coloredPath": "assets/coloring/colored/vehicules-terre/089-la-voiture-de-police-existing-vehicules-09-png-colored.png"
     },
     {
@@ -1526,7 +1526,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-10.png",
-      "sha256": "b4d3e246aeda6d2492584d15b5d84aebe33b4e843798add0fba82cc1d0f32018",
+      "sha256": "c42d6025cd781f5679d8c9ac114ab2d6504e7636b409a9a186de61b280ccb6b3",
       "coloredPath": "assets/coloring/colored/vehicules-terre/090-le-44-daventure-existing-vehicules-10-png-colored.png"
     },
     {
@@ -1542,7 +1542,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-11.png",
-      "sha256": "cfab5ae430fbee26862ed0bcbe5ad23bec70a3da95e303bd08318b3e92853421",
+      "sha256": "44ad1abdc91911105c647303308fd82d9b72eb050e8c235bc9666ba5546216f1",
       "coloredPath": "assets/coloring/colored/vehicules-terre/091-le-tracteur-du-fermier-existing-vehicules-11-png-colored.png"
     },
     {
@@ -1558,7 +1558,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-12.png",
-      "sha256": "7d27653f8759593f7c9be9f5dd76bd0cc9d2ca4d50f14c39fe7743c212405a5e",
+      "sha256": "f993ed35b8e0460b02bd9c8111b3db6909712c3c4d9350e74933238e426d9ce5",
       "coloredPath": "assets/coloring/colored/vehicules-terre/092-la-moissonneuse-existing-vehicules-12-png-colored.png"
     },
     {
@@ -1574,7 +1574,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-13.png",
-      "sha256": "3f3c32f7995fb34369660be9ce27bdf52ea858afae75e8f2e0c213bc8f0b7981",
+      "sha256": "e1d4fab875a8f4d6f439221dfd1c088e92271e657985ff15d4faef8dc8b756e9",
       "coloredPath": "assets/coloring/colored/vehicules-terre/093-la-pelleteuse-existing-vehicules-13-png-colored.png"
     },
     {
@@ -1590,7 +1590,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-14.png",
-      "sha256": "4efbf692bb77c8bff98d1cb4319bd4d787c6f473bfb5dc7acf68df2bbd00f778",
+      "sha256": "ef293b69854533709dd4524d99e88600e2c5843ae539d8945c14ee0d35741032",
       "coloredPath": "assets/coloring/colored/vehicules-terre/094-le-bulldozer-existing-vehicules-14-png-colored.png"
     },
     {
@@ -1606,7 +1606,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-15.png",
-      "sha256": "27cb59d5b43799a455e6391f2bd2ec0b4bfa5320e38dea54adb67cad06813b79",
+      "sha256": "cedbc30b8398b29d6d5f78f26cfe2e8e2f6508b64530195e683a92db2a065a29",
       "coloredPath": "assets/coloring/colored/vehicules-terre/095-la-grue-de-chantier-existing-vehicules-15-png-colored.png"
     },
     {
@@ -1622,7 +1622,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-16.png",
-      "sha256": "6b1503846fa9289d42b2655a329010422842d1cbace4e33e9b12a7f50aa7818e",
+      "sha256": "7d1c006c7787986f8de52015630b23979efc3c29779696c82716cc4d02ea1b90",
       "coloredPath": "assets/coloring/colored/vehicules-terre/096-le-camion-toupie-existing-vehicules-16-png-colored.png"
     },
     {
@@ -1638,7 +1638,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-17.png",
-      "sha256": "e141e608a66713d617e5a7bd4e9ead45cefbc701389ff43960aa56478b45bf81",
+      "sha256": "ad769ba19731170757711771f1f33fef08403baabea837fda3a44d77c06ba85d",
       "coloredPath": "assets/coloring/colored/vehicules-terre/097-le-velo-avec-panier-existing-vehicules-17-png-colored.png"
     },
     {
@@ -1654,7 +1654,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-18.png",
-      "sha256": "690f40fdfd1415ef94d74786fb41644b92f7a8c7998a409d429c3a21f2b240c2",
+      "sha256": "917a7dc77fbdf5249fe22a134c5cf5ed06feea39d893720738756d937ec71338",
       "coloredPath": "assets/coloring/colored/vehicules-terre/098-le-velo-tout-terrain-existing-vehicules-18-png-colored.png"
     },
     {
@@ -1670,7 +1670,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-19.png",
-      "sha256": "bd3049d0c82914766e638a6fc6bc112e620d5e8bcce0186d8e44aac7ebb7d484",
+      "sha256": "1242ddd17fa51fab30db359a26e6aba290cab124a2ecd0c21f2a5f3c17f7b06e",
       "coloredPath": "assets/coloring/colored/vehicules-terre/099-la-moto-de-course-existing-vehicules-19-png-colored.png"
     },
     {
@@ -1686,7 +1686,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-20.png",
-      "sha256": "9a1e853f335c5bbd437006edc875403413f984ae0826456cd344003a488ea4fe",
+      "sha256": "ea513e305012f7d5683d7acf380e150f45bd2e9a045a5acb3df79587819d37c0",
       "coloredPath": "assets/coloring/colored/vehicules-terre/100-le-scooter-existing-vehicules-20-png-colored.png"
     },
     {
@@ -1702,7 +1702,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-21.png",
-      "sha256": "ec5528e04b8d4cede9b2bac665179ec10caf388e00541b85089abc5a21ee47e4",
+      "sha256": "438a2e9f405f2f9210195316369d6f3c4b0ef89a80503d41583cc59692562c62",
       "coloredPath": "assets/coloring/colored/vehicules-terre/101-le-train-de-voyageurs-existing-vehicules-21-png-colored.png"
     },
     {
@@ -1718,7 +1718,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-22.png",
-      "sha256": "6a1c4423bcff78ebd7b899532939ed2ee8f8835dbee0d0263dcbbdaf391ba14e",
+      "sha256": "3549e047db132cef8c7952bd17224d0805fe3ba961b6b5b6446d0d53fbb16a37",
       "coloredPath": "assets/coloring/colored/vehicules-terre/102-le-train-a-vapeur-existing-vehicules-22-png-colored.png"
     },
     {
@@ -1734,7 +1734,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-23.png",
-      "sha256": "3af80bbd849ade412e0754a7c9b70bebb4779af9b3beab3bf6d01bdc7531a16f",
+      "sha256": "cdb0f0a9e9d206cedc9da4986915513a1ae9930423a6e98aea7a3207983f3ecd",
       "coloredPath": "assets/coloring/colored/vehicules-terre/103-le-metro-existing-vehicules-23-png-colored.png"
     },
     {
@@ -1750,7 +1750,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-24.png",
-      "sha256": "cbd3331780d20094d89f16b5e1d6e6e0bb35d5c19c68131b5df8a48d0c201e3a",
+      "sha256": "f277e3c32d44d0bcac22c4cbdcc59ea121adaddd319e699b2147c4523faa4ed3",
       "coloredPath": "assets/coloring/colored/vehicules-terre/104-le-tramway-existing-vehicules-24-png-colored.png"
     },
     {
@@ -1766,7 +1766,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-37.png",
-      "sha256": "47a35077e3c89014985bfb7636f4ddef8b4fc59a8d67aec91186152af4306330",
+      "sha256": "da4a64346914ed12bc8474aedd7b9a679d23eadd095c52b351661be17188b0ae",
       "coloredPath": "assets/coloring/colored/vehicules-terre/105-la-trottinette-existing-vehicules-37-png-colored.png"
     },
     {
@@ -1782,7 +1782,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-38.png",
-      "sha256": "78c2c855821bf0aa993f10f8eb7bf2fdadf8bb93e200f44d4afd7b5cdfecff85",
+      "sha256": "3379f38fb2b7f7d36c75eb57352fa120d0a478be4b323b86c27da74994c95004",
       "coloredPath": "assets/coloring/colored/vehicules-terre/106-le-pousse-pousse-existing-vehicules-38-png-colored.png"
     },
     {
@@ -1798,7 +1798,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-39.png",
-      "sha256": "28ef027b4a6a9be7528318737a13ee4efc6553b14257b0bb9d7b459ec922b2c7",
+      "sha256": "e7d37887dc535caa77682d5f977af0023b610b9b5323a14558a438e9247750ba",
       "coloredPath": "assets/coloring/colored/vehicules-terre/107-le-kart-de-course-existing-vehicules-39-png-colored.png"
     },
     {
@@ -1814,7 +1814,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-40.png",
-      "sha256": "2857bd9487f075d98f41a0c6fb2b5a55239468a4d795f4b67501ca216b4a69bb",
+      "sha256": "a5e7e75de6dac4107719bb182caa6456e8a73802d56b0c6f12a89209134f020e",
       "coloredPath": "assets/coloring/colored/vehicules-terre/108-le-camion-de-safari-existing-vehicules-40-png-colored.png"
     },
     {
@@ -1830,7 +1830,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_006.png",
-      "sha256": "6eb5881b720a30a1f6100ad478573f8d68a870df3b2d773a39ea6f28a39cf9c7",
+      "sha256": "aeed2b9918b005b783e893c03a5c2e254eca41454b7ecd5565dd01ae33a19089",
       "sharpnessBefore": 15.471,
       "sharpnessAfter": 19.195,
       "coloredPath": "assets/coloring/colored/vehicules-terre/109-le-camion-de-livraison-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-006-pn-colored.png"
@@ -1848,7 +1848,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-005_ChatGPT_Image_Jul_17_2026_07_37_28_PM_2_006.png",
-      "sha256": "2eacfc50b938633e6752d976917f04c8be2cb6cf320e0ac267075e1d0cf06898",
+      "sha256": "26a7ca13f1184c548e8a89f679b31deb4bfbd4c6b94cce6c22db91ed36b2e00b",
       "sharpnessBefore": 20.162,
       "sharpnessAfter": 26.234,
       "coloredPath": "assets/coloring/colored/vehicules-terre/110-la-trottinette-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-006--colored.png"
@@ -1866,7 +1866,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_005.png",
-      "sha256": "a0d7a9befdffeb3cd4265e1847751c8166dc2ba94272a66ddc477342e952cdf1",
+      "sha256": "545d1df2466758332f656204886729f9204651e97007a140540edc7db84aca1d",
       "sharpnessBefore": 44.214,
       "sharpnessAfter": 55.806,
       "coloredPath": "assets/coloring/colored/vehicules-terre/111-le-camion-de-pompiers-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-005--colored.png"
@@ -1884,7 +1884,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_006.png",
-      "sha256": "c55c1fa26fde6435fa446b1f00f3269a5cd4b0025d66f9415e6ceae10a73fca1",
+      "sha256": "271c2698e13edc639497edfad130fe910bfe8dbfe5168590916938069ca2558f",
       "sharpnessBefore": 41.155,
       "sharpnessAfter": 51.693,
       "coloredPath": "assets/coloring/colored/vehicules-terre/112-le-tracteur-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-006--colored.png"
@@ -1938,7 +1938,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_008.png",
-      "sha256": "463be6f27688d6443dde4d2ed2df0ef875d0fd0ca23d66102560d7d4089ce5b6",
+      "sha256": "dbcf06e577c42806461ad49f848a6a8379ad1bcf3dd898ee67445c7280c5f972",
       "sharpnessBefore": 41.166,
       "sharpnessAfter": 52.349,
       "coloredPath": "assets/coloring/colored/vehicules-terre/115-le-bulldozer-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-008--colored.png"
@@ -1956,7 +1956,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_005.png",
-      "sha256": "2101200ed260385be42eb12233927e0ffec9e518ef8247365842fdc1d2037439",
+      "sha256": "6480094cccfc87bead90c9cd6de86e96714715362ce6afe27caaa0494c90bedc",
       "sharpnessBefore": 32.102,
       "sharpnessAfter": 42.08,
       "coloredPath": "assets/coloring/colored/vehicules-terre/116-le-taxi-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-005--colored.png"
@@ -1992,7 +1992,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_007.png",
-      "sha256": "584048c0a6cf5a9ee06a43b61bdea3769d8747822abcf6ca4df28ae64c3de703",
+      "sha256": "f1219d219e0e561a993cbd7651c1c3798d37fed4169fa2b277d338b26422c99b",
       "sharpnessBefore": 28.78,
       "sharpnessAfter": 35.438,
       "coloredPath": "assets/coloring/colored/vehicules-terre/118-la-jeep-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-007--colored.png"
@@ -2010,7 +2010,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-011_ChatGPT_Image_Jul_17_2026_07_37_31_PM_8_005.png",
-      "sha256": "a0f35015806dfb4e20c763dcfd0251fb0bcea35099aed56e4d7cebe179c35e66",
+      "sha256": "5c04e964984b726771cbecbb4b8f108892dd0b811845075c77a83885e00d995b",
       "sharpnessBefore": 40.336,
       "sharpnessAfter": 50.418,
       "coloredPath": "assets/coloring/colored/vehicules-terre/119-le-pick-up-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-005--colored.png"
@@ -2046,7 +2046,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-25.png",
-      "sha256": "85172aa4e34aea52bc303ecf3b00da151539507f05a763948791a5fb1802ed5f",
+      "sha256": "837e1a107a29902c16549c223845903fd16f36fbad2ef3f012fd3fae716ddaf8",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/121-la-pirogue-existing-vehicules-25-png-colored.png"
     },
     {
@@ -2062,7 +2062,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-26.png",
-      "sha256": "be27a3f27a9e9889e494207cd1f4db7513ce25e2715e6e5bcec8ec21ad59f8a7",
+      "sha256": "071d66e33fb7d248abdd5bfcb04c00e4f530a409d5ff5e6cd1ba4b99cf09a8b3",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/122-le-voilier-existing-vehicules-26-png-colored.png"
     },
     {
@@ -2078,7 +2078,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-27.png",
-      "sha256": "1dad7474818c55be69187f9893f6ffa66945b1233578f0c9df7b5e5a6b5af09b",
+      "sha256": "608530b178a0e0438c8925c25941500ad59217065c2551adca0b8244e1f3c986",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/123-le-bateau-de-peche-existing-vehicules-27-png-colored.png"
     },
     {
@@ -2094,7 +2094,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-28.png",
-      "sha256": "fb95d7505dd468188b18467e2ae36a305de55f6c6da5c5fa115ce31705546912",
+      "sha256": "282a6f2e7121d0e2afe761c9e57285ef44061e2e3c175e13a8dca49e3a98503a",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/124-le-ferry-existing-vehicules-28-png-colored.png"
     },
     {
@@ -2110,7 +2110,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-29.png",
-      "sha256": "2ea6899a78a5c4b794cea0206d78323d21bd5bd6f2f11fac78975e81e402aacf",
+      "sha256": "45d819619843f886f23d10bab4bda7f31000b299474d17b139032421eda1ec93",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/125-le-sous-marin-existing-vehicules-29-png-colored.png"
     },
     {
@@ -2126,7 +2126,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-30.png",
-      "sha256": "d09c68e20dcea34525dcd680e67215ea217cfe8b8bce5873a4eb2638b269fd54",
+      "sha256": "a8abec300f6513e4d1d845522d30ac0b4b7dc7401ea62cae9e88d8a94bad8076",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/126-lhydravion-existing-vehicules-30-png-colored.png"
     },
     {
@@ -2142,7 +2142,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-31.png",
-      "sha256": "d5d0e509f7de906214fd99f348611abdfba5220d1ff7ce994ab5c5aebfe334c4",
+      "sha256": "a21b953278c416f9aaf5b2b54ffebf26de6e6f88bb24c002e7584e304afabdd4",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/127-lavion-de-ligne-existing-vehicules-31-png-colored.png"
     },
     {
@@ -2174,7 +2174,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-33.png",
-      "sha256": "72a9362d8535fea494944023db3490bedb70429375a992201c0e14995d5d515c",
+      "sha256": "ec5d0158cc76ea60d0cb003f78dc6119345e637e7a195dccc9be90cd56f77adc",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/129-lhelicoptere-existing-vehicules-33-png-colored.png"
     },
     {
@@ -2190,7 +2190,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-34.png",
-      "sha256": "be817010a99dde4d7980951c0ffa9ddae70968b21d2849a8302e134a4895b99b",
+      "sha256": "6dae0833e8b2ed39c4bd37edd6512bcd4ef2438d18aaa2de8682ccc7fdc04664",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/130-la-montgolfiere-existing-vehicules-34-png-colored.png"
     },
     {
@@ -2206,7 +2206,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-35.png",
-      "sha256": "046e7042fa64a8c2418f32f24efe5ef8886e8742d08cd1d5974714b8cb4a53f8",
+      "sha256": "791fa057b91cdf3a655ecb1e8531adaa8e46b8335f18f00360842363b341ba99",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/131-la-fusee-existing-vehicules-35-png-colored.png"
     },
     {
@@ -2222,7 +2222,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-vehicules-36.png",
-      "sha256": "abb38dd2a2a73580c19cae91f96992f11913858c7f66a824f817ad281500bc8e",
+      "sha256": "8b3efb9586273fa2719596ae1162f69d62145403493e32a3aaa7d07c54c764db",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/132-le-rover-spatial-existing-vehicules-36-png-colored.png"
     },
     {
@@ -2238,7 +2238,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_001.png",
-      "sha256": "bcf9abcde8a4dec428b795b12894c8c355d1e917646a51c2d233e898a9ccea1b",
+      "sha256": "6b1a38fee5252fe01ca14183b21e7c4baf56c8d2fe14ae77140b70de2e8e0907",
       "sharpnessBefore": 19.78,
       "sharpnessAfter": 25.346,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/133-lhelicoptere-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-001-pn-colored.png"
@@ -2310,7 +2310,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-003_ChatGPT_Image_Jul_17_2026_07_37_00_PM_002.png",
-      "sha256": "635a266770d2d2499c938a23a9ad379499945ec9756dd01e8c9a47ec283f8188",
+      "sha256": "0a578fdfbd0a04834c1077ec8a4d311f87b92b697794a72db2c66c8a6868cedf",
       "sharpnessBefore": 11.809,
       "sharpnessAfter": 14.484,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/137-le-voilier-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-002-pn-colored.png"
@@ -2328,7 +2328,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-005_ChatGPT_Image_Jul_17_2026_07_37_28_PM_2_004.png",
-      "sha256": "85fa135b7bce309bb792558c8ed78250e326899d5e0d5d2236b86c35815363ed",
+      "sha256": "b93acfa0a49a00d7030707b35345687683d269de7a3e92ecf078eef36ff1921b",
       "sharpnessBefore": 23.56,
       "sharpnessAfter": 30.192,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/138-le-bateau-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-004--colored.png"
@@ -2382,7 +2382,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_008.png",
-      "sha256": "6c5345fd005b24ad22239278d47ee1a8a2400aee6a88c2ab778ee8304749a32d",
+      "sha256": "e60ca83556d94d9cc2f4b3c04a1f867b356f75577578f4bcae1df295b5ec41f8",
       "sharpnessBefore": 20.29,
       "sharpnessAfter": 25.422,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/141-le-canoe-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-008--colored.png"
@@ -2436,7 +2436,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-012_ChatGPT_Image_Jul_17_2026_07_37_31_PM_9_008.png",
-      "sha256": "d8b531e9cadd7eb466b46bdc7b81713d49b99e1878340fd77c19a214177566f7",
+      "sha256": "99609cf75aa581abf490cdb868b77b84f3c15d16967120a822836550617af144",
       "sharpnessBefore": 29.75,
       "sharpnessAfter": 37.203,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/144-lhelicoptere-de-secours-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-008--colored.png"
@@ -2490,7 +2490,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-024_ChatGPT_Image_Jul_17_2026_07_53_24_PM_1_011.png",
-      "sha256": "13e4b51e26848029ccf0a84cd72309f672897dbcfcc2d5fd77970cd1e6dd9d20",
+      "sha256": "05ece32e989e0f804bfedeba0a9e75fd1ad1e8a08a2010455bb4ad8fbe9c2b6b",
       "sharpnessBefore": 28.934,
       "sharpnessAfter": 40.617,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/147-la-montgolfiere-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-011--colored.png"
@@ -2526,7 +2526,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_007.png",
-      "sha256": "b8880c559f23eaf4a471330d4cfc2f076e5e365dd8edf24ab63f8e4014d6c066",
+      "sha256": "db950b2c4aae6417883e493a5f0a7a63a48c6b23892e80878096c81807505c29",
       "sharpnessBefore": 18.776,
       "sharpnessAfter": 24.241,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/149-le-voilier-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-007--colored.png"
@@ -2544,7 +2544,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_015.png",
-      "sha256": "e176c293c15482141883b1f721f06232814c0904df466f2bb18cd0249074d7e7",
+      "sha256": "404567b3f395739bf0607639c34b738ee18201208fb306bd466af2b2e97de129",
       "sharpnessBefore": 18.087,
       "sharpnessAfter": 23.882,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/150-la-montgolfiere-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-015--colored.png"
@@ -2562,7 +2562,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-027_ChatGPT_Image_Jul_17_2026_07_53_25_PM_4_013.png",
-      "sha256": "ee7e0a87022f13653e13bfa5f3771e61c9d2188578adb2ebff4732504c489588",
+      "sha256": "d2ffb0e12444ebfc3b1acdad1411362cbf3ceeff7e04265c17af0fbd144d8228",
       "sharpnessBefore": 22.083,
       "sharpnessAfter": 28.396,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/151-lavion-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-013--colored.png"
@@ -2670,7 +2670,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_008.png",
-      "sha256": "c7936897ad14988f90bdeaff6d5fb2164ae865eb0271c59b5044797dc883bf11",
+      "sha256": "de5eb5b8d1b71a586f60dda652799c1140a8ebb75e767aa0fecbcdcb3341cca7",
       "sharpnessBefore": 13.476,
       "sharpnessAfter": 16.692,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/157-la-fusee-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-008--colored.png"
@@ -2724,7 +2724,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_017.png",
-      "sha256": "2a435901c67c903667542946c50741e5e6c4de44dad60af3bf1a4839e488f8d3",
+      "sha256": "b6307a6ea370876d9e6a57a4c8dca8123b15dd7df982ee93d00fe2e44ae33fe5",
       "sharpnessBefore": 11.654,
       "sharpnessAfter": 14.252,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/160-le-bateau-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-017--colored.png"
@@ -2742,7 +2742,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-fruits-01.png",
-      "sha256": "8381c9d12782331026248002ae50e991955e29448f944c2cf141825d3b8dc993",
+      "sha256": "8b33c959805c0e59f5707c50143945a663606e19f67dc822f657d4393a74c5a9",
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/161-la-pomme-existing-fruits-01-png-colored.png"
     },
     {
@@ -2758,7 +2758,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-fruits-02.png",
-      "sha256": "2f79b340ceb8eab48fd520df99fbc072d59f5378e8cd15efcdf1990bbec7f751",
+      "sha256": "dfa56723fc9c78d248f27e74542a93c00f401ab048a2db82b47defaef4f91781",
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/162-la-poire-existing-fruits-02-png-colored.png"
     },
     {
@@ -2774,7 +2774,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-fruits-03.png",
-      "sha256": "a392d1c1716096791e7d725109041b98926ab2cac35bf7ea187eff4b520cca1a",
+      "sha256": "da50985d3a33a715dd8f2dd6d008d564314a502986ebebfec9da49fd165c0dee",
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/163-la-grappe-de-raisin-existing-fruits-03-png-colored.png"
     },
     {
@@ -2790,7 +2790,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-fruits-04.png",
-      "sha256": "03fe4cdf6308d1a1bd9eb074c1f595a724320e1f1478960b5de972b6a73b6d18",
+      "sha256": "5d04a61b1f5839323033e4097ab3e19606f108637d7ba83f2b6e88dbaf7ca853",
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/164-les-cerises-existing-fruits-04-png-colored.png"
     },
     {
@@ -2806,7 +2806,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_003.png",
-      "sha256": "34fd018ecda1e4243f06af6f84712e27a42c015ef7b61fc2b860237f72f7e5b0",
+      "sha256": "d28f913accfc4a40bb7fa3349a7a676c7fe524f8f9a6e14fc0a29b2bbbee81e3",
       "sharpnessBefore": 14.121,
       "sharpnessAfter": 17.602,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/165-la-fraise-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-003-pn-colored.png"
@@ -2860,7 +2860,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-003_ChatGPT_Image_Jul_17_2026_07_37_00_PM_007.png",
-      "sha256": "7492ec4fbbab54d7d4df109aec4dc48bb0b9eacda39b81c8c4b2df7dc756b3b9",
+      "sha256": "dfd91b918bd0b66fb58b025e3b52dd131a47f85504dbf27e0ba57c74fdf8227e",
       "sharpnessBefore": 8.507,
       "sharpnessAfter": 10.031,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/168-les-bananes-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-007-pn-colored.png"
@@ -2878,7 +2878,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-005_ChatGPT_Image_Jul_17_2026_07_37_28_PM_2_007.png",
-      "sha256": "ae60d8fd8937835e2453e25cfa6173a0a0f78b48a8e70236602ffb999a6024b9",
+      "sha256": "9f3e18863924271e5a1040ecf9152733c10654dab45efc914da821e4d895059c",
       "sharpnessBefore": 21.622,
       "sharpnessAfter": 27.415,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/169-le-raisin-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-007--colored.png"
@@ -2914,7 +2914,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-005_ChatGPT_Image_Jul_17_2026_07_37_28_PM_2_009.png",
-      "sha256": "868cc7b4712c605a2f49b622dc3d1a93752226754aa49e210f86c9d2eb77f15b",
+      "sha256": "3c94a2e1608c490f5f6e66c9473753678abd07bef2fbc304ce3911454c3fc7fa",
       "sharpnessBefore": 13.789,
       "sharpnessAfter": 17.619,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/171-la-poire-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-009--colored.png"
@@ -2932,7 +2932,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_009.png",
-      "sha256": "3b79f71aac4c1e75868000a3f0831adba8b2ec9ba4f082c0811097b4c9a13474",
+      "sha256": "a55096a5767c80db85e4ebf0fafc5346dee7fe0d42731896794ac5addd74b384",
       "sharpnessBefore": 13.324,
       "sharpnessAfter": 16.809,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/172-lorange-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-009--colored.png"
@@ -2950,7 +2950,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_010.png",
-      "sha256": "7ab624da37076f7c4b1e9ca1522006cc140fd9769391b2d2106f8b46bd605dd6",
+      "sha256": "132e88bc3198748b736fa17014a1240f7dcc262e9561c3385173974dcd30c074",
       "sharpnessBefore": 24.691,
       "sharpnessAfter": 29.768,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/173-la-pasteque-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-010--colored.png"
@@ -2968,7 +2968,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_011.png",
-      "sha256": "c4d232494ba27c945e7f8426bb257ec7a4902c5e758e9ee0e6d31c1000aa9a48",
+      "sha256": "02d6b37d11dbd70cc7de6d912432b0536a4c16e74cdbc28e51b7c1996e893890",
       "sharpnessBefore": 16.275,
       "sharpnessAfter": 20.381,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/174-le-brocoli-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-011--colored.png"
@@ -2986,7 +2986,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_012.png",
-      "sha256": "7d2c113eeffb8aa79ecbe838fd6fd820d65afe0459889eacb53250589fc5b776",
+      "sha256": "802423a3a22c3ebb16fc68a3fd450f485cc603df710968e89a556aaeabdc7056",
       "sharpnessBefore": 13.032,
       "sharpnessAfter": 16.045,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/175-la-tomate-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-012--colored.png"
@@ -3004,7 +3004,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_009.png",
-      "sha256": "f9d72b78bfbc6fbfa1ae231a96ac70fc3ad0eed518d115762c1e419ca10fe5f9",
+      "sha256": "1f736c360044ec8c14743e1eacf1f6faf4f012b7da0b7035af4f9d19ee32b537",
       "sharpnessBefore": 11.081,
       "sharpnessAfter": 13.722,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/176-la-peche-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-009--colored.png"
@@ -3094,7 +3094,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-011_ChatGPT_Image_Jul_17_2026_07_37_31_PM_8_010.png",
-      "sha256": "4bf6427e85edfad90568295430c46008e1aa93c40065708d304ca690c313a5c7",
+      "sha256": "e339e79e856ad99b1bbdfd8529a9ea9f222ff77f35c16d48c35b86d7e2ada419",
       "sharpnessBefore": 21.758,
       "sharpnessAfter": 27.003,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/181-les-myrtilles-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-010--colored.png"
@@ -3166,7 +3166,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-013_ChatGPT_Image_Jul_17_2026_07_37_32_PM_10_005.png",
-      "sha256": "97b915377cfb46f4e67e9eff1ed9469119538acba1f63a56d350277adacb0520",
+      "sha256": "00ca9a13250087cab9f7d2a9e6da55171dfdc885364d124dc8af3d4f7cbb1f1e",
       "sharpnessBefore": 48.69,
       "sharpnessAfter": 62.187,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/185-la-figue-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-005-colored.png"
@@ -3184,7 +3184,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-013_ChatGPT_Image_Jul_17_2026_07_37_32_PM_10_006.png",
-      "sha256": "aeb00c2db905aec0ecc7a6995975b92faeedb97d3b9fa7bb0c872b4724a6725c",
+      "sha256": "18374a40ebb16e3cf46d52d859d393413a98f80199484da9a1ab37e6023744a1",
       "sharpnessBefore": 22.034,
       "sharpnessAfter": 27.555,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/186-la-framboise-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-006-colored.png"
@@ -3220,7 +3220,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_023.png",
-      "sha256": "e91c0c3da3fcbe65db7b4544dc7d74984971b077101f6b36bd78f5b6987bd0b3",
+      "sha256": "22e24eeb65e4c2372e0da4df2e8101c97491409c3a5e17f448c628e1eb3a590a",
       "sharpnessBefore": 20.608,
       "sharpnessAfter": 28.018,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/188-le-gateau-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-023--colored.png"
@@ -3238,7 +3238,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_027.png",
-      "sha256": "559edc6c12ee8d8306b97fb6688d4b701f064bca3856c020d7291ac7e4c52b6d",
+      "sha256": "d8c1132c7cdd6e31b23573f516718d45850252611f766c0c7ba28226d113fb3c",
       "sharpnessBefore": 18.876,
       "sharpnessAfter": 23.306,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/189-la-pasteque-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-027--colored.png"
@@ -3274,7 +3274,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-027_ChatGPT_Image_Jul_17_2026_07_53_25_PM_4_028.png",
-      "sha256": "c1674685ad6a6cfb7bc776983fc6316ed2a95e9bd78a0ab34b290cb7a8398bbb",
+      "sha256": "918bb2038451704c5df9ea157bc935ad65d9f32fc63a20386db4fe0eb82e8da7",
       "sharpnessBefore": 11.392,
       "sharpnessAfter": 14.098,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/191-le-raisin-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-028--colored.png"
@@ -3292,7 +3292,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_017.png",
-      "sha256": "4b5ce7b550971cb09d44e0d44cdbda447d3fa6657d0bb1e161f319899ed58198",
+      "sha256": "1ec6be7e944cf94aaa40b291671044e175d17f9dc30eb7dbf49459a7069e945f",
       "sharpnessBefore": 7.182,
       "sharpnessAfter": 9.933,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/192-la-pomme-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-017--colored.png"
@@ -3310,7 +3310,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_018.png",
-      "sha256": "75c6c6e0e2bb6725fccc0521acf17268d99a76f65e15bb5012b60a5082cb559b",
+      "sha256": "2ba97907db6124e85918facdda882148656277103db64b8956ce299db44863dc",
       "sharpnessBefore": 10.202,
       "sharpnessAfter": 12.826,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/193-les-bananes-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-018--colored.png"
@@ -3328,7 +3328,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_027.png",
-      "sha256": "cc2575cd69aee94182e232ad1e81003a674467e6abee41ad90a738476cbcd7b9",
+      "sha256": "d268afccce984b72b749ac31eefdd381bdd0ac68b219fe7dc21d79c49933c7d1",
       "sharpnessBefore": 7.518,
       "sharpnessAfter": 8.875,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/194-la-glace-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-027--colored.png"
@@ -3346,7 +3346,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_028.png",
-      "sha256": "3bccded4ab44224e15df7467cb781b6de9b1604dadd6979862274482b4a08c57",
+      "sha256": "6ff41d563467775e9699c87a3994a343fae8aa53911803a40638c112089b2886",
       "sharpnessBefore": 11.234,
       "sharpnessAfter": 13.211,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/195-le-gateau-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-028--colored.png"
@@ -3382,7 +3382,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-030_ChatGPT_Image_Jul_17_2026_07_53_26_PM_7_014.png",
-      "sha256": "0c1d33fd690aece3743e9d10659b41d5a9c813e0caf3d874218af708b7768fd8",
+      "sha256": "1abe55f66538758f5f5fabb14f8fecb1d070c68b3e974588d9887f1fc0be80da",
       "sharpnessBefore": 12.08,
       "sharpnessAfter": 14.632,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/197-le-raisin-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-014--colored.png"
@@ -3400,7 +3400,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_026.png",
-      "sha256": "dc67bfb1c40506a6c39cf47786ffb10aad1442d7451833afb92528348c2fd0d3",
+      "sha256": "7370fc6251e112cfa2c4b09abbc12b6777879267186c5b7a4030e59213ed5552",
       "sharpnessBefore": 5.589,
       "sharpnessAfter": 6.627,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/198-la-pomme-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-026--colored.png"
@@ -3418,7 +3418,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_027.png",
-      "sha256": "18f36bd2a831330c279163b2ddbae1a2356608dcba6447ac1fd092b32890bab0",
+      "sha256": "7de2586c472195d45a44a5fa3d1548338c45bc400df1f3cc67f7371126dad24a",
       "sharpnessBefore": 8.948,
       "sharpnessAfter": 10.467,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/199-le-raisin-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-027--colored.png"
@@ -3436,7 +3436,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_028.png",
-      "sha256": "f8ed5885645c7e1c98e31ff4b0263db2b5da798f1e58b835fa0e5c20e8808967",
+      "sha256": "3225db7bf55b564f4a75898e6da55a8a2102cd243a6adcf6b60681ec6780330d",
       "sharpnessBefore": 9.379,
       "sharpnessAfter": 11.331,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/200-la-pasteque-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-028--colored.png"
@@ -3454,7 +3454,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-legumes-01.png",
-      "sha256": "13f9a1f6cb8bc0f333aebb9c2113cc84b230cc7e400fd3a455e4bd87f0224a94",
+      "sha256": "d721b3af08a9f6a86cb1f9b669fc84d2649b3f5cc6dce016d7cf7ff34fb9704a",
       "coloredPath": "assets/coloring/colored/nature-jardin/201-la-carotte-existing-legumes-01-png-colored.png"
     },
     {
@@ -3470,7 +3470,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-legumes-02.png",
-      "sha256": "a7eaca5f0ed6c8336fc8b5787f3e66a6bef9abb661c37fa644b8a7e05187365c",
+      "sha256": "0d13b7d5d30d590799882c285ffa4c5eba2b8686b9f471947548c66baa0ea583",
       "coloredPath": "assets/coloring/colored/nature-jardin/202-la-tomate-existing-legumes-02-png-colored.png"
     },
     {
@@ -3486,7 +3486,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-legumes-03.png",
-      "sha256": "f045cf31e9680c3912f150d8d28aec000c3d223220464c79d107e9bc002aab61",
+      "sha256": "78de008a624ae950425fb4f99866362b3aa5234bda7f10eb1ba0584cf3a38cd2",
       "coloredPath": "assets/coloring/colored/nature-jardin/203-laubergine-existing-legumes-03-png-colored.png"
     },
     {
@@ -3502,7 +3502,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-legumes-04.png",
-      "sha256": "b9868d7c7ab55b6010a5e79fe0ba30a11d98d90f6d3940181010aa383c8ef78f",
+      "sha256": "99d66b4f552a04b71ede261ccfc0fce52821f6667abf6b4606d8c4ace9c63950",
       "coloredPath": "assets/coloring/colored/nature-jardin/204-le-poivron-existing-legumes-04-png-colored.png"
     },
     {
@@ -3518,7 +3518,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-nature-01.png",
-      "sha256": "409f42ca83e256649008f7fa438b3b39c355d37a1531dd6f3bcdbcf632d148df",
+      "sha256": "0cc94cc121092abe9630e3a1c09d60dc8cc3bd15b80c8689c2f86668e3f24edd",
       "coloredPath": "assets/coloring/colored/nature-jardin/205-le-soleil-rayonnant-existing-nature-01-png-colored.png"
     },
     {
@@ -3534,7 +3534,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-nature-02.png",
-      "sha256": "c46ff27c006608b43f366714ae5191bee8ab5a0ebca9019041e98ae1487dc410",
+      "sha256": "790ceafc986b19660eea6e539a5164ac365df9c1602f3dad0f9c3853220eb46b",
       "coloredPath": "assets/coloring/colored/nature-jardin/206-le-croissant-de-lune-existing-nature-02-png-colored.png"
     },
     {
@@ -3550,7 +3550,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-nature-03.png",
-      "sha256": "487a4aa7e8a330a6547f7b30bbaade53ed952ee35e9b3717d5c9bef45592b5c0",
+      "sha256": "0039e103fa814b6c6fe478ca66ede5a0434a249d462cf0d1b89fe005209da469",
       "coloredPath": "assets/coloring/colored/nature-jardin/207-le-nuage-leger-existing-nature-03-png-colored.png"
     },
     {
@@ -3566,7 +3566,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-nature-04.png",
-      "sha256": "8d25483d01840ebcb778b178def9eac88d7e36d7a7f66ae1673a3af747f6ac8f",
+      "sha256": "d983f7d1dd0388b37f5b5098fbc524519f59606cb9b4268d7b69e67730b9000b",
       "coloredPath": "assets/coloring/colored/nature-jardin/208-larc-en-ciel-existing-nature-04-png-colored.png"
     },
     {
@@ -3582,7 +3582,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_005.png",
-      "sha256": "18d6415e2c0bdb44faae65b46d63194e85cb9b5ce1e0c8cb853df599294d78be",
+      "sha256": "93b1af93ffacecad69d16895f3952945cabc70daa6825aa59b2ad95f2b46f63d",
       "sharpnessBefore": 14.136,
       "sharpnessAfter": 17.917,
       "coloredPath": "assets/coloring/colored/nature-jardin/209-le-soleil-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-005-pn-colored.png"
@@ -3600,7 +3600,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_012.png",
-      "sha256": "3849f2ee6de5995bd71e6caab27d2257d89dd8057e72d9c7a24e799a78827a7e",
+      "sha256": "c80b9e3d78a3e09c5dec3e71eb398cfc44becf794263576a91731fe63be72b64",
       "sharpnessBefore": 21.183,
       "sharpnessAfter": 26.236,
       "coloredPath": "assets/coloring/colored/nature-jardin/210-le-papillon-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-012-pn-colored.png"
@@ -3690,7 +3690,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_011.png",
-      "sha256": "1d822fb047f76ef08142ce6c229a454fb3cec73fe4928d6a75effe4b5d8f13be",
+      "sha256": "007f67f85db28251a968a5832af37df89cd510dc394a6ef524840eea5835052b",
       "sharpnessBefore": 9.966,
       "sharpnessAfter": 13.376,
       "coloredPath": "assets/coloring/colored/nature-jardin/215-laubergine-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-011--colored.png"
@@ -3708,7 +3708,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_012.png",
-      "sha256": "27dc7e0795acec6d18bcc547298f065fa98b9da9dab89428210a5492b0145f05",
+      "sha256": "9e017ea07048f83cef63c95affbd6a63310cd0acdc948ffee4cc3839cbcb7424",
       "sharpnessBefore": 24.996,
       "sharpnessAfter": 31.367,
       "coloredPath": "assets/coloring/colored/nature-jardin/216-les-petits-pois-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-012--colored.png"
@@ -3726,7 +3726,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_018.png",
-      "sha256": "dc91c521da2bcb576b7c762c29dd2a07f55810480bcbdf0440a08198cc388ce7",
+      "sha256": "ce9f002199865ae376922ad72f5fb6c7dcef97d949064d40f5c956468560def9",
       "sharpnessBefore": 26.558,
       "sharpnessAfter": 37.003,
       "coloredPath": "assets/coloring/colored/nature-jardin/217-la-fleur-en-pot-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-018--colored.png"
@@ -3744,7 +3744,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_011.png",
-      "sha256": "7d97ebc6990ef38582a071a6db1dca3e4cb1b0ead9975d868f6cb2f452e5cd35",
+      "sha256": "bfa534ddb7ae31cc072db2ce7afb8e3486ce3b54986a74db84da6a5d684a45b2",
       "sharpnessBefore": 27.373,
       "sharpnessAfter": 34.074,
       "coloredPath": "assets/coloring/colored/nature-jardin/218-le-chou-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-011--colored.png"
@@ -3780,7 +3780,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-011_ChatGPT_Image_Jul_17_2026_07_37_31_PM_8_011.png",
-      "sha256": "036460b05852c78809fe04a187b35a2bb782b71651ee9f2a1a152a8ed74f74a7",
+      "sha256": "91623ace4a4172fd947497cb55d299a9eafa1cdf2f4fb3ef57cf0567fb0bbb25",
       "sharpnessBefore": 25.399,
       "sharpnessAfter": 32.044,
       "coloredPath": "assets/coloring/colored/nature-jardin/220-le-chou-fleur-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-011--colored.png"
@@ -3834,7 +3834,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-012_ChatGPT_Image_Jul_17_2026_07_37_31_PM_9_012.png",
-      "sha256": "e5ba1727f9d68d0106106f3780513d93e5a2d4ab4ac121739a64b017af895e5a",
+      "sha256": "76cc3dbb503f30884ece12c0ceb1ff32b74ba5623322b77bd8f7ab99b8f04bed",
       "sharpnessBefore": 15.893,
       "sharpnessAfter": 19.794,
       "coloredPath": "assets/coloring/colored/nature-jardin/223-lail-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-012--colored.png"
@@ -3870,7 +3870,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-013_ChatGPT_Image_Jul_17_2026_07_37_32_PM_10_007.png",
-      "sha256": "eba5f11ecf812db2eb32d16de19353d94854b51142d378928ba5a628ef1f4941",
+      "sha256": "3d314ae486aab29bf0d6d0e3f1a8df917402f832d354c5101dfde0c1cee90be3",
       "sharpnessBefore": 20.444,
       "sharpnessAfter": 25.055,
       "coloredPath": "assets/coloring/colored/nature-jardin/225-la-courgette-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-007-colored.png"
@@ -3888,7 +3888,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-013_ChatGPT_Image_Jul_17_2026_07_37_32_PM_10_008.png",
-      "sha256": "cd4e17baa1dc88ddc0cf9726a1e6662149d538cf950cf610c4b77ac3bd5f2054",
+      "sha256": "71cb2959aa526ffe0e0c4fa75fef2cbde1b31bb43483d85ecc73ea4279d474cd",
       "sharpnessBefore": 25.1,
       "sharpnessAfter": 32.076,
       "coloredPath": "assets/coloring/colored/nature-jardin/226-le-navet-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-008-colored.png"
@@ -3906,7 +3906,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-013_ChatGPT_Image_Jul_17_2026_07_37_32_PM_10_013.png",
-      "sha256": "fc293c23da1404791e4f7b271bc33b50f38efa7660570a14f10c030eb3f5c229",
+      "sha256": "831bd574990261990516a019b05c5985330ef7506c4b0bf89c6307aa35f0e229",
       "sharpnessBefore": 18.455,
       "sharpnessAfter": 23.475,
       "coloredPath": "assets/coloring/colored/nature-jardin/227-larc-en-ciel-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-013-colored.png"
@@ -3960,7 +3960,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_020.png",
-      "sha256": "f1d51d94f460a3ba5f2aa5ddeccba28e7e229fd605fc319fc884d196bacdce9f",
+      "sha256": "ee7f1cc1b2567dcf3a1d8ee82f155e55316b7d3966376544f348b8f7fab04c3c",
       "sharpnessBefore": 10.992,
       "sharpnessAfter": 13.335,
       "coloredPath": "assets/coloring/colored/nature-jardin/230-le-soleil-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-020--colored.png"
@@ -3978,7 +3978,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_013.png",
-      "sha256": "7c1cf27275e3e59584c2ea1f9fdab6be8099f0adaca53dd2cb7334f6b6eacbfd",
+      "sha256": "f3fe70c0968407f853f8b0b6f2509baa1602b67d438682f23d9e299e84e606e8",
       "sharpnessBefore": 15.632,
       "sharpnessAfter": 21.374,
       "coloredPath": "assets/coloring/colored/nature-jardin/231-labeille-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-013--colored.png"
@@ -4032,7 +4032,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_030.png",
-      "sha256": "fbf29e06a82afe7089c794c18f1e775550e2fb518b4785c8bd6f1058c453575a",
+      "sha256": "05b19607910db62af7d3ef8b680545c1fa362dd0a978ff9c253766c3290d79f8",
       "sharpnessBefore": 12.725,
       "sharpnessAfter": 16.364,
       "coloredPath": "assets/coloring/colored/nature-jardin/234-le-soleil-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-030--colored.png"
@@ -4068,7 +4068,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_005.png",
-      "sha256": "3a4bc087d8d41cfc11e5038dec7599ec4be1b952aae1da79699e1afac77cc029",
+      "sha256": "3a4920acbe145d226cf2f4f4bbe1d4f6ad7ef4d608b79ebdc3366f654205f6ab",
       "sharpnessBefore": 10.88,
       "sharpnessAfter": 14.136,
       "coloredPath": "assets/coloring/colored/nature-jardin/236-la-coccinelle-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-005--colored.png"
@@ -4086,7 +4086,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_006.png",
-      "sha256": "9649c1c7d6dbff1e6c7dc6870748c7d427e8c8f5a7d448c9fbbcabf9057a89ee",
+      "sha256": "91d4ac5ea1273de8901dda8e2c37180bdbc11c76098067137e9d3c8ba386919a",
       "sharpnessBefore": 42.256,
       "sharpnessAfter": 49.444,
       "coloredPath": "assets/coloring/colored/nature-jardin/237-le-papillon-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-006--colored.png"
@@ -4140,7 +4140,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-030_ChatGPT_Image_Jul_17_2026_07_53_26_PM_7_018.png",
-      "sha256": "71b9f4b08430f78799ba8592579c16bccf1c68e2957e7feff16f689a01ec6245",
+      "sha256": "5819002dac66f4c3103133b353960ec7899c3705dfdb422f08c3a092c23b9d0e",
       "sharpnessBefore": 12.246,
       "sharpnessAfter": 15.241,
       "coloredPath": "assets/coloring/colored/nature-jardin/240-la-fleur-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-018--colored.png"
@@ -4174,7 +4174,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-maison-02.png",
-      "sha256": "3c71487c51ea1b2cfe18f7dd53c982ff4fd1d1fa71ed46c624837c612169f6b7",
+      "sha256": "419b514f2231af9d260028b9013ed6e85e542f1fbd4626699945a16dc2ba9ce1",
       "coloredPath": "assets/coloring/colored/maison-objets/242-la-table-ronde-existing-maison-02-png-colored.png"
     },
     {
@@ -4190,7 +4190,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-maison-03.png",
-      "sha256": "b4b8f1746ae81b2ac28b42720dc6899031394e4f97c03b2f62dda919332c2832",
+      "sha256": "8d948dc562df8174ca3129796e2c138160c591fd3f2922f44e04313a33ef75d3",
       "coloredPath": "assets/coloring/colored/maison-objets/243-le-fauteuil-existing-maison-03-png-colored.png"
     },
     {
@@ -4206,7 +4206,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-maison-04.png",
-      "sha256": "28eeb4efb0cb85e3b3d1fd4d2da33e07657b2559f545c4181623275426f8fcb8",
+      "sha256": "0655269683917d50bc559514b521c63a7950d38d139470dc7afff48c67a8d666",
       "coloredPath": "assets/coloring/colored/maison-objets/244-le-canape-existing-maison-04-png-colored.png"
     },
     {
@@ -4222,7 +4222,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_007.png",
-      "sha256": "2331fcdb933284ec9cfb26d28355ac0194a4cca195ab2211045a215c21f54f7e",
+      "sha256": "38e2148a7e0f5e49e480726f72a84707c59608b9fa9ce7730a74353e0fdb2eda",
       "sharpnessBefore": 12.007,
       "sharpnessAfter": 14.986,
       "coloredPath": "assets/coloring/colored/maison-objets/245-le-fauteuil-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-007-pn-colored.png"
@@ -4294,7 +4294,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-003_ChatGPT_Image_Jul_17_2026_07_37_00_PM_006.png",
-      "sha256": "f98c8b58c9388692ac7ceb1bc5878d46bed4d5cdf6032f44a3df1f58d7a3857b",
+      "sha256": "cb7a7ca99c78364382e5096ab7f6d8db4c751fac8499c16e3d5bbb2a7d2e940b",
       "sharpnessBefore": 13.458,
       "sharpnessAfter": 19.092,
       "coloredPath": "assets/coloring/colored/maison-objets/249-le-refrigerateur-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-006-pn-colored.png"
@@ -4312,7 +4312,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_013.png",
-      "sha256": "7b19209aef48606897ecabedfe70cdf55379dcd815bb63e3e8de4b1d8a6cd7b1",
+      "sha256": "f71a17fd6be132518598055ecfe2eb87b54b8a2bd30e8eba315d58c1ebbce953",
       "sharpnessBefore": 29.273,
       "sharpnessAfter": 42.953,
       "coloredPath": "assets/coloring/colored/maison-objets/250-le-lit-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-013--colored.png"
@@ -4330,7 +4330,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_014.png",
-      "sha256": "ebe7bfed54f5e054966c82865021b7dc29b12e15d0c5c1fc550ae209c44f0573",
+      "sha256": "e093e45c714c8b45792ca67d168730ccdedc428b29d7dc3c87a8a1b6f17a4ce4",
       "sharpnessBefore": 28.573,
       "sharpnessAfter": 38.078,
       "coloredPath": "assets/coloring/colored/maison-objets/251-la-bibliotheque-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-014--colored.png"
@@ -4384,7 +4384,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_014.png",
-      "sha256": "d1e6b8d5c17c84998984e85b43220899ad1191561789e95d24be26480b4973b3",
+      "sha256": "0a132874cec2e0e2dceed72bf40577eee0c6fde1168f21559418625ab5cef161",
       "sharpnessBefore": 15.548,
       "sharpnessAfter": 19.318,
       "coloredPath": "assets/coloring/colored/maison-objets/254-le-tabouret-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-014--colored.png"
@@ -4402,7 +4402,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_013.png",
-      "sha256": "a084b4f25bca96cd371ca5a9463bc2a3e334cb229e6ad28991f347992d0f8cf5",
+      "sha256": "47d95710f878c6ef4689cee4dc810fd7beabc11609dd4fcee0ccc932250454bf",
       "sharpnessBefore": 24.616,
       "sharpnessAfter": 29.985,
       "coloredPath": "assets/coloring/colored/maison-objets/255-le-banc-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-013--colored.png"
@@ -4420,7 +4420,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_014.png",
-      "sha256": "ae3bd472690d7d1f76710bfa53a71ce61a2d3d0449f6b42b65b254e666a538ce",
+      "sha256": "a898b785a34a6810a5614d16a0b45079d0631482ec9218329d5e0cd790a35227",
       "sharpnessBefore": 22.76,
       "sharpnessAfter": 29.738,
       "coloredPath": "assets/coloring/colored/maison-objets/256-la-commode-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-014--colored.png"
@@ -4456,7 +4456,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-011_ChatGPT_Image_Jul_17_2026_07_37_31_PM_8_013.png",
-      "sha256": "f33e418423851aa565daa74e95145d4819e1fc2b8689833fae62d3588a37eece",
+      "sha256": "cd97c935c37664076cefa0891789921dd01f4b0d1c8606f8745169986bda30f9",
       "sharpnessBefore": 19.712,
       "sharpnessAfter": 24.837,
       "coloredPath": "assets/coloring/colored/maison-objets/258-la-table-de-nuit-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-013--colored.png"
@@ -4492,7 +4492,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-012_ChatGPT_Image_Jul_17_2026_07_37_31_PM_9_013.png",
-      "sha256": "801d0e4cec55b64365ae987245664cd32a7c9853d43984e2eb9ca7d3b09cc605",
+      "sha256": "ed952d60f9251eb5ea49711f158410b83c352479ff8c9a9c8709f8b010c371f5",
       "sharpnessBefore": 28.49,
       "sharpnessAfter": 36.281,
       "coloredPath": "assets/coloring/colored/maison-objets/260-le-lit-de-bebe-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-013--colored.png"
@@ -4510,7 +4510,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-013_ChatGPT_Image_Jul_17_2026_07_37_32_PM_10_009.png",
-      "sha256": "cf90f1b4b37c9d89e47a762b495112ce7ebbfc2ec087849b3d968e3da77d1f83",
+      "sha256": "68b12a2afe6d251640f499d7e114cca4184643a131108ce1cda6d8b48338835a",
       "sharpnessBefore": 20.716,
       "sharpnessAfter": 26.536,
       "coloredPath": "assets/coloring/colored/maison-objets/261-le-miroir-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-009-colored.png"
@@ -4528,7 +4528,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-013_ChatGPT_Image_Jul_17_2026_07_37_32_PM_10_010.png",
-      "sha256": "a54b483f8c5338a0fa886fcd6a3528332e50bb10ce699ba4ab8db72937867714",
+      "sha256": "67d19a29a9988a5e319dff020ac44080d1b3ed23fe8376af317c190429286bab",
       "sharpnessBefore": 29.762,
       "sharpnessAfter": 37.1,
       "coloredPath": "assets/coloring/colored/maison-objets/262-le-lit-superpose-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-010-colored.png"
@@ -4546,7 +4546,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_011.png",
-      "sha256": "85e5e057c5300af16f2bef2074230af2dc15f1459ec47207b7ca970e5d19e039",
+      "sha256": "f5da333074efc67ac458bd90d36fbdc9ce55a3ffbb2d8409bc37fcc5025c4087",
       "sharpnessBefore": 11.553,
       "sharpnessAfter": 14.505,
       "coloredPath": "assets/coloring/colored/maison-objets/263-la-table-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-011--colored.png"
@@ -4564,7 +4564,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_012.png",
-      "sha256": "5ff9aea4112e871f0d00c348caa12a41abc1d23ac438c6ed7d010a670730ebed",
+      "sha256": "7255701054cbf006ca859088a01fa68c9a182d27c9ce1f6cb58427fc0a7732fa",
       "sharpnessBefore": 13.584,
       "sharpnessAfter": 16.666,
       "coloredPath": "assets/coloring/colored/maison-objets/264-le-lit-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-012--colored.png"
@@ -4600,7 +4600,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_014.png",
-      "sha256": "a93172d8f4d413d31163a92ca110552dd5c5dee39c7a572ed80c7bb434808659",
+      "sha256": "2a470389a721b26273b9a307ff58b735bf44018bc42d8d2cc7c2112922d262e3",
       "sharpnessBefore": 7.805,
       "sharpnessAfter": 9.122,
       "coloredPath": "assets/coloring/colored/maison-objets/266-larmoire-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-014--colored.png"
@@ -4618,7 +4618,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_015.png",
-      "sha256": "d9352952e4cdb871e0baf5e55abb9f41851ddaab29ee08cf5d53398ddf4cb622",
+      "sha256": "e1e472b4ca15c22c6bc368f219218a25922fab9ba99eb7cd28b4d24ab48b0c96",
       "sharpnessBefore": 9.856,
       "sharpnessAfter": 11.646,
       "coloredPath": "assets/coloring/colored/maison-objets/267-la-baignoire-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-015--colored.png"
@@ -4636,7 +4636,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_019.png",
-      "sha256": "1890539d0ff22744af4b7336ea83281b7ff5cc3d41f11a8e165dcedd641c38eb",
+      "sha256": "83dbc3710b63afa9de786bf768522efe87746858c58d3d6a0ffa0df52ab29f5b",
       "sharpnessBefore": 7.03,
       "sharpnessAfter": 8.178,
       "coloredPath": "assets/coloring/colored/maison-objets/268-la-brosse-a-dents-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-019--colored.png"
@@ -4654,7 +4654,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_028.png",
-      "sha256": "e03d92bbaa5316fc684a8db4fc5595272fa5b26a90a94004bfc6f1076a6b9fd9",
+      "sha256": "eb96ecb3739e86a555b9b64b5fdd2850efa9a7fbc414cda85e0e806e16114db4",
       "sharpnessBefore": 18.662,
       "sharpnessAfter": 23.623,
       "coloredPath": "assets/coloring/colored/maison-objets/269-le-reveil-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-028--colored.png"
@@ -4762,7 +4762,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_013.png",
-      "sha256": "ecc96d47100a2c6e81b0739a7ea4850446d550600ddd9ec72b953048d2331c91",
+      "sha256": "754cb4961bd4e14c2404eef6cf4329d93688cb89d748e9f903da59ee873854f0",
       "sharpnessBefore": 11.846,
       "sharpnessAfter": 17.141,
       "coloredPath": "assets/coloring/colored/maison-objets/275-la-chaise-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-013--colored.png"
@@ -4780,7 +4780,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_014.png",
-      "sha256": "35634f00f418edf58485190ebc2588d40a6656b892e77fe29c9667c69b04703c",
+      "sha256": "5a235f7da32d6e727294a8f982b13d833ecc047a1842075183a5bfb3d5f49079",
       "sharpnessBefore": 7.897,
       "sharpnessAfter": 9.195,
       "coloredPath": "assets/coloring/colored/maison-objets/276-la-table-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-014--colored.png"
@@ -4798,7 +4798,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_015.png",
-      "sha256": "e457b6b7e8d871481f995a38d953c349eed1821544518bfdef6e07776b6bb5f1",
+      "sha256": "8069396a81f458166dbd8803dabf124613f56011e8f586acdae08940eaa1b876",
       "sharpnessBefore": 18.773,
       "sharpnessAfter": 23.476,
       "coloredPath": "assets/coloring/colored/maison-objets/277-le-lit-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-015--colored.png"
@@ -4816,7 +4816,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_016.png",
-      "sha256": "c867cff1804420ded777d0aee395edd73ec2e62c59a539b2506ff74f0af7bc17",
+      "sha256": "a31825b8d542d079c242753216dbbdf220b34b6c2fea0ea834344ff3562c3c6e",
       "sharpnessBefore": 7.145,
       "sharpnessAfter": 9.659,
       "coloredPath": "assets/coloring/colored/maison-objets/278-la-lampe-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-016--colored.png"
@@ -4834,7 +4834,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_026.png",
-      "sha256": "4916c03e320773aaf51981449fca4319a7c74d1cb710fff147ccc3e7329cca61",
+      "sha256": "b2cc703f6a66a778df2cfb44341d9bec57624520f9eebd756f80bdf173ba87f9",
       "sharpnessBefore": 12.085,
       "sharpnessAfter": 14.102,
       "coloredPath": "assets/coloring/colored/maison-objets/279-le-reveil-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-026--colored.png"
@@ -4870,7 +4870,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-ville-01.png",
-      "sha256": "3772c84ca160d2c4ccd0aca6c3612623c994bbd1e93e0860f1c5db234846b67f",
+      "sha256": "27b3692ee59bb07c9bd9b58158a693ee6d50878839268cdbd9359c015367d1c3",
       "coloredPath": "assets/coloring/colored/batiments-lieux/281-la-petite-maison-existing-ville-01-png-colored.png"
     },
     {
@@ -4886,7 +4886,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-ville-02.png",
-      "sha256": "6986ad08c850bd92f327c18df49a6f283090898ab1df8f71d40f2ceb21e771e0",
+      "sha256": "51ea7f203f180d2ffa158514d04eefacc18d884a8a8666437e1d0e065d2553e6",
       "coloredPath": "assets/coloring/colored/batiments-lieux/282-la-maison-a-etage-existing-ville-02-png-colored.png"
     },
     {
@@ -4902,7 +4902,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-ville-03.png",
-      "sha256": "2616cf56cd312a344280d06bc0172e52e04d920a9fb8f16d887d985af3813a7f",
+      "sha256": "6ef714a21bc9f9e24d3ef546f840e0a5fef4cc8d862e2b7c969327efda3aa5ae",
       "coloredPath": "assets/coloring/colored/batiments-lieux/283-limmeuble-existing-ville-03-png-colored.png"
     },
     {
@@ -4918,7 +4918,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-ville-04.png",
-      "sha256": "b9f09ab5b159c5c6f411f63cd1b3b0fd8b3900fe89e90d0b13f6a85dfc4718b0",
+      "sha256": "26fe32459a508ac4f7af223f8182cc3796140bb03f8018104c893724e4ff1005",
       "coloredPath": "assets/coloring/colored/batiments-lieux/284-lecole-existing-ville-04-png-colored.png"
     },
     {
@@ -4934,7 +4934,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_011.png",
-      "sha256": "4945538edd0e5c76d882a94d27c53df231edda0fc9cde9673f938ef3b2c7fe84",
+      "sha256": "e8327da4f554ab96fc3d226b65cea4efd3501a7a3418c6db1576f70711a6416f",
       "sharpnessBefore": 20.091,
       "sharpnessAfter": 24.976,
       "coloredPath": "assets/coloring/colored/batiments-lieux/285-le-sac-a-dos-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-011-pn-colored.png"
@@ -4988,7 +4988,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_016.png",
-      "sha256": "49753492cba146df4b516231bb7347f6ac47f717de2f8fd9e3a37e48555becc4",
+      "sha256": "2e23972f720ed132d8227c52c098352a38acd5e4aa86a13f7dc1888843054ece",
       "sharpnessBefore": 16.398,
       "sharpnessAfter": 21.096,
       "coloredPath": "assets/coloring/colored/batiments-lieux/288-le-phare-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-016--colored.png"
@@ -5006,7 +5006,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_015.png",
-      "sha256": "3ce00a17338ce498687f4daff232b1daaec62d106d3cfc77cd15e51d95f97674",
+      "sha256": "8d5ea0557773d7e025e5dccb4cc2e04d59e45afb801deaaec2dfdf577ae063d7",
       "sharpnessBefore": 41.796,
       "sharpnessAfter": 52.704,
       "coloredPath": "assets/coloring/colored/batiments-lieux/289-la-cabane-dans-larbre-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-015--colored.png"
@@ -5042,7 +5042,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_015.png",
-      "sha256": "3d246767e6a0ac5dcd5dae1f49ad3e61d7b508d6ef1fae770dbbcf96187b90d7",
+      "sha256": "07700af5cd383fb5ca3c8b4746d040c1e8c6880b42d2ce34b37cb302e97abd74",
       "sharpnessBefore": 32.943,
       "sharpnessAfter": 41.488,
       "coloredPath": "assets/coloring/colored/batiments-lieux/291-le-garage-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-015--colored.png"
@@ -5060,7 +5060,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_016.png",
-      "sha256": "e97cd5a3b1ccfc8aee7bfa0b4f033d3104617de4d86f8c1f1421148ed45d70a6",
+      "sha256": "bc6b9843c273631d51f70fbf227ffc074cfb658a3a5bf1f7b47e0230e1616a41",
       "sharpnessBefore": 17.572,
       "sharpnessAfter": 22.249,
       "coloredPath": "assets/coloring/colored/batiments-lieux/292-la-tour-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-016--colored.png"
@@ -5078,7 +5078,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-011_ChatGPT_Image_Jul_17_2026_07_37_31_PM_8_015.png",
-      "sha256": "6bfa8691da9b172a7222d788a25d0b1c6f34b06fe16655f951d2eec499703d8e",
+      "sha256": "d9687d827e6337b9c6f1e0eb04934a4710e2ce201ad9428d47221074178352c8",
       "sharpnessBefore": 48.964,
       "sharpnessAfter": 61.876,
       "coloredPath": "assets/coloring/colored/batiments-lieux/293-la-maison-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-015--colored.png"
@@ -5114,7 +5114,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-013_ChatGPT_Image_Jul_17_2026_07_37_32_PM_10_011.png",
-      "sha256": "5c7af4d2b6ed32f255a55a6d4a0d0236458e2a1e4e5dafd4a5f301f573256d80",
+      "sha256": "95b44bed0bc87e93b678b2c15d63fe92dac5a843a01bd4d32fa7ce5f4dbd48ea",
       "sharpnessBefore": 44.209,
       "sharpnessAfter": 54.538,
       "coloredPath": "assets/coloring/colored/batiments-lieux/295-la-pagode-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-011-colored.png"
@@ -5240,7 +5240,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_007.png",
-      "sha256": "14f2531fc1828d7562e653d7991ba0353b88af2aaa5f2829d530ad52a4d34b18",
+      "sha256": "010aff47a73e767da2e26623baddca0fa0902c9a5d8ebbbb76f2f48bf7f8b76e",
       "sharpnessBefore": 30.179,
       "sharpnessAfter": 40.379,
       "coloredPath": "assets/coloring/colored/batiments-lieux/302-lecole-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-007--colored.png"
@@ -5276,7 +5276,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_009.png",
-      "sha256": "1fa3689647339ab43c581bcb297706ff6ddbbe401e51412310eed098abd7d57b",
+      "sha256": "164a6e8d0df91666fa1942a3d650690732157abeafadf591cd65138631070328",
       "sharpnessBefore": 18.79,
       "sharpnessAfter": 23.238,
       "coloredPath": "assets/coloring/colored/batiments-lieux/304-le-magasin-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-009--colored.png"
@@ -5294,7 +5294,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_010.png",
-      "sha256": "1f5f1423a8de5fbc4e50aeeca5a5b814ce5d8d24f22143e3a1cd8c6cae2bf6f0",
+      "sha256": "77969762408e3f378372c0f36750178fd81a1f89f254dd6c9a6887741590666f",
       "sharpnessBefore": 26.4,
       "sharpnessAfter": 33.341,
       "coloredPath": "assets/coloring/colored/batiments-lieux/305-le-chateau-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-010--colored.png"
@@ -5330,7 +5330,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-025_ChatGPT_Image_Jul_17_2026_07_53_24_PM_2_017.png",
-      "sha256": "9eeb82a7b5da4f2710d3c024f3dcf9de65dd8c9f54d25d344d892555f8538d03",
+      "sha256": "7e8be71d72835bfafa9077cdb3c8234639ba284e7027b098870bd12c5158c6b4",
       "sharpnessBefore": 8.874,
       "sharpnessAfter": 10.727,
       "coloredPath": "assets/coloring/colored/batiments-lieux/307-le-crayon-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-017--colored.png"
@@ -5366,7 +5366,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_010.png",
-      "sha256": "145a4bd320cb3a6a80e9f8f90e23176ac75f326266a67b734b2ed533118f3843",
+      "sha256": "e352b188e4915dcdf4135d938952b942436c131eae07c47836273d2422d0ea8c",
       "sharpnessBefore": 28.354,
       "sharpnessAfter": 35.514,
       "coloredPath": "assets/coloring/colored/batiments-lieux/309-la-maison-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-010--colored.png"
@@ -5402,7 +5402,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-026_ChatGPT_Image_Jul_17_2026_07_53_25_PM_3_021.png",
-      "sha256": "be27ab602ea55ed46f4d551c31f116992119af0a8c3100d0ce313b72fb2a1ab1",
+      "sha256": "4e128f5938c477d6a2bf7dfac8e1c6bf342799ccb81b188599166d0ea08049c8",
       "sharpnessBefore": 18.349,
       "sharpnessAfter": 23.321,
       "coloredPath": "assets/coloring/colored/batiments-lieux/311-le-sac-a-dos-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-021--colored.png"
@@ -5420,7 +5420,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-027_ChatGPT_Image_Jul_17_2026_07_53_25_PM_4_030.png",
-      "sha256": "955a37bce028f9208792110bd06d46724e427f12cc30ea5ed9d3065af22aaae2",
+      "sha256": "e313b96d6b847505ae9f17d292a225e05b9361fceb0858d05f4e4d19a0612103",
       "sharpnessBefore": 10.569,
       "sharpnessAfter": 14.37,
       "coloredPath": "assets/coloring/colored/batiments-lieux/312-le-crayon-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-030--colored.png"
@@ -5438,7 +5438,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_019.png",
-      "sha256": "22c7b777a3f8a9f12f3b03a59721153549145f673f0dd5e5dd7586493c2ee9a3",
+      "sha256": "a73a8b68cfe54912b1ecd1cb7b0cd7dc45336442ccb213c81a447601edf8e1b9",
       "sharpnessBefore": 23.808,
       "sharpnessAfter": 31.088,
       "coloredPath": "assets/coloring/colored/batiments-lieux/313-la-maison-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-019--colored.png"
@@ -5456,7 +5456,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_020.png",
-      "sha256": "891f9d9514b9f7699e4dbc965e61ba3619ab62f233c29f2c9b92edeb55fa752b",
+      "sha256": "f673bd49c623134157355465c4630da360a1ceea3bed8b7e64ecfd2bb57937f7",
       "sharpnessBefore": 16.673,
       "sharpnessAfter": 20.451,
       "coloredPath": "assets/coloring/colored/batiments-lieux/314-le-moulin-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-020--colored.png"
@@ -5474,7 +5474,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_022.png",
-      "sha256": "db1db8a7557b8436959a6e078869f244cf3f54e5dbc0ed818d6a26ecdf9ca8cb",
+      "sha256": "db5af3287a6454222060a84da3493f022900c7a0ea778db74c23d2040a78260f",
       "sharpnessBefore": 9.018,
       "sharpnessAfter": 11.349,
       "coloredPath": "assets/coloring/colored/batiments-lieux/315-le-crayon-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-022--colored.png"
@@ -5510,7 +5510,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-030_ChatGPT_Image_Jul_17_2026_07_53_26_PM_7_013.png",
-      "sha256": "53453f3a9599a95325f5436b51c21ec8e433bde27f6fdc17c953a8bd6752da47",
+      "sha256": "44371ef440f757ed2ea3165e5018bb38a304cc61134bbec8b553ac68fbed56f3",
       "sharpnessBefore": 17.285,
       "sharpnessAfter": 21.31,
       "coloredPath": "assets/coloring/colored/batiments-lieux/317-le-sac-a-dos-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-013--colored.png"
@@ -5546,7 +5546,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_022.png",
-      "sha256": "9e8abe18acc517847c480329d40742790942d91dce608ec1696422464b6cf373",
+      "sha256": "d66570ddc0e56fb06a22a5ac31154d75c5bdeee33e00e4b57211632f46743dc4",
       "sharpnessBefore": 17.299,
       "sharpnessAfter": 22.139,
       "coloredPath": "assets/coloring/colored/batiments-lieux/319-le-chateau-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-022--colored.png"
@@ -5582,7 +5582,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-chiffres-01.png",
-      "sha256": "35ff33d4f44f847cec4220c0429079044fef29da10a96efd5b6c4fdb6ce90d53",
+      "sha256": "a314c71317d33dc6d9cf8b87cffad42904c4afd2e8e46b3803d4f472b4755c5d",
       "coloredPath": "assets/coloring/colored/apprentissage/321-le-grand-chiffre-1-existing-chiffres-01-png-colored.png"
     },
     {
@@ -5598,7 +5598,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-chiffres-02.png",
-      "sha256": "d5bb0f870c195fb924297146791d2a6086e984de97bb04e67d201773d8629a37",
+      "sha256": "1284a3f97094474ef92aec5a6bceb850f0c1dde317f6314936cfc28151357532",
       "coloredPath": "assets/coloring/colored/apprentissage/322-1-soleil-existing-chiffres-02-png-colored.png"
     },
     {
@@ -5614,7 +5614,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-chiffres-03.png",
-      "sha256": "a942af2b0f844f9900766d3eece6b8f128228721240f4e655c8a941422132e3b",
+      "sha256": "3fb4badc5a398ad5e1e7910a644cb9677a56b1b4c1c6e2e28ddcaec1b9ade57c",
       "coloredPath": "assets/coloring/colored/apprentissage/323-1-ballon-existing-chiffres-03-png-colored.png"
     },
     {
@@ -5630,7 +5630,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-chiffres-04.png",
-      "sha256": "5c6d8552ce64bcd22fd4898b256c2205b88257d77468e7e0d494974fbbc7d3b5",
+      "sha256": "a737aede9919652556f6550561ab2551cf90b9c5a73d0ca56b40e3f3e2aa192e",
       "coloredPath": "assets/coloring/colored/apprentissage/324-1-tambour-existing-chiffres-04-png-colored.png"
     },
     {
@@ -5646,7 +5646,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-chiffres-05.png",
-      "sha256": "218142732238a5eb9b0bffe69e36488ff34c26655bd39737f051f46146d1a72a",
+      "sha256": "979c9b5cac73e64732a389f2d6e322649f3eb9f9cf917fc92e653da6513b5b03",
       "coloredPath": "assets/coloring/colored/apprentissage/325-le-grand-chiffre-2-existing-chiffres-05-png-colored.png"
     },
     {
@@ -5662,7 +5662,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-chiffres-06.png",
-      "sha256": "3b0146bf8576f68b8d8fc70d10beaff5b194ffb26c41a0430001118e2e6ef8b5",
+      "sha256": "118d80d40db586dabc9d0f898d8be366e83a7e980d65a378af0e33915e953aa7",
       "coloredPath": "assets/coloring/colored/apprentissage/326-2-poissons-existing-chiffres-06-png-colored.png"
     },
     {
@@ -5678,7 +5678,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-chiffres-07.png",
-      "sha256": "62612e6d9cf725af165f9b0504853b1b518bad32e14a18a8988b70f45085feb8",
+      "sha256": "b6d18c1f13b834e7ef9b80bb4ac321ba0906adf433b90296681e329de08c5286",
       "coloredPath": "assets/coloring/colored/apprentissage/327-2-chaussures-existing-chiffres-07-png-colored.png"
     },
     {
@@ -5694,7 +5694,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-chiffres-08.png",
-      "sha256": "879a69baba99a9240f8b0bae1c91372052c2a5cf45a7943b91dc1a7f595576e5",
+      "sha256": "22b8d5dbab1f871ff694a9c4eaca4ed85e72979a9394b1a7431c01b65e67e793",
       "coloredPath": "assets/coloring/colored/apprentissage/328-2-oiseaux-existing-chiffres-08-png-colored.png"
     },
     {
@@ -5710,7 +5710,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-chiffres-09.png",
-      "sha256": "eb22cebaedd6cd790e3dc8cf22988b2ea9e2bfa65cbfec69eb00901fb15a2b51",
+      "sha256": "d1b8dd134d5ca5bf91568ced30a5da3d86ac274e54a4be20b23c6012fe65114e",
       "coloredPath": "assets/coloring/colored/apprentissage/329-le-grand-chiffre-3-existing-chiffres-09-png-colored.png"
     },
     {
@@ -5726,7 +5726,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-chiffres-10.png",
-      "sha256": "f391eb5f8e8bffa5bc5859819f5203654c3470b518c632a8a71f600df9b87dc1",
+      "sha256": "230c4a63c29c35a716e68d47bac65d046904fce518c9b4147db0d8f25cd1d76e",
       "coloredPath": "assets/coloring/colored/apprentissage/330-3-mangues-existing-chiffres-10-png-colored.png"
     },
     {
@@ -5742,7 +5742,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-chiffres-11.png",
-      "sha256": "0967c33dc802503d86fd73438b391fae84282e6116e0db6f783255abe47d7038",
+      "sha256": "a729990c079a1a67c9bc041d10df214254982d13f8a80e7af52b5c4577bb6c39",
       "coloredPath": "assets/coloring/colored/apprentissage/331-3-papillons-existing-chiffres-11-png-colored.png"
     },
     {
@@ -5758,7 +5758,7 @@
       "validationStatus": "validated",
       "origin": "generated-image",
       "sourceName": "existing-chiffres-12.png",
-      "sha256": "19fcf55d63c45e6f101a1368ebfb741a7efaf8b5550bb47f0cba2e0dd7226357",
+      "sha256": "c1378f38986c4140810404eccb7a549575bb1b4a6ca3df27305355fd70124fdf",
       "coloredPath": "assets/coloring/colored/apprentissage/332-3-petites-voitures-existing-chiffres-12-png-colored.png"
     },
     {
@@ -5774,7 +5774,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-formes-01.png",
-      "sha256": "395937f4dbcb60e9a88d7031dbda5952a4727e93b444639e1b6b567c787ce05c",
+      "sha256": "424dfcb06789848dddc1439c87f26349472c602709ee1fa9b12c96a527f9ba30",
       "coloredPath": "assets/coloring/colored/apprentissage/333-le-grand-cercle-existing-formes-01-png-colored.png"
     },
     {
@@ -5790,7 +5790,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-formes-02.png",
-      "sha256": "2434412316fd4aeb576238ccfa016228272684ad635e44f6fb7845cb493ccbba",
+      "sha256": "e4334f1e21352aed0332086e68820e0faa623af4c00bd884cd30cfba46670acd",
       "coloredPath": "assets/coloring/colored/apprentissage/334-le-carre-bien-droit-existing-formes-02-png-colored.png"
     },
     {
@@ -5806,7 +5806,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-formes-03.png",
-      "sha256": "e9b1907192ac42984cf5ac0c956cfca04f7dd6955c18abbd298c442842cc9cb7",
+      "sha256": "ea059655b2599fa9464f28dcdb1862c09edba1b9a40ce449c04c077b28e870dd",
       "coloredPath": "assets/coloring/colored/apprentissage/335-le-triangle-pointu-existing-formes-03-png-colored.png"
     },
     {
@@ -5822,7 +5822,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-formes-04.png",
-      "sha256": "664b0836369194c2cdf2f8bb78442799b36a82a9d7e2fcd7cd37837ccf7a9caf",
+      "sha256": "baa9a7a7ba81095ce2384d8e2f71ac7d632e9085c850c0e85689ee3eac2d2803",
       "coloredPath": "assets/coloring/colored/apprentissage/336-le-rectangle-allonge-existing-formes-04-png-colored.png"
     },
     {
@@ -5838,7 +5838,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-002_ChatGPT_Image_Jul_17_2026_07_36_43_PM_008.png",
-      "sha256": "3721efe0e05110b669db3763d47e3b5474da7b8ae664f77d2b0807dd73bf867b",
+      "sha256": "7ec2925c015dda99328529c339b3a99a384f7946a6bde14b75b44ffc476c7bff",
       "sharpnessBefore": 13.403,
       "sharpnessAfter": 17.159,
       "coloredPath": "assets/coloring/colored/apprentissage/337-le-chiffre-5-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-008-pn-colored.png"
@@ -5856,7 +5856,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-003_ChatGPT_Image_Jul_17_2026_07_37_00_PM_009.png",
-      "sha256": "710ea5ca93f634954ab39f62ed8f4729a7b7bbe5f195bdcc3633b0c5b3483d6d",
+      "sha256": "4b3b8839142882f9014046b527c14994cfc46e66cf38fc9206e3aad238e12c71",
       "sharpnessBefore": 8.432,
       "sharpnessAfter": 12.069,
       "coloredPath": "assets/coloring/colored/apprentissage/338-le-chiffre-3-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-009-pn-colored.png"
@@ -5874,7 +5874,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-003_ChatGPT_Image_Jul_17_2026_07_37_00_PM_010.png",
-      "sha256": "9681635368f6bd61f7b39c3cfe896d0b87e34b9cea34e1f4963452cf8aafaf2f",
+      "sha256": "09b6ebbf0c17340e3790ae5236271e70d1d42c0a902ee5abdb5f05691f547555",
       "sharpnessBefore": 4.957,
       "sharpnessAfter": 5.915,
       "coloredPath": "assets/coloring/colored/apprentissage/339-la-lettre-a-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-010-pn-colored.png"
@@ -5910,7 +5910,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_020.png",
-      "sha256": "262b732e25a6b0fd77977efea7be9a03ed51300b684ca7cac1116ec4111932ca",
+      "sha256": "53c1bb959d1e0b210fb22f9e58eb9831e51b5a3230a284841f8e1f4bd9d761f1",
       "sharpnessBefore": 9.408,
       "sharpnessAfter": 11.79,
       "coloredPath": "assets/coloring/colored/apprentissage/341-la-lettre-a-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-020--colored.png"
@@ -5946,7 +5946,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_020.png",
-      "sha256": "0ed5859b330f55716e388f78231b80fd6ffa33934d081b1b288fcac2c686b20d",
+      "sha256": "9d9aca1e30a75063e6758ab7f62b3d28ff38dfce598f8d19960fe8950309f2d3",
       "sharpnessBefore": 9.714,
       "sharpnessAfter": 12.383,
       "coloredPath": "assets/coloring/colored/apprentissage/343-la-lettre-d-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-020--colored.png"
@@ -5964,7 +5964,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_017.png",
-      "sha256": "4f02b1265264f27f5f6690c74e2eac208cbb5b0ab3856bc6ae78dae21ae5cdaf",
+      "sha256": "fd5c7802efe84b8e951b52d43fc915f6e230b8d0ad61a0d6acfd9a744fc2c309",
       "sharpnessBefore": 10.712,
       "sharpnessAfter": 13.549,
       "coloredPath": "assets/coloring/colored/apprentissage/344-le-cur-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-017--colored.png"
@@ -5982,7 +5982,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_019.png",
-      "sha256": "c295da53edcd5798d95ba00c9a73f2823b28db416b79c211fb1b90abdd5d9c94",
+      "sha256": "94c72ba25448d9dc434808c6ebf0d51818650433a9ec90049e28ab821caf81bd",
       "sharpnessBefore": 7.854,
       "sharpnessAfter": 9.396,
       "coloredPath": "assets/coloring/colored/apprentissage/345-le-chiffre-1-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-019--colored.png"
@@ -6000,7 +6000,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-010_ChatGPT_Image_Jul_17_2026_07_37_30_PM_7_020.png",
-      "sha256": "1553dc198738445417f54a60f6ae7f8eac395d6a97ad5e9f328006ac9efe3fc9",
+      "sha256": "b962e2bd211b592dc9bab5d05f25519198a99c84bf5f1be622901561f2cbe681",
       "sharpnessBefore": 7.699,
       "sharpnessAfter": 9.892,
       "coloredPath": "assets/coloring/colored/apprentissage/346-la-lettre-f-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-020--colored.png"
@@ -6018,7 +6018,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-011_ChatGPT_Image_Jul_17_2026_07_37_31_PM_8_017.png",
-      "sha256": "6cd13e5f75260403fe274389d5989ca12eeda11025eca2bace0e1ca531f815c5",
+      "sha256": "2e33ec265724136ebd12dcf1167ff88145b6c368b74994512933b6e2227574fd",
       "sharpnessBefore": 8.336,
       "sharpnessAfter": 10.097,
       "coloredPath": "assets/coloring/colored/apprentissage/347-la-note-de-musique-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-017--colored.png"
@@ -6054,7 +6054,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-011_ChatGPT_Image_Jul_17_2026_07_37_31_PM_8_020.png",
-      "sha256": "474601d15df7005630ef7b44d97707c3dfa14ca1d45804a200aa00309f26cce9",
+      "sha256": "0b7e03a9d938f6c12eab46408bc7f084789fefb9e03b03505e91b3570b4dcc13",
       "sharpnessBefore": 8.743,
       "sharpnessAfter": 10.959,
       "coloredPath": "assets/coloring/colored/apprentissage/349-la-lettre-h-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-020--colored.png"
@@ -6072,7 +6072,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-012_ChatGPT_Image_Jul_17_2026_07_37_31_PM_9_019.png",
-      "sha256": "98597ccbad649608143d268fed99074d0371caff4804dbe003cf3e98a81e3256",
+      "sha256": "3faa0e68de6c906c49f791c5f7c4050f0e84f31041e65c64b3ef67bcb591eee5",
       "sharpnessBefore": 11.159,
       "sharpnessAfter": 13.956,
       "coloredPath": "assets/coloring/colored/apprentissage/350-le-chiffre-3-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-019--colored.png"
@@ -6090,7 +6090,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-012_ChatGPT_Image_Jul_17_2026_07_37_31_PM_9_020.png",
-      "sha256": "2b84e275b4873917d1c31b1a855bb9e3a613e5ef8ea76f35d35fe0aa451dbc79",
+      "sha256": "2edda79f4deca2496424750827e0281be68949c4db3a3640724ce34e39e56db0",
       "sharpnessBefore": 8.656,
       "sharpnessAfter": 10.712,
       "coloredPath": "assets/coloring/colored/apprentissage/351-la-lettre-j-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-020--colored.png"
@@ -6144,7 +6144,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_029.png",
-      "sha256": "657586eb89999adf5c5e0158f549e35003e741d877b76b71f4355d2e152cb1e4",
+      "sha256": "b449dcc6fd9c4531b271ee392793b33e79a5830036754b4d20b031427d4bfcb6",
       "sharpnessBefore": 7.884,
       "sharpnessAfter": 9.585,
       "coloredPath": "assets/coloring/colored/apprentissage/354-letoile-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-029--colored.png"
@@ -6162,7 +6162,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-030_ChatGPT_Image_Jul_17_2026_07_53_26_PM_7_004.png",
-      "sha256": "a635fb7f72b5d739ab08c19e87d36d01647a816e729c0a742e1d81f3a126c96a",
+      "sha256": "4405250e2384584bd5e4f0e8f2cc7990c5c3276d5c5398d766690cc840d81217",
       "sharpnessBefore": 8.283,
       "sharpnessAfter": 9.862,
       "coloredPath": "assets/coloring/colored/apprentissage/355-letoile-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-004--colored.png"
@@ -6180,7 +6180,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_029.png",
-      "sha256": "7982d221644a2d67607513a5afd6716d8be62f54a32d7d047bb24e035b326357",
+      "sha256": "43e7cbf0d02699033fdda773580643427c96be124d9448eb3e9a110aaee3cdcf",
       "sharpnessBefore": 6.21,
       "sharpnessAfter": 7.406,
       "coloredPath": "assets/coloring/colored/apprentissage/356-letoile-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-029--colored.png"
@@ -6198,7 +6198,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_031.png",
-      "sha256": "a82a6c71b8611980f8e14bb12fafe243c955ea0c3c0551e37090500af54532c2",
+      "sha256": "8a352328f9c354d3abd2a1173070eae59cf3537e94012aa11c5967d808098b19",
       "sharpnessBefore": 11.959,
       "sharpnessAfter": 20.83,
       "coloredPath": "assets/coloring/colored/apprentissage/357-le-chiffre-1-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-031--colored.png"
@@ -6216,7 +6216,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_032.png",
-      "sha256": "5b195e9ef00df39b0713be8514562789fb3661596cc59b05afcad57d96e901d2",
+      "sha256": "686b7ba75f4bbd2f1e33b0021f861535e5d51d522ea619a307dad0c4ed59a76f",
       "sharpnessBefore": 4.199,
       "sharpnessAfter": 5.079,
       "coloredPath": "assets/coloring/colored/apprentissage/358-le-chiffre-2-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-032--colored.png"
@@ -6234,7 +6234,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_033.png",
-      "sha256": "deeb8f78153bf94c62d9932358a7e0bcf2b3fbe24d8587a0e8f1b9d80f58d4a6",
+      "sha256": "b1fe623cabb62b9729f2168cd0c347d43aab3a9715e3904a935d35e82946f493",
       "sharpnessBefore": 4.228,
       "sharpnessAfter": 4.977,
       "coloredPath": "assets/coloring/colored/apprentissage/359-le-chiffre-3-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-033--colored.png"
@@ -6252,7 +6252,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_034.png",
-      "sha256": "2f7660f865ce4921cdd422a686fa1d7ec8c6060b61822139be57a6476d0e1e25",
+      "sha256": "f3810af1d73b86356db7a4cac8cb96e2af219860d161533ad32b062906ee1d98",
       "sharpnessBefore": 4.503,
       "sharpnessAfter": 5.345,
       "coloredPath": "assets/coloring/colored/apprentissage/360-la-lettre-a-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-034--colored.png"
@@ -6270,7 +6270,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-metiers-01.png",
-      "sha256": "76366b7a51f86f6bb12e8d47adcf74ea367586d7297a4de3722adf374cf92a00",
+      "sha256": "0874feeb9a361223c36b62e81dbefcb1769ac06fdaa9418f79fd75a39f705f2b",
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/361-la-maitresse-decole-existing-metiers-01-png-colored.png"
     },
     {
@@ -6286,7 +6286,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-metiers-02.png",
-      "sha256": "d47aa39d24d042b0b1c2c0d6e23219efbe911fe34f8852079bd5b99e8ff1b70e",
+      "sha256": "39a78f81b99bc5bc2709a89201d91bf1c291ccfd006b1d7ec366e713b580f5be",
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/362-le-maitre-decole-existing-metiers-02-png-colored.png"
     },
     {
@@ -6302,7 +6302,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-metiers-03.png",
-      "sha256": "51cf6a474e0328071f28b83a568560880c590804dccb398900c5c70516b7729e",
+      "sha256": "1bb4e2e2157734cb6156bc4427dc47742924d075b9b1c7d093ca96c0e4155178",
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/363-la-medecin-existing-metiers-03-png-colored.png"
     },
     {
@@ -6318,7 +6318,7 @@
       "validationStatus": "validated",
       "origin": "gold-master-sprite",
       "sourceName": "existing-metiers-04.png",
-      "sha256": "13f24d7b6b7115cadff33e388341a6d8753e7575c48a3e1bb78a8f06b8eacc00",
+      "sha256": "6e714c03183ac6b6ba38cfa955e15d0d162a1630c113e8269fbe4b5a4f970b8e",
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/364-linfirmier-existing-metiers-04-png-colored.png"
     },
     {
@@ -6334,7 +6334,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-003_ChatGPT_Image_Jul_17_2026_07_37_00_PM_008.png",
-      "sha256": "7b9ac807b9d3ffae5a4b45850a0d8aedd673c1c3f889d485825f7da1b80209f6",
+      "sha256": "0d6190de9651765c9f1c1015b927114264d4fb3269bf19aa7d931c069e5b01f2",
       "sharpnessBefore": 6.618,
       "sharpnessAfter": 8.268,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/365-letoile-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-008-pn-colored.png"
@@ -6370,7 +6370,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-006_ChatGPT_Image_Jul_17_2026_07_37_28_PM_3_007.png",
-      "sha256": "388e6154bfa45122560b4502eaa0f93b98bb61cf1dcfd225323f84db7bfd31e0",
+      "sha256": "2dea7a2c46236560bf387c833d3b2b4f653efb3ac9fa51c53421ef6ae7655b91",
       "sharpnessBefore": 21.253,
       "sharpnessAfter": 28.186,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/367-la-fusee-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-007--colored.png"
@@ -6388,7 +6388,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-008_ChatGPT_Image_Jul_17_2026_07_37_29_PM_5_007.png",
-      "sha256": "62aae14f2bc8786f5a55ee5aa53b605a854e3986ce1c613cd528eadf92eb981f",
+      "sha256": "7c586a97be511e73552ade70655d98b8e65bfe4a7cd4b7f7d0744fd1bc1ba114",
       "sharpnessBefore": 22.687,
       "sharpnessAfter": 28.395,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/368-la-soucoupe-volante-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-007--colored.png"
@@ -6478,7 +6478,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-012_ChatGPT_Image_Jul_17_2026_07_37_31_PM_9_002.png",
-      "sha256": "bc7b807e574e5f435e5ffdd336e73f790e1d7b7603abd5fac52c7ffc1102fa6c",
+      "sha256": "c50459f1c31acf0690f16963a761a07ea95054ae5345c1b08119694498a7abd5",
       "sharpnessBefore": 22.846,
       "sharpnessAfter": 29.161,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/373-la-chauve-souris-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-002--colored.png"
@@ -6550,7 +6550,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-012_ChatGPT_Image_Jul_17_2026_07_37_31_PM_9_018.png",
-      "sha256": "e7257273ad4badff286fe7c4dbab8b709320086b642bbc92e48fb81161544c45",
+      "sha256": "8d91f54b09b4519de92397b7e35f841b647db80f6c89a5a4a424a611c8873d6c",
       "sharpnessBefore": 17.995,
       "sharpnessAfter": 22.511,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/377-le-cadeau-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-018--colored.png"
@@ -6604,7 +6604,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-024_ChatGPT_Image_Jul_17_2026_07_53_24_PM_1_017.png",
-      "sha256": "bdec128a0a322e5fe3184ca15e2106e4428aa331b1d58d8752a533734184d71b",
+      "sha256": "eb30d2e5ea146fb18f99cee226ea25a76f5e674b0299df7c94ef2187de9790df",
       "sharpnessBefore": 14.534,
       "sharpnessAfter": 19.067,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/380-letoile-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-017--colored.png"
@@ -6730,7 +6730,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-027_ChatGPT_Image_Jul_17_2026_07_53_25_PM_4_008.png",
-      "sha256": "f758367148ec08bace00bbeee9704b211054b63b730e877cf97d448532a0d9d8",
+      "sha256": "ffb9c9fb724bb38e8d3584ce8023b068687a9ff5e576f63206dbaa8d6286bd7f",
       "sharpnessBefore": 28.606,
       "sharpnessAfter": 37.119,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/387-lours-en-peluche-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-008--colored.png"
@@ -6766,7 +6766,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-027_ChatGPT_Image_Jul_17_2026_07_53_25_PM_4_029.png",
-      "sha256": "230b2f0f4931af69e3900f99c0009b909a8745dbe3c71c0e68945cc8c5b55472",
+      "sha256": "989c7e4dfd23fb8a07cefdea9dece43593273813dd73685f349c23bf401b6cd2",
       "sharpnessBefore": 19.709,
       "sharpnessAfter": 26.455,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/389-le-cadeau-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-029--colored.png"
@@ -6820,7 +6820,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_019.png",
-      "sha256": "246fdc50132fe74056199e7534d5be1c5235581e915f7841990cfc9e39e1225a",
+      "sha256": "eff51d0dc4e1134ca15d2bcb9405ffe3ce367ae0b3ee76dcb5d1e51c2a4126ef",
       "sharpnessBefore": 7.682,
       "sharpnessAfter": 9.018,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/392-le-ballon-de-football-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-019--colored.png"
@@ -6838,7 +6838,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-028_ChatGPT_Image_Jul_17_2026_07_53_26_PM_5_020.png",
-      "sha256": "6a1c5dcf46b50bba990fe095fd62206f7517fec71dd1dc7a9921c572d4cc5e1d",
+      "sha256": "9a995f2e961dd54dfe9a76e8de42aa9999f1b6ea618dca65ee75c1f64ff2ac27",
       "sharpnessBefore": 10.655,
       "sharpnessAfter": 13.282,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/393-letoile-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-020--colored.png"
@@ -6856,7 +6856,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-029_ChatGPT_Image_Jul_17_2026_07_53_26_PM_6_024.png",
-      "sha256": "dc206f87cbb5dfb2ea07de9721078661e178790399a4758905e788314db9bd5c",
+      "sha256": "aea958ced076d2da36b5bc684b021eacb432bbf141be2a85f475eeaae2524967",
       "sharpnessBefore": 22.067,
       "sharpnessAfter": 25.7,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/394-lours-en-peluche-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-024--colored.png"
@@ -6910,7 +6910,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-030_ChatGPT_Image_Jul_17_2026_07_53_26_PM_7_009.png",
-      "sha256": "abbf75e376d25bc87fdcba42162ccf937bba08272a1bdfee992233ada7633c72",
+      "sha256": "0c22389704aef165a04251ff56d034b000046c5ec6deefd2aef8996e00f81bad",
       "sharpnessBefore": 27.544,
       "sharpnessAfter": 45.613,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/397-lappareil-photo-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-009--colored.png"
@@ -6928,7 +6928,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_024.png",
-      "sha256": "49ebe0ac1aa5cce19a5ee39de1aa546224b22e3ef4080aa64a56ecfceed52fcc",
+      "sha256": "f7b34473ecd2e3ea293c46109fad01f27a3bd61aa2daf20ecc8c58187d58a317",
       "sharpnessBefore": 14.453,
       "sharpnessAfter": 17.212,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/398-le-sac-a-dos-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-024--colored.png"
@@ -6946,7 +6946,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_025.png",
-      "sha256": "4c537b3a65d048da613e4ee88f62fd4b86cbb6dde25d99a89cd75c1263f1aea1",
+      "sha256": "33d94b461d9df8011e43095b79c7b68e74a2c5ecda271925e9c2ee7a6c2a9c5e",
       "sharpnessBefore": 12.446,
       "sharpnessAfter": 14.763,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/399-les-crayons-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-025--colored.png"
@@ -6964,7 +6964,7 @@
       "validationStatus": "validated",
       "origin": "output-extract-sharpened",
       "sourceName": "extract-031_ChatGPT_Image_Jul_17_2026_07_53_27_PM_8_030.png",
-      "sha256": "9a07d82daab034a2e72c584d8f9260a95edf584153e7e3763b4e28d58db121ef",
+      "sha256": "a64ac57c0d95f4b3192a84e2ec52670b3a1dcd6f78d76197e8ac09172358029a",
       "sharpnessBefore": 7.68,
       "sharpnessAfter": 9.056,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/400-le-ballon-de-plage-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-030--colored.png"
