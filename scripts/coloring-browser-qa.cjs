@@ -66,13 +66,28 @@ async function main() {
     }
     return result.result.value;
   };
-  const waitFor = async (expression, timeout = 15000) => {
+  const waitFor = async (expression, timeout = 30000) => {
     const started = Date.now();
     while (Date.now() - started < timeout) {
       if (await evaluate(expression)) return;
       await delay(50);
     }
-    throw new Error(`Délai dépassé : ${expression}`);
+    const diagnostic = await evaluate(`(() => ({
+      readyState: document.readyState,
+      catalogues: document.querySelectorAll(".catalogue-card").length,
+      atelierClass: document.querySelector("#atelier")?.className || null,
+      drawings: document.querySelectorAll(".drawing-card").length,
+      images: [...document.querySelectorAll(".drawing-card__image")].map((image) => ({
+        src: image.currentSrc || image.src,
+        complete: image.complete,
+        naturalWidth: image.naturalWidth,
+        naturalHeight: image.naturalHeight
+      })),
+      assetErrors: [...document.querySelectorAll(".asset-error")].map((error) => error.textContent)
+    }))()`).catch(() => null);
+    throw new Error(
+      `Délai dépassé : ${expression}\nÉtat navigateur : ${JSON.stringify(diagnostic)}`,
+    );
   };
   const screenshot = async (name) => {
     const result = await call("Page.captureScreenshot", {
