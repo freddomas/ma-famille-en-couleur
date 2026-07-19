@@ -14,6 +14,14 @@ if ($ChromePath) {
     $chromeCandidates += $ChromePath
 }
 
+$chromeCandidates += @(
+    (Join-Path $env:ProgramFiles "Google\Chrome\Application\chrome.exe"),
+    (Join-Path ${env:ProgramFiles(x86)} "Google\Chrome\Application\chrome.exe")
+)
+
+# Le Chrome système est préféré : sur Windows, le sandbox peut refuser
+# l'exécutable téléchargé sous le profil utilisateur de l'agent. La copie
+# agent-browser reste un repli portable lorsque Chrome n'est pas installé.
 $agentBrowserCommand = Get-Command "agent-browser" -ErrorAction SilentlyContinue
 if ($agentBrowserCommand) {
     $npmBin = Split-Path -Parent $agentBrowserCommand.Source
@@ -32,11 +40,6 @@ if ($agentBrowserCommand) {
             ForEach-Object { Join-Path $_.FullName "chrome.exe" }
     }
 }
-
-$chromeCandidates += @(
-    (Join-Path $env:ProgramFiles "Google\Chrome\Application\chrome.exe"),
-    (Join-Path ${env:ProgramFiles(x86)} "Google\Chrome\Application\chrome.exe")
-)
 
 $chrome = $chromeCandidates |
     Where-Object { $_ -and (Test-Path -LiteralPath $_ -PathType Leaf) } |
