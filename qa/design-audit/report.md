@@ -14,8 +14,9 @@ structurellement repris.
 
 - Sévérité initiale : haute
 - Cause : retournement 3D fragile laissant la face noir-et-blanc au-dessus.
-- Correctif : transition d’opacité déterministe de 180 ms, face colorée
-  réellement visible et impression A4 toujours forcée en noir et blanc.
+- Correctif : rotation verticale 3D déterministe de 520 ms, revers masqués,
+  face colorée réellement visible et impression A4 toujours forcée en noir et
+  blanc.
 - Preuve : `after-desktop-catalogue-viewport.png`.
 
 ### ISSUE-002 — Marque sans retour accueil
@@ -54,9 +55,9 @@ structurellement repris.
 
 ## Direction de mouvement
 
-Le mouvement est volontairement fonctionnel : état coloré en 180 ms, retours
-de pression courts, aucune chorégraphie décorative de page. Les transitions sont
-neutralisées par `prefers-reduced-motion`.
+Le mouvement est volontairement fonctionnel : rotation verticale en 520 ms,
+retours de pression courts, aucune chorégraphie décorative de page. Les
+transitions sont neutralisées par `prefers-reduced-motion`.
 
 ## Matrice Playwright
 

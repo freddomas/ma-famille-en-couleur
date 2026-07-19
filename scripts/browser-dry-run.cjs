@@ -272,15 +272,10 @@ async function main() {
       `document.querySelector(".drawing-card .color-flip-card").getAttribute("aria-pressed") === "true"`,
     );
     await delay(220);
-    const desktopGuideOpacity = await evaluate(`(() => {
-      const card = document.querySelector(".drawing-card .color-flip-card");
-      return {
-        front: Number(getComputedStyle(card.querySelector(".color-flip-card__front")).opacity),
-        back: Number(getComputedStyle(card.querySelector(".color-flip-card__back")).opacity),
-      };
-    })()`);
-    assert.ok(desktopGuideOpacity.front <= 0.01);
-    assert.ok(desktopGuideOpacity.back >= 0.99);
+    const desktopMidTransform = await evaluate(
+      `getComputedStyle(document.querySelector(".drawing-card .color-flip-card__inner")).transform`,
+    );
+    assert.notEqual(desktopMidTransform, "none");
     await screenshot("desktop-card-flipping.png");
     await delay(430);
     await screenshot("desktop-color-guide.png");

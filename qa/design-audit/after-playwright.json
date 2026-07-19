@@ -1,6 +1,6 @@
 {
   "phase": "after",
-  "generatedAt": "2026-07-19T12:52:04.808Z",
+  "generatedAt": "2026-07-19T13:07:12.361Z",
   "status": "passed",
   "results": [
     {
@@ -59,11 +59,11 @@
           {
             "id": "open-coloring-studio",
             "left": 12,
-            "top": 278.796875,
+            "top": 277.8619689941406,
             "right": 308,
-            "bottom": 330.796875,
+            "bottom": 329.8619384765625,
             "width": 296,
-            "height": 52
+            "height": 51.999969482421875
           },
           {
             "id": "print-page",
@@ -97,15 +97,20 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 37,
-          "top": 0.4375,
-          "right": 283,
-          "bottom": 246.4375,
-          "width": 246,
-          "height": 246
+          "left": 39.14448928833008,
+          "top": -1.047937035560608,
+          "right": 283.774600982666,
+          "bottom": 247.92294919490814,
+          "width": 244.63011169433594,
+          "height": 248.97088623046875
         },
-        "frontOpacity": 0.00765683,
-        "backOpacity": 0.992343
+        "frontOpacity": 1,
+        "backOpacity": 1,
+        "frontBackface": "hidden",
+        "backBackface": "hidden",
+        "innerTransform": "matrix3d(-0.99429, 0, -0.106714, 0, 0, 1, 0, 0, 0.106714, 0, -0.99429, 0, 0, 0, 0, 1)",
+        "innerOverflow": "visible",
+        "rotationSettled": true
       },
       "brandNavigation": {
         "linkPresent": true,
@@ -208,15 +213,20 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 37,
-          "top": 481.4375,
-          "right": 353,
-          "bottom": 797.4375,
-          "width": 316,
-          "height": 316
+          "left": 40.28289031982422,
+          "top": 478.9725036621094,
+          "right": 354.54467010498047,
+          "bottom": 799.9024658203125,
+          "width": 314.26177978515625,
+          "height": 320.9299621582031
         },
-        "frontOpacity": 0.00759638,
-        "backOpacity": 0.992404
+        "frontOpacity": 1,
+        "backOpacity": 1,
+        "frontBackface": "hidden",
+        "backBackface": "hidden",
+        "innerTransform": "matrix3d(-0.994265, 0, -0.106948, 0, 0, 1, 0, 0, 0.106948, 0, -0.994265, 0, 0, 0, 0, 1)",
+        "innerOverflow": "visible",
+        "rotationSettled": true
       },
       "brandNavigation": {
         "linkPresent": true,
@@ -319,15 +329,20 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 62,
-          "top": 51.578125,
-          "right": 314.5,
-          "bottom": 322.453125,
-          "width": 252.5,
-          "height": 270.875
+          "left": 64.2403335571289,
+          "top": 49.898414611816406,
+          "right": 315.3356399536133,
+          "bottom": 324.13285064697266,
+          "width": 251.09530639648438,
+          "height": 274.23443603515625
         },
-        "frontOpacity": 0.00758612,
-        "backOpacity": 0.992414
+        "frontOpacity": 1,
+        "backOpacity": 1,
+        "frontBackface": "hidden",
+        "backBackface": "hidden",
+        "innerTransform": "matrix3d(-0.994288, 0, -0.106734, 0, 0, 1, 0, 0, 0.106734, 0, -0.994288, 0, 0, 0, 0, 1)",
+        "innerOverflow": "visible",
+        "rotationSettled": true
       },
       "brandNavigation": {
         "linkPresent": true,
@@ -430,15 +445,20 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 62,
-          "top": 498.0625,
-          "right": 365,
-          "bottom": 827.9375,
-          "width": 303,
-          "height": 329.875
+          "left": 65.04256439208984,
+          "top": 495.60504150390625,
+          "right": 366.3812789916992,
+          "bottom": 830.3949584960938,
+          "width": 301.3387145996094,
+          "height": 334.7899169921875
         },
-        "frontOpacity": 0.00756735,
-        "backOpacity": 0.992433
+        "frontOpacity": 1,
+        "backOpacity": 1,
+        "frontBackface": "hidden",
+        "backBackface": "hidden",
+        "innerTransform": "matrix3d(-0.994303, 0, -0.106592, 0, 0, 1, 0, 0, 0.106592, 0, -0.994303, 0, 0, 0, 0, 1)",
+        "innerOverflow": "visible",
+        "rotationSettled": true
       },
       "brandNavigation": {
         "linkPresent": true,
@@ -541,15 +561,20 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 310,
-          "top": 454.375,
-          "right": 603,
-          "bottom": 768.234375,
-          "width": 293,
-          "height": 313.859375
+          "left": 312.8879089355469,
+          "top": 452.10614013671875,
+          "right": 604.2647094726562,
+          "bottom": 770.5032348632812,
+          "width": 291.3768005371094,
+          "height": 318.3970947265625
         },
-        "frontOpacity": 0.00759937,
-        "backOpacity": 0.992401
+        "frontOpacity": 1,
+        "backOpacity": 1,
+        "frontBackface": "hidden",
+        "backBackface": "hidden",
+        "innerTransform": "matrix3d(-0.994258, 0, -0.107009, 0, 0, 1, 0, 0, 0.107009, 0, -0.994258, 0, 0, 0, 0, 1)",
+        "innerOverflow": "visible",
+        "rotationSettled": true
       },
       "brandNavigation": {
         "linkPresent": true,
@@ -652,15 +677,20 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 515,
-          "top": 506.140625,
-          "right": 826,
-          "bottom": 836.71875,
-          "width": 311,
-          "height": 330.578125
+          "left": 518.1805419921875,
+          "top": 503.61224365234375,
+          "right": 827.4794311523438,
+          "bottom": 839.2471313476562,
+          "width": 309.29888916015625,
+          "height": 335.6348876953125
         },
-        "frontOpacity": 0.00757887,
-        "backOpacity": 0.992421
+        "frontOpacity": 1,
+        "backOpacity": 1,
+        "frontBackface": "hidden",
+        "backBackface": "hidden",
+        "innerTransform": "matrix3d(-0.994304, 0, -0.106578, 0, 0, 1, 0, 0, 0.106578, 0, -0.994304, 0, 0, 0, 0, 1)",
+        "innerOverflow": "visible",
+        "rotationSettled": true
       },
       "brandNavigation": {
         "linkPresent": true,
@@ -763,15 +793,20 @@
         "naturalHeight": 627,
         "visible": true,
         "rect": {
-          "left": 755,
-          "top": 442.140625,
-          "right": 1066,
-          "bottom": 772.71875,
-          "width": 311,
-          "height": 330.578125
+          "left": 757.1289672851562,
+          "top": 440.3231506347656,
+          "right": 1067.243896484375,
+          "bottom": 774.5362548828125,
+          "width": 310.11492919921875,
+          "height": 334.2131042480469
         },
-        "frontOpacity": 0.00757332,
-        "backOpacity": 0.992427
+        "frontOpacity": 1,
+        "backOpacity": 1,
+        "frontBackface": "hidden",
+        "backBackface": "hidden",
+        "innerTransform": "matrix3d(-0.997036, 0, -0.0769367, 0, 0, 1, 0, 0, 0.0769367, 0, -0.997036, 0, 0, 0, 0, 1)",
+        "innerOverflow": "visible",
+        "rotationSettled": true
       },
       "brandNavigation": {
         "linkPresent": true,

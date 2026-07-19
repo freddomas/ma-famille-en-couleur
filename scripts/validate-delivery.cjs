@@ -131,16 +131,20 @@ async function main() {
     "Adaptation mobile de la planche absente",
   );
   check(
-    /transition:\s*opacity\s+180ms/.test(stylesSource),
-    "Transition courte du guide coloré absente",
+    /transition:\s*transform\s+520ms/.test(stylesSource),
+    "Transition de rotation du guide coloré absente",
   );
   check(
-    /\.color-flip-card\.is-color-visible\s+\.color-flip-card__front\s*\{[^}]*opacity:\s*0/s.test(stylesSource),
-    "La face noir et blanc du guide coloré n’est pas masquée",
+    /\.color-flip-card\.is-color-visible\s+\.color-flip-card__inner\s*\{[^}]*rotateY\(180deg\)/s.test(stylesSource),
+    "Rotation verticale 180° absente",
   );
   check(
-    /\.color-flip-card\.is-color-visible\s+\.color-flip-card__back\s*\{[^}]*opacity:\s*1/s.test(stylesSource),
-    "La face colorée du guide ne devient pas visible",
+    /backface-visibility:\s*hidden/.test(stylesSource),
+    "Masquage du revers des guides absent",
+  );
+  check(
+    /\.drawing-card__art\s+\.color-flip-card__inner\s*\{[^}]*overflow:\s*visible/s.test(stylesSource),
+    "Le conteneur 3D des guides ne doit pas être aplati par overflow",
   );
   check(!/pointerType === "mouse"/.test(appSource), "Ancien maintien souris encore actif");
   check(!/handleGuidePointerDown/.test(appSource), "Ancien appui long encore actif");

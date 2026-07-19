@@ -211,26 +211,33 @@ async function inspectCatalogue(page) {
   });
 }
 
-async function inspectColoredGuide(page) {
+async function inspectColoredGuide(page, midRotationPath) {
   const card = page.locator(".drawing-card .color-flip-card").first();
   await card.scrollIntoViewIfNeeded();
   await card.click();
   await page.waitForFunction(() =>
     document.querySelector(".drawing-card .color-flip-card")?.getAttribute("aria-pressed") === "true"
   );
+  await page.waitForTimeout(220);
+  await page.screenshot({ path: midRotationPath, fullPage: false });
   await page.waitForFunction(() => {
-    const cardElement = document.querySelector(".drawing-card .color-flip-card");
-    const front = cardElement?.querySelector(".color-flip-card__front");
-    const back = cardElement?.querySelector(".color-flip-card__back");
-    return front && back
-      && Number(getComputedStyle(front).opacity) <= 0.01
-      && Number(getComputedStyle(back).opacity) >= 0.99;
+    const inner = document.querySelector(
+      ".drawing-card .color-flip-card__inner",
+    );
+    const transform = inner ? getComputedStyle(inner).transform : "none";
+    if (transform === "none") return false;
+    const matrix = new DOMMatrixReadOnly(transform);
+    return matrix.m11 <= -0.99 && matrix.m33 <= -0.99;
   });
   return card.evaluate((element) => {
     const front = element.querySelector(".color-flip-card__front");
     const back = element.querySelector(".color-flip-card__back");
     const frontStyle = getComputedStyle(front);
     const backStyle = getComputedStyle(back);
+    const inner = element.querySelector(".color-flip-card__inner");
+    const innerStyle = getComputedStyle(inner);
+    const innerTransform = innerStyle.transform;
+    const matrix = new DOMMatrixReadOnly(innerTransform);
     const rect = back.getBoundingClientRect();
     return {
       pressed: element.getAttribute("aria-pressed"),
@@ -254,6 +261,11 @@ async function inspectColoredGuide(page) {
       },
       frontOpacity: Number(frontStyle.opacity),
       backOpacity: Number(backStyle.opacity),
+      frontBackface: frontStyle.backfaceVisibility,
+      backBackface: backStyle.backfaceVisibility,
+      innerTransform,
+      innerOverflow: innerStyle.overflow,
+      rotationSettled: matrix.m11 <= -0.99 && matrix.m33 <= -0.99,
     };
   });
 }
@@ -328,7 +340,13 @@ async function main() {
       await page.waitForSelector("#atelier.is-catalogue-open");
       await waitForImages(page, ".drawing-card__image");
       const catalogue = await inspectCatalogue(page);
-      const coloredGuide = await inspectColoredGuide(page);
+      const coloredGuide = await inspectColoredGuide(
+        page,
+        path.join(
+          outputDir,
+          `${phase}-${viewport.name}-catalogue-flip-mid.png`,
+        ),
+      );
       await page.screenshot({
         path: path.join(outputDir, `${phase}-${viewport.name}-catalogue.png`),
         fullPage: true,
@@ -399,14 +417,26 @@ async function main() {
         );
         assert.equal(result.coloredGuide.decoded, true, `${result.viewport.name}: guide non décodé`);
         assert.equal(result.coloredGuide.visible, true, `${result.viewport.name}: guide invisible`);
-      assert.ok(
-        result.coloredGuide.frontOpacity <= 0.01,
-        `${result.viewport.name}: face noir et blanc visible`,
-      );
-      assert.ok(
-        result.coloredGuide.backOpacity >= 0.99,
-        `${result.viewport.name}: face colorée masquée`,
-      );
+        assert.equal(
+          result.coloredGuide.frontBackface,
+          "hidden",
+          `${result.viewport.name}: revers noir et blanc visible`,
+        );
+        assert.equal(
+          result.coloredGuide.backBackface,
+          "hidden",
+          `${result.viewport.name}: revers coloré visible`,
+        );
+        assert.equal(
+          result.coloredGuide.rotationSettled,
+          true,
+          `${result.viewport.name}: rotation verticale incomplète`,
+        );
+        assert.equal(
+          result.coloredGuide.innerOverflow,
+          "visible",
+          `${result.viewport.name}: scène 3D aplatie par overflow`,
+        );
         assert.equal(result.brandNavigation.linkPresent, true, `${result.viewport.name}: marque sans lien`);
         assert.equal(result.brandNavigation.returnedHome, true, `${result.viewport.name}: retour accueil cassé`);
         assert.equal(result.brandNavigation.scrollY, 0, `${result.viewport.name}: retour accueil décalé`);
@@ -428,8 +458,10 @@ async function main() {
           thumbnails: result.home.visibleThumbnails,
         coloredGuide: result.coloredGuide.decoded
           && result.coloredGuide.visible
-          && result.coloredGuide.frontOpacity <= 0.01
-          && result.coloredGuide.backOpacity >= 0.99,
+          && result.coloredGuide.frontBackface === "hidden"
+          && result.coloredGuide.backBackface === "hidden"
+          && result.coloredGuide.innerOverflow === "visible"
+          && result.coloredGuide.rotationSettled,
           homeLink: result.brandNavigation.returnedHome,
           overflows: result.home.horizontalOverflow || result.catalogue.horizontalOverflow,
           overlaps: result.catalogue.overlaps.length,
