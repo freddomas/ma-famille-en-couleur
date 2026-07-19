@@ -8,26 +8,83 @@
         "height": 568,
         "mobile": true
       },
+      "home": {
+        "cards": 10,
+        "visibleImages": 10,
+        "decodedImages": 10,
+        "imageBleeds": [],
+        "outsideCards": 0,
+        "horizontalOverflow": false,
+        "headerVisible": true,
+        "weeklyInsideViewport": true
+      },
+      "exhaustive": {
+        "pages": 100,
+        "decodedImages": 400,
+        "defects": []
+      },
       "catalogue": {
         "images": 4,
         "decoded": 4,
         "horizontalOverflow": false,
         "colorButtonWidth": 296,
-        "colorButtonHeight": 56,
+        "colorButtonHeight": 52,
         "sheetWidth": 296,
-        "widestDrawing": 272
+        "widestDrawing": 272,
+        "actionRects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 12,
+            "top": 277.109375,
+            "right": 308,
+            "bottom": 329.109375,
+            "width": 296,
+            "height": 52,
+            "hitTarget": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 12,
+            "top": 337.109375,
+            "right": 156,
+            "bottom": 381.109375,
+            "width": 144,
+            "height": 44,
+            "hitTarget": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 164,
+            "top": 337.109375,
+            "right": 308,
+            "bottom": 381.109375,
+            "width": 144,
+            "height": 44,
+            "hitTarget": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "actionsInsideViewport": true,
+        "bleedingImages": [],
+        "sheetContainsDrawings": true,
+        "stickyHeaderVisible": true,
+        "stickyHeaderHasBrand": true,
+        "wrappedLabels": []
       },
       "selection": {
         "choices": 4,
         "decoded": 4,
-        "horizontalOverflow": false
+        "horizontalOverflow": false,
+        "lastAction": "coloring",
+        "printSheets": 0,
+        "printing": false
       },
       "workspace": {
         "tabs": 2,
         "frameWidth": 238,
         "frameHeight": 238,
-        "frameLeft": 41,
-        "frameRight": 279,
+        "frameLeft": 32,
+        "frameRight": 270,
         "canvasWidth": 768,
         "canvasHeight": 768,
         "lineArt": 1254,
@@ -50,26 +107,83 @@
         "height": 844,
         "mobile": true
       },
+      "home": {
+        "cards": 10,
+        "visibleImages": 10,
+        "decodedImages": 10,
+        "imageBleeds": [],
+        "outsideCards": 0,
+        "horizontalOverflow": false,
+        "headerVisible": true,
+        "weeklyInsideViewport": true
+      },
+      "exhaustive": {
+        "pages": 100,
+        "decodedImages": 400,
+        "defects": []
+      },
       "catalogue": {
         "images": 4,
         "decoded": 4,
         "horizontalOverflow": false,
         "colorButtonWidth": 366,
-        "colorButtonHeight": 56,
+        "colorButtonHeight": 52,
         "sheetWidth": 366,
-        "widestDrawing": 342
+        "widestDrawing": 342,
+        "actionRects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 12,
+            "top": 277.109375,
+            "right": 378,
+            "bottom": 329.109375,
+            "width": 366,
+            "height": 52,
+            "hitTarget": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 12,
+            "top": 337.109375,
+            "right": 191,
+            "bottom": 381.109375,
+            "width": 179,
+            "height": 44,
+            "hitTarget": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 199,
+            "top": 337.109375,
+            "right": 378,
+            "bottom": 381.109375,
+            "width": 179,
+            "height": 44,
+            "hitTarget": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "actionsInsideViewport": true,
+        "bleedingImages": [],
+        "sheetContainsDrawings": true,
+        "stickyHeaderVisible": true,
+        "stickyHeaderHasBrand": true,
+        "wrappedLabels": []
       },
       "selection": {
         "choices": 4,
         "decoded": 4,
-        "horizontalOverflow": false
+        "horizontalOverflow": false,
+        "lastAction": "coloring",
+        "printSheets": 0,
+        "printing": false
       },
       "workspace": {
         "tabs": 2,
-        "frameWidth": 366,
-        "frameHeight": 366,
-        "frameLeft": 12,
-        "frameRight": 378,
+        "frameWidth": 344,
+        "frameHeight": 344,
+        "frameLeft": 14,
+        "frameRight": 358,
         "canvasWidth": 768,
         "canvasHeight": 768,
         "lineArt": 1254,
@@ -92,26 +206,83 @@
         "height": 375,
         "mobile": true
       },
+      "home": {
+        "cards": 10,
+        "visibleImages": 10,
+        "decodedImages": 10,
+        "imageBleeds": [],
+        "outsideCards": 0,
+        "horizontalOverflow": false,
+        "headerVisible": true,
+        "weeklyInsideViewport": true
+      },
+      "exhaustive": {
+        "pages": 100,
+        "decodedImages": 400,
+        "defects": []
+      },
       "catalogue": {
         "images": 4,
         "decoded": 4,
         "horizontalOverflow": false,
-        "colorButtonWidth": 129,
+        "colorButtonWidth": 202,
         "colorButtonHeight": 52,
-        "sheetWidth": 581,
-        "widestDrawing": 259
+        "sheetWidth": 623,
+        "widestDrawing": 279,
+        "actionRects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 22.015625,
+            "top": 297.109375,
+            "right": 224.34375,
+            "bottom": 349.109375,
+            "width": 202.328125,
+            "height": 52,
+            "hitTarget": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 232.34375,
+            "top": 301.109375,
+            "right": 434.671875,
+            "bottom": 345.109375,
+            "width": 202.328125,
+            "height": 44,
+            "hitTarget": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 442.671875,
+            "top": 301.109375,
+            "right": 645,
+            "bottom": 345.109375,
+            "width": 202.328125,
+            "height": 44,
+            "hitTarget": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "actionsInsideViewport": true,
+        "bleedingImages": [],
+        "sheetContainsDrawings": true,
+        "stickyHeaderVisible": true,
+        "stickyHeaderHasBrand": true,
+        "wrappedLabels": []
       },
       "selection": {
         "choices": 4,
         "decoded": 4,
-        "horizontalOverflow": false
+        "horizontalOverflow": false,
+        "lastAction": "coloring",
+        "printSheets": 0,
+        "printing": false
       },
       "workspace": {
         "tabs": 2,
-        "frameWidth": 259,
-        "frameHeight": 259,
-        "frameLeft": 79,
-        "frameRight": 338,
+        "frameWidth": 81,
+        "frameHeight": 81,
+        "frameLeft": 24,
+        "frameRight": 105,
         "canvasWidth": 768,
         "canvasHeight": 768,
         "lineArt": 1254,
@@ -134,26 +305,83 @@
         "height": 1024,
         "mobile": true
       },
+      "home": {
+        "cards": 10,
+        "visibleImages": 10,
+        "decodedImages": 10,
+        "imageBleeds": [],
+        "outsideCards": 0,
+        "horizontalOverflow": false,
+        "headerVisible": true,
+        "weeklyInsideViewport": true
+      },
+      "exhaustive": {
+        "pages": 100,
+        "decodedImages": 400,
+        "defects": []
+      },
       "catalogue": {
         "images": 4,
         "decoded": 4,
         "horizontalOverflow": false,
-        "colorButtonWidth": 129,
+        "colorButtonWidth": 236,
         "colorButtonHeight": 52,
-        "sheetWidth": 682,
-        "widestDrawing": 309
+        "sheetWidth": 724,
+        "widestDrawing": 329,
+        "actionRects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 22,
+            "top": 297.109375,
+            "right": 258,
+            "bottom": 349.109375,
+            "width": 236,
+            "height": 52,
+            "hitTarget": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 266,
+            "top": 301.109375,
+            "right": 502,
+            "bottom": 345.109375,
+            "width": 236,
+            "height": 44,
+            "hitTarget": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 510,
+            "top": 301.109375,
+            "right": 746,
+            "bottom": 345.109375,
+            "width": 236,
+            "height": 44,
+            "hitTarget": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "actionsInsideViewport": true,
+        "bleedingImages": [],
+        "sheetContainsDrawings": true,
+        "stickyHeaderVisible": true,
+        "stickyHeaderHasBrand": true,
+        "wrappedLabels": []
       },
       "selection": {
         "choices": 4,
         "decoded": 4,
-        "horizontalOverflow": false
+        "horizontalOverflow": false,
+        "lastAction": "coloring",
+        "printSheets": 0,
+        "printing": false
       },
       "workspace": {
         "tabs": 2,
         "frameWidth": 553,
         "frameHeight": 553,
-        "frameLeft": 108,
-        "frameRight": 660,
+        "frameLeft": 99,
+        "frameRight": 651,
         "canvasWidth": 768,
         "canvasHeight": 768,
         "lineArt": 1254,
@@ -176,26 +404,83 @@
         "height": 900,
         "mobile": false
       },
+      "home": {
+        "cards": 10,
+        "visibleImages": 10,
+        "decodedImages": 10,
+        "imageBleeds": [],
+        "outsideCards": 0,
+        "horizontalOverflow": false,
+        "headerVisible": true,
+        "weeklyInsideViewport": true
+      },
+      "exhaustive": {
+        "pages": 100,
+        "decodedImages": 400,
+        "defects": []
+      },
       "catalogue": {
         "images": 4,
         "decoded": 4,
         "horizontalOverflow": false,
-        "colorButtonWidth": 129,
+        "colorButtonWidth": 131,
         "colorButtonHeight": 52,
         "sheetWidth": 740,
-        "widestDrawing": 338
+        "widestDrawing": 337,
+        "actionRects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 888.109375,
+            "top": 304.015625,
+            "right": 1019.28125,
+            "bottom": 356.015625,
+            "width": 131.171875,
+            "height": 52,
+            "hitTarget": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 1027.28125,
+            "top": 308.015625,
+            "right": 1143.28125,
+            "bottom": 352.015625,
+            "width": 116,
+            "height": 44,
+            "hitTarget": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 1151.28125,
+            "top": 308.015625,
+            "right": 1330,
+            "bottom": 352.015625,
+            "width": 178.71875,
+            "height": 44,
+            "hitTarget": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "actionsInsideViewport": true,
+        "bleedingImages": [],
+        "sheetContainsDrawings": true,
+        "stickyHeaderVisible": true,
+        "stickyHeaderHasBrand": true,
+        "wrappedLabels": []
       },
       "selection": {
         "choices": 4,
         "decoded": 4,
-        "horizontalOverflow": false
+        "horizontalOverflow": false,
+        "lastAction": "coloring",
+        "printSheets": 0,
+        "printing": false
       },
       "workspace": {
         "tabs": 2,
         "frameWidth": 558,
         "frameHeight": 558,
-        "frameLeft": 434,
-        "frameRight": 992,
+        "frameLeft": 440,
+        "frameRight": 998,
         "canvasWidth": 768,
         "canvasHeight": 768,
         "lineArt": 1254,

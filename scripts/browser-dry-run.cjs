@@ -1,6 +1,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
+const { chromium } = require("playwright");
 
 const endpoint = process.argv[2];
 if (!endpoint) throw new Error("Endpoint Chrome DevTools manquant.");
@@ -15,7 +16,9 @@ const delay = (milliseconds) =>
 
 async function connect() {
   const targets = await fetch(`${endpoint}/json`).then((response) => response.json());
-  const target = targets.find((item) => item.type === "page");
+  const target =
+    targets.find((item) => item.type === "page" && item.url.startsWith(appUrl))
+    || targets.find((item) => item.type === "page");
   if (!target) throw new Error("Aucune page Chrome disponible.");
 
   const socket = new WebSocket(target.webSocketDebuggerUrl);
@@ -35,22 +38,68 @@ async function connect() {
       events.push(message);
     }
   };
-  await new Promise((resolve, reject) => {
-    socket.onopen = resolve;
-    socket.onerror = reject;
-  });
+  await Promise.race([
+    new Promise((resolve, reject) => {
+      socket.onopen = resolve;
+      socket.onerror = reject;
+    }),
+    delay(15000).then(() => {
+      throw new Error("Connexion WebSocket CDP bloquée après 15 s.");
+    }),
+  ]);
 
   const call = (method, params = {}) =>
     new Promise((resolve, reject) => {
       const id = ++nextId;
-      pending.set(id, { resolve, reject });
+      const timeout = setTimeout(() => {
+        pending.delete(id);
+        reject(new Error(`Commande CDP bloquée après 15 s : ${method}`));
+      }, 15000);
+      pending.set(id, {
+        resolve: (value) => {
+          clearTimeout(timeout);
+          resolve(value);
+        },
+        reject: (error) => {
+          clearTimeout(timeout);
+          reject(error);
+        },
+      });
       socket.send(JSON.stringify({ id, method, params }));
     });
   return { socket, call, events };
 }
 
+async function connectWithPlaywright() {
+  const browser = await chromium.launch({
+    channel: "chrome",
+    headless: true,
+  });
+  const context = await browser.newContext();
+  const page = await context.newPage();
+  const session = await context.newCDPSession(page);
+  const events = [];
+
+  session.on("Runtime.exceptionThrown", (params) => {
+    events.push({ method: "Runtime.exceptionThrown", params });
+  });
+  session.on("Log.entryAdded", (params) => {
+    events.push({ method: "Log.entryAdded", params });
+  });
+
+  return {
+    socket: {
+      close: () => {
+        void browser.close();
+      },
+    },
+    call: (method, params = {}) => session.send(method, params),
+    events,
+  };
+}
+
 async function main() {
-  const { socket, call, events } = await connect();
+  const { socket, call, events } = await connectWithPlaywright();
   const evaluate = async (expression) => {
     const result = await call("Runtime.evaluate", {
       expression,

@@ -208,9 +208,12 @@ export default function Home() {
         <section id="atelier" className="atelier-section" aria-labelledby="atelier-title">
           <div className="section-shell">
             <div className="catalogue-viewer__back">
+              <span className="catalogue-viewer__brand">
+                <Brand />
+              </span>
               <button id="close-catalogue" className="button button--paper" type="button">
                 <span aria-hidden="true">←</span>
-                Retour vers les catalogues
+                <span className="button__label">Retour vers les catalogues</span>
               </button>
             </div>
 
@@ -267,22 +270,37 @@ export default function Home() {
                       id="open-coloring-studio"
                       className="button button--coloring"
                       type="button"
+                      aria-label="Colorier cette page ici"
                     >
                       <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="m14.5 4.5 5 5M5 19l3.2-.7L19 7.5a2.1 2.1 0 0 0-3-3L5.7 14.8 5 19Z" />
                         <path d="m12.8 7.2 4 4" />
                       </svg>
-                      Colorier ici
+                      <span className="button__label">Colorier ici</span>
                     </button>
-                    <button id="print-page" className="button button--paper" type="button">
+                    <button
+                      id="print-page"
+                      className="button button--paper"
+                      type="button"
+                      aria-label="Imprimer cette page"
+                    >
                       <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
                         <path d="M7 14h10v7H7z" />
                       </svg>
-                      Cette page
+                      <span className="button__label">Cette page</span>
                     </button>
-                    <button id="print-catalogue" className="button button--ink" type="button">
-                      Imprimer les 10 pages
+                    <button
+                      id="print-catalogue"
+                      className="button button--ink"
+                      type="button"
+                      aria-label="Imprimer les 10 pages"
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                        <path d="M7 14h10v7H7z" />
+                      </svg>
+                      <span className="button__label">Imprimer les 10 pages</span>
                     </button>
                   </div>
                 </div>

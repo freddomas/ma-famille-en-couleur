@@ -1,0 +1,401 @@
+{
+  "status": "passed",
+  "generatedAt": "2026-07-19T11:01:13.360Z",
+  "checks": [
+    {
+      "viewport": {
+        "name": "phone-320",
+        "width": 320,
+        "height": 568,
+        "mobile": true
+      },
+      "home": {
+        "cards": 10,
+        "decoded": 10,
+        "overflow": false,
+        "outside": 0,
+        "bleeds": [],
+        "sticky": true,
+        "weekly": true,
+        "noteWrap": false,
+        "vehicleCover": "vehicules-terre-29"
+      },
+      "viewer": {
+        "overflow": false,
+        "rects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 12,
+            "right": 308,
+            "top": 276.1423034667969,
+            "bottom": 328.1423034667969,
+            "width": 296,
+            "height": 52,
+            "hit": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 12,
+            "right": 156,
+            "top": 337.109375,
+            "bottom": 381.109375,
+            "width": 144,
+            "height": 44,
+            "hit": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 164,
+            "right": 308,
+            "top": 337.109375,
+            "bottom": 381.109375,
+            "width": 144,
+            "height": 44,
+            "hit": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "inside": true,
+        "bleeds": [],
+        "sheet": true,
+        "sticky": true,
+        "brand": true,
+        "wrapped": 0
+      },
+      "selection": {
+        "choices": 4,
+        "action": "coloring",
+        "printCalls": 0,
+        "sheets": 0,
+        "overflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "left": 32,
+        "right": 270,
+        "width": 238,
+        "height": 238,
+        "ink": 46241,
+        "overflow": false
+      },
+      "consoleErrors": []
+    },
+    {
+      "viewport": {
+        "name": "phone-390",
+        "width": 390,
+        "height": 844,
+        "mobile": true
+      },
+      "home": {
+        "cards": 10,
+        "decoded": 10,
+        "overflow": false,
+        "outside": 0,
+        "bleeds": [],
+        "sticky": true,
+        "weekly": true,
+        "noteWrap": false,
+        "vehicleCover": "vehicules-terre-29"
+      },
+      "viewer": {
+        "overflow": false,
+        "rects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 12,
+            "right": 378,
+            "top": 277.109375,
+            "bottom": 329.109375,
+            "width": 366,
+            "height": 52,
+            "hit": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 12,
+            "right": 191,
+            "top": 337.109375,
+            "bottom": 381.109375,
+            "width": 179,
+            "height": 44,
+            "hit": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 199,
+            "right": 378,
+            "top": 337.109375,
+            "bottom": 381.109375,
+            "width": 179,
+            "height": 44,
+            "hit": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "inside": true,
+        "bleeds": [],
+        "sheet": true,
+        "sticky": true,
+        "brand": true,
+        "wrapped": 0
+      },
+      "selection": {
+        "choices": 4,
+        "action": "coloring",
+        "printCalls": 0,
+        "sheets": 0,
+        "overflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "left": 14,
+        "right": 358,
+        "width": 344,
+        "height": 344,
+        "ink": 46241,
+        "overflow": false
+      },
+      "consoleErrors": []
+    },
+    {
+      "viewport": {
+        "name": "phone-landscape",
+        "width": 667,
+        "height": 375,
+        "mobile": true
+      },
+      "home": {
+        "cards": 10,
+        "decoded": 10,
+        "overflow": false,
+        "outside": 0,
+        "bleeds": [],
+        "sticky": true,
+        "weekly": true,
+        "noteWrap": false,
+        "vehicleCover": "vehicules-terre-29"
+      },
+      "viewer": {
+        "overflow": false,
+        "rects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 22.015625,
+            "right": 224.34375,
+            "top": 297.109375,
+            "bottom": 349.109375,
+            "width": 202.328125,
+            "height": 52,
+            "hit": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 232.34375,
+            "right": 434.671875,
+            "top": 301.109375,
+            "bottom": 345.109375,
+            "width": 202.328125,
+            "height": 44,
+            "hit": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 442.671875,
+            "right": 645,
+            "top": 301.109375,
+            "bottom": 345.109375,
+            "width": 202.328125,
+            "height": 44,
+            "hit": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "inside": true,
+        "bleeds": [],
+        "sheet": true,
+        "sticky": true,
+        "brand": true,
+        "wrapped": 0
+      },
+      "selection": {
+        "choices": 4,
+        "action": "coloring",
+        "printCalls": 0,
+        "sheets": 0,
+        "overflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "left": 24,
+        "right": 105.015625,
+        "width": 81.015625,
+        "height": 81.015625,
+        "ink": 46241,
+        "overflow": false
+      },
+      "consoleErrors": []
+    },
+    {
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024,
+        "mobile": true
+      },
+      "home": {
+        "cards": 10,
+        "decoded": 10,
+        "overflow": false,
+        "outside": 0,
+        "bleeds": [],
+        "sticky": true,
+        "weekly": true,
+        "noteWrap": false,
+        "vehicleCover": "vehicules-terre-29"
+      },
+      "viewer": {
+        "overflow": false,
+        "rects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 22,
+            "right": 258,
+            "top": 297.109375,
+            "bottom": 349.109375,
+            "width": 236,
+            "height": 52,
+            "hit": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 266,
+            "right": 502,
+            "top": 301.109375,
+            "bottom": 345.109375,
+            "width": 236,
+            "height": 44,
+            "hit": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 510,
+            "right": 746,
+            "top": 301.109375,
+            "bottom": 345.109375,
+            "width": 236,
+            "height": 44,
+            "hit": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "inside": true,
+        "bleeds": [],
+        "sheet": true,
+        "sticky": true,
+        "brand": true,
+        "wrapped": 0
+      },
+      "selection": {
+        "choices": 4,
+        "action": "coloring",
+        "printCalls": 0,
+        "sheets": 0,
+        "overflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "left": 98.515625,
+        "right": 651.46875,
+        "width": 552.953125,
+        "height": 552.953125,
+        "ink": 46241,
+        "overflow": false
+      },
+      "consoleErrors": []
+    },
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "mobile": false
+      },
+      "home": {
+        "cards": 10,
+        "decoded": 10,
+        "overflow": false,
+        "outside": 0,
+        "bleeds": [],
+        "sticky": true,
+        "weekly": true,
+        "noteWrap": false,
+        "vehicleCover": "vehicules-terre-29"
+      },
+      "viewer": {
+        "overflow": false,
+        "rects": [
+          {
+            "id": "open-coloring-studio",
+            "left": 888.109375,
+            "right": 1019.28125,
+            "top": 304.015625,
+            "bottom": 356.015625,
+            "width": 131.171875,
+            "height": 52,
+            "hit": "open-coloring-studio"
+          },
+          {
+            "id": "print-page",
+            "left": 1027.28125,
+            "right": 1143.28125,
+            "top": 308.015625,
+            "bottom": 352.015625,
+            "width": 116,
+            "height": 44,
+            "hit": "print-page"
+          },
+          {
+            "id": "print-catalogue",
+            "left": 1151.28125,
+            "right": 1330,
+            "top": 308.015625,
+            "bottom": 352.015625,
+            "width": 178.71875,
+            "height": 44,
+            "hit": "print-catalogue"
+          }
+        ],
+        "overlaps": [],
+        "inside": true,
+        "bleeds": [],
+        "sheet": true,
+        "sticky": true,
+        "brand": true,
+        "wrapped": 0,
+        "exhaustive": {
+          "checked": 100,
+          "decoded": 400,
+          "defects": []
+        }
+      },
+      "selection": {
+        "choices": 4,
+        "action": "coloring",
+        "printCalls": 0,
+        "sheets": 0,
+        "overflow": false
+      },
+      "workspace": {
+        "tabs": 2,
+        "left": 440,
+        "right": 998,
+        "width": 558,
+        "height": 558,
+        "ink": 46241,
+        "overflow": false
+      },
+      "consoleErrors": []
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
+const { chromium } = require("playwright");
 
 const endpoint = process.argv[2];
 const appUrl = process.argv[3] || "http://127.0.0.1:8080/";
@@ -15,7 +16,9 @@ const delay = (milliseconds) =>
 
 async function connect() {
   const targets = await fetch(`${endpoint}/json`).then((response) => response.json());
-  const target = targets.find((item) => item.type === "page");
+  const target =
+    targets.find((item) => item.type === "page" && item.url.startsWith(appUrl))
+    || targets.find((item) => item.type === "page");
   if (!target) throw new Error("Aucune page Chrome disponible.");
   const socket = new WebSocket(target.webSocketDebuggerUrl);
   const pending = new Map();
@@ -40,21 +43,68 @@ async function connect() {
     }
     pending.clear();
   };
-  await new Promise((resolve, reject) => {
-    socket.onopen = resolve;
-    socket.onerror = reject;
-  });
+  await Promise.race([
+    new Promise((resolve, reject) => {
+      socket.onopen = resolve;
+      socket.onerror = reject;
+    }),
+    delay(15000).then(() => {
+      throw new Error("Connexion WebSocket CDP bloquée après 15 s.");
+    }),
+  ]);
   const call = (method, params = {}) =>
     new Promise((resolve, reject) => {
       const id = ++nextId;
-      pending.set(id, { resolve, reject });
+      const timeout = setTimeout(() => {
+        pending.delete(id);
+        reject(new Error(`Commande CDP bloquée après 15 s : ${method}`));
+      }, 15000);
+      pending.set(id, {
+        resolve: (value) => {
+          clearTimeout(timeout);
+          resolve(value);
+        },
+        reject: (error) => {
+          clearTimeout(timeout);
+          reject(error);
+        },
+      });
       socket.send(JSON.stringify({ id, method, params }));
     });
   return { socket, call, events };
 }
 
+async function connectWithPlaywright() {
+  const browser = await chromium.launch({
+    channel: "chrome",
+    headless: true,
+  });
+  const context = await browser.newContext();
+  const page = await context.newPage();
+  const session = await context.newCDPSession(page);
+  const events = [];
+
+  session.on("Runtime.exceptionThrown", (params) => {
+    events.push({ method: "Runtime.exceptionThrown", params });
+  });
+  session.on("Log.entryAdded", (params) => {
+    events.push({ method: "Log.entryAdded", params });
+  });
+
+  return {
+    socket: {
+      close: () => {
+        void browser.close();
+      },
+    },
+    call: (method, params = {}) => session.send(method, params),
+    events,
+    page,
+  };
+}
+
 async function main() {
-  const { socket, call, events } = await connect();
+  const { socket, call, events, page } = await connectWithPlaywright();
   const evaluate = async (expression) => {
     const result = await call("Runtime.evaluate", {
       expression,
@@ -96,6 +146,20 @@ async function main() {
     });
     fs.writeFileSync(path.join(outputDir, name), Buffer.from(result.data, "base64"));
   };
+  const activate = async (selector) => {
+    const point = await evaluate(`(() => {
+      const target = document.querySelector(${JSON.stringify(selector)});
+      if (!target) return null;
+      target.scrollIntoView({ block: "center", inline: "center", behavior: "instant" });
+      const rect = target.getBoundingClientRect();
+      return {
+        x: Math.round(rect.left + rect.width / 2),
+        y: Math.round(rect.top + rect.height / 2)
+      };
+    })()`);
+    assert.ok(point, `Cible introuvable : ${selector}`);
+    await page.mouse.click(point.x, point.y);
+  };
 
   const checks = [];
   const viewports = [
@@ -124,11 +188,108 @@ async function main() {
         maxTouchPoints: viewport.mobile ? 5 : 1,
       });
       await call("Page.navigate", { url: appUrl });
-      await waitFor(
-        `document.readyState === "complete"
-          && document.querySelectorAll(".catalogue-card").length === 10`,
+    await waitFor(
+      `document.readyState === "complete"
+      && document.querySelectorAll(".catalogue-card").length === 10
+      && [...document.querySelectorAll(".catalogue-card__image")]
+        .every((image) => image.complete && image.naturalWidth > 0)`,
+    );
+      await evaluate(
+        `document.querySelector("#catalogues").scrollIntoView({ block: "start", behavior: "instant" })`,
       );
-      await evaluate(`document.querySelectorAll(".catalogue-card")[1].click()`);
+      const home = await evaluate(`(() => {
+        const contains = (outer, inner, tolerance = 1) =>
+          inner.left >= outer.left - tolerance
+          && inner.right <= outer.right + tolerance
+          && inner.top >= outer.top - tolerance
+          && inner.bottom <= outer.bottom + tolerance;
+        const cards = [...document.querySelectorAll(".catalogue-card")];
+        const images = [...document.querySelectorAll(".catalogue-card__image")];
+        const imageBleeds = images.filter((image) => {
+          const frame = image.closest(".catalogue-card__media");
+          return !frame || !contains(frame.getBoundingClientRect(), image.getBoundingClientRect());
+        }).map((image) => image.dataset.assetId || image.alt);
+        const outsideCards = cards.filter((card) => {
+          const rect = card.getBoundingClientRect();
+          return rect.left < -1 || rect.right > window.innerWidth + 1;
+        }).length;
+        const header = document.querySelector(".site-header")?.getBoundingClientRect();
+        const weekly = document.querySelector(".weekly-promise__stamp")?.getBoundingClientRect();
+        return {
+          cards: cards.length,
+          visibleImages: images.filter((image) => {
+            const rect = image.getBoundingClientRect();
+            return rect.width > 0 && rect.height > 0;
+          }).length,
+          decodedImages: images.filter((image) => image.complete && image.naturalWidth > 0).length,
+          imageBleeds,
+          outsideCards,
+          horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth,
+          headerVisible: Boolean(header && header.top >= -1 && header.bottom > 44),
+          weeklyInsideViewport: Boolean(
+            weekly && weekly.left >= -1 && weekly.right <= window.innerWidth + 1
+          )
+        };
+      })()`);
+      console.log(JSON.stringify(home));
+      assert.equal(home.cards, 10);
+      assert.equal(home.visibleImages, 10);
+      assert.equal(home.decodedImages, 10);
+      assert.deepEqual(home.imageBleeds, []);
+      assert.equal(home.outsideCards, 0);
+    assert.equal(home.horizontalOverflow, false);
+    assert.equal(home.headerVisible, true);
+    assert.equal(home.weeklyInsideViewport, true);
+
+    const exhaustive = await evaluate(`(async () => {
+      const defects = [];
+      let decodedImages = 0;
+      let pages = 0;
+      for (const catalogue of state.catalogues) {
+        selectCatalogue(catalogue.id);
+        for (let pageNumber = 1; pageNumber <= 10; pageNumber += 1) {
+          selectPage(pageNumber);
+          const images = [...document.querySelectorAll(".drawing-card__image")];
+          await Promise.all(images.map((image) => image.decode()));
+          pages += 1;
+          decodedImages += images.filter((image) => image.naturalWidth > 0).length;
+          const sheetRect = document.querySelector(".colouring-sheet").getBoundingClientRect();
+          const pageDefects = images
+            .filter((image) => {
+              const artRect = image.closest(".drawing-card__art").getBoundingClientRect();
+              return image.getBoundingClientRect().left < artRect.left - 1
+                || image.getBoundingClientRect().right > artRect.right + 1
+                || image.getBoundingClientRect().top < artRect.top - 1
+                || image.getBoundingClientRect().bottom > artRect.bottom + 1
+                || artRect.left < sheetRect.left - 1
+                || artRect.right > sheetRect.right + 1;
+            })
+            .map((image) => image.dataset.assetId || image.alt);
+          if (images.length !== 4
+            || images.some((image) => image.naturalWidth === 0)
+            || pageDefects.length > 0
+            || document.documentElement.scrollWidth > window.innerWidth) {
+            defects.push({
+              catalogue: catalogue.id,
+              page: pageNumber,
+              images: images.length,
+              pageDefects,
+            });
+          }
+        }
+      }
+      document.getElementById("close-catalogue").click();
+      return { pages, decodedImages, defects };
+    })()`);
+    assert.equal(exhaustive.pages, 100);
+    assert.equal(exhaustive.decodedImages, 400);
+    assert.deepEqual(exhaustive.defects, []);
+
+    await evaluate(`window.scrollTo({ top: 0, left: 0, behavior: "instant" })`);
+    await delay(200);
+    await screenshot(`qa-${viewport.name}-home.png`);
+
+      await activate(".catalogue-card:nth-child(2)", viewport.mobile);
       await waitFor(
         `document.querySelector("#atelier").classList.contains("is-catalogue-open")
           && [...document.querySelectorAll(".drawing-card__image")]
@@ -141,6 +302,58 @@ async function main() {
         const drawings = [...document.querySelectorAll(".drawing-card")];
         const buttonRect = colorButton.getBoundingClientRect();
         const sheetRect = sheet.getBoundingClientRect();
+        const actionButtons = [
+          document.querySelector("#open-coloring-studio"),
+          document.querySelector("#print-page"),
+          document.querySelector("#print-catalogue")
+        ];
+        const actionRects = actionButtons.map((button) => {
+          const rect = button.getBoundingClientRect();
+          const centerX = rect.left + rect.width / 2;
+          const centerY = rect.top + rect.height / 2;
+          return {
+            id: button.id,
+            left: rect.left,
+            top: rect.top,
+            right: rect.right,
+            bottom: rect.bottom,
+            width: rect.width,
+            height: rect.height,
+            hitTarget: document.elementFromPoint(centerX, centerY)?.closest("button")?.id || null
+          };
+        });
+        const overlaps = [];
+        for (let leftIndex = 0; leftIndex < actionRects.length; leftIndex += 1) {
+          for (let rightIndex = leftIndex + 1; rightIndex < actionRects.length; rightIndex += 1) {
+            const left = actionRects[leftIndex];
+            const right = actionRects[rightIndex];
+            const overlapWidth = Math.max(
+              0,
+              Math.min(left.right, right.right) - Math.max(left.left, right.left)
+            );
+            const overlapHeight = Math.max(
+              0,
+              Math.min(left.bottom, right.bottom) - Math.max(left.top, right.top)
+            );
+            if (overlapWidth * overlapHeight > 0.5) {
+              overlaps.push([left.id, right.id, overlapWidth * overlapHeight]);
+            }
+          }
+        }
+        const contains = (outer, inner, tolerance = 1) =>
+          inner.left >= outer.left - tolerance
+          && inner.right <= outer.right + tolerance
+          && inner.top >= outer.top - tolerance
+          && inner.bottom <= outer.bottom + tolerance;
+        const bleedingImages = [...document.querySelectorAll(".drawing-card__image")]
+          .filter((image) => {
+            const art = image.closest(".drawing-card__art");
+            return !art || !contains(art.getBoundingClientRect(), image.getBoundingClientRect());
+          })
+          .map((image) => image.dataset.assetId || image.alt);
+        const stickyHeader = document.querySelector(".catalogue-viewer__back");
+        const stickyRect = stickyHeader.getBoundingClientRect();
+        const labels = [...document.querySelectorAll(".print-actions .button__label")];
         return {
           images: document.querySelectorAll(".drawing-card__image").length,
           decoded: [...document.querySelectorAll(".drawing-card__image")]
@@ -151,7 +364,28 @@ async function main() {
           sheetWidth: Math.round(sheetRect.width),
           widestDrawing: Math.round(
             Math.max(...drawings.map((drawing) => drawing.getBoundingClientRect().width))
-          )
+          ),
+          actionRects,
+          overlaps,
+          actionsInsideViewport: actionRects.every((rect) =>
+            rect.left >= -1
+            && rect.right <= window.innerWidth + 1
+            && rect.top >= -1
+            && rect.bottom <= window.innerHeight + 1
+          ),
+          bleedingImages,
+          sheetContainsDrawings: drawings.every((drawing) =>
+            contains(sheetRect, drawing.getBoundingClientRect())
+          ),
+          stickyHeaderVisible:
+            stickyRect.top >= -1
+            && stickyRect.bottom <= window.innerHeight
+            && getComputedStyle(stickyHeader).position === "sticky",
+          stickyHeaderHasBrand: Boolean(stickyHeader.querySelector(".catalogue-viewer__brand")),
+          wrappedLabels: labels
+            .filter((label) => getComputedStyle(label).display !== "none")
+            .filter((label) => getComputedStyle(label).whiteSpace !== "nowrap")
+            .map((label) => label.textContent.trim())
         };
       })()`);
       console.log(JSON.stringify(catalogue));
@@ -161,10 +395,29 @@ async function main() {
       assert.ok(catalogue.colorButtonHeight >= 48);
       assert.ok(catalogue.sheetWidth <= viewport.width);
       assert.ok(catalogue.widestDrawing <= viewport.width);
+      assert.deepEqual(catalogue.overlaps, []);
+      assert.equal(catalogue.actionsInsideViewport, true);
+      assert.deepEqual(catalogue.bleedingImages, []);
+      assert.equal(catalogue.sheetContainsDrawings, true);
+      assert.equal(catalogue.stickyHeaderVisible, true);
+      assert.equal(catalogue.stickyHeaderHasBrand, true);
+      assert.deepEqual(catalogue.wrappedLabels, []);
+    for (const target of catalogue.actionRects) {
+      assert.ok(target.width >= 44, `${target.id}: largeur tactile insuffisante`);
+      assert.ok(target.height >= 44, `${target.id}: hauteur tactile insuffisante`);
+      if (target.hitTarget !== null) {
+        assert.equal(target.hitTarget, target.id, `${target.id}: zone de clic recouverte`);
+      }
+    }
       await screenshot(`qa-${viewport.name}-catalogue.png`);
 
       console.log(`QA ${viewport.name}: sélection`);
-      await evaluate(`document.querySelector("#open-coloring-studio").click()`);
+      await evaluate(`(() => {
+        delete document.documentElement.dataset.lastCatalogueAction;
+        document.querySelector("#print-area").replaceChildren();
+        document.body.classList.remove("is-printing");
+      })()`);
+      await activate("#open-coloring-studio", viewport.mobile);
       await waitFor(
         `document.querySelector("#coloring-studio").open
           && [...document.querySelectorAll(".coloring-choice img")]
@@ -174,13 +427,17 @@ async function main() {
         choices: document.querySelectorAll(".coloring-choice").length,
         decoded: [...document.querySelectorAll(".coloring-choice img")]
           .filter((image) => image.naturalWidth > 0).length,
-        horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth
+        horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth,
+        lastAction: document.documentElement.dataset.lastCatalogueAction || null,
+        printSheets: document.querySelectorAll("#print-area .colouring-sheet").length,
+        printing: document.body.classList.contains("is-printing")
       }))()`);
-      assert.deepEqual(selection, {
-        choices: 4,
-        decoded: 4,
-        horizontalOverflow: false,
-      });
+      assert.equal(selection.choices, 4);
+      assert.equal(selection.decoded, 4);
+      assert.equal(selection.horizontalOverflow, false);
+      assert.equal(selection.lastAction, "coloring");
+      assert.equal(selection.printSheets, 0);
+      assert.equal(selection.printing, false);
       await screenshot(`qa-${viewport.name}-selection.png`);
 
       console.log(`QA ${viewport.name}: canevas`);
@@ -238,7 +495,7 @@ async function main() {
       assert.equal(workspace.horizontalOverflow, false);
       await screenshot(`qa-${viewport.name}-workspace.png`);
 
-      checks.push({ viewport, catalogue, selection, workspace });
+    checks.push({ viewport, home, exhaustive, catalogue, selection, workspace });
     }
 
     const consoleErrors = events

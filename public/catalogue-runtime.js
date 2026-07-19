@@ -1,6 +1,10 @@
 const PAGE_COUNT = 10;
 const ITEMS_PER_PAGE = 4;
 const RANDOM_DRAWING_COUNT = 40;
+const CATALOGUE_COVER_IDS = Object.freeze({
+  "vehicules-terre": "vehicules-terre-29",
+  "loisirs-decouvertes": "loisirs-decouvertes-32",
+});
 
 const state = {
   catalogues: [],
@@ -224,6 +228,12 @@ function installSurpriseGenerator() {
 }
 
 function bindGlobalEvents() {
+  const isolateAction = (event, action) => {
+    event.preventDefault();
+    event.stopPropagation();
+    document.documentElement.dataset.lastCatalogueAction = action;
+  };
+
   document.getElementById("catalogue-search")?.addEventListener("input", (event) => {
     state.search = normalizeText(event.target.value.trim());
     renderLibrary();
@@ -234,11 +244,13 @@ function bindGlobalEvents() {
   document
     .getElementById("next-page")
     ?.addEventListener("click", () => selectPage(state.selectedPage + 1));
-  document.getElementById("print-page")?.addEventListener("click", async () => {
+  document.getElementById("print-page")?.addEventListener("click", async (event) => {
+    isolateAction(event, "print-page");
     const catalogue = selectedCatalogue();
     if (catalogue) await printEntries(catalogue, "page");
   });
-  document.getElementById("print-catalogue")?.addEventListener("click", async () => {
+  document.getElementById("print-catalogue")?.addEventListener("click", async (event) => {
+    isolateAction(event, "print-catalogue");
     const catalogue = selectedCatalogue();
     if (catalogue) await printEntries(catalogue, "catalogue");
   });
@@ -247,7 +259,10 @@ function bindGlobalEvents() {
     ?.addEventListener("click", closeCatalogueViewer);
   document
     .getElementById("open-coloring-studio")
-    ?.addEventListener("click", openColoringStudio);
+    ?.addEventListener("click", (event) => {
+      isolateAction(event, "coloring");
+      openColoringStudio(event);
+    });
   document
     .getElementById("close-coloring-studio")
     ?.addEventListener("click", closeColoringStudio);
@@ -340,7 +355,7 @@ function renderLibrary() {
         >
           <span class="catalogue-card__visual">
             <span class="catalogue-card__media">
-              ${imageMarkup(catalogue.entries[0], "catalogue-card__image")}
+              ${imageMarkup(catalogueCoverEntry(catalogue), "catalogue-card__image")}
             </span>
           </span>
           <span class="catalogue-card__body">
@@ -364,6 +379,16 @@ function renderLibrary() {
       });
     });
   });
+}
+
+function catalogueCoverEntry(catalogue) {
+  const preferredId = CATALOGUE_COVER_IDS[catalogue.id];
+  if (!preferredId) return catalogue.entries[0];
+  const cover = catalogue.entries.find((entry) => entry.id === preferredId);
+  if (!cover) {
+    throw new Error(`Couverture de catalogue introuvable : ${preferredId}.`);
+  }
+  return cover;
 }
 
 function renderCatalogueMenu() {

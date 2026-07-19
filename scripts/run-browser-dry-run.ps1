@@ -102,10 +102,11 @@ $arguments = @(
   "--disable-background-networking"
   "--no-first-run"
   "--no-default-browser-check"
-  "--remote-debugging-address=127.0.0.1"
-  "--remote-debugging-port=$Port"
-  "--user-data-dir=`"$profile`""
-  "about:blank"
+      "--remote-debugging-address=127.0.0.1"
+      "--remote-debugging-port=$Port"
+      "--remote-allow-origins=*"
+      "--user-data-dir=`"$profile`""
+      "http://127.0.0.1:$AppPort/"
 ) -join " "
 
 $chromeProcess = Start-Process `
@@ -144,10 +145,18 @@ try {
     (Join-Path $PSScriptRoot "browser-dry-run.cjs") `
     "http://127.0.0.1:$Port" `
     "http://127.0.0.1:$AppPort/"
-  if ($LASTEXITCODE -ne 0) {
-    throw "Le DRY_RUN navigateur a échoué avec le code $LASTEXITCODE."
-  }
-} finally {
+    if ($LASTEXITCODE -ne 0) {
+      throw "Le DRY_RUN navigateur a échoué avec le code $LASTEXITCODE."
+    }
+
+    & node `
+      (Join-Path $PSScriptRoot "coloring-browser-qa.cjs") `
+      "http://127.0.0.1:$Port" `
+      "http://127.0.0.1:$AppPort/"
+    if ($LASTEXITCODE -ne 0) {
+      throw "La QA géométrique multi-format a échoué avec le code $LASTEXITCODE."
+    }
+  } finally {
     if (-not $chromeProcess.HasExited) {
         Stop-Process -Id $chromeProcess.Id -Force
     }
