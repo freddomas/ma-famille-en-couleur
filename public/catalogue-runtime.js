@@ -109,6 +109,14 @@ function validateData(data, manifest) {
     if (!entry.coloredPath) {
       throw new Error(`Jumeau coloré absent : ${entry.id}.`);
     }
+    if (
+      entry.format !== "svg"
+      || !/\.svg$/i.test(entry.path)
+      || !/\.svg$/i.test(entry.coloredPath)
+      || !entry.coloredSha256
+    ) {
+      throw new Error(`Contrat SVG incomplet : ${entry.id}.`);
+    }
     ids.add(entry.id);
     paths.add(entry.path);
   }

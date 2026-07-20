@@ -146,18 +146,48 @@ async function main() {
     });
     fs.writeFileSync(path.join(outputDir, name), Buffer.from(result.data, "base64"));
   };
-  const activate = async (selector) => {
-    const point = await evaluate(`(() => {
+  const activate = async (selector, useTouch = false) => {
+    const point = await evaluate(`(async () => {
       const target = document.querySelector(${JSON.stringify(selector)});
       if (!target) return null;
       target.scrollIntoView({ block: "center", inline: "center", behavior: "instant" });
+      await new Promise((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(resolve))
+      );
       const rect = target.getBoundingClientRect();
+      const x = Math.round(rect.left + rect.width / 2);
+      const y = Math.round(rect.top + rect.height / 2);
+      const hit = document.elementFromPoint(x, y);
       return {
-        x: Math.round(rect.left + rect.width / 2),
-        y: Math.round(rect.top + rect.height / 2)
+        x,
+        y,
+        interactive:
+          rect.width > 0
+          && rect.height > 0
+          && Boolean(hit)
+          && target.contains(hit)
       };
     })()`);
     assert.ok(point, `Cible introuvable : ${selector}`);
+    assert.equal(point.interactive, true, `Cible masquée ou sans dimensions : ${selector}`);
+    if (useTouch) {
+      await call("Input.dispatchTouchEvent", {
+        type: "touchStart",
+        touchPoints: [{
+          x: point.x,
+          y: point.y,
+          radiusX: 2,
+          radiusY: 2,
+          force: 1,
+          id: 1,
+        }],
+      });
+      await call("Input.dispatchTouchEvent", {
+        type: "touchEnd",
+        touchPoints: [],
+      });
+      return;
+    }
     await page.mouse.click(point.x, point.y);
   };
 
@@ -241,6 +271,12 @@ async function main() {
     assert.equal(home.headerVisible, true);
     assert.equal(home.weeklyInsideViewport, true);
 
+    await activate(".catalogue-card:first-child", viewport.mobile);
+    await waitFor(
+      `document.querySelector("#atelier").classList.contains("is-catalogue-open")
+        && [...document.querySelectorAll(".drawing-card__image")]
+          .every((image) => image.complete && image.naturalWidth > 0)`,
+    );
     const exhaustive = await evaluate(`(async () => {
       const defects = [];
       let decodedImages = 0;
@@ -250,7 +286,10 @@ async function main() {
         for (let pageNumber = 1; pageNumber <= 10; pageNumber += 1) {
           selectPage(pageNumber);
           const images = [...document.querySelectorAll(".drawing-card__image")];
-          await Promise.all(images.map((image) => image.decode()));
+          await Promise.all(images.map((image) => {
+            if (image.complete && image.naturalWidth > 0) return Promise.resolve();
+            return image.decode();
+          }));
           pages += 1;
           decodedImages += images.filter((image) => image.naturalWidth > 0).length;
           const sheetRect = document.querySelector(".colouring-sheet").getBoundingClientRect();

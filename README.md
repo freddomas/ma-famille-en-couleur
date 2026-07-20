@@ -29,14 +29,17 @@ Stripe n’est pas intégré dans cette version.
   deux tailles de crayon, gomme, annulation, modèle coloré et export PNG ;
 - impression d’une page ou d’un catalogue complet.
 
-Le rendu utilise exclusivement `public/assets/coloring/manifest.json`. Il
-n’existe ni génération SVG procédurale ni fallback silencieux.
+Le rendu utilise exclusivement `public/assets/coloring/manifest.json`. Les
+880 illustrations de catalogue sont de vrais SVG locaux sans raster incorporé :
+400 dessins actifs, 400 guides colorés et 80 réserves. L’image du hero reste
+volontairement en PNG. Il n’existe ni génération SVG procédurale ni fallback
+silencieux.
 
 ## Organisation des images
 
-- `public/assets/coloring/active/<categorie>/` : illustrations actives ;
-- `public/assets/coloring/reserve/<categorie>/` : réserve des rotations ;
-- `public/assets/coloring/colored/<categorie>/` : jumeaux colorés ;
+- `public/assets/coloring/active/<categorie>/` : illustrations actives SVG ;
+- `public/assets/coloring/reserve/<categorie>/` : réserve des rotations SVG ;
+- `public/assets/coloring/colored/<categorie>/` : jumeaux colorés SVG ;
 - `public/assets/coloring/reserve/manifest.json` : inventaire de réserve ;
 - `public/data/extracted-assets.csv` : association source, sujet et catégorie.
 
@@ -68,12 +71,26 @@ est réservée aux migrations et opérations serveur.
 ## Mise à jour hebdomadaire
 
 Le pipeline de contenu écrit désormais dans `public/` afin que les nouveaux
-catalogues soient immédiatement servis par Next.js. Les jumeaux colorés peuvent
-être régénérés avec :
+catalogues soient immédiatement servis par Next.js. Lors d’un nouvel import
+raster, les jumeaux colorés sont générés avant la vectorisation avec :
 
 ```powershell
 python scripts\generate-colored-twins.py
 ```
+
+Après un import ou une régénération raster, la migration vectorielle
+reproductible s’exécute avec :
+
+```powershell
+npm run assets:svg
+```
+
+Cette commande ne touche pas au hero. Elle convertit uniquement les chemins
+référencés par les manifestes, impose `xMidYMid meet`, refuse les SVG contenant
+une balise raster `<image>`, met à jour les empreintes SHA-256, puis déclasse les
+anciens PNG dans `output/Extract/decommissioned-catalogue-png/` avant de les
+retirer du runtime. L’archive locale conserve les sous-dossiers `active/`,
+`colored/` et `reserve/`; elle reste exclue de Git.
 
 Le script d’import conserve son mode non destructif :
 

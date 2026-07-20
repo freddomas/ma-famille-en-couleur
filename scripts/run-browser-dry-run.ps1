@@ -1,7 +1,8 @@
 param(
     [int]$Port = 9223,
     [int]$AppPort = 8080,
-    [string]$ChromePath = $env:AGENT_BROWSER_EXECUTABLE_PATH
+    [string]$ChromePath = $env:AGENT_BROWSER_EXECUTABLE_PATH,
+    [switch]$Headed
 )
 
 Set-StrictMode -Version Latest
@@ -93,8 +94,7 @@ if (-not $appReady) {
   throw "Next.js n'a pas démarré sur le port $AppPort."
 }
 
-$arguments = @(
-    "--headless=new"
+$chromeArguments = @(
     "--disable-gpu"
     "--disable-gpu-sandbox"
     "--disable-crash-reporter"
@@ -107,14 +107,25 @@ $arguments = @(
       "--remote-allow-origins=*"
       "--user-data-dir=`"$profile`""
       "http://127.0.0.1:$AppPort/"
-) -join " "
+)
+if (-not $Headed) {
+    $chromeArguments = @("--headless=new") + $chromeArguments
+}
+$arguments = $chromeArguments -join " "
+$chromeWindowStyle = if ($Headed) { "Normal" } else { "Hidden" }
+$previousPlaywrightHeaded = $env:PLAYWRIGHT_HEADED
+if ($Headed) {
+    $env:PLAYWRIGHT_HEADED = "1"
+} else {
+    Remove-Item Env:PLAYWRIGHT_HEADED -ErrorAction SilentlyContinue
+}
 
 $chromeProcess = Start-Process `
   -FilePath $chrome `
   -ArgumentList $arguments `
   -RedirectStandardOutput $chromeStdout `
   -RedirectStandardError $chromeStderr `
-  -WindowStyle Hidden `
+  -WindowStyle $chromeWindowStyle `
   -PassThru
 
 try {
@@ -165,5 +176,10 @@ try {
     }
     if (Test-Path -LiteralPath $profile -PathType Container) {
         Remove-Item -LiteralPath $profile -Recurse -Force
+    }
+    if ($null -eq $previousPlaywrightHeaded) {
+        Remove-Item Env:PLAYWRIGHT_HEADED -ErrorAction SilentlyContinue
+    } else {
+        $env:PLAYWRIGHT_HEADED = $previousPlaywrightHeaded
     }
 }

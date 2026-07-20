@@ -8,11 +8,16 @@ const root = path.resolve(__dirname, "..");
 const manifest = JSON.parse(
   fs.readFileSync(path.join(root, "public", "assets", "coloring", "manifest.json"), "utf8"),
 );
-const externalBaseUrl = process.argv[2];
+const headed = process.argv.includes("--headed");
+const externalBaseUrl = process.argv
+  .slice(2)
+  .find((argument) => !argument.startsWith("--"));
 const baseUrl = externalBaseUrl || "http://127.0.0.1:3112/";
 const outputPath = path.join(root, "qa", "image-framing-playwright.json");
 const viewports = [
-  { name: "phone", width: 390, height: 844, isMobile: true, hasTouch: true },
+  { name: "phone-320", width: 320, height: 568, isMobile: true, hasTouch: true },
+  { name: "phone-390", width: 390, height: 844, isMobile: true, hasTouch: true },
+  { name: "phone-landscape", width: 667, height: 375, isMobile: true, hasTouch: true },
   { name: "tablet", width: 768, height: 1024, isMobile: true, hasTouch: true },
   { name: "desktop", width: 1440, height: 900, isMobile: false, hasTouch: false },
 ];
@@ -159,6 +164,57 @@ async function renderedCatalogueAudit(page, viewport) {
         const images = [...document.querySelectorAll(".color-flip-card__face")];
         return images.length === 8 && images.every((image) => image.complete && image.naturalWidth);
       });
+      const flip = await page.evaluate(async () => {
+        const cards = [...document.querySelectorAll(".drawing-card [data-color-flip]")];
+        const nextFrame = () => new Promise((resolve) => requestAnimationFrame(resolve));
+        const transformState = (card) => {
+          const inner = card.querySelector(".color-flip-card__inner");
+          const transform = getComputedStyle(inner).transform;
+          return {
+            transform,
+            identity: transform === "none"
+              || transform === "matrix(1, 0, 0, 1, 0, 0)"
+              || transform === "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
+          };
+        };
+        await nextFrame();
+        cards.forEach((card) => {
+          const inner = card.querySelector(".color-flip-card__inner");
+          void inner.offsetWidth;
+          getComputedStyle(inner).transform;
+        });
+        cards.forEach((card) => card.click());
+        await nextFrame();
+        await nextFrame();
+        let framesWaited = 2;
+        while (
+          framesWaited < 10
+          && cards.some((card) => transformState(card).identity)
+        ) {
+          await nextFrame();
+          framesWaited += 1;
+        }
+        const activated = cards.map((card) => {
+          const { transform, identity } = transformState(card);
+          return {
+            id: card.querySelector(".color-flip-card__front")?.dataset.assetId,
+            pressed: card.getAttribute("aria-pressed"),
+            transform,
+            identity,
+            framesWaited,
+          };
+        });
+        cards.forEach((card) => card.click());
+        await nextFrame();
+        await nextFrame();
+        return {
+          activated,
+          reset: cards.every(
+            (card) => card.getAttribute("aria-pressed") === "false"
+              && !card.classList.contains("is-color-visible"),
+          ),
+        };
+      });
       const metrics = await page.evaluate(() => {
         const contains = (outer, inner) =>
           inner.left >= outer.left - 1 &&
@@ -186,7 +242,7 @@ async function renderedCatalogueAudit(page, viewport) {
           }),
         };
       });
-      pages.push({ catalogueId, page: pageNumber, ...metrics });
+      pages.push({ catalogueId, page: pageNumber, flip, ...metrics });
     }
   }
   return { viewport, pages };
@@ -209,9 +265,14 @@ async function main() {
     });
     await waitForServer();
   }
-  const browser = await chromium.launch({ channel: "chrome", headless: true });
+  const browser = await chromium.launch({
+    channel: "chrome",
+    headless: !headed,
+    slowMo: headed ? 25 : 0,
+  });
   const report = {
     status: "passed",
+    browserMode: headed ? "headed" : "headless",
     baseUrl,
     assets: [],
     viewports: [],
@@ -254,6 +315,13 @@ async function main() {
       const image = entry[variant];
       assert.equal(image.naturalWidth, image.naturalHeight, `${entry.id}: canevas non carré.`);
       assert.ok(
+        image.bounds[0] > 0
+          && image.bounds[1] > 0
+          && image.bounds[2] < 320
+          && image.bounds[3] < 320,
+        `${entry.id} ${variant}: tracé au bord du viewBox ${JSON.stringify(image)}.`,
+      );
+      assert.ok(
         Math.max(Math.abs(image.centerOffset.x), Math.abs(image.centerOffset.y)) <= 0.0085,
         `${entry.id} ${variant}: centre optique hors tolérance ${JSON.stringify(image)}.`,
       );
@@ -265,6 +333,12 @@ async function main() {
     for (const page of viewport.pages) {
       assert.equal(page.cards.length, 4, `${viewport.viewport.name}: page incomplète.`);
       assert.equal(page.horizontalOverflow, false, `${viewport.viewport.name}: débordement horizontal.`);
+      assert.equal(page.flip.activated.length, 4, `${viewport.viewport.name}: flips incomplets.`);
+      assert.equal(page.flip.reset, true, `${viewport.viewport.name}: flips non réinitialisés.`);
+      for (const flip of page.flip.activated) {
+        assert.equal(flip.pressed, "true", `${flip.id}: aria-pressed du flip incorrect.`);
+        assert.equal(flip.identity, false, `${flip.id}: rotation du flip absente.`);
+      }
       for (const card of page.cards) {
         assert.equal(card.decoded, true, `${card.id}: paire non décodée.`);
         assert.equal(card.frontContained, true, `${card.id}: traits hors cadre.`);
@@ -284,6 +358,11 @@ async function main() {
     renderedCardsChecked: report.viewports.reduce(
       (total, viewport) =>
         total + viewport.pages.reduce((sum, page) => sum + page.cards.length, 0),
+      0,
+    ),
+    flipsChecked: report.viewports.reduce(
+      (total, viewport) =>
+        total + viewport.pages.reduce((sum, page) => sum + page.flip.activated.length, 0),
       0,
     ),
     maximumCenterOffset: Math.max(

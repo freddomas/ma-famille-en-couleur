@@ -35,9 +35,9 @@
           {
             "id": "open-coloring-studio",
             "left": 12,
-            "top": 277.109375,
+            "top": 278.796875,
             "right": 308,
-            "bottom": 329.109375,
+            "bottom": 330.796875,
             "width": 296,
             "height": 52,
             "hitTarget": "open-coloring-studio"
@@ -45,9 +45,9 @@
           {
             "id": "print-page",
             "left": 12,
-            "top": 337.109375,
+            "top": 338.796875,
             "right": 156,
-            "bottom": 381.109375,
+            "bottom": 382.796875,
             "width": 144,
             "height": 44,
             "hitTarget": "print-page"
@@ -55,9 +55,9 @@
           {
             "id": "print-catalogue",
             "left": 164,
-            "top": 337.109375,
+            "top": 338.796875,
             "right": 308,
-            "bottom": 381.109375,
+            "bottom": 382.796875,
             "width": 144,
             "height": 44,
             "hitTarget": "print-catalogue"
@@ -89,14 +89,14 @@
         "canvasHeight": 768,
         "lineArt": 1254,
         "guide": 1254,
-        "lineArtInkPixels": 46241,
+        "lineArtInkPixels": 54094,
         "lineArtLayerHidden": false,
         "lineArtHidden": true,
         "lineArtDisplay": "none",
         "lineArtVisibility": "visible",
         "lineArtOpacity": "1",
         "lineArtZIndex": "auto",
-        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "lineArtSource": "http://127.0.0.1:8080/assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.svg",
         "horizontalOverflow": false
       }
     },
@@ -134,9 +134,9 @@
           {
             "id": "open-coloring-studio",
             "left": 12,
-            "top": 277.109375,
+            "top": 278.796875,
             "right": 378,
-            "bottom": 329.109375,
+            "bottom": 330.796875,
             "width": 366,
             "height": 52,
             "hitTarget": "open-coloring-studio"
@@ -144,9 +144,9 @@
           {
             "id": "print-page",
             "left": 12,
-            "top": 337.109375,
+            "top": 338.796875,
             "right": 191,
-            "bottom": 381.109375,
+            "bottom": 382.796875,
             "width": 179,
             "height": 44,
             "hitTarget": "print-page"
@@ -154,9 +154,9 @@
           {
             "id": "print-catalogue",
             "left": 199,
-            "top": 337.109375,
+            "top": 338.796875,
             "right": 378,
-            "bottom": 381.109375,
+            "bottom": 382.796875,
             "width": 179,
             "height": 44,
             "hitTarget": "print-catalogue"
@@ -188,14 +188,14 @@
         "canvasHeight": 768,
         "lineArt": 1254,
         "guide": 1254,
-        "lineArtInkPixels": 46241,
+        "lineArtInkPixels": 54094,
         "lineArtLayerHidden": false,
         "lineArtHidden": true,
         "lineArtDisplay": "none",
         "lineArtVisibility": "visible",
         "lineArtOpacity": "1",
         "lineArtZIndex": "auto",
-        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "lineArtSource": "http://127.0.0.1:8080/assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.svg",
         "horizontalOverflow": false
       }
     },
@@ -233,9 +233,9 @@
           {
             "id": "open-coloring-studio",
             "left": 22.015625,
-            "top": 297.109375,
+            "top": 298.796875,
             "right": 224.34375,
-            "bottom": 349.109375,
+            "bottom": 350.796875,
             "width": 202.328125,
             "height": 52,
             "hitTarget": "open-coloring-studio"
@@ -243,9 +243,9 @@
           {
             "id": "print-page",
             "left": 232.34375,
-            "top": 301.109375,
+            "top": 302.796875,
             "right": 434.671875,
-            "bottom": 345.109375,
+            "bottom": 346.796875,
             "width": 202.328125,
             "height": 44,
             "hitTarget": "print-page"
@@ -253,9 +253,9 @@
           {
             "id": "print-catalogue",
             "left": 442.671875,
-            "top": 301.109375,
+            "top": 302.796875,
             "right": 645,
-            "bottom": 345.109375,
+            "bottom": 346.796875,
             "width": 202.328125,
             "height": 44,
             "hitTarget": "print-catalogue"
@@ -279,22 +279,22 @@
       },
       "workspace": {
         "tabs": 2,
-        "frameWidth": 81,
-        "frameHeight": 81,
+        "frameWidth": 78,
+        "frameHeight": 78,
         "frameLeft": 24,
-        "frameRight": 105,
+        "frameRight": 102,
         "canvasWidth": 768,
         "canvasHeight": 768,
         "lineArt": 1254,
         "guide": 1254,
-        "lineArtInkPixels": 46241,
+        "lineArtInkPixels": 54094,
         "lineArtLayerHidden": false,
         "lineArtHidden": true,
         "lineArtDisplay": "none",
         "lineArtVisibility": "visible",
         "lineArtOpacity": "1",
         "lineArtZIndex": "auto",
-        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "lineArtSource": "http://127.0.0.1:8080/assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.svg",
         "horizontalOverflow": false
       }
     },
@@ -332,9 +332,9 @@
           {
             "id": "open-coloring-studio",
             "left": 22,
-            "top": 297.109375,
+            "top": 298.796875,
             "right": 258,
-            "bottom": 349.109375,
+            "bottom": 350.796875,
             "width": 236,
             "height": 52,
             "hitTarget": "open-coloring-studio"
@@ -342,9 +342,9 @@
           {
             "id": "print-page",
             "left": 266,
-            "top": 301.109375,
+            "top": 302.796875,
             "right": 502,
-            "bottom": 345.109375,
+            "bottom": 346.796875,
             "width": 236,
             "height": 44,
             "hitTarget": "print-page"
@@ -352,9 +352,9 @@
           {
             "id": "print-catalogue",
             "left": 510,
-            "top": 301.109375,
+            "top": 302.796875,
             "right": 746,
-            "bottom": 345.109375,
+            "bottom": 346.796875,
             "width": 236,
             "height": 44,
             "hitTarget": "print-catalogue"
@@ -386,14 +386,14 @@
         "canvasHeight": 768,
         "lineArt": 1254,
         "guide": 1254,
-        "lineArtInkPixels": 46241,
+        "lineArtInkPixels": 54094,
         "lineArtLayerHidden": false,
         "lineArtHidden": true,
         "lineArtDisplay": "none",
         "lineArtVisibility": "visible",
         "lineArtOpacity": "1",
         "lineArtZIndex": "auto",
-        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "lineArtSource": "http://127.0.0.1:8080/assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.svg",
         "horizontalOverflow": false
       }
     },
@@ -430,31 +430,31 @@
         "actionRects": [
           {
             "id": "open-coloring-studio",
-            "left": 888.109375,
-            "top": 304.015625,
-            "right": 1019.28125,
-            "bottom": 356.015625,
-            "width": 131.171875,
+            "left": 844.34375,
+            "top": 305.375,
+            "right": 975.5,
+            "bottom": 357.375,
+            "width": 131.15625,
             "height": 52,
             "hitTarget": "open-coloring-studio"
           },
           {
             "id": "print-page",
-            "left": 1027.28125,
-            "top": 308.015625,
-            "right": 1143.28125,
-            "bottom": 352.015625,
-            "width": 116,
+            "left": 983.5,
+            "top": 309.375,
+            "right": 1114.4375,
+            "bottom": 353.375,
+            "width": 130.9375,
             "height": 44,
             "hitTarget": "print-page"
           },
           {
             "id": "print-catalogue",
-            "left": 1151.28125,
-            "top": 308.015625,
+            "left": 1122.4375,
+            "top": 309.375,
             "right": 1330,
-            "bottom": 352.015625,
-            "width": 178.71875,
+            "bottom": 353.375,
+            "width": 207.5625,
             "height": 44,
             "hitTarget": "print-catalogue"
           }
@@ -485,14 +485,14 @@
         "canvasHeight": 768,
         "lineArt": 1254,
         "guide": 1254,
-        "lineArtInkPixels": 46241,
+        "lineArtInkPixels": 54094,
         "lineArtLayerHidden": false,
         "lineArtHidden": true,
         "lineArtDisplay": "none",
         "lineArtVisibility": "visible",
         "lineArtOpacity": "1",
         "lineArtZIndex": "auto",
-        "lineArtSource": "assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.png",
+        "lineArtSource": "http://127.0.0.1:8080/assets/coloring/active/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png.svg",
         "horizontalOverflow": false
       }
     }

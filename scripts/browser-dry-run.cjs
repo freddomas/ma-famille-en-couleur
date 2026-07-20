@@ -6,6 +6,7 @@ const { chromium } = require("playwright");
 const endpoint = process.argv[2];
 if (!endpoint) throw new Error("Endpoint Chrome DevTools manquant.");
 const appUrl = process.argv[3] || "http://127.0.0.1:8080/";
+const playwrightHeadless = process.env.PLAYWRIGHT_HEADED !== "1";
 
 const root = path.resolve(__dirname, "..");
 const outputDir = path.join(root, "qa", "rendered");
@@ -73,7 +74,7 @@ async function connect() {
 async function connectWithPlaywright() {
   const browser = await chromium.launch({
     channel: "chrome",
-    headless: true,
+    headless: playwrightHeadless,
   });
   const context = await browser.newContext();
   const page = await context.newPage();
@@ -96,6 +97,97 @@ async function connectWithPlaywright() {
     call: (method, params = {}) => session.send(method, params),
     events,
   };
+}
+
+async function verifyMobileFlipFlow() {
+  const browser = await chromium.launch({
+    channel: "chrome",
+    headless: playwrightHeadless,
+  });
+  const context = await browser.newContext({
+    viewport: { width: 360, height: 800 },
+    isMobile: true,
+    hasTouch: true,
+  });
+  const page = await context.newPage();
+  const browserErrors = [];
+  page.on("pageerror", (error) => browserErrors.push(String(error)));
+  page.on("console", (message) => {
+    if (message.type() === "error") browserErrors.push(message.text());
+  });
+
+  try {
+    await page.goto(appUrl, { waitUntil: "networkidle" });
+    const catalogueCard = page.locator(".catalogue-card").nth(1);
+    await catalogueCard.scrollIntoViewIfNeeded();
+    const returnScrollY = await page.evaluate(() => window.scrollY);
+    await catalogueCard.tap();
+    await page.waitForFunction(
+      () =>
+        document.querySelector("#atelier")?.classList.contains("is-catalogue-open")
+        && [...document.querySelectorAll(".drawing-card__image")]
+          .every((image) => image.complete && image.naturalWidth > 0),
+    );
+
+    await page.locator("#open-coloring-studio").tap();
+    await page.waitForFunction(() => document.querySelector("#coloring-studio")?.open);
+    await page.locator("#close-coloring-studio").tap();
+    await page.waitForFunction(() => !document.querySelector("#coloring-studio")?.open);
+
+    const flipCard = page.locator(".drawing-card .color-flip-card").first();
+    await flipCard.scrollIntoViewIfNeeded();
+    const geometry = await flipCard.evaluate((card) => {
+      const rect = card.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const hit = document.elementFromPoint(centerX, centerY);
+      return {
+        width: rect.width,
+        height: rect.height,
+        hitCard: hit?.closest("[data-color-flip]") === card,
+      };
+    });
+    assert.ok(geometry.width > 0 && geometry.height > 0);
+    assert.equal(geometry.hitCard, true, "La carte doit être la cible tactile au centre.");
+
+    await flipCard.tap();
+    await page.waitForFunction(
+      () =>
+        document.querySelector(".drawing-card .color-flip-card")
+          ?.getAttribute("aria-pressed") === "true",
+    );
+    await delay(220);
+    const midTransform = await flipCard
+      .locator(".color-flip-card__inner")
+      .evaluate((element) => getComputedStyle(element).transform);
+    assert.notEqual(midTransform, "none");
+    assert.notEqual(midTransform, "matrix(1, 0, 0, 1, 0, 0)");
+    await delay(430);
+    await page.screenshot({
+      path: path.join(outputDir, "mobile-color-guide.png"),
+    });
+
+    await flipCard.tap();
+    await page.waitForFunction(
+      () =>
+        document.querySelector(".drawing-card .color-flip-card")
+          ?.getAttribute("aria-pressed") === "false",
+    );
+    await delay(650);
+    await page.screenshot({
+      path: path.join(outputDir, "mobile-normal.png"),
+    });
+
+    await page.locator("#close-catalogue").tap();
+    await page.waitForFunction(
+      () => !document.querySelector("#atelier")?.classList.contains("is-catalogue-open"),
+    );
+    assert.equal(Math.round(await page.evaluate(() => window.scrollY)), Math.round(returnScrollY));
+    assert.deepEqual(browserErrors, [], "Erreur console pendant le retournement tactile");
+    return geometry;
+  } finally {
+    await browser.close();
+  }
 }
 
 async function main() {
@@ -126,6 +218,63 @@ async function main() {
       captureBeyondViewport: false,
     });
     fs.writeFileSync(path.join(outputDir, name), Buffer.from(result.data, "base64"));
+  };
+  const targetCenter = async (selector) =>
+    evaluate(`(async () => {
+      const target = document.querySelector(${JSON.stringify(selector)});
+      if (!target) throw new Error("Cible introuvable : ${selector}");
+      target.scrollIntoView({ block: "center", inline: "center", behavior: "instant" });
+      await new Promise((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(resolve))
+      );
+      const rect = target.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
+      const hit = document.elementFromPoint(x, y);
+      if (rect.width <= 0 || rect.height <= 0 || !hit || !target.contains(hit)) {
+        throw new Error(
+          "Cible non interactive : ${selector} (" +
+          Math.round(rect.width) + " × " + Math.round(rect.height) + ")"
+        );
+      }
+      return { x, y };
+    })()`);
+  const clickTarget = async (selector) => {
+    const point = await targetCenter(selector);
+    await call("Input.dispatchMouseEvent", {
+      type: "mousePressed",
+      x: point.x,
+      y: point.y,
+      button: "left",
+      buttons: 1,
+      clickCount: 1,
+    });
+    await call("Input.dispatchMouseEvent", {
+      type: "mouseReleased",
+      x: point.x,
+      y: point.y,
+      button: "left",
+      buttons: 0,
+      clickCount: 1,
+    });
+  };
+  const tapPoint = async (point, id) => {
+    await call("Input.dispatchTouchEvent", {
+      type: "touchStart",
+      touchPoints: [{
+        x: point.x,
+        y: point.y,
+        radiusX: 2,
+        radiusY: 2,
+        force: 1,
+        id,
+      }],
+    });
+    await delay(80);
+    await call("Input.dispatchTouchEvent", {
+      type: "touchEnd",
+      touchPoints: [],
+    });
   };
   const printPdf = async (name) => {
     const result = await call("Page.printToPDF", {
@@ -212,6 +361,10 @@ async function main() {
         .every((image) => image.complete && image.naturalWidth > 0)`,
     );
     await screenshot("desktop-catalogues.png");
+    await clickTarget(".catalogue-card");
+    await waitFor(
+      `document.querySelector("#atelier").classList.contains("is-catalogue-open")`,
+    );
 
     const normalPages = await evaluate(`(async () => {
       const results = [];
@@ -403,6 +556,10 @@ async function main() {
     );
     await printPdf("surprise-10-pages.pdf");
     await evaluate(`clearPrintArea()`);
+    await evaluate(`document.querySelector("#close-catalogue").click()`);
+    await waitFor(
+      `!document.querySelector("#atelier").classList.contains("is-catalogue-open")`,
+    );
 
     await call("Emulation.setDeviceMetricsOverride", {
       width: 360,
@@ -426,7 +583,6 @@ async function main() {
       headingVisible: true,
     });
     await screenshot("mobile-weekly-promise.png");
-    await evaluate(`selectCatalogue(state.catalogues[0].id)`);
     await evaluate(`document.querySelector("#catalogues").scrollIntoView()`);
     await evaluate(
       `document.querySelector(".catalogue-card").scrollIntoView({ block: "start", behavior: "instant" })`,
@@ -436,20 +592,27 @@ async function main() {
         .every((image) => image.complete && image.naturalWidth > 0)`,
     );
     await screenshot("mobile-catalogues.png");
-    const touchTarget = await evaluate(`(() => {
+    const touchTarget = await evaluate(`(async () => {
       const card = document.querySelectorAll(".catalogue-card")[1];
       card.scrollIntoView({ block: "center", behavior: "instant" });
+      await new Promise((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(resolve))
+      );
       const rect = card.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + Math.min(rect.height / 2, 180);
+      const hit = document.elementFromPoint(x, y);
+      if (!hit || !card.contains(hit)) {
+        throw new Error("La vignette de catalogue n'est pas la cible tactile.");
+      }
       return {
         catalogueId: card.dataset.catalogueId,
         scrollY: window.scrollY,
-        x: rect.left + rect.width / 2,
-        y: rect.top + Math.min(rect.height / 2, 180)
+        x,
+        y
       };
     })()`);
-    await evaluate(
-      `document.querySelector('[data-catalogue-id="${touchTarget.catalogueId}"]').click()`,
-    );
+    await tapPoint(touchTarget, 1);
     await waitFor(`state.selectedCatalogueId === ${JSON.stringify(touchTarget.catalogueId)}`);
     await waitFor(
       `document.querySelector("#atelier").classList.contains("is-catalogue-open")`,
@@ -457,6 +620,10 @@ async function main() {
     await waitFor(
       `[...document.querySelectorAll(".drawing-card__image")]
         .every((image) => image.complete && image.naturalWidth > 0)`,
+    );
+    await waitFor(
+      `document.activeElement === document.querySelector("#close-catalogue")`,
+      5000,
     );
     const mobile = await evaluate(`(() => ({
       innerWidth: window.innerWidth,
@@ -730,70 +897,6 @@ async function main() {
       false,
     );
 
-    const touchGuideTarget = await evaluate(`(async () => {
-      const card = document.querySelector(".drawing-card .color-flip-card");
-      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
-      document.documentElement.style.scrollBehavior = "auto";
-      card.scrollIntoView({ block: "center", behavior: "auto" });
-      await new Promise((resolve) =>
-        requestAnimationFrame(() => requestAnimationFrame(resolve))
-      );
-      const rect = card.getBoundingClientRect();
-      const x = rect.left + rect.width / 2;
-      const y = rect.top + rect.height / 2;
-      const hitTarget = document.elementFromPoint(x, y);
-      document.documentElement.style.scrollBehavior = previousScrollBehavior;
-      if (!hitTarget || hitTarget.closest("[data-color-flip]") !== card) {
-        throw new Error(
-          "La carte de guide coloriée n'est pas la cible tactile au centre du viewport."
-        );
-      }
-      return {
-        x,
-        y
-      };
-    })()`);
-    await call("Input.dispatchTouchEvent", {
-      type: "touchStart",
-      touchPoints: [{
-        x: touchGuideTarget.x,
-        y: touchGuideTarget.y,
-        radiusX: 2,
-        radiusY: 2,
-        force: 1,
-        id: 1,
-      }],
-    });
-    await call("Input.dispatchTouchEvent", {
-      type: "touchEnd",
-      touchPoints: [],
-    });
-    await waitFor(
-      `document.querySelector(".drawing-card .color-flip-card").getAttribute("aria-pressed") === "true"`,
-      5000,
-    );
-    await delay(650);
-    await screenshot("mobile-color-guide.png");
-    await call("Input.dispatchTouchEvent", {
-      type: "touchStart",
-      touchPoints: [{
-        x: touchGuideTarget.x,
-        y: touchGuideTarget.y,
-        radiusX: 2,
-        radiusY: 2,
-        force: 1,
-        id: 1,
-      }],
-    });
-    await call("Input.dispatchTouchEvent", {
-      type: "touchEnd",
-      touchPoints: [],
-    });
-    await waitFor(
-      `document.querySelector(".drawing-card .color-flip-card").getAttribute("aria-pressed") === "false"`,
-    );
-    await delay(650);
-    await screenshot("mobile-normal.png");
     await evaluate(`document.querySelector("#close-catalogue").click()`);
     await waitFor(
       `!document.querySelector("#atelier").classList.contains("is-catalogue-open")`,
@@ -802,6 +905,7 @@ async function main() {
       await evaluate(`Math.round(window.scrollY)`),
       Math.round(touchTarget.scrollY),
     );
+    await verifyMobileFlipFlow();
     await call("Emulation.setTouchEmulationEnabled", { enabled: false });
     await call("Emulation.clearDeviceMetricsOverride");
 
@@ -819,7 +923,7 @@ async function main() {
     await waitFor(`document.querySelectorAll(".catalogue-card").length === 10`);
     await evaluate(`(() => {
       state.manifestEntries = state.manifestEntries.slice(0, 40).map((entry) => ({ ...entry }));
-      state.manifestEntries[16].path = "assets/coloring/active/image-volontairement-absente.png";
+      state.manifestEntries[16].path = "assets/coloring/active/image-volontairement-absente.svg";
       document.querySelector("#create-surprise").click();
       return true;
     })()`);
@@ -853,7 +957,7 @@ async function main() {
       .map((event) => event.params);
     const expectedInvalidConsoleErrors = consoleErrors.filter(
       (error) =>
-        /\/assets\/coloring\/active\/image-volontairement-absente\.png(?:\?asset-retry=[12])?$/.test(
+        /\/assets\/coloring\/active\/image-volontairement-absente\.svg(?:\?asset-retry=[12])?$/.test(
           error.entry?.url || "",
         ),
     );

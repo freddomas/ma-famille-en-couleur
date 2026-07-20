@@ -23,6 +23,7 @@ qa/inventory/
 # Profils et journaux techniques headless éphémères
 qa/rendered/dom.html
 qa/rendered/chrome-dom.stderr.log
+/debug.log
 
 # Caches Python
 __pycache__/

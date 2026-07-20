@@ -17,20 +17,46 @@ const readJson = (relativePath) =>
 const sha256 = (buffer) => crypto.createHash("sha256").update(buffer).digest("hex");
 const check = (condition, message) => assert.ok(condition, message);
 
-function readPng(relativePath) {
+function readSvg(relativePath) {
   const absolutePath = path.join(root, "public", ...relativePath.split("/"));
   const buffer = fs.readFileSync(absolutePath);
+  const source = buffer.toString("utf8");
+  const rootTag = source.match(/^<svg\b[^>]*>/i)?.[0];
+  check(rootTag, `Racine SVG absente : ${relativePath}`);
+  check(/\.svg$/i.test(relativePath), `Extension SVG absente : ${relativePath}`);
+  check(/<path\b/i.test(source), `Tracés vectoriels absents : ${relativePath}`);
   check(
-    buffer.subarray(0, 8).equals(
-      Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]),
-    ),
-    `PNG illisible : ${relativePath}`,
+    !/<image\b|data:image|<script\b|\bhref=/i.test(source),
+    `Raster ou ressource externe incorporé : ${relativePath}`,
   );
-  check(buffer.toString("ascii", 12, 16) === "IHDR", `IHDR absent : ${relativePath}`);
+  check(
+    /\bpreserveAspectRatio="xMidYMid meet"/i.test(rootTag),
+    `Centrage SVG absent : ${relativePath}`,
+  );
+  const width = Number(rootTag.match(/\bwidth="([\d.]+)"/i)?.[1]);
+  const height = Number(rootTag.match(/\bheight="([\d.]+)"/i)?.[1]);
+  const viewBox = rootTag
+    .match(/\bviewBox="([^"]+)"/i)?.[1]
+    ?.trim()
+    .split(/\s+/)
+    .map(Number);
+  check(Number.isFinite(width) && width > 0, `Largeur SVG invalide : ${relativePath}`);
+  check(Number.isFinite(height) && height > 0, `Hauteur SVG invalide : ${relativePath}`);
+  check(
+    viewBox?.length === 4
+      && viewBox.every(Number.isFinite)
+      && viewBox[0] === 0
+      && viewBox[1] === 0
+      && viewBox[2] > 0
+      && viewBox[3] > 0,
+    `viewBox SVG invalide : ${relativePath}`,
+  );
   return {
-    width: buffer.readUInt32BE(16),
-    height: buffer.readUInt32BE(20),
+    width,
+    height,
+    viewBox,
     hash: sha256(buffer),
+    bytes: buffer.length,
   };
 }
 
@@ -47,13 +73,31 @@ async function main() {
   const packageJson = readJson("package.json");
 
   validateData(data, manifest);
-  assert.equal(assetUrl("assets/coloring/example.png"), "/assets/coloring/example.png");
-  assert.equal(assetUrl("/assets/coloring/example.png"), "/assets/coloring/example.png");
-  assert.equal(assetUrl("https://example.test/example.png"), "https://example.test/example.png");
+  assert.equal(assetUrl("assets/coloring/example.svg"), "/assets/coloring/example.svg");
+  assert.equal(assetUrl("/assets/coloring/example.svg"), "/assets/coloring/example.svg");
+  assert.equal(assetUrl("https://example.test/example.svg"), "https://example.test/example.svg");
   assert.equal(data.catalogues.length, 10, "10 catalogues requis");
   assert.equal(manifest.entries.length, 400, "400 actifs requis");
   assert.equal(reserve.entries.length, 80, "80 réserves requises");
   assert.equal(manifest.complete, true, "Le manifeste actif doit être complet");
+  assert.equal(manifest.assetFormat, "svg", "Le manifeste actif doit imposer SVG");
+  assert.equal(reserve.assetFormat, "svg", "Le manifeste de réserve doit imposer SVG");
+  assert.equal(manifest.vectorization?.rasterEmbedding, false);
+  assert.equal(manifest.vectorization?.heroExcluded, true);
+  assert.ok(
+    manifest.vectorization.sourceBytes > manifest.vectorization.svgBytes,
+    "Le poids SVG total doit être inférieur au poids PNG d'origine",
+  );
+  assert.equal(
+    manifest.vectorization.reductionPercent,
+    Number(
+      (
+        (1 - manifest.vectorization.svgBytes / manifest.vectorization.sourceBytes)
+        * 100
+      ).toFixed(2),
+    ),
+    "Pourcentage de réduction incohérent",
+  );
   assert.equal(
     new Set(manifest.entries.map((entry) => entry.coloredPath)).size,
     400,
@@ -67,7 +111,8 @@ async function main() {
 
   for (const entry of allEntries) {
     check(!/^https?:\/\//i.test(entry.path), `Asset distant : ${entry.path}`);
-    const decoded = readPng(entry.path);
+    assert.equal(entry.format, "svg", `Format SVG requis : ${entry.id}`);
+    const decoded = readSvg(entry.path);
     assert.equal(decoded.width, entry.width, `Largeur incohérente : ${entry.id}`);
     assert.equal(decoded.height, entry.height, `Hauteur incohérente : ${entry.id}`);
     assert.equal(decoded.hash, entry.sha256, `SHA-256 incohérent : ${entry.id}`);
@@ -79,12 +124,30 @@ async function main() {
       entry.coloredPath.startsWith("assets/coloring/colored/"),
       `Chemin coloré invalide : ${entry.id}`,
     );
-    const lineArt = readPng(entry.path);
-    const colored = readPng(entry.coloredPath);
+    check(/\.svg$/i.test(entry.coloredPath), `Extension colorée SVG absente : ${entry.id}`);
+    check(entry.coloredSha256, `SHA-256 coloré absent : ${entry.id}`);
+    const lineArt = readSvg(entry.path);
+    const colored = readSvg(entry.coloredPath);
     assert.equal(colored.width, lineArt.width, `Largeur colorée : ${entry.id}`);
     assert.equal(colored.height, lineArt.height, `Hauteur colorée : ${entry.id}`);
     check(colored.hash !== lineArt.hash, `Jumeau coloré identique : ${entry.id}`);
+    assert.equal(
+      colored.hash,
+      entry.coloredSha256,
+      `SHA-256 coloré incohérent : ${entry.id}`,
+    );
   }
+
+  const runtimePngs = [
+    path.join(root, "public", "assets", "coloring", "active"),
+    path.join(root, "public", "assets", "coloring", "colored"),
+    path.join(root, "public", "assets", "coloring", "reserve"),
+  ].flatMap((directory) =>
+    fs
+      .readdirSync(directory, { recursive: true, withFileTypes: true })
+      .filter((entry) => entry.isFile() && /\.png$/i.test(entry.name)),
+  );
+  assert.equal(runtimePngs.length, 0, "Aucun PNG ne doit rester dans les actifs runtime.");
 
   for (const catalogue of data.catalogues) {
     const entries = manifest.entries
@@ -241,7 +304,7 @@ async function main() {
     activeImages: manifest.entries.length,
     reserveImages: reserve.entries.length,
     coloredTwins: manifest.entries.length,
-    decodedPng: allEntries.length,
+    vectorAssets: allEntries.length + manifest.entries.length,
     uniqueIds: new Set(allEntries.map((entry) => entry.id)).size,
     uniquePaths: new Set(allEntries.map((entry) => entry.path)).size,
     uniqueSha256: new Set(allEntries.map((entry) => entry.sha256)).size,
