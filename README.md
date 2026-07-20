@@ -71,15 +71,18 @@ est réservée aux migrations et opérations serveur.
 ## Mise à jour hebdomadaire
 
 Le pipeline de contenu écrit désormais dans `public/` afin que les nouveaux
-catalogues soient immédiatement servis par Next.js. Lors d’un nouvel import
-raster, les jumeaux colorés sont générés avant la vectorisation avec :
+catalogues soient immédiatement servis par Next.js. Les jumeaux colorés sont
+régénérés avec un transfert sémantique de palette qui conserve les traits noirs,
+nettoie les aplats, refuse les débordements et produit directement de vrais SVG
+sans raster incorporé :
 
 ```powershell
-python scripts\generate-colored-twins.py
+npm run assets:colored
 ```
 
-Après un import ou une régénération raster, la migration vectorielle
-reproductible s’exécute avec :
+L’ancienne commande Python délègue à ce pipeline afin de ne plus réintroduire
+le remplissage raster défectueux. Après un import raster, la migration
+vectorielle des dessins actifs et de réserve s’exécute avec :
 
 ```powershell
 npm run assets:svg

@@ -24,7 +24,7 @@
       "sourceName": "existing-animaux-01.png",
       "sha256": "5a54b968cc293c110eebbf0b315e4962950e0ed1e5d790fdc19766e06abe7cf5",
       "coloredPath": "assets/coloring/colored/animaux-familiers/001-le-chat-curieux-existing-animaux-01-png-colored.svg",
-      "coloredSha256": "33653935af4d7c721612fe5d968547a6547e5ea5e5e964040577226dd5befb1b",
+      "coloredSha256": "1c830929f72df1c653fb031fbfcdf34be97840b21421d03ff84b9b4856f0a2fe",
       "format": "svg"
     },
     {
@@ -42,7 +42,7 @@
       "sourceName": "existing-animaux-02.png",
       "sha256": "d7f7f0962ca351852864b203d395056b6e6e337c9fc4984219e703172be770b6",
       "coloredPath": "assets/coloring/colored/animaux-familiers/002-le-chien-joueur-existing-animaux-02-png-colored.svg",
-      "coloredSha256": "17c1f5b3eb604dd9fbca4aa1d7504fbf6bad7e766942cd9d18625e0e7ea6b855",
+      "coloredSha256": "108c2792ec0dbb8a07dde8cb17be892deb5bbf0c2c5ecd9ae00b0fbda937f94c",
       "format": "svg"
     },
     {
@@ -60,7 +60,7 @@
       "sourceName": "existing-animaux-03.png",
       "sha256": "5a6d3ad79b8dda8cb6707228256a48b2654e0f8243e0b6613928967aed18003a",
       "coloredPath": "assets/coloring/colored/animaux-familiers/003-le-lapin-aux-longues-oreilles-existing-animaux-03-png-colored.svg",
-      "coloredSha256": "a108f88e8a8e6a6edd52745350ee2da91483e62ec46b493013e9462d4195a279",
+      "coloredSha256": "c1bdb4f323fff43b5c4d542f479fcb1736f63e58caf778ea78068e38d5fe4504",
       "format": "svg"
     },
     {
@@ -78,7 +78,7 @@
       "sourceName": "existing-animaux-04.png",
       "sha256": "c5682cc6230f2fdf5784bace37bd4ae7e6bb276a5802769d7179d2609170f2a3",
       "coloredPath": "assets/coloring/colored/animaux-familiers/004-la-poule-et-ses-plumes-existing-animaux-04-png-colored.svg",
-      "coloredSha256": "0591630e93a1892b2f0c8978159ed6f750625d229584eb03210a14b9b3d75a82",
+      "coloredSha256": "82c04c44e474987bac8caf33f99f870075e7a0ba1c4c921bafa5f13117e3f9c0",
       "format": "svg"
     },
     {
@@ -96,7 +96,7 @@
       "sourceName": "existing-animaux-17.png",
       "sha256": "40a5062fd2cf133374e14043463bf1c2394bdb1ef77bb23ea3ce0cb6e183a79f",
       "coloredPath": "assets/coloring/colored/animaux-familiers/005-le-cheval-au-galop-existing-animaux-17-png-colored.svg",
-      "coloredSha256": "cc6610bd9b80931504502ff8ec14b272938928792fc339448515166314720447",
+      "coloredSha256": "8a51e0a8e4fd93598704932d08cedad626bd8bc5bba952d10173d33e6548b1d1",
       "format": "svg"
     },
     {
@@ -114,7 +114,7 @@
       "sourceName": "existing-animaux-18.png",
       "sha256": "e4856b97d8e0883ae16bc598b923c7c9daa1bd3b606d3a58b82d9603741cad23",
       "coloredPath": "assets/coloring/colored/animaux-familiers/006-la-vache-de-la-ferme-existing-animaux-18-png-colored.svg",
-      "coloredSha256": "fe4c94dd396096b13692c79c1e28d4cf0db3fe0b78815e26f4ea7a3ecf0c2903",
+      "coloredSha256": "a3d3680604467b7fcf4203f04405181682211c25d179906c141fc7b0aed90902",
       "format": "svg"
     },
     {
@@ -132,7 +132,7 @@
       "sourceName": "existing-animaux-19.png",
       "sha256": "1b5aec858608eefcb0b64c2c06e027d9d1255b0c896f00186e3534843f69a9da",
       "coloredPath": "assets/coloring/colored/animaux-familiers/007-la-chevre-sur-le-rocher-existing-animaux-19-png-colored.svg",
-      "coloredSha256": "08c2b90722595101095e011621e16bef27fb3d3d7bf308217c06e5ce61301d58",
+      "coloredSha256": "723608de3eaa8b8fef7f3441cac57d9ede830644bf3090ef8f0619e85bfd13b7",
       "format": "svg"
     },
     {
@@ -150,7 +150,7 @@
       "sourceName": "existing-animaux-20.png",
       "sha256": "5c678681b7d6f909e7887eee77a269c7b99202a0949d99caadad0035ba00c034",
       "coloredPath": "assets/coloring/colored/animaux-familiers/008-le-mouton-frise-existing-animaux-20-png-colored.svg",
-      "coloredSha256": "4c2dd67f56a504fbaa4fe72d20ae3575d355116134a83826627efd544baa39a6",
+      "coloredSha256": "7822ae6366231701b7df7a15d134791b51db8cfc8f39b3a34d8a7f0adcbd8e79",
       "format": "svg"
     },
     {
@@ -168,7 +168,7 @@
       "sourceName": "existing-animaux-33.png",
       "sha256": "aa70268bde9b185b30d1d81431637705b2307698039a607aba7ae7264a66e86c",
       "coloredPath": "assets/coloring/colored/animaux-familiers/009-le-canard-sur-letang-existing-animaux-33-png-colored.svg",
-      "coloredSha256": "deb63874a070af623b076822ef8147cb971989d3e349402e2ae71b458085fc76",
+      "coloredSha256": "9b398291b7ed070c025b797d2c371b00cb64776e267fa4fe3c516cbecd8f08df",
       "format": "svg"
     },
     {
@@ -188,7 +188,7 @@
       "sharpnessBefore": 18.083,
       "sharpnessAfter": 22.408,
       "coloredPath": "assets/coloring/colored/animaux-familiers/010-la-vache-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-009-pn-colored.svg",
-      "coloredSha256": "056e1030c2881f211f64f0c0886801615e1779c345a92f453035971619d48c7a",
+      "coloredSha256": "695a586502d0e0db686590d02c64ad7ac884f3c0c5367165fc503a583cc7e276",
       "format": "svg"
     },
     {
@@ -208,7 +208,7 @@
       "sharpnessBefore": 27.687,
       "sharpnessAfter": 37.366,
       "coloredPath": "assets/coloring/colored/animaux-familiers/011-le-lapin-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-001--colored.svg",
-      "coloredSha256": "fbef5adc39527fdf501e84e98afd6138afdf7d12940e69ae8cdd40da1cdfb31b",
+      "coloredSha256": "8bce70cc94e9a6cef93761a89d5a01adad9da19913b99d9515c90492a96def1b",
       "format": "svg"
     },
     {
@@ -228,7 +228,7 @@
       "sharpnessBefore": 29.177,
       "sharpnessAfter": 38.385,
       "coloredPath": "assets/coloring/colored/animaux-familiers/012-le-chat-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-002--colored.svg",
-      "coloredSha256": "1b9a7680e49744269e5bce0aab75af580ad848dd2e050c94e77ea372c7d1dfda",
+      "coloredSha256": "9e598209b2afcd930284dd0b1a43c508f397c42f776ea34e481acb955c11e8f1",
       "format": "svg"
     },
     {
@@ -248,7 +248,7 @@
       "sharpnessBefore": 25.098,
       "sharpnessAfter": 32.395,
       "coloredPath": "assets/coloring/colored/animaux-familiers/013-le-chien-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-003--colored.svg",
-      "coloredSha256": "98e457f3fd08453017d8ee5caeb9d48255ce33dd39af720adec52c7bf2e41ebc",
+      "coloredSha256": "49c98e013d72e8b1ff2ebd4ea540cd929753d9ac83cf3d3ff9e823ad16b250fc",
       "format": "svg"
     },
     {
@@ -268,7 +268,7 @@
       "sharpnessBefore": 30.318,
       "sharpnessAfter": 38.325,
       "coloredPath": "assets/coloring/colored/animaux-familiers/014-la-vache-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-002--colored.svg",
-      "coloredSha256": "34b7cf32c7eb8d54921bf22e2d916bded81cfb1fe9a000c5fe54fb68c8d8c125",
+      "coloredSha256": "2e990a37191edb05ceff437b397186ad18e194383ad6086a7dddbbcb3fc0b8d1",
       "format": "svg"
     },
     {
@@ -288,7 +288,7 @@
       "sharpnessBefore": 21.073,
       "sharpnessAfter": 27.663,
       "coloredPath": "assets/coloring/colored/animaux-familiers/015-le-canard-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-003--colored.svg",
-      "coloredSha256": "106fdbe31da0d4dce361a592a4073e87a3b174d5586e062a7c8fc42fa3e0d7e8",
+      "coloredSha256": "1f87915389450a80dedef57858b74b2e93710e748236ce4f75893b31b5dbc24c",
       "format": "svg"
     },
     {
@@ -308,7 +308,7 @@
       "sharpnessBefore": 23.359,
       "sharpnessAfter": 30.019,
       "coloredPath": "assets/coloring/colored/animaux-familiers/016-le-cheval-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-002--colored.svg",
-      "coloredSha256": "82353a8753056288625cc3a3844bab06474c7dad417989d655e02f642dd1de88",
+      "coloredSha256": "0090e7ba35f51961b59dc74d2fe5e383a9e58338362c7cb73af776a0d66e4e36",
       "format": "svg"
     },
     {
@@ -328,7 +328,7 @@
       "sharpnessBefore": 20.705,
       "sharpnessAfter": 26.528,
       "coloredPath": "assets/coloring/colored/animaux-familiers/017-le-cochon-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-003--colored.svg",
-      "coloredSha256": "08c446533e6f3378c2f9f6e02d8d55e2538d309f7cab7ef5a68313832df82b75",
+      "coloredSha256": "34b39a03c745c362d6b30cd263b5dc60a791743692d926d732e307086d7bafec",
       "format": "svg"
     },
     {
@@ -348,7 +348,7 @@
       "sharpnessBefore": 21.507,
       "sharpnessAfter": 27.683,
       "coloredPath": "assets/coloring/colored/animaux-familiers/018-le-hamster-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-001--colored.svg",
-      "coloredSha256": "c84a151d511e86d47e97ab8d5f1b1a0fee541687055a2c25260b6779d13a5a48",
+      "coloredSha256": "5e12da3499153a66b2de6527f3314d7879af400646e782f46be5ed29309f3137",
       "format": "svg"
     },
     {
@@ -368,7 +368,7 @@
       "sharpnessBefore": 26.292,
       "sharpnessAfter": 33.077,
       "coloredPath": "assets/coloring/colored/animaux-familiers/019-la-souris-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-002--colored.svg",
-      "coloredSha256": "80092e682c355c485984eb01c4783838429db62e92c24388edde6054e3993b01",
+      "coloredSha256": "d2b06fb9b3385f4bf39b511a8defe13c0d6d0b9c001fc117e14634e982220e92",
       "format": "svg"
     },
     {
@@ -388,7 +388,7 @@
       "sharpnessBefore": 30.457,
       "sharpnessAfter": 40.172,
       "coloredPath": "assets/coloring/colored/animaux-familiers/020-le-coq-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-003-colored.svg",
-      "coloredSha256": "1a550ff2af2b0c1d2f54c8315f4490159b9b635127e714a70d837cc9f7669fee",
+      "coloredSha256": "625a77e413add41569a58c096452033ef0bd888bd89bc58c932ac926c20395ef",
       "format": "svg"
     },
     {
@@ -408,7 +408,7 @@
       "sharpnessBefore": 34.649,
       "sharpnessAfter": 47.554,
       "coloredPath": "assets/coloring/colored/animaux-familiers/021-le-chat-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-001--colored.svg",
-      "coloredSha256": "89fa160e168edda6027714200bed35dc899cdcbeba4bc35c9914c66ac0d71579",
+      "coloredSha256": "40aae737c8a15ff7f99515c202246771641640121d5f1fe83c2eb62f3f026506",
       "format": "svg"
     },
     {
@@ -428,7 +428,7 @@
       "sharpnessBefore": 29.838,
       "sharpnessAfter": 41.439,
       "coloredPath": "assets/coloring/colored/animaux-familiers/022-le-chien-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-002--colored.svg",
-      "coloredSha256": "44fc79f35f01b4579e9dd7a88345487ce174dc2c7fa243c06f0257aefe5f9c40",
+      "coloredSha256": "cda698680980c6ba116f4f48b63cf43741074105edaa34e9892f4e0229910152",
       "format": "svg"
     },
     {
@@ -448,7 +448,7 @@
       "sharpnessBefore": 25.458,
       "sharpnessAfter": 31.516,
       "coloredPath": "assets/coloring/colored/animaux-familiers/023-le-chat-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-001--colored.svg",
-      "coloredSha256": "ca2c60d0a45de3292045243df3abe18fc9a6cec9a23b24f5ff4e3181e6e52a2a",
+      "coloredSha256": "af54bd3d0270e0fa552b7d16703efb40e3e01cdfc8ad37acdbb2d5f46b36d5b4",
       "format": "svg"
     },
     {
@@ -468,7 +468,7 @@
       "sharpnessBefore": 15.792,
       "sharpnessAfter": 19.615,
       "coloredPath": "assets/coloring/colored/animaux-familiers/024-le-chien-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-002--colored.svg",
-      "coloredSha256": "e9c2a22b1b03bebd0f460f642b27e04de80c10c3852cb36fe84141f12bac4e72",
+      "coloredSha256": "4415c903fd85617dad77183801cbfa78ce099f9f2f41ae214bf259a19ecdec04",
       "format": "svg"
     },
     {
@@ -488,7 +488,7 @@
       "sharpnessBefore": 18.375,
       "sharpnessAfter": 23.295,
       "coloredPath": "assets/coloring/colored/animaux-familiers/025-le-lapin-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-003--colored.svg",
-      "coloredSha256": "e5b7d32df8f4c4af3115a20ca12da31d9edec7ef25b0df472aad619e66ecbb56",
+      "coloredSha256": "dc74867cfb0ddff8f405a6792db8a541e45448358f653b963e1f1c12a7eef1d9",
       "format": "svg"
     },
     {
@@ -508,7 +508,7 @@
       "sharpnessBefore": 21.821,
       "sharpnessAfter": 27.831,
       "coloredPath": "assets/coloring/colored/animaux-familiers/026-la-vache-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-004--colored.svg",
-      "coloredSha256": "11478eb4af86d5eaec3e6f4c2c333b8ca16e0a61d296754ee846f2e032d86adf",
+      "coloredSha256": "980144f5f4be37b3c21a2ab4cbdef38c35b83aa89c28c2ed78a988ced155bac5",
       "format": "svg"
     },
     {
@@ -528,7 +528,7 @@
       "sharpnessBefore": 22.354,
       "sharpnessAfter": 29.486,
       "coloredPath": "assets/coloring/colored/animaux-familiers/027-le-chien-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-001--colored.svg",
-      "coloredSha256": "7cb553f11552db7d580a8eeb2fb3ab99383a51aa76811e2982c6c378394bd2e8",
+      "coloredSha256": "1395085698ae78360185d0dee7883de0d9dac6c2c850867230bb77dbae2da467",
       "format": "svg"
     },
     {
@@ -548,7 +548,7 @@
       "sharpnessBefore": 23.726,
       "sharpnessAfter": 32.179,
       "coloredPath": "assets/coloring/colored/animaux-familiers/028-le-chat-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-002--colored.svg",
-      "coloredSha256": "e11df5301d7d5013f894ea7d01528a3a7c422466c98a95c3d156de55ae730490",
+      "coloredSha256": "07af4d4e7b69329d48df292c8f7aa5fc1dcf9dd14b4606186aea334ff3a6a5c9",
       "format": "svg"
     },
     {
@@ -568,7 +568,7 @@
       "sharpnessBefore": 18.013,
       "sharpnessAfter": 23.886,
       "coloredPath": "assets/coloring/colored/animaux-familiers/029-le-mouton-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-008--colored.svg",
-      "coloredSha256": "dde781bb4296976eb75b5a3aed98a37a7760ca2fd6bf7eda3daa6d1239dd8273",
+      "coloredSha256": "12fa32ca53675ee1c8f6b78a7dccbe0699d7cbe6f75942597d04a8da8e960182",
       "format": "svg"
     },
     {
@@ -588,7 +588,7 @@
       "sharpnessBefore": 16.706,
       "sharpnessAfter": 21.236,
       "coloredPath": "assets/coloring/colored/animaux-familiers/030-le-lapin-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-024--colored.svg",
-      "coloredSha256": "e79228a13f296b598a2fe5deb5cfe6eebcb99f1f3c29b04bee07110f13702441",
+      "coloredSha256": "3ce1cdaa73c1a3154b4baa8917f4e9988bddcd1e666675c357c52cf1cccc69e5",
       "format": "svg"
     },
     {
@@ -608,7 +608,7 @@
       "sharpnessBefore": 26.476,
       "sharpnessAfter": 35.991,
       "coloredPath": "assets/coloring/colored/animaux-familiers/031-le-chien-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-001--colored.svg",
-      "coloredSha256": "c8d9d12028fefa74a3cfb7a9185a2bb5bc27a33f2c3b3d70d2ac6ec3e32969bd",
+      "coloredSha256": "451bd69da4fbe8ee856731e36bab0eec9199dc27dc8629f08cfe2a9d17a7ee48",
       "format": "svg"
     },
     {
@@ -628,7 +628,7 @@
       "sharpnessBefore": 25.744,
       "sharpnessAfter": 34.714,
       "coloredPath": "assets/coloring/colored/animaux-familiers/032-le-chat-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-002--colored.svg",
-      "coloredSha256": "79039046643f5b520d3191a136b07c4d7d29ded5c85a54da9a99adeb0ba94a55",
+      "coloredSha256": "172df3aab4abe7c6a543cbc71e8d49a17a0c5280d0fe041f4b7cad9f177d1419",
       "format": "svg"
     },
     {
@@ -648,7 +648,7 @@
       "sharpnessBefore": 27.726,
       "sharpnessAfter": 38.862,
       "coloredPath": "assets/coloring/colored/animaux-familiers/033-le-lapin-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-004--colored.svg",
-      "coloredSha256": "b95cdd48d970e03520c930bf35e77c397464d2c51ed073415b4b1e6968fdbefc",
+      "coloredSha256": "b1aec2f295d012d93f09606fd6f78f0df12ebc727980be1aeb7758a92011e6a8",
       "format": "svg"
     },
     {
@@ -668,7 +668,7 @@
       "sharpnessBefore": 33.886,
       "sharpnessAfter": 42.868,
       "coloredPath": "assets/coloring/colored/animaux-familiers/034-la-vache-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-006--colored.svg",
-      "coloredSha256": "61705cd79b14d8b5859abeb6ebda97d2501cc586b5b3ff7b09056ec98f00a298",
+      "coloredSha256": "a85ae7fd86d784e2c661d78c80b85e15192b6f7c7e597d4afed28e0d28cd7f46",
       "format": "svg"
     },
     {
@@ -688,7 +688,7 @@
       "sharpnessBefore": 27.291,
       "sharpnessAfter": 35.207,
       "coloredPath": "assets/coloring/colored/animaux-familiers/035-la-vache-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-001--colored.svg",
-      "coloredSha256": "21508d92436746b65a8dcfb9d3afe411a95d9d3547d636881f298418e01780cf",
+      "coloredSha256": "1bb09a880114ebe1139441166bc25dc22e7098abb23d89b5670f2b0511aada64",
       "format": "svg"
     },
     {
@@ -708,7 +708,7 @@
       "sharpnessBefore": 25.639,
       "sharpnessAfter": 33.247,
       "coloredPath": "assets/coloring/colored/animaux-familiers/036-le-mouton-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-002--colored.svg",
-      "coloredSha256": "15c98afa9c513b9381a41839732bec1196e42efb803908744c40cb65bb00985b",
+      "coloredSha256": "5ff83a61b493c7f005917358c7e3e21eeb00bbfdfb3556355e0d557e3f97b40a",
       "format": "svg"
     },
     {
@@ -728,7 +728,7 @@
       "sharpnessBefore": 29.014,
       "sharpnessAfter": 34.646,
       "coloredPath": "assets/coloring/colored/animaux-familiers/037-le-cheval-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-003--colored.svg",
-      "coloredSha256": "06eb1e9988249f0d34d884729a47343ae74960501e754c1aeb00a07686698213",
+      "coloredSha256": "6f7dc867b20b46c8d8b68b35e9cf77d4fc5063b69cb28b291450039239815109",
       "format": "svg"
     },
     {
@@ -748,7 +748,7 @@
       "sharpnessBefore": 15.309,
       "sharpnessAfter": 19.141,
       "coloredPath": "assets/coloring/colored/animaux-familiers/038-le-chien-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-001--colored.svg",
-      "coloredSha256": "a3aa2f24b5fd303707b380c88e93b5d44a5c75f7187dd44650bb3d0dcecaa959",
+      "coloredSha256": "d89b0003891838edba55e34f389595c45978508ef053ab75317a3d2239acaa6f",
       "format": "svg"
     },
     {
@@ -768,7 +768,7 @@
       "sharpnessBefore": 21.683,
       "sharpnessAfter": 27.785,
       "coloredPath": "assets/coloring/colored/animaux-familiers/039-le-chat-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-002--colored.svg",
-      "coloredSha256": "48ff4d9352406eee55c06b85fd31f87b3fe4399da1303612101e8008061777b2",
+      "coloredSha256": "1e0c63cfdd51258d70858a0a1e4f618cd871f04f3e8d5a01bdfd831d944289fa",
       "format": "svg"
     },
     {
@@ -788,7 +788,7 @@
       "sharpnessBefore": 15.833,
       "sharpnessAfter": 19.922,
       "coloredPath": "assets/coloring/colored/animaux-familiers/040-le-lapin-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-003--colored.svg",
-      "coloredSha256": "7dd2471a6133ca2871312f4a99cd67fe2b35085da1d6f9965960e718b8ebd482",
+      "coloredSha256": "fc3aa4cc6c38fe72aec6b092309a994172135d61287748e7a9a14a0f131038a8",
       "format": "svg"
     },
     {
@@ -806,7 +806,7 @@
       "sourceName": "existing-animaux-05.png",
       "sha256": "579b0be65338f2e8131e690ea730da2698f4bcabbf83e45fd7b1ed7942d9d7af",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/041-le-lion-majestueux-existing-animaux-05-png-colored.svg",
-      "coloredSha256": "7ffb22a1869e693df135786de9814658c3a4da4e088e7867ac1258a20701cda0",
+      "coloredSha256": "2905b2b29084279786e51ad408d20d17474b93a93d8b06bf6a97cd60983c429b",
       "format": "svg"
     },
     {
@@ -824,7 +824,7 @@
       "sourceName": "existing-animaux-06.png",
       "sha256": "8b4523a109dc193f3de9182f99f14b83f9e10176a4ad0a6cd8b368989455cb8d",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/042-lelephant-de-la-savane-existing-animaux-06-png-colored.svg",
-      "coloredSha256": "19b41546d4431c5e1854962809e46ce489864fc47ac765372a31b7b66614b376",
+      "coloredSha256": "b67dc554050d7006a555e614693701bc54dcaec3c79474bb0e9683db59431cc9",
       "format": "svg"
     },
     {
@@ -842,7 +842,7 @@
       "sourceName": "existing-animaux-07.png",
       "sha256": "66bb30de89a13fb3a588ae2e4c9401103745b91e4aee03acf95ac8aab170ad5b",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/043-la-girafe-au-long-cou-existing-animaux-07-png-colored.svg",
-      "coloredSha256": "46f7468a6ea4b7e6c907c216ff8e08c755aa8469ce8215d63ad2d15aa787595c",
+      "coloredSha256": "86ed21934150a36c17587287825bf0e0f59e22ac5ac4b077d8634a5baebd3048",
       "format": "svg"
     },
     {
@@ -860,7 +860,7 @@
       "sourceName": "existing-animaux-08.png",
       "sha256": "b54646d4d9eaeaa7f74b64255401fb68c02c9135bacf93c4a9ee819e830a4ac9",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/044-le-zebre-raye-existing-animaux-08-png-colored.svg",
-      "coloredSha256": "e3f39d2f30377832a5f410c676675ef6078958ed4e1128e86f1b4cba3a904033",
+      "coloredSha256": "4e400e54abacb467a0e8d2a2546ca480e2f44192a6b39d9efba8b54413ce2600",
       "format": "svg"
     },
     {
@@ -878,7 +878,7 @@
       "sourceName": "existing-animaux-09.png",
       "sha256": "9bcfd54b2d5ea4ed5240a6cec4d58362f54f50e84650f83275d1d2484935a314",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/045-lhippopotame-dans-leau-existing-animaux-09-png-colored.svg",
-      "coloredSha256": "f982214080377ff2e79f9001ebd1761eeb12be0f9e5d45701094bd7258839a81",
+      "coloredSha256": "8bff97e85f7b0e85cccc701110da6e1999e085465d07fbf41106ceea755afe46",
       "format": "svg"
     },
     {
@@ -896,7 +896,7 @@
       "sourceName": "existing-animaux-10.png",
       "sha256": "4877a2d34ac503c217b0eb7b0c3d1008048d16db1bf4f8ce8aa1be546a555e17",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/046-le-rhinoceros-tranquille-existing-animaux-10-png-colored.svg",
-      "coloredSha256": "29a122c725ee6ecda7a98e12dfc764d8e9b0e9c442aaaa197525cb51589b6878",
+      "coloredSha256": "2e3cce4149b0b5253be18bb980814bc1f3d3a823e0b745ab02d45b48a6b91d4f",
       "format": "svg"
     },
     {
@@ -914,7 +914,7 @@
       "sourceName": "existing-animaux-11.png",
       "sha256": "7ff00e69b098a76bb96b2f72aa839ab92926e45d7257d8d4ffaba38f39fc2bc1",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/047-le-singe-acrobate-existing-animaux-11-png-colored.svg",
-      "coloredSha256": "857375793a3e9e2102df9ceb05dc8a989eacbd9d30681dcd2b67e33b1b0e5eaf",
+      "coloredSha256": "6a93c15ba62e9ad271e339f18f4b169519b31f13a2e6d6923b9cb017a66012e3",
       "format": "svg"
     },
     {
@@ -932,7 +932,7 @@
       "sourceName": "existing-animaux-12.png",
       "sha256": "9b0dc9cd2a0b8d244dd70639c714a20c191abcb657614767bcf1a5c5d59121a1",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/048-le-gorille-de-la-foret-existing-animaux-12-png-colored.svg",
-      "coloredSha256": "efbfad03c3935e3530551b96b548e2bf524eb4cfd9abf6f1cbce2a9f962348ee",
+      "coloredSha256": "4322208cb8ef8653b067e0bdabefbbee766ab2b59d93161d328e0147c09ef2d0",
       "format": "svg"
     },
     {
@@ -950,7 +950,7 @@
       "sourceName": "existing-animaux-13.png",
       "sha256": "8dc1c1114c4400f5940e7641a9d4fe5093cde047efaa53c6fd763dd06037261c",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/049-le-panda-gourmand-existing-animaux-13-png-colored.svg",
-      "coloredSha256": "b01c0867802ec27ef28f970b2523cf7f742b0f7b95e1b993ff2ff75b8eba6cff",
+      "coloredSha256": "4a9a9357c4f34590af4af174fbcca51581d61ab642cefb8255d5c4c775ce9875",
       "format": "svg"
     },
     {
@@ -968,7 +968,7 @@
       "sourceName": "existing-animaux-14.png",
       "sha256": "fd234df5b42203a0817444cd82adb809fc8cf02221c54391a68aaa3358be7bc8",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/050-lours-au-grand-cur-existing-animaux-14-png-colored.svg",
-      "coloredSha256": "4047ef8960e7f89cf909bd0b56e6ff715f8e3c9a82a65eedbd62e2a2c0aad829",
+      "coloredSha256": "a706de284fa207669db559a9c3e1a51744041dc56b795250a7ca368401253a3b",
       "format": "svg"
     },
     {
@@ -986,7 +986,7 @@
       "sourceName": "existing-animaux-15.png",
       "sha256": "a30ee0cc224b9ec000a7e764efe95e44003f13d6c80e90732c3a4aea4213ae77",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/051-le-renard-malin-existing-animaux-15-png-colored.svg",
-      "coloredSha256": "a772c06b9e1282c920196baa2b527611fd2aef9fcc0f3e9174b63dbd61dcef74",
+      "coloredSha256": "725c617a252b5bc5b14d09daf894a7354f2b0662b8fd0daac297fac1e8b73307",
       "format": "svg"
     },
     {
@@ -1004,7 +1004,7 @@
       "sourceName": "existing-animaux-16.png",
       "sha256": "97f2a1e8dfc3f5ee01baac6dba8abe55fe7f1a0f57c517cbf059f3db9e97583d",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/052-le-herisson-piquant-existing-animaux-16-png-colored.svg",
-      "coloredSha256": "f8734ba8bea9a55f2390c59c09d8d4bf76761be7d901fb07fae2ec1e63ccf8a9",
+      "coloredSha256": "a565fa72588834373064742d36f7a854f4cd7472f6d1c6df81c5f01c6a0f55ed",
       "format": "svg"
     },
     {
@@ -1022,7 +1022,7 @@
       "sourceName": "existing-animaux-21.png",
       "sha256": "e67952f0839182832de7b83ee81df4976b431b9590bc04f19431686396dddb49",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/053-le-crocodile-du-fleuve-existing-animaux-21-png-colored.svg",
-      "coloredSha256": "2395a94b2df320c0b8872e259a7ff8d19d6ff5eae8e9c695fadd927eb99ed103",
+      "coloredSha256": "37d128f42f7a1ca89689cd523a6aff88d0b0d69542efb0d179973c0090f5a773",
       "format": "svg"
     },
     {
@@ -1040,7 +1040,7 @@
       "sourceName": "existing-animaux-22.png",
       "sha256": "01669ef9dcf24a30ff032fb5ee26cc360cbdfc8fef824916996213ad733eec4d",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/054-la-tortue-patiente-existing-animaux-22-png-colored.svg",
-      "coloredSha256": "9214b1bae46b54714560107c27b60d14ca6c3f552d939f60679277ad1846066c",
+      "coloredSha256": "60d750d58ae43a6cf1e38782bfbf7ac37f12e89a9f730bab5e7253386c520854",
       "format": "svg"
     },
     {
@@ -1058,7 +1058,7 @@
       "sourceName": "existing-animaux-23.png",
       "sha256": "eea7906fce355363293ef019cc2f85ca14278968baf0d7785ab86fe859b3e92c",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/055-le-cameleon-sur-sa-branche-existing-animaux-23-png-colored.svg",
-      "coloredSha256": "bbb36b529b195d226fcfd75b239f85f9470e2054449316782e88ab54c19e0a6a",
+      "coloredSha256": "c7c5d7d22efe8ad926f0eefbc99d0c0c7bc26ddabf0b288d41873098ec804c4b",
       "format": "svg"
     },
     {
@@ -1076,7 +1076,7 @@
       "sourceName": "existing-animaux-24.png",
       "sha256": "e8d087ecea61d2885954bd89de90052edbcc945309fac28e22e29b5d6e5f673b",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/056-le-serpent-en-spirale-existing-animaux-24-png-colored.svg",
-      "coloredSha256": "b4146d3bd48387d468a3213a7ec794073e24e6091750fca1ebb34583b45ff6fd",
+      "coloredSha256": "cd09d6dff134f3ad0e53d18924ae00bed76f281e884f875a546fbe96e30a36b0",
       "format": "svg"
     },
     {
@@ -1094,7 +1094,7 @@
       "sourceName": "existing-animaux-25.png",
       "sha256": "a0a183485bebb73b4acae4802684149bec101eadc617e90ada3832b2214a4a5b",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/057-le-dauphin-bondissant-existing-animaux-25-png-colored.svg",
-      "coloredSha256": "f1fcba35b9df99e0eda6c1fbe2b4d21dfd413896285c587653ae68207e422474",
+      "coloredSha256": "13c3db2a793d1fff97d1c5dd5f33cff10aad912f8605e392e493889c9ef75be5",
       "format": "svg"
     },
     {
@@ -1112,7 +1112,7 @@
       "sourceName": "existing-animaux-26.png",
       "sha256": "04ce825bca666c39150977c4c507133548548ed2f8f0d5e535792e89b4077d0c",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/058-la-baleine-et-son-jet-deau-existing-animaux-26-png-colored.svg",
-      "coloredSha256": "cdd4d79770f7ecc19cd461a7af276a213a4c0786ff4ce296d0956275fc5dc195",
+      "coloredSha256": "ef84079b5c0f9b41be1006a3602bfcd9ba30ba0833f2951f0e51a0f69b992c99",
       "format": "svg"
     },
     {
@@ -1130,7 +1130,7 @@
       "sourceName": "existing-animaux-27.png",
       "sha256": "c78a648f364ce2dfa5edcc55394c1bce0d6823e7f7c13157586d66d1dd6b1238",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/059-le-poisson-tropical-existing-animaux-27-png-colored.svg",
-      "coloredSha256": "99786df128f26f1d7351eeb587ccf6b274359aca67a60461bc98981b5b5c03b4",
+      "coloredSha256": "ec7eb1d96cf0113c79fd93eb6bf486264067a47b6913ca9c1a164da8500ccb02",
       "format": "svg"
     },
     {
@@ -1148,7 +1148,7 @@
       "sourceName": "existing-animaux-28.png",
       "sha256": "c1f0fbc9b0e8a61f6132309464b1ce643af26375fa7d854713903aaef820f62c",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/060-lhippocampe-gracieux-existing-animaux-28-png-colored.svg",
-      "coloredSha256": "3a387ad5fc49563ed67797aef1cfa5ee0c26bfef7bfc50aedf8570715d8b9708",
+      "coloredSha256": "4377d94b28aa9040b37d87a6b12aa2b69f78c9fb6fe7ac1a5678d5ec1146edb0",
       "format": "svg"
     },
     {
@@ -1166,7 +1166,7 @@
       "sourceName": "existing-animaux-29.png",
       "sha256": "9062b5a1a640f6774d19dc343dc09b6daee2320b4e69010630b433fe7529011a",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/061-le-perroquet-colore-existing-animaux-29-png-colored.svg",
-      "coloredSha256": "23969c82b3cde72396adf9027885d4f93b3606c1e7cbab1d86cc79bc7d0a396c",
+      "coloredSha256": "209f7078656fdacb8741b2912a4faa99618e4d37b8d14f70e319da45a9e487e8",
       "format": "svg"
     },
     {
@@ -1184,7 +1184,7 @@
       "sourceName": "existing-animaux-30.png",
       "sha256": "79dd3e29e07fb54818f5fa6c4b1195cb3368f8b26319dfa0e94f277e52d12b94",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/062-le-hibou-aux-grands-yeux-existing-animaux-30-png-colored.svg",
-      "coloredSha256": "af9c184931bf047b36e515b576ef65640f4d1cc6679554ed32a3555ec5a92d61",
+      "coloredSha256": "df479a2d6c0ccf1c9c202339afe4389301cdaf9f11d672b275e545902b37c937",
       "format": "svg"
     },
     {
@@ -1202,7 +1202,7 @@
       "sourceName": "existing-animaux-31.png",
       "sha256": "b5d408095d8b8827283cb2b523a3497ea1a3cff5df75b2d8b4053730fc34a30e",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/063-laigle-en-plein-vol-existing-animaux-31-png-colored.svg",
-      "coloredSha256": "37d489f3f4a6a67a762f33b3a3e69e47f0b8c3df56b32aa01ee61949db34714b",
+      "coloredSha256": "a220d494b02ada90a076de98a84defb5ea00522071711c0ac4e5e131ff0c0ef0",
       "format": "svg"
     },
     {
@@ -1220,7 +1220,7 @@
       "sourceName": "existing-animaux-32.png",
       "sha256": "96681220c4860e1afe8650adadb369c229c16c1867b8c3a08ea3143eeb486559",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/064-le-flamant-rose-existing-animaux-32-png-colored.svg",
-      "coloredSha256": "a4d931773e27c7ab268394be756c0f350b1d9621ac2362ce0ac950dc7862aa33",
+      "coloredSha256": "f35b5c6e0cdbc98b1fdd4dc5e8df9d6fa16f62bd9dc609afa277e2de70b77bf9",
       "format": "svg"
     },
     {
@@ -1238,7 +1238,7 @@
       "sourceName": "existing-animaux-34.png",
       "sha256": "523524582150f8b86b9900627f3ec80ffd0000dc07d0d62177de5eb1149328a9",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/065-le-paon-et-sa-grande-roue-existing-animaux-34-png-colored.svg",
-      "coloredSha256": "1b1e96bdabccb0ef5f88eb6d4949476ab8273d6f0d3bfec9acda37f3d67b7137",
+      "coloredSha256": "74cdc398487ecc6f9e03a0a4fbc766e1e72bd5999f73a4671737c702f7f46dbd",
       "format": "svg"
     },
     {
@@ -1256,7 +1256,7 @@
       "sourceName": "existing-animaux-35.png",
       "sha256": "f5288fdbd7f0bf0a672bc65b8bbc95c9f5e0816bdccb689907ce102bb8d56c0f",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/066-le-papillon-symetrique-existing-animaux-35-png-colored.svg",
-      "coloredSha256": "217ae51a14ba70e1ae6848322a895c811a595c2dbaa693f6c4785e606f631583",
+      "coloredSha256": "a0fece0c283bfa2f1f7120395e74503b2c3c68da1d3b12defee8e24c033cdad7",
       "format": "svg"
     },
     {
@@ -1274,7 +1274,7 @@
       "sourceName": "existing-animaux-36.png",
       "sha256": "0cbbb96486caa7bf4566f82eca5661598644fe5456f56ee66a21495ce118f9ef",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/067-la-coccinelle-a-sept-points-existing-animaux-36-png-colored.svg",
-      "coloredSha256": "00565e1a7154c93bfc9b89ce17037d3094975871274663b4e994fab88b2699a4",
+      "coloredSha256": "7026f74afeefdb5d3017f47a3c0e3fca903f0242c50fba4d471d9c3891650aa5",
       "format": "svg"
     },
     {
@@ -1292,7 +1292,7 @@
       "sourceName": "existing-animaux-37.png",
       "sha256": "cd6a40622ff8da60320b44da12b77a99a5e1269cb616a8f5581f56ef3c10014d",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/068-labeille-et-la-fleur-existing-animaux-37-png-colored.svg",
-      "coloredSha256": "ae283562b64973d135a6295be724d14d322094910cc2eea98578b75a25975f33",
+      "coloredSha256": "ad51b2972441c66aefcda1ed78348dfa4e7343088b6cf90cbc7635bf33456284",
       "format": "svg"
     },
     {
@@ -1310,7 +1310,7 @@
       "sourceName": "existing-animaux-38.png",
       "sha256": "c2a97894f6dbacc039b280730f045e4ac16e38068b81a395bddab73457cbf988",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/069-la-libellule-legere-existing-animaux-38-png-colored.svg",
-      "coloredSha256": "78197193b34e145b63a3ef8054a6d20d8a5b04e7001710b4a7c0bde382f050f2",
+      "coloredSha256": "ee6c22098cdd23d1043c921eb25b1e70402fc53cff31af0e6c10188c51397490",
       "format": "svg"
     },
     {
@@ -1328,7 +1328,7 @@
       "sourceName": "existing-animaux-39.png",
       "sha256": "a67569d630ca6dbbc1cf1e10394cc5599cb63aa6418b7a84bf0ce2536d80e714",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/070-la-grenouille-sur-son-nenuphar-existing-animaux-39-png-colored.svg",
-      "coloredSha256": "0767d522ad028f926c1a23646d88c17dcb76fd8ce891bc9b070c14ad770b5d5a",
+      "coloredSha256": "859c06b8877f30998ebe81ae4461715b2e7a30b397906dfbc501a5da99559475",
       "format": "svg"
     },
     {
@@ -1346,7 +1346,7 @@
       "sourceName": "existing-animaux-40.png",
       "sha256": "18ffb102deb9983da94a7ea01aff5839c3e5c248bfbed3ffa136aaa400bdb67e",
       "coloredPath": "assets/coloring/colored/animaux-sauvages/071-lescargot-voyageur-existing-animaux-40-png-colored.svg",
-      "coloredSha256": "eb87401abee7f1e04fd3792feec69fca58ef659521f681890db6c0a44d1c5139",
+      "coloredSha256": "b3b9e5fd095358bf42170ad4c1f6ce092e3311cf638b02332a5d39aee4b0ba53",
       "format": "svg"
     },
     {
@@ -1366,7 +1366,7 @@
       "sharpnessBefore": 20.335,
       "sharpnessAfter": 25.452,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/072-le-lion-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-002-pn-colored.svg",
-      "coloredSha256": "567062ad5c7ba5951ddffd143eed695be9ca78f6d31bb2299c0fd3712b0d2907",
+      "coloredSha256": "98b96baa5139d6ffcedc587674ea8920a38fbd4c05f7461979d4e3d6e4bb9fdc",
       "format": "svg"
     },
     {
@@ -1386,7 +1386,7 @@
       "sharpnessBefore": 13.855,
       "sharpnessAfter": 17.099,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/073-la-tortue-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-015-pn-colored.svg",
-      "coloredSha256": "dd341099fd2941b76b08a72e568f6d2dc0058a1fadddecd08a63e1ec3d21f77c",
+      "coloredSha256": "0d93b4849bc4c587c3f3537d6516ffaafe2910261ff00418e05815a88fdd4fe2",
       "format": "svg"
     },
     {
@@ -1406,7 +1406,7 @@
       "sharpnessBefore": 12.951,
       "sharpnessAfter": 16.063,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/074-le-dinosaure-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-019-pn-colored.svg",
-      "coloredSha256": "883c30e1709192fc506b127b85dec3ba94741fb4e0aba8dca178cb169d341c9f",
+      "coloredSha256": "323e47b278cd11a4dfa407f1ece8b28dafb7cbb59ec502c82576b246e159d523",
       "format": "svg"
     },
     {
@@ -1426,7 +1426,7 @@
       "sharpnessBefore": 33.706,
       "sharpnessAfter": 44.771,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/075-le-lion-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-001--colored.svg",
-      "coloredSha256": "d18c5894391d86fd5fd70a48a39b0612b02bb054e5af123ddd963dbed05ac6f9",
+      "coloredSha256": "7b0758bb6fb6da0466c789135b7cb4dd135154daef6d58a83bd87de2fabce7cb",
       "format": "svg"
     },
     {
@@ -1446,7 +1446,7 @@
       "sharpnessBefore": 27.272,
       "sharpnessAfter": 34.404,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/076-lelephant-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-002--colored.svg",
-      "coloredSha256": "6a47f824ee7b2049dcdcb7ab623320ae26694c3a18d9b183cc3477c57eb3aa6a",
+      "coloredSha256": "ec7416bd68c1a266002c34c8c411dde5f7e0cd9a9a50e471c0c4dd481fc5d651",
       "format": "svg"
     },
     {
@@ -1466,7 +1466,7 @@
       "sharpnessBefore": 22.011,
       "sharpnessAfter": 28.567,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/077-la-tortue-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-004--colored.svg",
-      "coloredSha256": "cca36464d89e80a4c7cc21eb5a517cc9661a2d133c53ce2958712cea52608108",
+      "coloredSha256": "6ac9cf3d3e7cde38503d352d01fea4399dc95b9f72dfc9ab678ffe5c5fb85e4c",
       "format": "svg"
     },
     {
@@ -1486,7 +1486,7 @@
       "sharpnessBefore": 24.458,
       "sharpnessAfter": 32.545,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/078-la-girafe-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-001--colored.svg",
-      "coloredSha256": "4a7e75c5d587e51f4fd5fdb4cc3c327f9e5eb3107cba5ac7f558bb5acd9674ec",
+      "coloredSha256": "50e45aa0c3e6c19e40e0a619cb1f3744ef18312834d64b1ae7adc5c8e9f7168f",
       "format": "svg"
     },
     {
@@ -1506,7 +1506,7 @@
       "sharpnessBefore": 14.099,
       "sharpnessAfter": 17.893,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/079-le-dauphin-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-004--colored.svg",
-      "coloredSha256": "2d569d3aa64902e3596dcdb9c9ee25f1a5b7b78799439d9303e9c99e2ae5dcaa",
+      "coloredSha256": "321967b52f552a3abb39e303aee8a1316e0e2033e17aaac3ab1d8c4d07616da6",
       "format": "svg"
     },
     {
@@ -1526,7 +1526,7 @@
       "sharpnessBefore": 27.976,
       "sharpnessAfter": 36.265,
       "coloredPath": "assets/coloring/colored/animaux-sauvages/080-le-zebre-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-001--colored.svg",
-      "coloredSha256": "053f18cf4c736067081011f931b56b0868043bed1fc709087e6a4c0c0c7e7310",
+      "coloredSha256": "f4ec179bf4d0585cd6962a5bbb8aafa1d2577c44ec1b590bec40b305a5be8c40",
       "format": "svg"
     },
     {
@@ -1544,7 +1544,7 @@
       "sourceName": "existing-vehicules-01.png",
       "sha256": "845adeabbec794954cf4b07d246da7b7043e6257332d2e70131b974bb4fd1fd4",
       "coloredPath": "assets/coloring/colored/vehicules-terre/081-la-petite-voiture-existing-vehicules-01-png-colored.svg",
-      "coloredSha256": "b1889d87a9a09cd0eee5467b3e2bc6361a0611300462d1b7427b16c80123840c",
+      "coloredSha256": "084d57fef7a26546b02b9fa980dfde0ca26e73cc926e2e8cccdb94fa9c583e55",
       "format": "svg"
     },
     {
@@ -1562,7 +1562,7 @@
       "sourceName": "existing-vehicules-02.png",
       "sha256": "03840af59578a55c3c04b9b022164b2205c54a8e1cd568cc49f75fd4fc1981fb",
       "coloredPath": "assets/coloring/colored/vehicules-terre/082-le-bus-scolaire-existing-vehicules-02-png-colored.svg",
-      "coloredSha256": "aa031b9cd4f60adf2f09bed09efd0b43788abf502cbdeda7b40fa7b9c0afe2da",
+      "coloredSha256": "d5c824573c25fd909af31ff8765217f45da2ec07d3b9f981d84a7dbf29d6110c",
       "format": "svg"
     },
     {
@@ -1580,7 +1580,7 @@
       "sourceName": "existing-vehicules-03.png",
       "sha256": "1d3b9ab5ebaed2b50f19fb917473de8d61c0a43dea87dffb6afd1e658ca6eb23",
       "coloredPath": "assets/coloring/colored/vehicules-terre/083-le-camion-de-livraison-existing-vehicules-03-png-colored.svg",
-      "coloredSha256": "51a234ddfaaac27174c255984d17f239a9a4619ecd1548cde3ec276825cd75c6",
+      "coloredSha256": "acdf7a7c8219b5173c1c88c5eddd3ea34280eeaddb011e51bcda78ece384770d",
       "format": "svg"
     },
     {
@@ -1598,7 +1598,7 @@
       "sourceName": "existing-vehicules-04.png",
       "sha256": "151e57e9d0b9c860619b490f61c83126bcb2b49d6bbc455f28bdba40fb6a039f",
       "coloredPath": "assets/coloring/colored/vehicules-terre/084-le-camion-de-pompiers-existing-vehicules-04-png-colored.svg",
-      "coloredSha256": "aa87a94b1642d006f1b6509a213d1e351881010d0a7906f414949b52e7317859",
+      "coloredSha256": "f392eb7d9a573d5fd2e176a3d4c3339fcafbd43b904883dd080fb60a78b75cdb",
       "format": "svg"
     },
     {
@@ -1616,7 +1616,7 @@
       "sourceName": "existing-vehicules-05.png",
       "sha256": "26d72570be5fdd2b00c38c6b3e37eba9d99def11971d78c0ffcbbd4377549a35",
       "coloredPath": "assets/coloring/colored/vehicules-terre/085-le-taxi-de-la-ville-existing-vehicules-05-png-colored.svg",
-      "coloredSha256": "77d6129c71fb2b0020c9def941da55b785f2a04241dd678f4577862c36982ea7",
+      "coloredSha256": "c0657f14581012347315d50ee3ec65fc7a170bb266827e922963b701bcbe0500",
       "format": "svg"
     },
     {
@@ -1634,7 +1634,7 @@
       "sourceName": "existing-vehicules-06.png",
       "sha256": "1df2e802fdf5b0b2b1ec2e06beffc9562979752c842357f3c9cf4a68f870cb34",
       "coloredPath": "assets/coloring/colored/vehicules-terre/086-le-minibus-colore-existing-vehicules-06-png-colored.svg",
-      "coloredSha256": "f0e64834fa5a661e5f6be4021647336f0482af27dcfe7f5f403f7ca3064b7a49",
+      "coloredSha256": "3c0f77b1e00cc7f6ecfd4e7f342192ab634cbbcb4d666554688d5747f816cbd3",
       "format": "svg"
     },
     {
@@ -1652,7 +1652,7 @@
       "sourceName": "existing-vehicules-07.png",
       "sha256": "a5a79f3174f50b22a06346c05aa6c70babc9862a79fb548925b79d131b9a2661",
       "coloredPath": "assets/coloring/colored/vehicules-terre/087-le-camion-benne-existing-vehicules-07-png-colored.svg",
-      "coloredSha256": "842f98f9f2fe2c6e3ab7f6447f887dec8f2f513287e970f22f30f510053728f9",
+      "coloredSha256": "98762888ce92b71a511aa5d6b901fcd791f1076ec04a8966ae664fa4fa8ef76b",
       "format": "svg"
     },
     {
@@ -1670,7 +1670,7 @@
       "sourceName": "existing-vehicules-08.png",
       "sha256": "fdfa370a31418d3e959d0123b129cf096e345ebb3f9aeff042f66f6cd9b4a4ce",
       "coloredPath": "assets/coloring/colored/vehicules-terre/088-lambulance-existing-vehicules-08-png-colored.svg",
-      "coloredSha256": "870c96a3a8f70419b9498e6c0e38b99af65f7cbd1ee3f1c5e1f2b3aef4eeb677",
+      "coloredSha256": "f7ae06947776f663a9df9044b87506d5f8153be460ac3d307a9e93e848a26dc1",
       "format": "svg"
     },
     {
@@ -1688,7 +1688,7 @@
       "sourceName": "existing-vehicules-09.png",
       "sha256": "21d9f65be8b676dc05835a1f10a1a44a584117756a89da14e5b13797676317b5",
       "coloredPath": "assets/coloring/colored/vehicules-terre/089-la-voiture-de-police-existing-vehicules-09-png-colored.svg",
-      "coloredSha256": "130a991adcc198fe344e093167d7b65818e296b2427e5a6441b171bece4bd650",
+      "coloredSha256": "77f26242ff403d6cd58aa78503c6f7fd5738300fc2591edae47f54f145074066",
       "format": "svg"
     },
     {
@@ -1706,7 +1706,7 @@
       "sourceName": "existing-vehicules-10.png",
       "sha256": "5b34a792689882d2cd515976242a2efe4e0072e086c7668c9e50270068ee249f",
       "coloredPath": "assets/coloring/colored/vehicules-terre/090-le-44-daventure-existing-vehicules-10-png-colored.svg",
-      "coloredSha256": "268d654dc9ae58896fa3cd3e6278ec6351b05cfb6c1599fb6660ea99d716bd52",
+      "coloredSha256": "c83ad3e2417a19fa591a16b650fe157030b24e5ae71b0db71cdf10ffe13234f8",
       "format": "svg"
     },
     {
@@ -1724,7 +1724,7 @@
       "sourceName": "existing-vehicules-11.png",
       "sha256": "6848b4d1fd7cdbd46b0d87b889134a3adeee1f18f031fa6b869551f087731b7b",
       "coloredPath": "assets/coloring/colored/vehicules-terre/091-le-tracteur-du-fermier-existing-vehicules-11-png-colored.svg",
-      "coloredSha256": "64f166d5fbe4f55b6507678480503d3d821509bf5c3c04c824a0a0fd62626c4f",
+      "coloredSha256": "5ad05cbf03fccf35b97afcdf83b1ff381a5403ca47efbfa3b195ef1de29983a5",
       "format": "svg"
     },
     {
@@ -1742,7 +1742,7 @@
       "sourceName": "existing-vehicules-12.png",
       "sha256": "a5a4b5db19fc4521c8b9205c3ac92e6c84e0145d68987c5bad8a320cf6013e99",
       "coloredPath": "assets/coloring/colored/vehicules-terre/092-la-moissonneuse-existing-vehicules-12-png-colored.svg",
-      "coloredSha256": "458a267aec57f744b0cc5c6eebd6f3bfb53cfb0e97642250a6777857ee85c740",
+      "coloredSha256": "78a845704d8de772c200ae63a537deddea49f424b453ca0f26b5df5b81c1a73a",
       "format": "svg"
     },
     {
@@ -1760,7 +1760,7 @@
       "sourceName": "existing-vehicules-13.png",
       "sha256": "ff8af9ab73897f9dcfea8d0338ab266da84c4868226cce5ab0d23eebfb8af8a7",
       "coloredPath": "assets/coloring/colored/vehicules-terre/093-la-pelleteuse-existing-vehicules-13-png-colored.svg",
-      "coloredSha256": "6ae9b2e6491110eb293f3ef5b07ea69921f4d49c0bcffb9e66094393f93464a3",
+      "coloredSha256": "f7afa19b7fe5c0f638cbe73b014e69d9d4bc4e9f11ad58418cc31b575b6b9d52",
       "format": "svg"
     },
     {
@@ -1778,7 +1778,7 @@
       "sourceName": "existing-vehicules-14.png",
       "sha256": "ff3d7d7df852685f9972b121d02e4f0269e078c5c9c841b537ef459f2ab0319b",
       "coloredPath": "assets/coloring/colored/vehicules-terre/094-le-bulldozer-existing-vehicules-14-png-colored.svg",
-      "coloredSha256": "79dd99666888c56d8bcb5db2893793bc18e19cfed08ae851526f2f6ad86fb409",
+      "coloredSha256": "603b25bb1cacd2122db06704eafe1f790e9eca9c77ca8d2a81d0ef9083e0581e",
       "format": "svg"
     },
     {
@@ -1796,7 +1796,7 @@
       "sourceName": "existing-vehicules-15.png",
       "sha256": "461551cf804374d108f36b8aa721783b741ad6003abe5f84ec1f84f9d850fb82",
       "coloredPath": "assets/coloring/colored/vehicules-terre/095-la-grue-de-chantier-existing-vehicules-15-png-colored.svg",
-      "coloredSha256": "9996c2dc12aba0adff9fb2977f63e718530d474c6c9f1e0bf68d4d3b2b0092b0",
+      "coloredSha256": "30bda0ac87d82c22f55828a0e22dcf5849e8a74d8c100858147d10fd0c7569c5",
       "format": "svg"
     },
     {
@@ -1814,7 +1814,7 @@
       "sourceName": "existing-vehicules-16.png",
       "sha256": "2f0769cc96049ef8d210a7e8924865c4fd453adcac306f2bf9a625d0a5032164",
       "coloredPath": "assets/coloring/colored/vehicules-terre/096-le-camion-toupie-existing-vehicules-16-png-colored.svg",
-      "coloredSha256": "932b21c059c447e3a9db3b9aafe548b561dec362a2d5886f1e52d105fe3133a1",
+      "coloredSha256": "826cf0c0644f2c4d20f724cddc23ffcfc3a8c42da3fb0f4801c501c3e643e794",
       "format": "svg"
     },
     {
@@ -1832,7 +1832,7 @@
       "sourceName": "existing-vehicules-17.png",
       "sha256": "d4cfbf9934c071d3ae9f75faa26b6ca46fcec38ad87d7f86476f1cfb70e146ff",
       "coloredPath": "assets/coloring/colored/vehicules-terre/097-le-velo-avec-panier-existing-vehicules-17-png-colored.svg",
-      "coloredSha256": "58d624e8076edf10909d86e5027729f93c9d431c063444a27fd0c8ba7f0647c4",
+      "coloredSha256": "99c4591c7e1698743ca95e101d5517bc056e96a568d027ddadcd02118afd89c0",
       "format": "svg"
     },
     {
@@ -1850,7 +1850,7 @@
       "sourceName": "existing-vehicules-18.png",
       "sha256": "6dfdae8bdb5462b55a25739ec1ca10b6ba53c56a91525cc2fc7ddf1b8484409c",
       "coloredPath": "assets/coloring/colored/vehicules-terre/098-le-velo-tout-terrain-existing-vehicules-18-png-colored.svg",
-      "coloredSha256": "100a343276cfe4de657d652c92b33427eaa672a401154d2821f8726773e9ddd0",
+      "coloredSha256": "7297a8099fd2d7ab5bb21083e26ce7a81058e7753cf34278c7650ba6497ca112",
       "format": "svg"
     },
     {
@@ -1868,7 +1868,7 @@
       "sourceName": "existing-vehicules-19.png",
       "sha256": "c4a2154fce257cfe2e8c58191ed589363633ddd39c5be6e1d23b4c6483ce2569",
       "coloredPath": "assets/coloring/colored/vehicules-terre/099-la-moto-de-course-existing-vehicules-19-png-colored.svg",
-      "coloredSha256": "116cc49836cd41f19c42197adfad4c73a64034294bc206636c6f1b35e21e7978",
+      "coloredSha256": "a4c33faf16cf127320e12645f50705b8fead7cb96670c125805ca0e237b3102b",
       "format": "svg"
     },
     {
@@ -1886,7 +1886,7 @@
       "sourceName": "existing-vehicules-20.png",
       "sha256": "826b2d7dc6beaba8b3577581748b4cc62f96e1585dbebe00e2b335112479f208",
       "coloredPath": "assets/coloring/colored/vehicules-terre/100-le-scooter-existing-vehicules-20-png-colored.svg",
-      "coloredSha256": "ed0fe875ee4d293e73d1f38705b7466db30119e7c76cde684ef23daa04d0b3db",
+      "coloredSha256": "7fd53a9415cc856c2a47868f825811d4eb3a7ef79165d429d16d0f1606aacd5f",
       "format": "svg"
     },
     {
@@ -1904,7 +1904,7 @@
       "sourceName": "existing-vehicules-21.png",
       "sha256": "2ce2109d3e19a60432c6e0abb496bc9ce30b3e81e068ac3ce38ed6a3963a7240",
       "coloredPath": "assets/coloring/colored/vehicules-terre/101-le-train-de-voyageurs-existing-vehicules-21-png-colored.svg",
-      "coloredSha256": "2e6579ff923a250538e1f771f7686047325d0ae4312119f2bf0fad5403c3f81a",
+      "coloredSha256": "794dc0fd4345cfa556c52994ffbc8d16e281e3b0f5577eb77941d98bc915f0aa",
       "format": "svg"
     },
     {
@@ -1922,7 +1922,7 @@
       "sourceName": "existing-vehicules-22.png",
       "sha256": "daaee614c81f7a331c793a6e15a2ab7419178c15498638384cee05e40ec4b58e",
       "coloredPath": "assets/coloring/colored/vehicules-terre/102-le-train-a-vapeur-existing-vehicules-22-png-colored.svg",
-      "coloredSha256": "bbaf94b623b6ac1fdc494a18b16be0373598f125974e061e6693de6c7ed14902",
+      "coloredSha256": "f0d87e4c2a95dfccc30b41c1bb9283da3f961750ec71325c6150de0b789a98d0",
       "format": "svg"
     },
     {
@@ -1940,7 +1940,7 @@
       "sourceName": "existing-vehicules-23.png",
       "sha256": "73c8d02f501c8dc0b4beefbaf7f7f2fefe3a8e5b833b315f3dc505d30a6f4b87",
       "coloredPath": "assets/coloring/colored/vehicules-terre/103-le-metro-existing-vehicules-23-png-colored.svg",
-      "coloredSha256": "ba94813761dd1e3c8e38c30084895e6303e43023746e790a7c903c3f214f163b",
+      "coloredSha256": "f3bb010762c1b4c56dbacfdcdc54a06090098256a369eb58ec13d6083d0d4c22",
       "format": "svg"
     },
     {
@@ -1958,7 +1958,7 @@
       "sourceName": "existing-vehicules-24.png",
       "sha256": "2bebf1052ca47a8db5727f9d1782a73b945bbfc76d8c35c512098b0ed0438f90",
       "coloredPath": "assets/coloring/colored/vehicules-terre/104-le-tramway-existing-vehicules-24-png-colored.svg",
-      "coloredSha256": "7b70711124a8301188084bb4d55e6cf5cc4cd368c29266a985fdcf2b28b6503f",
+      "coloredSha256": "608d7fb67cd5cba732a182e80cfcbf519e95c683aa2a3572c50348703aaa732a",
       "format": "svg"
     },
     {
@@ -1976,7 +1976,7 @@
       "sourceName": "existing-vehicules-37.png",
       "sha256": "6dfd95cef902d2dff7741a16e154197ea77683bb2cee0b80795f8383fad323e3",
       "coloredPath": "assets/coloring/colored/vehicules-terre/105-la-trottinette-existing-vehicules-37-png-colored.svg",
-      "coloredSha256": "174290cea90ed7d5af9b832d6a6e824b2c8d2a2873237a6320b6a6df19144539",
+      "coloredSha256": "615668b154238ae42b94aa3da0067e1d8d5e8ff90d121af58b7de59febed8cb1",
       "format": "svg"
     },
     {
@@ -1994,7 +1994,7 @@
       "sourceName": "existing-vehicules-38.png",
       "sha256": "ef4ef6920150ac375e345cd596ee514981ce64244dce7256d576be539329e6a6",
       "coloredPath": "assets/coloring/colored/vehicules-terre/106-le-pousse-pousse-existing-vehicules-38-png-colored.svg",
-      "coloredSha256": "45783d522a2a6a0f2b89202068329a957265be5f61257ac565801d99d4267382",
+      "coloredSha256": "46115e9e899ea6458acd8c46b996493188c9a358d3f510ec956d7c64be7c3bb8",
       "format": "svg"
     },
     {
@@ -2012,7 +2012,7 @@
       "sourceName": "existing-vehicules-39.png",
       "sha256": "4c723a38de8813b766585ba14acb6215cccfafba206db13fcfc7bf58f9e0209b",
       "coloredPath": "assets/coloring/colored/vehicules-terre/107-le-kart-de-course-existing-vehicules-39-png-colored.svg",
-      "coloredSha256": "f90645ede77a7015b20e1bb0474a8548b19c781d69b7194f1786da6c0ed2989d",
+      "coloredSha256": "eec0c13eb55216421d2a603fe26471cf4c7b31a69e4e135c8bf40bff97a7a092",
       "format": "svg"
     },
     {
@@ -2030,7 +2030,7 @@
       "sourceName": "existing-vehicules-40.png",
       "sha256": "343c1616024d48c7ce76ac01247edc0376dd3e5b20051ce30c03ae95843a77ca",
       "coloredPath": "assets/coloring/colored/vehicules-terre/108-le-camion-de-safari-existing-vehicules-40-png-colored.svg",
-      "coloredSha256": "7be6623b21681162fe889ed951c1d933d3ee65ffa3cf26fcb2a491ff6a65db8d",
+      "coloredSha256": "1332295a4881140b0088fa7c2e8fb416e9b5ae7e207beca4a97bee893fee180e",
       "format": "svg"
     },
     {
@@ -2050,7 +2050,7 @@
       "sharpnessBefore": 15.471,
       "sharpnessAfter": 19.195,
       "coloredPath": "assets/coloring/colored/vehicules-terre/109-le-camion-de-livraison-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-006-pn-colored.svg",
-      "coloredSha256": "16e32b503b1fd50e786c056d20551dce5abf56332501afc22441c6a45449d8cc",
+      "coloredSha256": "b8a65c04f0e1d96c2bd60d739bccb39f93d065b7530a50336f7f362914290813",
       "format": "svg"
     },
     {
@@ -2070,7 +2070,7 @@
       "sharpnessBefore": 20.162,
       "sharpnessAfter": 26.234,
       "coloredPath": "assets/coloring/colored/vehicules-terre/110-la-trottinette-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-006--colored.svg",
-      "coloredSha256": "608db78c740b2e34f0006dd8a394fab3aa46c873c22a5fe39f39bc26806b7ac1",
+      "coloredSha256": "10522baac970fb0fdde7619b8ded40c1e3cd9d7ad9b1c9f11e5bf300501bf8d9",
       "format": "svg"
     },
     {
@@ -2090,7 +2090,7 @@
       "sharpnessBefore": 44.214,
       "sharpnessAfter": 55.806,
       "coloredPath": "assets/coloring/colored/vehicules-terre/111-le-camion-de-pompiers-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-005--colored.svg",
-      "coloredSha256": "c1d940782ace55235b7de01172bc70e3b97987f65ee15a0aa3a64a863b571ec9",
+      "coloredSha256": "9ba788564adce7ad140814cba259b40b1f4272d6ceba8242ccf927a29a480955",
       "format": "svg"
     },
     {
@@ -2110,7 +2110,7 @@
       "sharpnessBefore": 41.155,
       "sharpnessAfter": 51.693,
       "coloredPath": "assets/coloring/colored/vehicules-terre/112-le-tracteur-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-006--colored.svg",
-      "coloredSha256": "8bf4b4388195c656587f0e16a4f5068828427b711565dbf7e5b2a003ae0901cb",
+      "coloredSha256": "c425d70b54500d8586255ac3cc65c514ab5be7fd5844e187c90e8ef7cda0c284",
       "format": "svg"
     },
     {
@@ -2130,7 +2130,7 @@
       "sharpnessBefore": 53.403,
       "sharpnessAfter": 68.327,
       "coloredPath": "assets/coloring/colored/vehicules-terre/113-lambulance-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-005--colored.svg",
-      "coloredSha256": "421a973086bf008effc76e5e64c0072a9ecee2d61aab6a9da54ace5c623f85fc",
+      "coloredSha256": "c16307d15aeea25c2c9620a83279b8a134348f7c71643b5ac8437d6f8c67cf50",
       "format": "svg"
     },
     {
@@ -2150,7 +2150,7 @@
       "sharpnessBefore": 33.391,
       "sharpnessAfter": 41.038,
       "coloredPath": "assets/coloring/colored/vehicules-terre/114-la-moto-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-006--colored.svg",
-      "coloredSha256": "b9a32769c9fe2508c9278632316af68d2da60277ff290516554aab4e47454cdd",
+      "coloredSha256": "f2d703407b44966e102b4f56f10bdd7d626eca62eee6d93b57be1b8856fa7840",
       "format": "svg"
     },
     {
@@ -2170,7 +2170,7 @@
       "sharpnessBefore": 41.166,
       "sharpnessAfter": 52.349,
       "coloredPath": "assets/coloring/colored/vehicules-terre/115-le-bulldozer-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-008--colored.svg",
-      "coloredSha256": "2afb4a9436e477fa2d94103c5a4b9b3cbd4a51dcb547d2c3ba53718f4b89657b",
+      "coloredSha256": "dc9f1697e1cc37cccbf6ea8647865ecb93eba2d7a3e708889eeee90adf1ec11e",
       "format": "svg"
     },
     {
@@ -2190,7 +2190,7 @@
       "sharpnessBefore": 32.102,
       "sharpnessAfter": 42.08,
       "coloredPath": "assets/coloring/colored/vehicules-terre/116-le-taxi-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-005--colored.svg",
-      "coloredSha256": "230feb93f098a6496243003f14533df199bff9a78fecbcea2e8fcdc50b8105a2",
+      "coloredSha256": "73ae9bf76f0491bfa64c06236fbe08c84e39c72a183bdee28555571e76607a50",
       "format": "svg"
     },
     {
@@ -2210,7 +2210,7 @@
       "sharpnessBefore": 30.499,
       "sharpnessAfter": 38.171,
       "coloredPath": "assets/coloring/colored/vehicules-terre/117-le-tramway-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-006--colored.svg",
-      "coloredSha256": "ad7e77a39fb0ac3becc4aa41e912279e33938420fbe9662c26b462b78cada455",
+      "coloredSha256": "a27fcd4375cb274ae10a402282926733a1d246b962eaa159b574487285bcdb34",
       "format": "svg"
     },
     {
@@ -2230,7 +2230,7 @@
       "sharpnessBefore": 28.78,
       "sharpnessAfter": 35.438,
       "coloredPath": "assets/coloring/colored/vehicules-terre/118-la-jeep-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-007--colored.svg",
-      "coloredSha256": "bb5237a246c9bcf290ac8c5aa12aaa54e68a76f23e5ee8c53ef2042d08d42f51",
+      "coloredSha256": "7a8e7e139d395465fdcc4029f99e3059021035e66b88f993c29be07be295759c",
       "format": "svg"
     },
     {
@@ -2250,7 +2250,7 @@
       "sharpnessBefore": 40.336,
       "sharpnessAfter": 50.418,
       "coloredPath": "assets/coloring/colored/vehicules-terre/119-le-pick-up-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-005--colored.svg",
-      "coloredSha256": "934628d12e5aa0f1ef878af7d47ddbb9916b1b5d1a079f945f090a3466c384e1",
+      "coloredSha256": "8889938bdde71e8c40b92a239bb40fd170e4adced42144a1b1521f5b9c80efac",
       "format": "svg"
     },
     {
@@ -2270,7 +2270,7 @@
       "sharpnessBefore": 36.907,
       "sharpnessAfter": 46.928,
       "coloredPath": "assets/coloring/colored/vehicules-terre/120-le-bus-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-006--colored.svg",
-      "coloredSha256": "45a6fd7e09399d50e9d3d8bd509e3efbead9c5a145e35b906f2114375d139581",
+      "coloredSha256": "6a91891861e4bcbe0ec626b195877b3d4b716216da9630550a4bb0f94bc8e312",
       "format": "svg"
     },
     {
@@ -2288,7 +2288,7 @@
       "sourceName": "existing-vehicules-25.png",
       "sha256": "094bbfa29673d6962cc24194ebb24f94419f94f59377ffc5a30ab14d53a18f9c",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/121-la-pirogue-existing-vehicules-25-png-colored.svg",
-      "coloredSha256": "dc925a2711bc29788bff626f12a4fa57fdebb95c13a6cab715a17f62b26a52db",
+      "coloredSha256": "67437a36258faa9543656dfe2eb52d5ea7d5d01a0e23dd19afd236da41e2b8e1",
       "format": "svg"
     },
     {
@@ -2306,7 +2306,7 @@
       "sourceName": "existing-vehicules-26.png",
       "sha256": "4e7f3890245fd3a5d3200ecbb2dc2e1ac9d0e47179960b9b02e272b928e2ca18",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/122-le-voilier-existing-vehicules-26-png-colored.svg",
-      "coloredSha256": "743095d3dca676872d3a53cbec243665ee328751e91cebf6f15711a6803fbcb7",
+      "coloredSha256": "fec4c6d1e4ee4b6ff6a671f07f972dcb51b770623eb71a891828b840e5ae0f32",
       "format": "svg"
     },
     {
@@ -2324,7 +2324,7 @@
       "sourceName": "existing-vehicules-27.png",
       "sha256": "c082c6437dfdd984cb78c543bd3e86a1a9d67caaeab93740e6f772810afa2a26",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/123-le-bateau-de-peche-existing-vehicules-27-png-colored.svg",
-      "coloredSha256": "8a5f75c5bd746bba8169cb014563c3d28909559e02ddb185f9769ef4b000e725",
+      "coloredSha256": "a727b43c189f3560e58a520f11251af9fa5e2fd491e33b87015d43fd996461d5",
       "format": "svg"
     },
     {
@@ -2342,7 +2342,7 @@
       "sourceName": "existing-vehicules-28.png",
       "sha256": "ecc582fcd297f20612ebe9f86664832c6526d055914eff873639863deef0b290",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/124-le-ferry-existing-vehicules-28-png-colored.svg",
-      "coloredSha256": "3f8c6e52766039c7574bcf478529b9e25efb654f65178f520ac24d3d63d9b0d1",
+      "coloredSha256": "114a636f2848b64de8f62948786c460e9a98b291fd2531150855777309326d3c",
       "format": "svg"
     },
     {
@@ -2360,7 +2360,7 @@
       "sourceName": "existing-vehicules-29.png",
       "sha256": "8af685044ab246b691f540d8be642cf7831eebec7146143c0ffa1bd9a1ebf689",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/125-le-sous-marin-existing-vehicules-29-png-colored.svg",
-      "coloredSha256": "5c8d952a1f231218506a1f5d4c4bf8748e5f227b9414badb3388536c9e00c52b",
+      "coloredSha256": "c3398845b1bb76f787130aa68d88a64a306efdc780f2e2cc59c526061018ad4c",
       "format": "svg"
     },
     {
@@ -2378,7 +2378,7 @@
       "sourceName": "existing-vehicules-30.png",
       "sha256": "354fa76ab3e05f317a418f9473ae6599d88824cd9fbc2e504dd881ae9175e418",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/126-lhydravion-existing-vehicules-30-png-colored.svg",
-      "coloredSha256": "44b2445bd21507a87b00dd4dbaba8dd608f98a375d01534e6b2cb12d61c094bc",
+      "coloredSha256": "2a0298c94f517b091c651a4498444d8ce75862b4c60b0d4c151cc66c2c872613",
       "format": "svg"
     },
     {
@@ -2396,7 +2396,7 @@
       "sourceName": "existing-vehicules-31.png",
       "sha256": "5a302dd5533218defe552c49753f335666d0ddcfc5b05e48cbb9dda588298f2e",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/127-lavion-de-ligne-existing-vehicules-31-png-colored.svg",
-      "coloredSha256": "7b08572ff95520146502aa9e23c9068cc33f00fe27411cdd7d402122eaad02d4",
+      "coloredSha256": "7f316dd480903285b400008bfb6d1d4d584d5fca6a50bfd7a10382de897cadff",
       "format": "svg"
     },
     {
@@ -2414,7 +2414,7 @@
       "sourceName": "existing-vehicules-32.png",
       "sha256": "bbb6a46ab13a9a004232ffb82f20a02e98a3ec2a7de4cc2d6d6b6542a627383e",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/128-le-petit-avion-existing-vehicules-32-png-colored.svg",
-      "coloredSha256": "e36e53f13b8cc350e759b034aa9f1f9d3c315d6d27f5f81864ef1bef7d8fbcbf",
+      "coloredSha256": "b9833c7d299dcd03f1d839d687d4de69bbaed710e16402e37c58dc9e21ec017f",
       "format": "svg"
     },
     {
@@ -2432,7 +2432,7 @@
       "sourceName": "existing-vehicules-33.png",
       "sha256": "5478f96bd2a3fe10926fc68b004fcbf7f801e5722d97f0c47389546de6ad60a8",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/129-lhelicoptere-existing-vehicules-33-png-colored.svg",
-      "coloredSha256": "df2513bbe0fc43f5d0968fd4c09ecef1e613cf24b8fa170a6bbb69253e1efa6b",
+      "coloredSha256": "ec4d09b0d3a1769084a41c25b49e7ea7b69554d013d485c16ee4046306efa5a7",
       "format": "svg"
     },
     {
@@ -2450,7 +2450,7 @@
       "sourceName": "existing-vehicules-34.png",
       "sha256": "84528b936dd390d006bd00902d7e7ac29a3ffa621b9efda461f095b1926921ab",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/130-la-montgolfiere-existing-vehicules-34-png-colored.svg",
-      "coloredSha256": "79dbda03cbd2e20d0121e479a2c6febeddcbe0b3f9617d5d79a28cf75cdcc13a",
+      "coloredSha256": "9a09d2d665e13d92c6c0e8cec04483308dc1c01865f252a09b059b8db81b46bb",
       "format": "svg"
     },
     {
@@ -2468,7 +2468,7 @@
       "sourceName": "existing-vehicules-35.png",
       "sha256": "0084b0f13946b5dc19abfaedec28c8a2714867a4a280ce1676b1aa9f1abc260e",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/131-la-fusee-existing-vehicules-35-png-colored.svg",
-      "coloredSha256": "a99036db957077ae77382bfc3680ef3db23697ba5e0ff0b61af3832046973ab3",
+      "coloredSha256": "88e1f053c30cfa53f809b1900d42a3b436ed45b9488da519cce6f605c9251258",
       "format": "svg"
     },
     {
@@ -2486,7 +2486,7 @@
       "sourceName": "existing-vehicules-36.png",
       "sha256": "704e16c50bbd1728df2a5d70c62d5c2d3209de969b4b5c58e0aa3e41a7535eba",
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/132-le-rover-spatial-existing-vehicules-36-png-colored.svg",
-      "coloredSha256": "8593d063ebcb20f7c18798aa316185649773015e447d4e264892854c2a531bb6",
+      "coloredSha256": "2d2e4449ed6557ebbf1c4db90ae149823d8f65099c027d3765872075c86085db",
       "format": "svg"
     },
     {
@@ -2506,7 +2506,7 @@
       "sharpnessBefore": 19.78,
       "sharpnessAfter": 25.346,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/133-lhelicoptere-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-001-pn-colored.svg",
-      "coloredSha256": "4cbc0f6d6e57f4aea50b9130930a171bc8f85a401a56ace5a78d93a6e3824594",
+      "coloredSha256": "c0ee718c49d4f95d70fa72b4b21c5939edd4413fec6c5f93c5880fb78a00e43e",
       "format": "svg"
     },
     {
@@ -2526,7 +2526,7 @@
       "sharpnessBefore": 16.863,
       "sharpnessAfter": 20.965,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/134-le-voilier-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-004-pn-colored.svg",
-      "coloredSha256": "d94e45bcefcfae94098f82d24dea611dfc8248d4d10943965d2f15b91ecd2932",
+      "coloredSha256": "4d4c16dc953b50df4965013368a956eeae2456ed58ec5b3bdf84d7e53b2a4f2a",
       "format": "svg"
     },
     {
@@ -2546,7 +2546,7 @@
       "sharpnessBefore": 14.291,
       "sharpnessAfter": 17.712,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/135-lavion-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-016-pn-colored.svg",
-      "coloredSha256": "35039fd0dafec9a433a4c27622bb1fd5b93696869f36f592df258d2cbcde3e22",
+      "coloredSha256": "96774ffe591192c326db4f7cd890647353b61df35623ab6d3422b8eb72a3169b",
       "format": "svg"
     },
     {
@@ -2566,7 +2566,7 @@
       "sharpnessBefore": 14.247,
       "sharpnessAfter": 17.361,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/136-lhelicoptere-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-001-pn-colored.svg",
-      "coloredSha256": "62300d9dc81ecc8d1bc3cb612d77db050a68eb95b5fa335658395384baf46b49",
+      "coloredSha256": "377fba26402b486c55a546fd87b85558323faacc209c7f33cfadf344bf4b2dd5",
       "format": "svg"
     },
     {
@@ -2586,7 +2586,7 @@
       "sharpnessBefore": 11.809,
       "sharpnessAfter": 14.484,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/137-le-voilier-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-002-pn-colored.svg",
-      "coloredSha256": "57d1209ccf6dcd515c29925b7112e866e5112b1e5c35b4b914f40d518b35e7c1",
+      "coloredSha256": "49948d39ea596aa7e90f4fa94283a11756eadca24f9ff61c239f5fbb114e1699",
       "format": "svg"
     },
     {
@@ -2606,7 +2606,7 @@
       "sharpnessBefore": 23.56,
       "sharpnessAfter": 30.192,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/138-le-bateau-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-004--colored.svg",
-      "coloredSha256": "aaeee3f92de1cb73d55ab68d736ee80decb0e9aa3addfac04cc80fc9d6d743f2",
+      "coloredSha256": "7bff7e22231f1df490e86d2186f0ad0d981adac00a6b8cb5691aff4aaa8df43d",
       "format": "svg"
     },
     {
@@ -2626,7 +2626,7 @@
       "sharpnessBefore": 37.455,
       "sharpnessAfter": 45.639,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/139-lhelicoptere-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-005--colored.svg",
-      "coloredSha256": "fc59160dcba598d927fa0375d7306bcc1f0925ee29b9869528b03edad3c15383",
+      "coloredSha256": "1283092220f518fcc7345199af4cf4a9b4b92daec0b5c18ce3be7a17e6735fd6",
       "format": "svg"
     },
     {
@@ -2646,7 +2646,7 @@
       "sharpnessBefore": 21.562,
       "sharpnessAfter": 28.553,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/140-la-montgolfiere-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-008--colored.svg",
-      "coloredSha256": "0500d0e3d385bb3524d8ece8164612bfd4b37171ed770fb090af6c3f0a9ca07d",
+      "coloredSha256": "09ed93fa680d0119d5300b6c0869d108da75edd5a769930155394c4ef4de0573",
       "format": "svg"
     },
     {
@@ -2666,7 +2666,7 @@
       "sharpnessBefore": 20.29,
       "sharpnessAfter": 25.422,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/141-le-canoe-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-008--colored.svg",
-      "coloredSha256": "d8f6efa5000dcbd8daeae691f8624ed147e922379e721a865b976e5fb694fa73",
+      "coloredSha256": "9d24f313185235e081f5ceb19d3c76109dd5b717d0fdb88d995ae5bb7ac73a29",
       "format": "svg"
     },
     {
@@ -2686,7 +2686,7 @@
       "sharpnessBefore": 33.262,
       "sharpnessAfter": 42.246,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/142-la-barque-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-007--colored.svg",
-      "coloredSha256": "5296c1b58d8863e9d2bfe67da1e2ca974e4dc947eaad25a661f82e1b6544f67b",
+      "coloredSha256": "4235e139110f980afeab917cb627b6a559834919a78dde88985425a25e2e6929",
       "format": "svg"
     },
     {
@@ -2706,7 +2706,7 @@
       "sharpnessBefore": 32.017,
       "sharpnessAfter": 39.751,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/143-le-dirigeable-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-008--colored.svg",
-      "coloredSha256": "2dbb1a123f157301a4f242358b2d419b22ab64dea4eec8098354a777da6993e5",
+      "coloredSha256": "21c3ecb6936fd15e5f516cd873d921036ed5870742ef08c2f34c6ac6897fbcba",
       "format": "svg"
     },
     {
@@ -2726,7 +2726,7 @@
       "sharpnessBefore": 29.75,
       "sharpnessAfter": 37.203,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/144-lhelicoptere-de-secours-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-008--colored.svg",
-      "coloredSha256": "ed691b73118543a8ad4c068d48a5a6d34ea27a0523699e8260d8b327bc2529ab",
+      "coloredSha256": "706e1d0618370f5f22f9c59322e8af231f6e073160c1f32aea46a1667cec40cd",
       "format": "svg"
     },
     {
@@ -2746,7 +2746,7 @@
       "sharpnessBefore": 21.136,
       "sharpnessAfter": 28.554,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/145-lavion-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-008--colored.svg",
-      "coloredSha256": "7f33d3c892779be93456842598d9eae8bd3033c63887a56e67a2394fca2ef773",
+      "coloredSha256": "e29137611c5671d5df0763ba42b315c9548a25e58cb55093f106eadf3fa21360",
       "format": "svg"
     },
     {
@@ -2766,7 +2766,7 @@
       "sharpnessBefore": 26.751,
       "sharpnessAfter": 35.843,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/146-le-voilier-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-010--colored.svg",
-      "coloredSha256": "730c75b1e7d77c8946ac6c9d405dfe7945b433d80ce9efe1f21c3073edae4ccc",
+      "coloredSha256": "0f6b0b51e4d5f3252599340529bf0f9f053ff851fe2fe5d09deef3b6d8c11953",
       "format": "svg"
     },
     {
@@ -2786,7 +2786,7 @@
       "sharpnessBefore": 28.934,
       "sharpnessAfter": 40.617,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/147-la-montgolfiere-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-011--colored.svg",
-      "coloredSha256": "ac496a1ece06c85836b900084d5cbcfd8745fc892414743411df81d3443c0cd8",
+      "coloredSha256": "9f4135bf31c097cf31dbb7dbcd66a13dbbe652c9df90bb6446a5f6197401555e",
       "format": "svg"
     },
     {
@@ -2806,7 +2806,7 @@
       "sharpnessBefore": 21.515,
       "sharpnessAfter": 27.209,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/148-lavion-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-004--colored.svg",
-      "coloredSha256": "0a316d3f47bbb21315101818cc970f8e33e090213dfcc1406910d635a463178a",
+      "coloredSha256": "9d1bc44deb5c1bb9a13e16bdcf8b6656af44c75d5de725a6f182fc2a524e8b80",
       "format": "svg"
     },
     {
@@ -2826,7 +2826,7 @@
       "sharpnessBefore": 18.776,
       "sharpnessAfter": 24.241,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/149-le-voilier-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-007--colored.svg",
-      "coloredSha256": "f79ab7bd014b9dc56507ec775e389f36db722a235adf0a1ad59452226774317b",
+      "coloredSha256": "13e4d79ff8484750fdfa7269874c6b5587a7d7eca7d8a11a427ca040b88cee06",
       "format": "svg"
     },
     {
@@ -2846,7 +2846,7 @@
       "sharpnessBefore": 18.087,
       "sharpnessAfter": 23.882,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/150-la-montgolfiere-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-015--colored.svg",
-      "coloredSha256": "c012cf577057a2e85d8963743c1efb75a700307d8b7ba13c57ee2150596257b8",
+      "coloredSha256": "2e8d98d9527c21560e01edc3df071723a9024646ff00a5554975736686370a9f",
       "format": "svg"
     },
     {
@@ -2866,7 +2866,7 @@
       "sharpnessBefore": 22.083,
       "sharpnessAfter": 28.396,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/151-lavion-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-013--colored.svg",
-      "coloredSha256": "490067cca77426a3ed3b899e36659936599b4a2a2043e88a0c7657ce14dee79d",
+      "coloredSha256": "6b627d3894fb7cfe695fee2482de08c9fc7ec12ccc7722582a696f7d65c1889d",
       "format": "svg"
     },
     {
@@ -2886,7 +2886,7 @@
       "sharpnessBefore": 19.788,
       "sharpnessAfter": 26.277,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/152-la-fusee-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-014--colored.svg",
-      "coloredSha256": "9fd52b9fd84474b962fffa9872665bbed6a03aafaa203495c4f2f173865f0d77",
+      "coloredSha256": "7963f6fd9b938819ce0e7e778702ffc4ead02e5f84a1e84e6b7f0669367b5838",
       "format": "svg"
     },
     {
@@ -2906,7 +2906,7 @@
       "sharpnessBefore": 26.759,
       "sharpnessAfter": 35.858,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/153-le-bateau-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-015--colored.svg",
-      "coloredSha256": "b38ae8977ba8c6a5aac5fcf9b6347e5d2eb75ac5334202be08ce5c7aed6da77a",
+      "coloredSha256": "4b18c585bd4b72d907bc3c2697f12116899cc3e03d33115811ffb926e402a028",
       "format": "svg"
     },
     {
@@ -2926,7 +2926,7 @@
       "sharpnessBefore": 21.114,
       "sharpnessAfter": 28.925,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/154-la-montgolfiere-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-019--colored.svg",
-      "coloredSha256": "4366c0108fa4d2c4112e68572bba7a3fd25dbfacfefb5b7d9e4af013eb9eb770",
+      "coloredSha256": "185e6d34659cab07dcb79546bc8649aee442bac0285e3de6418ca19b53996644",
       "format": "svg"
     },
     {
@@ -2946,7 +2946,7 @@
       "sharpnessBefore": 27.703,
       "sharpnessAfter": 35.428,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/155-lhelicoptere-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-012--colored.svg",
-      "coloredSha256": "95a699449a9012799261b284778af9b50e151b1a5aae1c2af4d6ad2e003412eb",
+      "coloredSha256": "eb669bc9ba02176cf944013ef55ab4a2d6cd653833713d20932ef9bc85e1af21",
       "format": "svg"
     },
     {
@@ -2966,7 +2966,7 @@
       "sharpnessBefore": 12.558,
       "sharpnessAfter": 15.608,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/156-le-parachute-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-005--colored.svg",
-      "coloredSha256": "23d646c3754f937bf3973faf9757c33337b6df344df58730f7ee668ac3a3dcab",
+      "coloredSha256": "f6589216907d5ecba085d8e86792ab3be0ec8aa165c3019b09ce5d295d94f1f5",
       "format": "svg"
     },
     {
@@ -2986,7 +2986,7 @@
       "sharpnessBefore": 13.476,
       "sharpnessAfter": 16.692,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/157-la-fusee-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-008--colored.svg",
-      "coloredSha256": "9cc1f14e2078f9f037b90d51e8b9ff011c63fcca05553e128cb7a14ed5873083",
+      "coloredSha256": "154afc411e7eb4a9d59265fdacf6aab37e282edd7df3c916c13f65f3b37e44da",
       "format": "svg"
     },
     {
@@ -3006,7 +3006,7 @@
       "sharpnessBefore": 12.386,
       "sharpnessAfter": 15.838,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/158-la-montgolfiere-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-009--colored.svg",
-      "coloredSha256": "17eea39037936a79b741e6c2e0149b99a9b0d44baaa6d4339f96c78699bf2d8d",
+      "coloredSha256": "b7537730a8f74d70ec40e3aa3299cfaaa523edf94d52dd8773380ad7f101385f",
       "format": "svg"
     },
     {
@@ -3026,7 +3026,7 @@
       "sharpnessBefore": 10.622,
       "sharpnessAfter": 14.398,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/159-lavion-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-016--colored.svg",
-      "coloredSha256": "9a8bc9ff199f35c4491fb33afcd717094fcb1f7e01da56d1bef64de7e48050de",
+      "coloredSha256": "cfadffbd380e435c9baa0f0d52191f4cc4265decca9c209bfe56ff91f2eb4abe",
       "format": "svg"
     },
     {
@@ -3046,7 +3046,7 @@
       "sharpnessBefore": 11.654,
       "sharpnessAfter": 14.252,
       "coloredPath": "assets/coloring/colored/vehicules-air-eau/160-le-bateau-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-017--colored.svg",
-      "coloredSha256": "7a482a1217313a1a86cb430b9ffd0c031faf078d3c7803e23f583831230740d0",
+      "coloredSha256": "0258fe088a5fa24f50ae747dba239ffea53c1eba98014d059f21c4ac7ce18833",
       "format": "svg"
     },
     {
@@ -3064,7 +3064,7 @@
       "sourceName": "existing-fruits-01.png",
       "sha256": "4768c176cd742bf39e790c1c34275749fa6c194f1828b315bdc90e04853602be",
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/161-la-pomme-existing-fruits-01-png-colored.svg",
-      "coloredSha256": "52db9eabf94ee932b4bcedf0c7865f203ae1fd2feaae3ce22e6ec32ca2059b05",
+      "coloredSha256": "cf55f873f370e0de5fa2b829a3df2eb3003944ee3e03b2fe98822dea39b4ebd1",
       "format": "svg"
     },
     {
@@ -3082,7 +3082,7 @@
       "sourceName": "existing-fruits-02.png",
       "sha256": "d20f7a3011c63c7ba0a00801e8b7e8233b77be22a8cdedfe4c81f4df700af2db",
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/162-la-poire-existing-fruits-02-png-colored.svg",
-      "coloredSha256": "fa4bb24d4d6338f34651add477fd1fce2262b786f5189b923cb0c16a3cdf9e8c",
+      "coloredSha256": "3d8833ffd707f15c0712dd27462aa7be24f991159d5d6292dbc429c66d360900",
       "format": "svg"
     },
     {
@@ -3100,7 +3100,7 @@
       "sourceName": "existing-fruits-03.png",
       "sha256": "797af03aa15b091dee89f91ad904e5228803cab87df72fdfa6359df11aa82287",
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/163-la-grappe-de-raisin-existing-fruits-03-png-colored.svg",
-      "coloredSha256": "d03397fa21a7d2b78694264623675929090a037be499444d29553f4e9b4277ca",
+      "coloredSha256": "bc8345fb57e7d7bdf9a9a81c77dfeec10f07f605a89c343ea4407e8b65565410",
       "format": "svg"
     },
     {
@@ -3118,7 +3118,7 @@
       "sourceName": "existing-fruits-04.png",
       "sha256": "5676a35e6b8a83d4327d0c8aeb264da9925421b92b96565b662e3fa6e74c2b26",
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/164-les-cerises-existing-fruits-04-png-colored.svg",
-      "coloredSha256": "aec9b6c710aa8aac600f24a554c0e93ec110ec104bc7c6407b9e56c611b12c21",
+      "coloredSha256": "c6a79a16acec0ba6e03ae23fe5701801874845071dfdf35596d5585b5528a26d",
       "format": "svg"
     },
     {
@@ -3138,7 +3138,7 @@
       "sharpnessBefore": 14.121,
       "sharpnessAfter": 17.602,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/165-la-fraise-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-003-pn-colored.svg",
-      "coloredSha256": "95064f8ae5a491b91d70355cbfaeee734a12c246ecb789bbd3fdabc77302e895",
+      "coloredSha256": "386522df35a716930592c086e93e3f506fff56f674d97b6085ef262ac3d9b6bf",
       "format": "svg"
     },
     {
@@ -3158,7 +3158,7 @@
       "sharpnessBefore": 12.116,
       "sharpnessAfter": 14.966,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/166-les-bananes-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-014-pn-colored.svg",
-      "coloredSha256": "b85a8c3afba902fb37bfc3ecd705b2d2379ab0cfdcedfe2963e17eedd5262c15",
+      "coloredSha256": "bbce02fdc29caebf6d8a32d419baa03dd7aaf8ea716ef63d9a38c74105cd24cf",
       "format": "svg"
     },
     {
@@ -3178,7 +3178,7 @@
       "sharpnessBefore": 15.726,
       "sharpnessAfter": 19.609,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/167-la-glace-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-020-pn-colored.svg",
-      "coloredSha256": "bf4ae01077143f40280ce35a6608b8b646ab83fa3830e5eb75bd6b0297409d7f",
+      "coloredSha256": "074b66bd88ba946cfef99c4b732b5b18cdb6819fab45e52c444a20360f9771d7",
       "format": "svg"
     },
     {
@@ -3198,7 +3198,7 @@
       "sharpnessBefore": 8.507,
       "sharpnessAfter": 10.031,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/168-les-bananes-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-007-pn-colored.svg",
-      "coloredSha256": "3d4fd8f22b6e08074c85d2bb8c18a31ee8d0c65b748b04defe51ec8b9987cf4d",
+      "coloredSha256": "a85d6a6150a3b31ec9ff8969bf9a063aab64658badf3f6c9282ade85525a706a",
       "format": "svg"
     },
     {
@@ -3218,7 +3218,7 @@
       "sharpnessBefore": 21.622,
       "sharpnessAfter": 27.415,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/169-le-raisin-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-007--colored.svg",
-      "coloredSha256": "22aae8405d4dd39fe511e4b6e195ec0d255df768881276b25c53df5fd5b56493",
+      "coloredSha256": "a828d645c1cab44cd616368e660434f0e30f89bccad190a23ffe38db8b1844f6",
       "format": "svg"
     },
     {
@@ -3238,7 +3238,7 @@
       "sharpnessBefore": 19.232,
       "sharpnessAfter": 24.454,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/170-le-mais-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-008--colored.svg",
-      "coloredSha256": "d9ec9d770d0c39ceb9084cf4fe4f2a4ab81e01da0ff43f23e3c99c7f76d268c2",
+      "coloredSha256": "0f790eb1547440d8ff5454a2c1fef3f6e233ced3a83d46cb646e1b72bdd58953",
       "format": "svg"
     },
     {
@@ -3258,7 +3258,7 @@
       "sharpnessBefore": 13.789,
       "sharpnessAfter": 17.619,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/171-la-poire-extract-005-chatgpt-image-jul-17-2026-07-37-28-pm-2-009--colored.svg",
-      "coloredSha256": "a26e04c2cc697e167d40ad8d17b40a5aa92757ed1094d602f67f96d8c1733a4f",
+      "coloredSha256": "4c8a51f88e112ff68f2d5058168add9a58ebff76c095d24ee353af857517a6ac",
       "format": "svg"
     },
     {
@@ -3278,7 +3278,7 @@
       "sharpnessBefore": 13.324,
       "sharpnessAfter": 16.809,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/172-lorange-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-009--colored.svg",
-      "coloredSha256": "fbd90874f1ec65d4c410424c1d7862d945268f27fc7261124aea4a30e8605926",
+      "coloredSha256": "0f238efa47496a8343b011c4853cb6e793fd4af8fcced25a3f3ae0498ba29d98",
       "format": "svg"
     },
     {
@@ -3298,7 +3298,7 @@
       "sharpnessBefore": 24.691,
       "sharpnessAfter": 29.768,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/173-la-pasteque-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-010--colored.svg",
-      "coloredSha256": "7a22aaab5559ece39abe6f3c9bf660166020344c5414c66d9385f60c42595b96",
+      "coloredSha256": "f59bd8e61fd328ebc55a8d6c78d43ae229d43c43b6d7c64c58dc24d4b9598a95",
       "format": "svg"
     },
     {
@@ -3318,7 +3318,7 @@
       "sharpnessBefore": 16.275,
       "sharpnessAfter": 20.381,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/174-le-brocoli-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-011--colored.svg",
-      "coloredSha256": "9b4896a91150fe4c5815e68cb45aedf154fe95105ea37680485c617d45e05d60",
+      "coloredSha256": "748af2ccce0126cec35c3588b878f9e6356909cdccae8620e5990e83c2f41489",
       "format": "svg"
     },
     {
@@ -3338,7 +3338,7 @@
       "sharpnessBefore": 13.032,
       "sharpnessAfter": 16.045,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/175-la-tomate-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-012--colored.svg",
-      "coloredSha256": "6bc8859b383a65f6aea8bf6b298ec6450aa3c1798847191d9e880653f0ef9bd9",
+      "coloredSha256": "4544f3041779d42bcca6f63e9af62e6618d2b5b445ef6bc965556a02a3e6eb92",
       "format": "svg"
     },
     {
@@ -3358,7 +3358,7 @@
       "sharpnessBefore": 11.081,
       "sharpnessAfter": 13.722,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/176-la-peche-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-009--colored.svg",
-      "coloredSha256": "3974ec40e205386fb8b7bf716ee99183c7c616b5aed3262ca64a93be7ce79d5b",
+      "coloredSha256": "2e82a4c8b73ab80c9948e392a8ef8418410271302f5501d42c384bb94ddce62b",
       "format": "svg"
     },
     {
@@ -3378,7 +3378,7 @@
       "sharpnessBefore": 9.705,
       "sharpnessAfter": 11.868,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/177-le-citron-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-010--colored.svg",
-      "coloredSha256": "dcdd48745b5a65091963b9f4debae799b9d167d171e46ad1eeae2656050b3c9c",
+      "coloredSha256": "5422771afb7b702269945b48620d4433150ded88746276e4d8020d4282d34353",
       "format": "svg"
     },
     {
@@ -3398,7 +3398,7 @@
       "sharpnessBefore": 13.863,
       "sharpnessAfter": 17.202,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/178-la-mangue-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-009--colored.svg",
-      "coloredSha256": "1b1a7b66119763c2c37a759782be680e751084135569f313dd4e9deddf8221c8",
+      "coloredSha256": "87fc1c3ab1df2a9d45139f3cef4cec4c8d28a0ec3b84f325d3aa4202e309bfe3",
       "format": "svg"
     },
     {
@@ -3418,7 +3418,7 @@
       "sharpnessBefore": 20.591,
       "sharpnessAfter": 26.029,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/179-la-noix-de-coco-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-010--colored.svg",
-      "coloredSha256": "7716a4096689e317997d346a2e3064fe8ffa36bfa5d6291fa38d4e6fe5e64aa7",
+      "coloredSha256": "252b613d7f67aebec6390259e307e0deb9925e61330b4f4c5b93c60969666637",
       "format": "svg"
     },
     {
@@ -3438,7 +3438,7 @@
       "sharpnessBefore": 26.807,
       "sharpnessAfter": 34.276,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/180-lavocat-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-009--colored.svg",
-      "coloredSha256": "2d9efbaa703b1d779c94658ceb60754e571e1f9ed893844dca6f2bc0b4b3de8c",
+      "coloredSha256": "86f2ad75dd47d1e0cb17f2ab7d2459fc537e44eba6c26b89e86b38e1337d834d",
       "format": "svg"
     },
     {
@@ -3458,7 +3458,7 @@
       "sharpnessBefore": 21.758,
       "sharpnessAfter": 27.003,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/181-les-myrtilles-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-010--colored.svg",
-      "coloredSha256": "9414a36b219760545e638a47574fa38a1d3741e1cf9730a1982ddb3a458b3705",
+      "coloredSha256": "d026b762b2d954c9759cd34793045af3d1fa5fe41087b30f3801d027fd6770e3",
       "format": "svg"
     },
     {
@@ -3478,7 +3478,7 @@
       "sharpnessBefore": 26.149,
       "sharpnessAfter": 32.502,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/182-la-grenade-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-009--colored.svg",
-      "coloredSha256": "41b8f3b758a063a117539035cf6f7f1e317a545e98f8e47a06c1dbcc072cda98",
+      "coloredSha256": "629a44b8ff927269e1c337e33c390633826f458143491ac221f18ada3362780e",
       "format": "svg"
     },
     {
@@ -3498,7 +3498,7 @@
       "sharpnessBefore": 28.228,
       "sharpnessAfter": 35.205,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/183-la-papaye-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-010--colored.svg",
-      "coloredSha256": "6f1d7e86383d9069c6285ca344bc850e7d180dc93cd877c76d4f6d03217ffd46",
+      "coloredSha256": "73ed80498264ab99f07e0ee960437f6f79134427a6268117615eecd367b154e7",
       "format": "svg"
     },
     {
@@ -3518,7 +3518,7 @@
       "sharpnessBefore": 24.04,
       "sharpnessAfter": 30.114,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/184-le-cupcake-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-017--colored.svg",
-      "coloredSha256": "a54f61793d5fba4a8edc4990425dbfd886a2867bdf2fe12ee2dc52c289707355",
+      "coloredSha256": "7a6d88a8144642782c68376604ec896207e88842f1e0f5da46e84d92835f0226",
       "format": "svg"
     },
     {
@@ -3538,7 +3538,7 @@
       "sharpnessBefore": 48.69,
       "sharpnessAfter": 62.187,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/185-la-figue-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-005-colored.svg",
-      "coloredSha256": "8ad42a970d6326b9fff322d012234e6c14aa6210a749e646531a38f3f0397717",
+      "coloredSha256": "44fb8f055d457d856fbd69df65264dcdc0dbc57c7d45e9e0f8e7d7202e03bfd1",
       "format": "svg"
     },
     {
@@ -3558,7 +3558,7 @@
       "sharpnessBefore": 22.034,
       "sharpnessAfter": 27.555,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/186-la-framboise-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-006-colored.svg",
-      "coloredSha256": "244806934ffdfb32bce1954960cd513a0654ae1e1342894a33f6e78d32295b8b",
+      "coloredSha256": "98085cd6ce47a2d95d807d6789bd8d4f0ee5544c819a941f74ba066d88136a78",
       "format": "svg"
     },
     {
@@ -3578,7 +3578,7 @@
       "sharpnessBefore": 21.106,
       "sharpnessAfter": 28.192,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/187-la-glace-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-009--colored.svg",
-      "coloredSha256": "ee8c2b39ee5600e4f7ba6dc18eb023ab613f2e1a4a3fdb79005a681e176a4423",
+      "coloredSha256": "1fbfe9692f8396a0d4691ebc36608f6ab4ad7097069dcfd461e6cac61feefa0b",
       "format": "svg"
     },
     {
@@ -3598,7 +3598,7 @@
       "sharpnessBefore": 20.608,
       "sharpnessAfter": 28.018,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/188-le-gateau-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-023--colored.svg",
-      "coloredSha256": "929e772cb5306583770a551cad418afd3e92cb81d8d0aed99a5fa1a498047729",
+      "coloredSha256": "5272f27a12c3b0377da5017c3e19a72d111293fe4c7f439df7f0caa2415c72b0",
       "format": "svg"
     },
     {
@@ -3618,7 +3618,7 @@
       "sharpnessBefore": 18.876,
       "sharpnessAfter": 23.306,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/189-la-pasteque-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-027--colored.svg",
-      "coloredSha256": "793dc66526c6557d86605ab4ba8d81693282f5f95660c25c319aa52025d3f325",
+      "coloredSha256": "6ba141cdf612ea177d80ea7f5f192fd0668fa9b6fbfc22b3791dd72b5e34ecbd",
       "format": "svg"
     },
     {
@@ -3638,7 +3638,7 @@
       "sharpnessBefore": 19.562,
       "sharpnessAfter": 23.25,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/190-la-glace-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-027--colored.svg",
-      "coloredSha256": "db7630a4eda6680939aa008b09e2e018965855a85fdf1bc47630639cd3de7ead",
+      "coloredSha256": "2efdcece5fda325101f2d1b8a79626990efc4b47c77cb23f4baa4d2faaffbe8b",
       "format": "svg"
     },
     {
@@ -3658,7 +3658,7 @@
       "sharpnessBefore": 11.392,
       "sharpnessAfter": 14.098,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/191-le-raisin-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-028--colored.svg",
-      "coloredSha256": "9c60c7b2338698ff145876a135b8b7071f9cdc4a826831848f7b26caade6e405",
+      "coloredSha256": "0ac63f93657a596bb42c6dcae8ecce2bd8a6da4537ab2a4be2da1b2f8779bf89",
       "format": "svg"
     },
     {
@@ -3678,7 +3678,7 @@
       "sharpnessBefore": 7.182,
       "sharpnessAfter": 9.933,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/192-la-pomme-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-017--colored.svg",
-      "coloredSha256": "62e5945b7fce97ab4c6e23fb4be0f2d4449c30433f01473b015a0cd7871b75bb",
+      "coloredSha256": "a95443a03df2e3323adb9f0483fccea152bab53c500df516b00a9c814845cafc",
       "format": "svg"
     },
     {
@@ -3698,7 +3698,7 @@
       "sharpnessBefore": 10.202,
       "sharpnessAfter": 12.826,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/193-les-bananes-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-018--colored.svg",
-      "coloredSha256": "355ae4b6b0a5c722f921205b00b60f1b8369bb6e14fdcdefbd1f3eb80a6b3c1d",
+      "coloredSha256": "1fe9edbd69606123f1ec9bdb231ca13748ce3715206e5bb9d950e8a5cdf92d0f",
       "format": "svg"
     },
     {
@@ -3718,7 +3718,7 @@
       "sharpnessBefore": 7.518,
       "sharpnessAfter": 8.875,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/194-la-glace-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-027--colored.svg",
-      "coloredSha256": "e5b31f1f73540b093c8988df9bc56c9e80e6ece39a94044286e1c60eafddef47",
+      "coloredSha256": "3cb9ba37cacfe3bb0ec56066bcf3a8565c031d3a08eeba619a331c4993925c08",
       "format": "svg"
     },
     {
@@ -3738,7 +3738,7 @@
       "sharpnessBefore": 11.234,
       "sharpnessAfter": 13.211,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/195-le-gateau-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-028--colored.svg",
-      "coloredSha256": "0d95d5dcbbc7da040c4f11553fcca8e1dd67e1db16b2a690b5dbf307b43ce60f",
+      "coloredSha256": "d29a1bc4222b0123fd8d22d63bf34bdf9ab25d322d4bfdaf49270c30efa3b651",
       "format": "svg"
     },
     {
@@ -3758,7 +3758,7 @@
       "sharpnessBefore": 9.155,
       "sharpnessAfter": 10.656,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/196-le-raisin-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-030--colored.svg",
-      "coloredSha256": "924404668b45a2655f4f4895f4ca75de283a7d12d57ad9e9e35f5f1854f045ac",
+      "coloredSha256": "debfb7f97467dd3d6b045a07450da8004f891a098d5b1424e17b7f5f04b96d11",
       "format": "svg"
     },
     {
@@ -3778,7 +3778,7 @@
       "sharpnessBefore": 12.08,
       "sharpnessAfter": 14.632,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/197-le-raisin-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-014--colored.svg",
-      "coloredSha256": "459719686b274cf78b6d37b517c4a1fb296c1f4f026408794693c9e4b63e022d",
+      "coloredSha256": "7598294245eeb1052b7a13308ef93c55b56919587e3487b4d1580436d1a7f105",
       "format": "svg"
     },
     {
@@ -3798,7 +3798,7 @@
       "sharpnessBefore": 5.589,
       "sharpnessAfter": 6.627,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/198-la-pomme-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-026--colored.svg",
-      "coloredSha256": "38ad69afda7e7739f53759f4035b6ea4924dcc872d6b548040c136446aaa83db",
+      "coloredSha256": "333e786de43d8824284dbbb19ba697e9008167940160dedd06ca0206751cc7b9",
       "format": "svg"
     },
     {
@@ -3818,7 +3818,7 @@
       "sharpnessBefore": 8.948,
       "sharpnessAfter": 10.467,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/199-le-raisin-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-027--colored.svg",
-      "coloredSha256": "088ced24243cd14330df68c07ac687d7f628ccdef36c991b96a7ba2e01c35a65",
+      "coloredSha256": "c741045d0e4a86be1cff609d6e6605a24922441dde4dd7d8909192aa44e7955b",
       "format": "svg"
     },
     {
@@ -3838,7 +3838,7 @@
       "sharpnessBefore": 9.379,
       "sharpnessAfter": 11.331,
       "coloredPath": "assets/coloring/colored/fruits-gourmandises/200-la-pasteque-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-028--colored.svg",
-      "coloredSha256": "7058e324ddc0871f64e06699bb8b2d4ba05fe34a1795530186a60a3e54d21745",
+      "coloredSha256": "28cb1cfdc529ea4f1de1571c0c2e5362d55e905e67cb43330e8fc83112ad1a70",
       "format": "svg"
     },
     {
@@ -3856,7 +3856,7 @@
       "sourceName": "existing-legumes-01.png",
       "sha256": "a6f3b2366978e5878e19b36990e0cbdf2294c2a5182a1ea511e98cccd67d7d28",
       "coloredPath": "assets/coloring/colored/nature-jardin/201-la-carotte-existing-legumes-01-png-colored.svg",
-      "coloredSha256": "c6f9481b2a87474ddc9a08b06dbee7246c9489f89f86290b8d88c17cf20aad5f",
+      "coloredSha256": "5b6c42a1363bc6db5f9600eddb1c725410a876e5be0f767740299d655c0fba06",
       "format": "svg"
     },
     {
@@ -3874,7 +3874,7 @@
       "sourceName": "existing-legumes-02.png",
       "sha256": "ceed8e5d5b64d26cd5bbe4924aa525cf3460eb44f99e2745cac1dc4d13c13683",
       "coloredPath": "assets/coloring/colored/nature-jardin/202-la-tomate-existing-legumes-02-png-colored.svg",
-      "coloredSha256": "9a9b892964a833a6578a46c0bafaa2f7779ce22d066e5b7c2366457976462d22",
+      "coloredSha256": "506f2b1417dc9e3ece2fbb532a66a419d26f80eb15c6ec1b66284ffd3beb27ed",
       "format": "svg"
     },
     {
@@ -3892,7 +3892,7 @@
       "sourceName": "existing-legumes-03.png",
       "sha256": "32ecf4ebd50bdd7c86168d0c01afa296b4409db05fcac030f54bc41c01b16f78",
       "coloredPath": "assets/coloring/colored/nature-jardin/203-laubergine-existing-legumes-03-png-colored.svg",
-      "coloredSha256": "80322cd7e60c0b46662cc580d98e8673d64e4638340e0137e05bf3a0c9221a88",
+      "coloredSha256": "7ba83a628f6a44c5e8f75e3826a894acb75ea2d021c8778334ce052a7beb0d6f",
       "format": "svg"
     },
     {
@@ -3910,7 +3910,7 @@
       "sourceName": "existing-legumes-04.png",
       "sha256": "fd2232f6f79866f65691597fb3ae151d86821a5a8837203b9ad0f68cc5d2d20f",
       "coloredPath": "assets/coloring/colored/nature-jardin/204-le-poivron-existing-legumes-04-png-colored.svg",
-      "coloredSha256": "742093fdade70e1706a61722e5689a04da83bdfc67706e58b74e08c12c11a08b",
+      "coloredSha256": "23e902edcffc201772c490de1d15bfec541e6304676f4ed40412d94b119e90ea",
       "format": "svg"
     },
     {
@@ -3928,7 +3928,7 @@
       "sourceName": "existing-nature-01.png",
       "sha256": "2b678215151d9cd1fd1513618568148b1497bb999902481689f326f904d170ff",
       "coloredPath": "assets/coloring/colored/nature-jardin/205-le-soleil-rayonnant-existing-nature-01-png-colored.svg",
-      "coloredSha256": "cd173bbfe8a897eb76f3e31bfc3ff5bc0d74c6e72a9b19071b0a12b05192596e",
+      "coloredSha256": "99c867d91a91531d8da0686a9ab2d08b9e45ae3cacdc7de4c5214fe70307c4a6",
       "format": "svg"
     },
     {
@@ -3946,7 +3946,7 @@
       "sourceName": "existing-nature-02.png",
       "sha256": "e976652c3649a42c805c8a79fe0f238b37726e26c3d1e7f89333dd2b2a2472e9",
       "coloredPath": "assets/coloring/colored/nature-jardin/206-le-croissant-de-lune-existing-nature-02-png-colored.svg",
-      "coloredSha256": "711a8264b3f224e4fe243d98c9189bad7280837f36cb345f0710abb280e20abe",
+      "coloredSha256": "b2c097352f3b347995981fa68d27e4f8606de29d4d26707959d4a48b64527757",
       "format": "svg"
     },
     {
@@ -3964,7 +3964,7 @@
       "sourceName": "existing-nature-03.png",
       "sha256": "c25c1373fd816c5bd5b2385398acd1b992a0da389fc01c687b3015816ff36ecd",
       "coloredPath": "assets/coloring/colored/nature-jardin/207-le-nuage-leger-existing-nature-03-png-colored.svg",
-      "coloredSha256": "32c375ff20474a34bc75c6f1c5914be30fd04c9c7026c60bbd0f097fa3175525",
+      "coloredSha256": "d69f0978a1293b528ee82587ada87b28445443c376ec9769fce8ea9798969304",
       "format": "svg"
     },
     {
@@ -3982,7 +3982,7 @@
       "sourceName": "existing-nature-04.png",
       "sha256": "2fe1ba3440737a8f975805b810b8402de11882aa11c6750bace853edbbec8a1a",
       "coloredPath": "assets/coloring/colored/nature-jardin/208-larc-en-ciel-existing-nature-04-png-colored.svg",
-      "coloredSha256": "05592b4d3dce9f4595478b2629e8696346e552ed64f178e7ff4844ebee2754ba",
+      "coloredSha256": "52c18d6d1386ebb9238a21a6adf0960c925a0a3dba822ee3a57ad3860111b172",
       "format": "svg"
     },
     {
@@ -4002,7 +4002,7 @@
       "sharpnessBefore": 14.136,
       "sharpnessAfter": 17.917,
       "coloredPath": "assets/coloring/colored/nature-jardin/209-le-soleil-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-005-pn-colored.svg",
-      "coloredSha256": "d33343ef87d13b78f081efe9d27fef1fac9e999a1f603d8c05b320f47a60c6d4",
+      "coloredSha256": "2e0fb6bb61084389925f9eb240a02f6294bbea5d58748de744d9e3ec7406818e",
       "format": "svg"
     },
     {
@@ -4022,7 +4022,7 @@
       "sharpnessBefore": 21.183,
       "sharpnessAfter": 26.236,
       "coloredPath": "assets/coloring/colored/nature-jardin/210-le-papillon-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-012-pn-colored.svg",
-      "coloredSha256": "4892f35d5f2bc334d67853c5ba0418eb1e71eaaa7351dc5f5c417d7cdb1c55e6",
+      "coloredSha256": "a38efb9d24b8e6ca497ee462f205ff07e0600f438745c877b26d8384946ade3c",
       "format": "svg"
     },
     {
@@ -4042,7 +4042,7 @@
       "sharpnessBefore": 15.338,
       "sharpnessAfter": 19.549,
       "coloredPath": "assets/coloring/colored/nature-jardin/211-la-fleur-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-017-pn-colored.svg",
-      "coloredSha256": "603c08df14a12dbd65dbf5915115bd78922d5dace55265ecd167b3aae656b0a3",
+      "coloredSha256": "044b8c26a13419755d8a4a4bffda28d005bfba9faab886e214eb77dcbbd11704",
       "format": "svg"
     },
     {
@@ -4062,7 +4062,7 @@
       "sharpnessBefore": 9.988,
       "sharpnessAfter": 12.13,
       "coloredPath": "assets/coloring/colored/nature-jardin/212-larbre-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-004-pn-colored.svg",
-      "coloredSha256": "e531c5377eadf168ff5120d930c636f287aa2586fbf3704a6ea09c7820cab0cb",
+      "coloredSha256": "fff988d80b697a9f73a13eb9a0cc2adf35491358ca169ca98a68a016c798ffc1",
       "format": "svg"
     },
     {
@@ -4082,7 +4082,7 @@
       "sharpnessBefore": 16.423,
       "sharpnessAfter": 20.513,
       "coloredPath": "assets/coloring/colored/nature-jardin/213-le-soleil-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-017--colored.svg",
-      "coloredSha256": "7cddfa1398d1a5d4a63d57a009394630b0f2e2479d29c49a656822e1a9102fe7",
+      "coloredSha256": "194d3ba9e24dfcc51f24c9fd1f98cb738da7f18629a008a7cc61b992094f5897",
       "format": "svg"
     },
     {
@@ -4102,7 +4102,7 @@
       "sharpnessBefore": 12.651,
       "sharpnessAfter": 16.458,
       "coloredPath": "assets/coloring/colored/nature-jardin/214-le-nuage-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-018--colored.svg",
-      "coloredSha256": "b0b3897235d1ff787f91c158c2814a562ccc4af5ecd592bfc011fd3f1d6a4ffa",
+      "coloredSha256": "4ace79ed986d984a1d584f7a2b622c88fa07440a6124e354682077b94bee5c3e",
       "format": "svg"
     },
     {
@@ -4122,7 +4122,7 @@
       "sharpnessBefore": 9.966,
       "sharpnessAfter": 13.376,
       "coloredPath": "assets/coloring/colored/nature-jardin/215-laubergine-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-011--colored.svg",
-      "coloredSha256": "64267061a9d6460d187679efd613f8c6df290910460b5bded0ba166cbbbe339e",
+      "coloredSha256": "5e07e9ef9a6b642e62240ed39508af1ecdb15ef159d753f3b1ab52bfce283d5b",
       "format": "svg"
     },
     {
@@ -4142,7 +4142,7 @@
       "sharpnessBefore": 24.996,
       "sharpnessAfter": 31.367,
       "coloredPath": "assets/coloring/colored/nature-jardin/216-les-petits-pois-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-012--colored.svg",
-      "coloredSha256": "c673a4129de58847c2bec89b2a27a534d279d39b89ad219c5867158ac16158df",
+      "coloredSha256": "36205f2ec800bc6f4cd71a1179e1646f71ec2268d98f748f7aaf48c9ad6eb1fb",
       "format": "svg"
     },
     {
@@ -4162,7 +4162,7 @@
       "sharpnessBefore": 26.558,
       "sharpnessAfter": 37.003,
       "coloredPath": "assets/coloring/colored/nature-jardin/217-la-fleur-en-pot-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-018--colored.svg",
-      "coloredSha256": "2ae13051edd52f54bb197f9d771dfa9f91cb7f6eeb37fb4b33e2304b00ad3177",
+      "coloredSha256": "74e140020e2046aedb1da9ceb7d5ce8dd989b78b08461a127412529ae3177559",
       "format": "svg"
     },
     {
@@ -4182,7 +4182,7 @@
       "sharpnessBefore": 27.373,
       "sharpnessAfter": 34.074,
       "coloredPath": "assets/coloring/colored/nature-jardin/218-le-chou-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-011--colored.svg",
-      "coloredSha256": "1a357619168a212ef86a45a20aed38b457bbb8abeea6a10360875995952cdb1a",
+      "coloredSha256": "48e32d9b7df9b92f4f99ea0d171b123a8d47cea2b759b649ce180c9ef65c0228",
       "format": "svg"
     },
     {
@@ -4202,7 +4202,7 @@
       "sharpnessBefore": 21.141,
       "sharpnessAfter": 26.983,
       "coloredPath": "assets/coloring/colored/nature-jardin/219-la-betterave-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-012--colored.svg",
-      "coloredSha256": "c69677003162bc52038ac3f1701d0151ed67a1bcfd29a2d2cc1d95e954b65368",
+      "coloredSha256": "0e27effc2a5192dee89a312772e4ce351fc04680d1063e06670d6f6b1e902054",
       "format": "svg"
     },
     {
@@ -4222,7 +4222,7 @@
       "sharpnessBefore": 25.399,
       "sharpnessAfter": 32.044,
       "coloredPath": "assets/coloring/colored/nature-jardin/220-le-chou-fleur-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-011--colored.svg",
-      "coloredSha256": "8b5bcb321ff41cf0b11653938c33330c9bff41415a5d7eed3ec7d6a475d9289b",
+      "coloredSha256": "529614c596e4a89d06838c4a11f5f0e740e693502a3081cc07c28056d5fe0d8c",
       "format": "svg"
     },
     {
@@ -4242,7 +4242,7 @@
       "sharpnessBefore": 14.443,
       "sharpnessAfter": 18.515,
       "coloredPath": "assets/coloring/colored/nature-jardin/221-la-pomme-de-terre-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-012--colored.svg",
-      "coloredSha256": "003d03a4befd3de9d8906bac7eb9317456075ca6453871dadbbef3ab49f4434d",
+      "coloredSha256": "c3ebcaed6bbae3c4e6fa919faa182102c732f9cf94e3d3f4f3d8ffaa2a3746aa",
       "format": "svg"
     },
     {
@@ -4262,7 +4262,7 @@
       "sharpnessBefore": 28.476,
       "sharpnessAfter": 34.286,
       "coloredPath": "assets/coloring/colored/nature-jardin/222-le-chou-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-011--colored.svg",
-      "coloredSha256": "bab6083e6fc2304ae8089abc0810baa4b7b251cd2a773295ed1c51db225f5594",
+      "coloredSha256": "5cabe6af3def6c5f3bb33d618e06f971b2135ea921fd0a106f94c28123fe6450",
       "format": "svg"
     },
     {
@@ -4282,7 +4282,7 @@
       "sharpnessBefore": 15.893,
       "sharpnessAfter": 19.794,
       "coloredPath": "assets/coloring/colored/nature-jardin/223-lail-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-012--colored.svg",
-      "coloredSha256": "19c355a3147044a03dbace8cf754356fc58b96f60d183c97863431fa3d651d8f",
+      "coloredSha256": "f3e3f01972637169acdd7bc4ffc193640ddaf6663af43de73e1f3a3f1a375735",
       "format": "svg"
     },
     {
@@ -4302,7 +4302,7 @@
       "sharpnessBefore": 13.139,
       "sharpnessAfter": 17.095,
       "coloredPath": "assets/coloring/colored/nature-jardin/224-leolienne-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-016--colored.svg",
-      "coloredSha256": "ae3027be3964c3725be43197e4818da63fd371beb537ca6189d5c574ee888fc7",
+      "coloredSha256": "6960c45efa4d33cd137cd64e2f09d90677d8a4a6aaeeeb216152fc250f5e8590",
       "format": "svg"
     },
     {
@@ -4322,7 +4322,7 @@
       "sharpnessBefore": 20.444,
       "sharpnessAfter": 25.055,
       "coloredPath": "assets/coloring/colored/nature-jardin/225-la-courgette-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-007-colored.svg",
-      "coloredSha256": "8e2a10afc56d7385d08d7b6f2c64af3bf63046c7f1d42fc70393f535d120afe9",
+      "coloredSha256": "b46ccce4679b9ced1a74c2ebb64d8bc5af538d4d0552877d575359b8b29eff62",
       "format": "svg"
     },
     {
@@ -4342,7 +4342,7 @@
       "sharpnessBefore": 25.1,
       "sharpnessAfter": 32.076,
       "coloredPath": "assets/coloring/colored/nature-jardin/226-le-navet-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-008-colored.svg",
-      "coloredSha256": "5c862b28adc9fa0d4225f8a3da1ad9e8e66056948d60224ebbe39c69c6b2d0d4",
+      "coloredSha256": "2662ad1ab43a00896beef9100f085fa499abdc0fa3d2fbfc2ea98e70bbf14528",
       "format": "svg"
     },
     {
@@ -4362,7 +4362,7 @@
       "sharpnessBefore": 18.455,
       "sharpnessAfter": 23.475,
       "coloredPath": "assets/coloring/colored/nature-jardin/227-larc-en-ciel-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-013-colored.svg",
-      "coloredSha256": "8e2e0b701459168c4c918bc8293214d8c8080221cf919a724c02ad03775d9ba7",
+      "coloredSha256": "5a62ee0aa3a11ff169cfdb6ec282450de6a4195884c16f938d44c27e18451c19",
       "format": "svg"
     },
     {
@@ -4382,7 +4382,7 @@
       "sharpnessBefore": 12.329,
       "sharpnessAfter": 17.365,
       "coloredPath": "assets/coloring/colored/nature-jardin/228-la-lune-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-018--colored.svg",
-      "coloredSha256": "742614003352b2a3904650ccd6a1b6021e5c8df6d9f316f0bb834b07e528a4b7",
+      "coloredSha256": "8db3e868200596c6efb8550622d4afc3254ed670666e6a11687d553021a713b5",
       "format": "svg"
     },
     {
@@ -4402,7 +4402,7 @@
       "sharpnessBefore": 23.905,
       "sharpnessAfter": 31.751,
       "coloredPath": "assets/coloring/colored/nature-jardin/229-la-fleur-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-019--colored.svg",
-      "coloredSha256": "f57de7b0dcf27deae62deb7ee674ab0f446b350cd966b50c704db58523ff6bb3",
+      "coloredSha256": "d8656e6431fef24b070351052480674c486af2210a6cd976bffc144af289d58b",
       "format": "svg"
     },
     {
@@ -4422,7 +4422,7 @@
       "sharpnessBefore": 10.992,
       "sharpnessAfter": 13.335,
       "coloredPath": "assets/coloring/colored/nature-jardin/230-le-soleil-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-020--colored.svg",
-      "coloredSha256": "de2cbcde0304d9ddafa8af80881372f0ea836f1d047fca76268c14ccbe615c0f",
+      "coloredSha256": "5239df6e3062705895e390f25d6404bff66a4c178f252f516e61613c563c0d10",
       "format": "svg"
     },
     {
@@ -4442,7 +4442,7 @@
       "sharpnessBefore": 15.632,
       "sharpnessAfter": 21.374,
       "coloredPath": "assets/coloring/colored/nature-jardin/231-labeille-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-013--colored.svg",
-      "coloredSha256": "0b1ce8bea0511be35f02e22dfa27e709f458b505665bdc6f096b6007005fe6ba",
+      "coloredSha256": "915f544ea4d567e1c19d9a9dc4dd55c8f64430b1ec67cde3eb080883b3636240",
       "format": "svg"
     },
     {
@@ -4462,7 +4462,7 @@
       "sharpnessBefore": 15.916,
       "sharpnessAfter": 21.217,
       "coloredPath": "assets/coloring/colored/nature-jardin/232-la-fleur-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-016--colored.svg",
-      "coloredSha256": "89fc8bf6424548c07c8c068c293d4b87182dcdb6bd60de9015762680b9db3893",
+      "coloredSha256": "607af63881ba7cda19d65872eab1854463b161b82196314185adcace0f4f9064",
       "format": "svg"
     },
     {
@@ -4482,7 +4482,7 @@
       "sharpnessBefore": 11.624,
       "sharpnessAfter": 14.537,
       "coloredPath": "assets/coloring/colored/nature-jardin/233-larbre-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-026--colored.svg",
-      "coloredSha256": "0904b5492b7faa84feaa378e9f180c08d62b5ab49732a89fb5d7dd596fd61fc8",
+      "coloredSha256": "4dfb20b82818be9d53f1cb1e561c0617c095786b71234d238770f5223d9ba627",
       "format": "svg"
     },
     {
@@ -4502,7 +4502,7 @@
       "sharpnessBefore": 12.725,
       "sharpnessAfter": 16.364,
       "coloredPath": "assets/coloring/colored/nature-jardin/234-le-soleil-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-030--colored.svg",
-      "coloredSha256": "fa0b65b2337e7fd09508a67b1bf975f85607129e2290ae60475dc3b81f4f078e",
+      "coloredSha256": "1dc348ba3e353f761086dbcbbd60bd0408428814a84fae6e8fe47ef2b17d7569",
       "format": "svg"
     },
     {
@@ -4522,7 +4522,7 @@
       "sharpnessBefore": 22.815,
       "sharpnessAfter": 29.306,
       "coloredPath": "assets/coloring/colored/nature-jardin/235-la-coccinelle-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-010--colored.svg",
-      "coloredSha256": "69079836a6588b23adacbca23168fab38e24ccea4417363252c71fb781b5dd8c",
+      "coloredSha256": "937039bceff46bef4370d95b40681087cc394ad0c5a5e94115df4adbb0e67931",
       "format": "svg"
     },
     {
@@ -4542,7 +4542,7 @@
       "sharpnessBefore": 10.88,
       "sharpnessAfter": 14.136,
       "coloredPath": "assets/coloring/colored/nature-jardin/236-la-coccinelle-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-005--colored.svg",
-      "coloredSha256": "b02bd75fbd1f7729633ef79ff43cdb34513c60bad90a8664ab48112981e4f162",
+      "coloredSha256": "9e2bd4692439b31eb24832a635b2c4a720e6c4d594c2dfbf006ddbaf92a86d3c",
       "format": "svg"
     },
     {
@@ -4562,7 +4562,7 @@
       "sharpnessBefore": 42.256,
       "sharpnessAfter": 49.444,
       "coloredPath": "assets/coloring/colored/nature-jardin/237-le-papillon-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-006--colored.svg",
-      "coloredSha256": "8c0d378d3fa527a0fb01590fe0eccb98cf6d4517ce83c498bce5ebc13ecb7545",
+      "coloredSha256": "a0aa016aa5e463d27aadf0d614115bf079baed9b3354288b91231d003eddd857",
       "format": "svg"
     },
     {
@@ -4582,7 +4582,7 @@
       "sharpnessBefore": 8.07,
       "sharpnessAfter": 9.618,
       "coloredPath": "assets/coloring/colored/nature-jardin/238-la-fleur-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-021--colored.svg",
-      "coloredSha256": "c620160ac21199cccdfad767950865295b9349d81976b5c5b8e7ed9733d66911",
+      "coloredSha256": "35385f0e8f780749af339e1756121626b9881fc0c5f9cdc099d02fa5ac38b3b9",
       "format": "svg"
     },
     {
@@ -4602,7 +4602,7 @@
       "sharpnessBefore": 17.909,
       "sharpnessAfter": 21.64,
       "coloredPath": "assets/coloring/colored/nature-jardin/239-larc-en-ciel-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-015--colored.svg",
-      "coloredSha256": "834724184cb49f47a0e41360a2d83503964a4701d8aabcd6d7d5668d72c5cff6",
+      "coloredSha256": "bf2322b7a4b0379493273f41aa8c7f44016d59e4db5bb8e7571e0f1c76a11048",
       "format": "svg"
     },
     {
@@ -4622,7 +4622,7 @@
       "sharpnessBefore": 12.246,
       "sharpnessAfter": 15.241,
       "coloredPath": "assets/coloring/colored/nature-jardin/240-la-fleur-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-018--colored.svg",
-      "coloredSha256": "1b033f60ed4af15d20c8d4bb9fc00d896ea9c7a0f8b0f5a726900f400fd95880",
+      "coloredSha256": "213d3fffea08778bbbde454b38eaeae306f5105d4e60f93b35137b6b016bbf64",
       "format": "svg"
     },
     {
@@ -4640,7 +4640,7 @@
       "sourceName": "existing-maison-01.png",
       "sha256": "aecba8d96c1d0089eceacd254fb5049ca5c82e39ddaaa4e8d0ee9d1257f69b10",
       "coloredPath": "assets/coloring/colored/maison-objets/241-la-chaise-existing-maison-01-png-colored.svg",
-      "coloredSha256": "262d0180b361a2f4f8ee094bf5513da450f56067405aba494734ea0d9fd9dcff",
+      "coloredSha256": "6d1acdcc44673ed81374edddb1935bc7e3978a8bdbde5cc834bbc0befb9a7090",
       "format": "svg"
     },
     {
@@ -4658,7 +4658,7 @@
       "sourceName": "existing-maison-02.png",
       "sha256": "56c77176035ad454f323f3e95824324f187a844d787ff82cff99bfcbbd697d74",
       "coloredPath": "assets/coloring/colored/maison-objets/242-la-table-ronde-existing-maison-02-png-colored.svg",
-      "coloredSha256": "574a1d8e06a6b0e3088b512cb72fc173c442f78d7d444e2c4fe5d033ff27b017",
+      "coloredSha256": "f6844581ad5395f2f26fc38ce69d48ab00c50b1192263949851f3543d8c131c1",
       "format": "svg"
     },
     {
@@ -4676,7 +4676,7 @@
       "sourceName": "existing-maison-03.png",
       "sha256": "b906cb2c650c20fcb8540edb8c81fb3fa88512b1063b5901e9cc183f2c7c6256",
       "coloredPath": "assets/coloring/colored/maison-objets/243-le-fauteuil-existing-maison-03-png-colored.svg",
-      "coloredSha256": "99f54c1528facd347229e8563c7902ba37958a9c0f90c96ea8d8edae72c64660",
+      "coloredSha256": "01439e193f9968f07850fa410552b69852c30c80c9b43de860b24929182a37f6",
       "format": "svg"
     },
     {
@@ -4694,7 +4694,7 @@
       "sourceName": "existing-maison-04.png",
       "sha256": "beb3c48f6d56874e13b6ce4b504a75c880e450c9ffc81bf173909bf709a3e12b",
       "coloredPath": "assets/coloring/colored/maison-objets/244-le-canape-existing-maison-04-png-colored.svg",
-      "coloredSha256": "68637cefdcdaaaa889893cdb92b232cfedf6dfe1ede034313dee4f34b825db8b",
+      "coloredSha256": "1139d813c1a88c5288ed62555401c95fc6d67e87b382210a86d06ccb4d331438",
       "format": "svg"
     },
     {
@@ -4714,7 +4714,7 @@
       "sharpnessBefore": 12.007,
       "sharpnessAfter": 14.986,
       "coloredPath": "assets/coloring/colored/maison-objets/245-le-fauteuil-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-007-pn-colored.svg",
-      "coloredSha256": "d4f9a11ae2f7dd732b4414a0558cfc46d4feae7639a258cd79a838ed71cc6431",
+      "coloredSha256": "30c023fdb5383dda14b5b47591bf60fbaf584a08a49e973bac4c78f36cfa43b5",
       "format": "svg"
     },
     {
@@ -4734,7 +4734,7 @@
       "sharpnessBefore": 18.379,
       "sharpnessAfter": 22.558,
       "coloredPath": "assets/coloring/colored/maison-objets/246-la-maison-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-010-pn-colored.svg",
-      "coloredSha256": "71370c01b2b6d3d1cd3a95f1f08e905b9914fbd1e799f2965f938ec6fc48c961",
+      "coloredSha256": "630f06bbdfe40aebb33c319237d5bcfae36a3149c45a1eca4acd41182a3b3642",
       "format": "svg"
     },
     {
@@ -4754,7 +4754,7 @@
       "sharpnessBefore": 14.649,
       "sharpnessAfter": 18.25,
       "coloredPath": "assets/coloring/colored/maison-objets/247-lhorloge-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-013-pn-colored.svg",
-      "coloredSha256": "4101a00f9816ebb0c16b15b16dbbe106e092ed408224d9c7835e575b732341bd",
+      "coloredSha256": "5a8e43217980bd6eb90fcf4e367f83e7fcdcf1abff31d7c156ce9ea153d47650",
       "format": "svg"
     },
     {
@@ -4774,7 +4774,7 @@
       "sharpnessBefore": 12.344,
       "sharpnessAfter": 16.488,
       "coloredPath": "assets/coloring/colored/maison-objets/248-le-fauteuil-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-005-pn-colored.svg",
-      "coloredSha256": "0cf470a44ca05fb0edf1671663a01fca9ac50c1f6babbb855acfe3c4e227ff03",
+      "coloredSha256": "0b28e05ede0599ae66163e217468d6c8625d4a4168ecc36dc6d2a63291225355",
       "format": "svg"
     },
     {
@@ -4794,7 +4794,7 @@
       "sharpnessBefore": 13.458,
       "sharpnessAfter": 19.092,
       "coloredPath": "assets/coloring/colored/maison-objets/249-le-refrigerateur-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-006-pn-colored.svg",
-      "coloredSha256": "6cbf761a97247a1e42d4668e07838d812a5ae0838b517d6d8de6eab13022a387",
+      "coloredSha256": "896ee8b24dbd4410a354c6bf53c913c7fbcee3742bffba5164696bc120f75905",
       "format": "svg"
     },
     {
@@ -4814,7 +4814,7 @@
       "sharpnessBefore": 29.273,
       "sharpnessAfter": 42.953,
       "coloredPath": "assets/coloring/colored/maison-objets/250-le-lit-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-013--colored.svg",
-      "coloredSha256": "5071815abd314f4a567edce45a6e2cdf7876b9ae3dc6858d58e9434cbd1ced6b",
+      "coloredSha256": "c628ebfeb702293763e64f1afc089b9ccff3045c52bcde5a6376307314914606",
       "format": "svg"
     },
     {
@@ -4834,7 +4834,7 @@
       "sharpnessBefore": 28.573,
       "sharpnessAfter": 38.078,
       "coloredPath": "assets/coloring/colored/maison-objets/251-la-bibliotheque-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-014--colored.svg",
-      "coloredSha256": "e19d0e5953c825121a621cc194bda0850b5bd21873442e1e25690d2f34934619",
+      "coloredSha256": "a1243e0279a831eee9d77b35bfff4c57659a6729e6ab2baa2905a1c6dbf3fa69",
       "format": "svg"
     },
     {
@@ -4854,7 +4854,7 @@
       "sharpnessBefore": 44.929,
       "sharpnessAfter": 56.514,
       "coloredPath": "assets/coloring/colored/maison-objets/252-la-maison-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-015--colored.svg",
-      "coloredSha256": "914c39cd9071234b566f8774fec3afc0a494eaca20295396dde4dc2cd7264a73",
+      "coloredSha256": "a377c18bf3374a5bcd2536a49abf1c605eef5383a81872f9034b14a9ff21dbcf",
       "format": "svg"
     },
     {
@@ -4874,7 +4874,7 @@
       "sharpnessBefore": 20.94,
       "sharpnessAfter": 26.631,
       "coloredPath": "assets/coloring/colored/maison-objets/253-larmoire-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-013--colored.svg",
-      "coloredSha256": "e0094ed395427b694acaaf9e8bc125f266989bd203bb22d2322834af754c2a77",
+      "coloredSha256": "4488f5eebc52d18d899544b51bbc55704f4bfeae9dbb82f4e2ff8a6cec49e48d",
       "format": "svg"
     },
     {
@@ -4894,7 +4894,7 @@
       "sharpnessBefore": 15.548,
       "sharpnessAfter": 19.318,
       "coloredPath": "assets/coloring/colored/maison-objets/254-le-tabouret-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-014--colored.svg",
-      "coloredSha256": "c552537ca0636aeb16daa70306870e29acc76f7074f5c4160286ee7b93c97a0e",
+      "coloredSha256": "fd4ebf14d1a781c351a7fce3d3ec999f691182064282fdfb8444fe064b4d4819",
       "format": "svg"
     },
     {
@@ -4914,7 +4914,7 @@
       "sharpnessBefore": 24.616,
       "sharpnessAfter": 29.985,
       "coloredPath": "assets/coloring/colored/maison-objets/255-le-banc-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-013--colored.svg",
-      "coloredSha256": "cd53f6478b7cc5f81a0954799bd82bae3bb55d03b1adff35a252b8d4aaadb457",
+      "coloredSha256": "db6ccdb0c60f06837f4364d5a74a9f63450493355c8c4e216075803293ed5471",
       "format": "svg"
     },
     {
@@ -4934,7 +4934,7 @@
       "sharpnessBefore": 22.76,
       "sharpnessAfter": 29.738,
       "coloredPath": "assets/coloring/colored/maison-objets/256-la-commode-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-014--colored.svg",
-      "coloredSha256": "9eff915f8e2a47e49ae15bf394d25e471c3cefc602752b5f2c353af352478b8d",
+      "coloredSha256": "43d03cfe81189fcdf78a9bcf21edf0bc293035fdebbde907036638a3419ada9c",
       "format": "svg"
     },
     {
@@ -4954,7 +4954,7 @@
       "sharpnessBefore": 14.109,
       "sharpnessAfter": 17.873,
       "coloredPath": "assets/coloring/colored/maison-objets/257-le-parapluie-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-018--colored.svg",
-      "coloredSha256": "34eb036a6b6f2862102945f1476cf28aca55c4bc53e436b1009e5a36b52b19d9",
+      "coloredSha256": "2466d7d3bc5b80920bf4b2d5bd165b8d1046daeaaaae71b46a8b25c9de18d0e1",
       "format": "svg"
     },
     {
@@ -4974,7 +4974,7 @@
       "sharpnessBefore": 19.712,
       "sharpnessAfter": 24.837,
       "coloredPath": "assets/coloring/colored/maison-objets/258-la-table-de-nuit-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-013--colored.svg",
-      "coloredSha256": "67f8ce30daccfbe6d0687bfe58d6eb56d639f7308541c5ca6c04836c57fe1298",
+      "coloredSha256": "5777c75ccc5032928a34be4e96b4ccb8f741bfbc20fcdc7fee57586aae22b93e",
       "format": "svg"
     },
     {
@@ -4994,7 +4994,7 @@
       "sharpnessBefore": 29.668,
       "sharpnessAfter": 37.083,
       "coloredPath": "assets/coloring/colored/maison-objets/259-la-bibliotheque-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-014--colored.svg",
-      "coloredSha256": "ae3a524cdba6db98197ff6c51bfe2f4ae4d75243d99c82700cbfd15d9f0032f0",
+      "coloredSha256": "455c5d40ac93f81f56cb5b5ef11d7c041654e2d9b011026b5d83575b9952b1fa",
       "format": "svg"
     },
     {
@@ -5014,7 +5014,7 @@
       "sharpnessBefore": 28.49,
       "sharpnessAfter": 36.281,
       "coloredPath": "assets/coloring/colored/maison-objets/260-le-lit-de-bebe-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-013--colored.svg",
-      "coloredSha256": "96d511f612df5b30f069d10a020c68d8389169c21f6ef7f8bd1039dce49e0ae2",
+      "coloredSha256": "95a0418ffc3d38a1599b27c2844a713be5e6fcf3728fa66122d00f83cfa63bc6",
       "format": "svg"
     },
     {
@@ -5034,7 +5034,7 @@
       "sharpnessBefore": 20.716,
       "sharpnessAfter": 26.536,
       "coloredPath": "assets/coloring/colored/maison-objets/261-le-miroir-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-009-colored.svg",
-      "coloredSha256": "9f5d16a1dac2e1f3b7f9c4bdf271d9edcfecc6bc700a83b6a988e49e069f6fb7",
+      "coloredSha256": "694a5ce221972a17dc58002329acf7ec405ab3c5b9d68e81781304de8cf95216",
       "format": "svg"
     },
     {
@@ -5054,7 +5054,7 @@
       "sharpnessBefore": 29.762,
       "sharpnessAfter": 37.1,
       "coloredPath": "assets/coloring/colored/maison-objets/262-le-lit-superpose-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-010-colored.svg",
-      "coloredSha256": "74f14427ff560ad67a3ea52cfac4bbf8ea7036be700aa29bf2db1c1546fd132e",
+      "coloredSha256": "5c0137976fa28d363a147695e42cf0f8d9cb47bb1b623e031398bab6abe05411",
       "format": "svg"
     },
     {
@@ -5074,7 +5074,7 @@
       "sharpnessBefore": 11.553,
       "sharpnessAfter": 14.505,
       "coloredPath": "assets/coloring/colored/maison-objets/263-la-table-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-011--colored.svg",
-      "coloredSha256": "cc27dae91c88f80b56bdddd2843a539c372bdbb4f52fbfbe0c748d8c72f991b9",
+      "coloredSha256": "cf7e893b67602746617ca11f6b9c9101f9a0e1092bc7158ac97c4b6daab339e4",
       "format": "svg"
     },
     {
@@ -5094,7 +5094,7 @@
       "sharpnessBefore": 13.584,
       "sharpnessAfter": 16.666,
       "coloredPath": "assets/coloring/colored/maison-objets/264-le-lit-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-012--colored.svg",
-      "coloredSha256": "718d63b2f30c548ce128dfef0c9325acd175228f6fa5c2e6993e48751951b573",
+      "coloredSha256": "e5525a62744186032326de0387d17c9400bd0d2ae3bb586c3e1dbb3bc8e9b0de",
       "format": "svg"
     },
     {
@@ -5114,7 +5114,7 @@
       "sharpnessBefore": 18.188,
       "sharpnessAfter": 23.131,
       "coloredPath": "assets/coloring/colored/maison-objets/265-le-canape-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-013--colored.svg",
-      "coloredSha256": "abc6bd83523fd86cd57a6767987ecb6aff4915a390f539701c1a0668570e072f",
+      "coloredSha256": "06cf224ec5b90da0f02f06c3660a20b5537d15a6f6975f498fc0a1c0e247a090",
       "format": "svg"
     },
     {
@@ -5134,7 +5134,7 @@
       "sharpnessBefore": 7.805,
       "sharpnessAfter": 9.122,
       "coloredPath": "assets/coloring/colored/maison-objets/266-larmoire-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-014--colored.svg",
-      "coloredSha256": "70c52c2b59cc356b8f2a1d268db9ac6504256afe25dcfde72e415e6e103e003b",
+      "coloredSha256": "dcbab9aded4ed674e5c52aae23ff0b317cedd86f711f88859834fabd2226c4c3",
       "format": "svg"
     },
     {
@@ -5154,7 +5154,7 @@
       "sharpnessBefore": 9.856,
       "sharpnessAfter": 11.646,
       "coloredPath": "assets/coloring/colored/maison-objets/267-la-baignoire-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-015--colored.svg",
-      "coloredSha256": "109ada8aca0ca5a54cf6e0cfa45d19d1e40714ea38a8dfa62c753d512c8e0b07",
+      "coloredSha256": "6919960ee2330847749df1a7c95946a2bb00a4e06c3a531bb39a8325fe397eac",
       "format": "svg"
     },
     {
@@ -5174,7 +5174,7 @@
       "sharpnessBefore": 7.03,
       "sharpnessAfter": 8.178,
       "coloredPath": "assets/coloring/colored/maison-objets/268-la-brosse-a-dents-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-019--colored.svg",
-      "coloredSha256": "753b3f1097681e613367d33b1647664d345ea492b360023c37a1bba72d8da2e2",
+      "coloredSha256": "0627b332a5b76b11e5d74ea8b023390ca5b430a1077e6510cb76d6627827ee1a",
       "format": "svg"
     },
     {
@@ -5194,7 +5194,7 @@
       "sharpnessBefore": 18.662,
       "sharpnessAfter": 23.623,
       "coloredPath": "assets/coloring/colored/maison-objets/269-le-reveil-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-028--colored.svg",
-      "coloredSha256": "62f09adb1af4531b0acd549c70a72c6362af7a34f99f4db8ba1db3de924a20cc",
+      "coloredSha256": "7d394ed20bf9366e865f7f1e75f26a7f9c2383b7baa82ac7ad9e416fefe25e7d",
       "format": "svg"
     },
     {
@@ -5214,7 +5214,7 @@
       "sharpnessBefore": 13.348,
       "sharpnessAfter": 17.023,
       "coloredPath": "assets/coloring/colored/maison-objets/270-le-lit-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-021--colored.svg",
-      "coloredSha256": "13cd781a67b0af99ae5a74630b7d7d2b3d5566fba0fa454a2b7906888632958f",
+      "coloredSha256": "0686638af66108396060818457d4c2c0a0fcef60470e4489ebf68167a1661b7c",
       "format": "svg"
     },
     {
@@ -5234,7 +5234,7 @@
       "sharpnessBefore": 14.899,
       "sharpnessAfter": 21.851,
       "coloredPath": "assets/coloring/colored/maison-objets/271-la-table-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-022--colored.svg",
-      "coloredSha256": "87d767ccd5b2835309b03939dceff44afea8bde5ab7cb7546ddb87ab68a4cb66",
+      "coloredSha256": "ec6f0a3500ecdd9df8e514bd7cba3c264b2b22e7a2b34903e0c6a152215564db",
       "format": "svg"
     },
     {
@@ -5254,7 +5254,7 @@
       "sharpnessBefore": 14.887,
       "sharpnessAfter": 19.274,
       "coloredPath": "assets/coloring/colored/maison-objets/272-le-refrigerateur-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-023--colored.svg",
-      "coloredSha256": "9cafe2b49ed96c632c0dbbd1cd5211909ecc9dc99d91260eaa5333616701267c",
+      "coloredSha256": "2c816a0817c9d39f97245e97d05769d3801a62e913f99be2a998e389bd7895ce",
       "format": "svg"
     },
     {
@@ -5274,7 +5274,7 @@
       "sharpnessBefore": 26.269,
       "sharpnessAfter": 33.423,
       "coloredPath": "assets/coloring/colored/maison-objets/273-le-fauteuil-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-024--colored.svg",
-      "coloredSha256": "d759e1b157cc0c670a76beb6f507ff3dfa44b056de5b3bf778b3a5e71edf7c8f",
+      "coloredSha256": "e6cedd146146a8921b05da17847c8f72c65a64df4ab51f4e2f1a65835d167cf7",
       "format": "svg"
     },
     {
@@ -5294,7 +5294,7 @@
       "sharpnessBefore": 33.863,
       "sharpnessAfter": 42.151,
       "coloredPath": "assets/coloring/colored/maison-objets/274-la-bibliotheque-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-025--colored.svg",
-      "coloredSha256": "df645f4bd9cbdb79ea0796836316c6d957235932c4386e5ad07da902240c7889",
+      "coloredSha256": "cee24b7241692bae3a4eb244edd2db4ec362460503f49935b103c737cb47b3c1",
       "format": "svg"
     },
     {
@@ -5314,7 +5314,7 @@
       "sharpnessBefore": 11.846,
       "sharpnessAfter": 17.141,
       "coloredPath": "assets/coloring/colored/maison-objets/275-la-chaise-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-013--colored.svg",
-      "coloredSha256": "3e3e11ded7acc708a9b5c058faa6632aa3e2ffc6e75cf029ed804cb8347646b8",
+      "coloredSha256": "d4b6f15a27d4fa52345a0407073cde782a6971c82815dfe06c7eef8dacfecc6a",
       "format": "svg"
     },
     {
@@ -5334,7 +5334,7 @@
       "sharpnessBefore": 7.897,
       "sharpnessAfter": 9.195,
       "coloredPath": "assets/coloring/colored/maison-objets/276-la-table-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-014--colored.svg",
-      "coloredSha256": "eb49140d9bbebbdeecb706aa4cbcbf00a71b1f66f4077cc9fb35f0f0df095310",
+      "coloredSha256": "a360a370f89d07f8466ad27299558768ce910c0ce51f065254f3c29b19a27af1",
       "format": "svg"
     },
     {
@@ -5354,7 +5354,7 @@
       "sharpnessBefore": 18.773,
       "sharpnessAfter": 23.476,
       "coloredPath": "assets/coloring/colored/maison-objets/277-le-lit-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-015--colored.svg",
-      "coloredSha256": "09d81238191850f32f97d8abb9ff4245ef8b1d835af5d8968116baaac0daf0da",
+      "coloredSha256": "5264baf112e4b8bd14b308c3a4e674675d31fa3e276c597968446e8193668545",
       "format": "svg"
     },
     {
@@ -5374,7 +5374,7 @@
       "sharpnessBefore": 7.145,
       "sharpnessAfter": 9.659,
       "coloredPath": "assets/coloring/colored/maison-objets/278-la-lampe-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-016--colored.svg",
-      "coloredSha256": "7f7cee00dbd6b8b57568c34f3cd548cb001b881aadab4d55578c3a57301af25f",
+      "coloredSha256": "2e0fb2dd43e272d5f152aca22f109eb256514a6274048916d4c51a04b1c678ae",
       "format": "svg"
     },
     {
@@ -5394,7 +5394,7 @@
       "sharpnessBefore": 12.085,
       "sharpnessAfter": 14.102,
       "coloredPath": "assets/coloring/colored/maison-objets/279-le-reveil-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-026--colored.svg",
-      "coloredSha256": "18871745f2fee3e29a921d8a22796700570778f7fca7cd34352e2952de82ae89",
+      "coloredSha256": "86bbf8133e16e9aa80ed5b87357eec0ee9da1d1089b4870e5f39bb5d70657796",
       "format": "svg"
     },
     {
@@ -5414,7 +5414,7 @@
       "sharpnessBefore": 10.953,
       "sharpnessAfter": 13.437,
       "coloredPath": "assets/coloring/colored/maison-objets/280-le-lit-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-017--colored.svg",
-      "coloredSha256": "383e1d1e5f4bb1d3593e0366eaf9db8e1e89deac2a24d98dd9560ba2a0101dcc",
+      "coloredSha256": "7c32617fb3f868def1c258b463b47abe60e5f68f1f7e7af24a2159a38004b5ec",
       "format": "svg"
     },
     {
@@ -5432,7 +5432,7 @@
       "sourceName": "existing-ville-01.png",
       "sha256": "ddd1a0309f77aac2fb3e4853d07e0e1b495b2283d6949b1231f10c629d9a9bf6",
       "coloredPath": "assets/coloring/colored/batiments-lieux/281-la-petite-maison-existing-ville-01-png-colored.svg",
-      "coloredSha256": "905effaa7b09e11788afa09fbe681b21b783ba13e9310813631fc27587455295",
+      "coloredSha256": "fcd5d3ada7412dbf3cac20a6aa43c1bdbb65ac57389324547ae94e0177c56497",
       "format": "svg"
     },
     {
@@ -5450,7 +5450,7 @@
       "sourceName": "existing-ville-02.png",
       "sha256": "c04d3f7b266ef31e4878501a6cd37efdd32db4638dbbd9e5d9b7c313563369c4",
       "coloredPath": "assets/coloring/colored/batiments-lieux/282-la-maison-a-etage-existing-ville-02-png-colored.svg",
-      "coloredSha256": "415a4a00591e596a4de98c690321d678eb6c19d9bc8e766972a53ad94a9ec2c2",
+      "coloredSha256": "ff00bd59a476342da0aab940f35abdd51fef42bac18f7bfcb65af3b8f32192de",
       "format": "svg"
     },
     {
@@ -5468,7 +5468,7 @@
       "sourceName": "existing-ville-03.png",
       "sha256": "f68aef3b7ab9b6b1e862401dc9b281541128c9b055754c8037e582c2992393e1",
       "coloredPath": "assets/coloring/colored/batiments-lieux/283-limmeuble-existing-ville-03-png-colored.svg",
-      "coloredSha256": "e0bffa609f8f9ca542487ada6c31599eb15fd6c8d540582cada142b1becd0fe4",
+      "coloredSha256": "422944b062abf0f0a1fac0a6b2d9d5242ccae4bfcfaef33dc91a16d00efde533",
       "format": "svg"
     },
     {
@@ -5486,7 +5486,7 @@
       "sourceName": "existing-ville-04.png",
       "sha256": "fc2b13d57e6888867512ec4deb15ecad625f9685785489df1a4ebe929c89e2a4",
       "coloredPath": "assets/coloring/colored/batiments-lieux/284-lecole-existing-ville-04-png-colored.svg",
-      "coloredSha256": "59195f4a18ac7d6a306626c8a0191837cb7559a4eef349417350978c9743b1fc",
+      "coloredSha256": "571a3808509e6f146e25836f5403949892cfb43caa40949f78aef4edec080229",
       "format": "svg"
     },
     {
@@ -5506,7 +5506,7 @@
       "sharpnessBefore": 20.091,
       "sharpnessAfter": 24.976,
       "coloredPath": "assets/coloring/colored/batiments-lieux/285-le-sac-a-dos-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-011-pn-colored.svg",
-      "coloredSha256": "82c51afac1f94a0a1f721ed99b0227083586209e6b22f4a6e16389834f611f18",
+      "coloredSha256": "ac9e1f774842c137d38854d941c53e210e66ac7194609d91e2586cac3f089dcd",
       "format": "svg"
     },
     {
@@ -5526,7 +5526,7 @@
       "sharpnessBefore": 21.67,
       "sharpnessAfter": 26.471,
       "coloredPath": "assets/coloring/colored/batiments-lieux/286-les-livres-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-018-pn-colored.svg",
-      "coloredSha256": "5b4833df98a4733efa72fb81b660d10619b607aca8164f9d8a436c4df7c06f7e",
+      "coloredSha256": "3cb700aebcb8839d9451eb001e0a14e53f95a31e3634439be71907d6d18a5967",
       "format": "svg"
     },
     {
@@ -5546,7 +5546,7 @@
       "sharpnessBefore": 16.473,
       "sharpnessAfter": 20.202,
       "coloredPath": "assets/coloring/colored/batiments-lieux/287-lecole-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-003-pn-colored.svg",
-      "coloredSha256": "91b5ac8d74a4a4da9d1ddb93cfa30f5f3f28565552ad17f77a6e9c6ec5f662a3",
+      "coloredSha256": "4e60e7f9b84ae1004960fb9f4b2734a562d431e5c545021011af60570b2024ab",
       "format": "svg"
     },
     {
@@ -5566,7 +5566,7 @@
       "sharpnessBefore": 16.398,
       "sharpnessAfter": 21.096,
       "coloredPath": "assets/coloring/colored/batiments-lieux/288-le-phare-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-016--colored.svg",
-      "coloredSha256": "07674bc6cc7e12ca01c8a6459bc48cb2ac5f0f0295e9566dc51b23ad557848be",
+      "coloredSha256": "6502f617581af5c5c6cc4a24d8078df022d413174de6e77d2c070ebed9be0d96",
       "format": "svg"
     },
     {
@@ -5586,7 +5586,7 @@
       "sharpnessBefore": 41.796,
       "sharpnessAfter": 52.704,
       "coloredPath": "assets/coloring/colored/batiments-lieux/289-la-cabane-dans-larbre-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-015--colored.svg",
-      "coloredSha256": "d3edb5b9ddc8bf23ecccbb19b6f5670d463baa845bddc0054bc3ba81ed56de0c",
+      "coloredSha256": "590d693948cad36f4fdc02169614f2c21559b71575c42c4ad1f39dc2b8078aa4",
       "format": "svg"
     },
     {
@@ -5606,7 +5606,7 @@
       "sharpnessBefore": 50.765,
       "sharpnessAfter": 64.99,
       "coloredPath": "assets/coloring/colored/batiments-lieux/290-le-pont-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-016--colored.svg",
-      "coloredSha256": "46904183f020dbda35305a11912d5f96a46b64f820e0700fa83d526c76e80d00",
+      "coloredSha256": "e45f0e77655fd0a95d62e8c7831d23b85a90eb8c3bd14751f806a91a467a042b",
       "format": "svg"
     },
     {
@@ -5626,7 +5626,7 @@
       "sharpnessBefore": 32.943,
       "sharpnessAfter": 41.488,
       "coloredPath": "assets/coloring/colored/batiments-lieux/291-le-garage-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-015--colored.svg",
-      "coloredSha256": "6adfd967c3ecf30ccc6bc97f4cca82ff2dc73cfa5e6527ba2ce55c2d38ed5e39",
+      "coloredSha256": "845348774b01da4daadd05a3ed8aa907e1da706fecf04c86d3cad29d81a80ed2",
       "format": "svg"
     },
     {
@@ -5646,7 +5646,7 @@
       "sharpnessBefore": 17.572,
       "sharpnessAfter": 22.249,
       "coloredPath": "assets/coloring/colored/batiments-lieux/292-la-tour-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-016--colored.svg",
-      "coloredSha256": "55b6efe1617e743d349aa8f1af8099f5e186a1bba0a76f73ee8ed2476d4e2f40",
+      "coloredSha256": "c1be08fbdf5701192e524f1f6a2b4c410ee0c2226ad1f1a91480c90a61bfa2c5",
       "format": "svg"
     },
     {
@@ -5666,7 +5666,7 @@
       "sharpnessBefore": 48.964,
       "sharpnessAfter": 61.876,
       "coloredPath": "assets/coloring/colored/batiments-lieux/293-la-maison-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-015--colored.svg",
-      "coloredSha256": "2ade1ba0f8d77329f153ce466c43be1f1cf9e4c331d8981c9cd68c3bda7640c2",
+      "coloredSha256": "4873dc1cc0e03d9ecf254c6a24cd439cfe21efce7cf77656cd8766fc22d74892",
       "format": "svg"
     },
     {
@@ -5686,7 +5686,7 @@
       "sharpnessBefore": 27.711,
       "sharpnessAfter": 35.545,
       "coloredPath": "assets/coloring/colored/batiments-lieux/294-le-gratte-ciel-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-015--colored.svg",
-      "coloredSha256": "cb2f2bf2d5cda61ecd28aca1439c791cd87f8d9ec3e0977a8e92216c3825a86e",
+      "coloredSha256": "80f48cdbf81776556c8a1df3c21a8082811a975ae3499344662e1fd9ace1bede",
       "format": "svg"
     },
     {
@@ -5706,7 +5706,7 @@
       "sharpnessBefore": 44.209,
       "sharpnessAfter": 54.538,
       "coloredPath": "assets/coloring/colored/batiments-lieux/295-la-pagode-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-011-colored.svg",
-      "coloredSha256": "caece2a5bfecab704092a82e202fa1c5526a9347c8727a0a23096157fed17b9f",
+      "coloredSha256": "b2f0ea8a6492ea1f89dbb7960a2549aa9404a64b14d16865b307467479d7ea34",
       "format": "svg"
     },
     {
@@ -5726,7 +5726,7 @@
       "sharpnessBefore": 34.291,
       "sharpnessAfter": 42.449,
       "coloredPath": "assets/coloring/colored/batiments-lieux/296-le-moulin-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-012-colored.svg",
-      "coloredSha256": "ac50f14dc85eed8e714c699ac51af73e82312bf5dc7d2978d06eb72865f5273c",
+      "coloredSha256": "7665ede363392edf6bdb2b14bafdfdc83547a417cb825a55eda82f694bd555fb",
       "format": "svg"
     },
     {
@@ -5746,7 +5746,7 @@
       "sharpnessBefore": 38.948,
       "sharpnessAfter": 53.204,
       "coloredPath": "assets/coloring/colored/batiments-lieux/297-la-maison-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-013--colored.svg",
-      "coloredSha256": "acf187b5d7db3e756195113c5e6f50c1506ea30057bcdd36c1d4d135cd8121e8",
+      "coloredSha256": "241c2e22bba0ab9d0f3f3e176f61ded5700d24de6e930c2b9059365dfe949669",
       "format": "svg"
     },
     {
@@ -5766,7 +5766,7 @@
       "sharpnessBefore": 23.11,
       "sharpnessAfter": 31.021,
       "coloredPath": "assets/coloring/colored/batiments-lieux/298-leglise-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-014--colored.svg",
-      "coloredSha256": "cbb4c4cf42e51ec255d997d248ff1fd4b9be26ca413fb00eebd63616cd62a7ca",
+      "coloredSha256": "db95ad32a13da73ff0cea96729e62e9c92a2d4215c8753206e9da48b8bd51e56",
       "format": "svg"
     },
     {
@@ -5786,7 +5786,7 @@
       "sharpnessBefore": 38.615,
       "sharpnessAfter": 50.723,
       "coloredPath": "assets/coloring/colored/batiments-lieux/299-lecole-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-015--colored.svg",
-      "coloredSha256": "02bd920f3ac3fd591954db7d2e28b604cfe7eec92b79691d4ab148b1f6751e01",
+      "coloredSha256": "43a39d8cba93423c36bfa32fb9496cf47d6e9c910b3553cd8f5c9dba308c7fa4",
       "format": "svg"
     },
     {
@@ -5806,7 +5806,7 @@
       "sharpnessBefore": 38.845,
       "sharpnessAfter": 51.199,
       "coloredPath": "assets/coloring/colored/batiments-lieux/300-le-chateau-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-016--colored.svg",
-      "coloredSha256": "0fd1efff106c2f13cdf38c980f05e6eb346c98ba3a5561e331424da3c7f6a740",
+      "coloredSha256": "708d5ce1b1d400fefa935592f44d5b3dfa134d1f16db36cbfd153a2d728693e9",
       "format": "svg"
     },
     {
@@ -5826,7 +5826,7 @@
       "sharpnessBefore": 24.96,
       "sharpnessAfter": 30.451,
       "coloredPath": "assets/coloring/colored/batiments-lieux/301-la-maison-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-006--colored.svg",
-      "coloredSha256": "851b593fd5555745405b2ccfb6da943577ce5ac1d256693bbb6931e002ad98d2",
+      "coloredSha256": "5a75c8d4c57822382c7541c1ff545f406ca602abc79088d42b0779e32801bb6d",
       "format": "svg"
     },
     {
@@ -5846,7 +5846,7 @@
       "sharpnessBefore": 30.179,
       "sharpnessAfter": 40.379,
       "coloredPath": "assets/coloring/colored/batiments-lieux/302-lecole-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-007--colored.svg",
-      "coloredSha256": "447597fde66068baaae3f7fd44bbfac0a09e53209e4806b0dad80ff62e88fdb6",
+      "coloredSha256": "913b3ce363bd0a593e664ffceea0142fc47db73e05f960d5d1ccce2c35fba89e",
       "format": "svg"
     },
     {
@@ -5866,7 +5866,7 @@
       "sharpnessBefore": 19.365,
       "sharpnessAfter": 25.349,
       "coloredPath": "assets/coloring/colored/batiments-lieux/303-lhopital-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-008--colored.svg",
-      "coloredSha256": "669cb35b9ac57f18e2ea24679a9a927fa93c83973f886d47fb2d40960c9327ab",
+      "coloredSha256": "8b81d514299337e462a6370b290dbdd0767e71bbffefd0d43a29b554c74d2aa9",
       "format": "svg"
     },
     {
@@ -5886,7 +5886,7 @@
       "sharpnessBefore": 18.79,
       "sharpnessAfter": 23.238,
       "coloredPath": "assets/coloring/colored/batiments-lieux/304-le-magasin-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-009--colored.svg",
-      "coloredSha256": "812e018872a5ec2319307bec9b907c465c793dbe20803ca635efe00af97d8914",
+      "coloredSha256": "a0d460929ea3331202dd68935a533b185e561ac6246b33c8df92e44f1c83d04e",
       "format": "svg"
     },
     {
@@ -5906,7 +5906,7 @@
       "sharpnessBefore": 26.4,
       "sharpnessAfter": 33.341,
       "coloredPath": "assets/coloring/colored/batiments-lieux/305-le-chateau-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-010--colored.svg",
-      "coloredSha256": "41f95e7becaf12ecba9edb311861e51c29d3fcadb21c9e33f88f8fe77555c48b",
+      "coloredSha256": "a254efb9efaff21015c1250624d989e4cdddc05861021febc18cd99c74adcd8f",
       "format": "svg"
     },
     {
@@ -5926,7 +5926,7 @@
       "sharpnessBefore": 14.172,
       "sharpnessAfter": 16.854,
       "coloredPath": "assets/coloring/colored/batiments-lieux/306-les-livres-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-016--colored.svg",
-      "coloredSha256": "d8d52c2103d4ff8c8f93f216c15dede6a167b897a224a023c02b975b0ee8557d",
+      "coloredSha256": "6b6eb057513f650bd15fa19ea5c517e2ddba67185b3f34a6e960f02314c5ba91",
       "format": "svg"
     },
     {
@@ -5946,7 +5946,7 @@
       "sharpnessBefore": 8.874,
       "sharpnessAfter": 10.727,
       "coloredPath": "assets/coloring/colored/batiments-lieux/307-le-crayon-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-017--colored.svg",
-      "coloredSha256": "81815604d5d079b4744f19db77e1fdbaf68b5c2453af5dbfb4a2d77fad69fa33",
+      "coloredSha256": "b92c8956bcc9f091d1f20c553eec2671fe6901a2ef3e31e8cda1cbcbc40d0c46",
       "format": "svg"
     },
     {
@@ -5966,7 +5966,7 @@
       "sharpnessBefore": 14.513,
       "sharpnessAfter": 16.996,
       "coloredPath": "assets/coloring/colored/batiments-lieux/308-le-sac-a-dos-extract-025-chatgpt-image-jul-17-2026-07-53-24-pm-2-018--colored.svg",
-      "coloredSha256": "9846defb7132666a6431998a416aba13dd5bdbb13b84882e239f4f08e791da75",
+      "coloredSha256": "8d077a407e58f213b16386c832d12487a8500aeec52d2a297cfd715cc3b73d9f",
       "format": "svg"
     },
     {
@@ -5986,7 +5986,7 @@
       "sharpnessBefore": 28.354,
       "sharpnessAfter": 35.514,
       "coloredPath": "assets/coloring/colored/batiments-lieux/309-la-maison-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-010--colored.svg",
-      "coloredSha256": "38484251ab41a5ac384f2e8b028176a61d87866a267cd5f46b414ea190e20ed5",
+      "coloredSha256": "432610398c73d23fe4b561eb7ac7124cc0eed8a4fc08d4720fa0615f4856d6dc",
       "format": "svg"
     },
     {
@@ -6006,7 +6006,7 @@
       "sharpnessBefore": 18.954,
       "sharpnessAfter": 24.372,
       "coloredPath": "assets/coloring/colored/batiments-lieux/310-le-phare-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-019--colored.svg",
-      "coloredSha256": "89f5c85ea9946382c5a2df623d29c4476187e87e2cb2d4010073be78e2371623",
+      "coloredSha256": "7fa2b1b69058608c85b4e2f6c8cc47cfe0251dc49eb64095731c5047de08f971",
       "format": "svg"
     },
     {
@@ -6026,7 +6026,7 @@
       "sharpnessBefore": 18.349,
       "sharpnessAfter": 23.321,
       "coloredPath": "assets/coloring/colored/batiments-lieux/311-le-sac-a-dos-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-021--colored.svg",
-      "coloredSha256": "8892d731bf076593213da5283f300b02571ea0037a1dd9e646b676bcb739946f",
+      "coloredSha256": "0f346121bee430ef5beaeab908ac2c99c2e690c102784cb4991885bb7bd0dd2a",
       "format": "svg"
     },
     {
@@ -6046,7 +6046,7 @@
       "sharpnessBefore": 10.569,
       "sharpnessAfter": 14.37,
       "coloredPath": "assets/coloring/colored/batiments-lieux/312-le-crayon-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-030--colored.svg",
-      "coloredSha256": "cafff472bbd85d3452715a28928fb762163e8c5907406c82403b41067d679856",
+      "coloredSha256": "d1dfee95098c9fc5bbd50895de857728441758756209026e037a7a7df1075588",
       "format": "svg"
     },
     {
@@ -6066,7 +6066,7 @@
       "sharpnessBefore": 23.808,
       "sharpnessAfter": 31.088,
       "coloredPath": "assets/coloring/colored/batiments-lieux/313-la-maison-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-019--colored.svg",
-      "coloredSha256": "ade39a63618b4e8766d167db469bea489e2c8ef90e22ddec9653b1cd8a981499",
+      "coloredSha256": "72f73a5c5634d320cd24220d7f64a0276558a1a23fd98e51202ac590113ac9d3",
       "format": "svg"
     },
     {
@@ -6086,7 +6086,7 @@
       "sharpnessBefore": 16.673,
       "sharpnessAfter": 20.451,
       "coloredPath": "assets/coloring/colored/batiments-lieux/314-le-moulin-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-020--colored.svg",
-      "coloredSha256": "f61eae0bbbaeb43bfb34f8faa048f82f85e4ec988d1afaaa739dfb54bd1a9bb9",
+      "coloredSha256": "7055b4a74cef3ff6b206227208000c307d6625de58d120e2930ba412c99ce468",
       "format": "svg"
     },
     {
@@ -6106,7 +6106,7 @@
       "sharpnessBefore": 9.018,
       "sharpnessAfter": 11.349,
       "coloredPath": "assets/coloring/colored/batiments-lieux/315-le-crayon-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-022--colored.svg",
-      "coloredSha256": "dabbddd9eb31c1898dcaa958914c4e80c0d570762eaa862111a7870eb8d413a0",
+      "coloredSha256": "e9de390c58ab8a58348b0fc13f259ad16b006933a487e7b682e8ce8278bb7b54",
       "format": "svg"
     },
     {
@@ -6126,7 +6126,7 @@
       "sharpnessBefore": 13.79,
       "sharpnessAfter": 16.182,
       "coloredPath": "assets/coloring/colored/batiments-lieux/316-le-sac-a-dos-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-023--colored.svg",
-      "coloredSha256": "6aa1978faf5e122251772d994f140258019b2ef599473f270b65eda45cdf3ff9",
+      "coloredSha256": "0415c282a6b56671ba2ecf12b667973ece07e99dcb3846fd4d0e8e04ee619ba8",
       "format": "svg"
     },
     {
@@ -6146,7 +6146,7 @@
       "sharpnessBefore": 17.285,
       "sharpnessAfter": 21.31,
       "coloredPath": "assets/coloring/colored/batiments-lieux/317-le-sac-a-dos-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-013--colored.svg",
-      "coloredSha256": "c3505917e2faf3a5f80df042ef988081699ca08a34267a8a6620309c6cefc59c",
+      "coloredSha256": "8dd45210eb7a19cc713ef2b355494c14d17b1c7ace98868864f16f0c3d05ca11",
       "format": "svg"
     },
     {
@@ -6166,7 +6166,7 @@
       "sharpnessBefore": 15.96,
       "sharpnessAfter": 19.435,
       "coloredPath": "assets/coloring/colored/batiments-lieux/318-la-maison-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-021--colored.svg",
-      "coloredSha256": "ee1fc18a1f566fc72ff77b9044c8e2f3364510ccdaf12b0ba6ad0a592db66285",
+      "coloredSha256": "7669ff949c44483f096eb3438530e9d5a093cdd79c9b47f1e7d5339d077a7549",
       "format": "svg"
     },
     {
@@ -6186,7 +6186,7 @@
       "sharpnessBefore": 17.299,
       "sharpnessAfter": 22.139,
       "coloredPath": "assets/coloring/colored/batiments-lieux/319-le-chateau-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-022--colored.svg",
-      "coloredSha256": "1c4035f72277dca36ddbd85ae7e257d37e9f837eef68fa1a28624d4c258a3856",
+      "coloredSha256": "936644196fa8edf3a46bf3f336f42417de90bff23a6d3ac3cb74756297bef5c4",
       "format": "svg"
     },
     {
@@ -6206,7 +6206,7 @@
       "sharpnessBefore": 17.079,
       "sharpnessAfter": 20.664,
       "coloredPath": "assets/coloring/colored/batiments-lieux/320-le-magasin-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-023--colored.svg",
-      "coloredSha256": "5f526775ab8ffd98bccb58b411aefbf90b88b76c5e44d1b4e6b624287613217a",
+      "coloredSha256": "6c49354af7095c6954b0bccbf400ff616273aab65bdcdfdaf67a86c628e59ee1",
       "format": "svg"
     },
     {
@@ -6224,7 +6224,7 @@
       "sourceName": "existing-chiffres-01.png",
       "sha256": "afe5bb351316c5b369a48da3ba3ca230e884ff6dd44653b136710e95553ea777",
       "coloredPath": "assets/coloring/colored/apprentissage/321-le-grand-chiffre-1-existing-chiffres-01-png-colored.svg",
-      "coloredSha256": "e53ec2021c0870011800093ad5a99c781c7fd7af6c60d56128a10bf0fc9e525e",
+      "coloredSha256": "39a659d5ca453c588f815283072854f01e1132b37dd170277d66411dc849699f",
       "format": "svg"
     },
     {
@@ -6242,7 +6242,7 @@
       "sourceName": "existing-chiffres-02.png",
       "sha256": "276fc56be69665c2068358f654808c9f1e3f722307e56d902a828692fb5bc19b",
       "coloredPath": "assets/coloring/colored/apprentissage/322-1-soleil-existing-chiffres-02-png-colored.svg",
-      "coloredSha256": "911941f1bfff4ff8df0acc452dac2ec7e13b98407c5ce3d22d185cb1fadaf587",
+      "coloredSha256": "f74e4e7a51d3242aa6bb1b6e724f00297b0be8d515ea4bdda8b491b792d3e93d",
       "format": "svg"
     },
     {
@@ -6260,7 +6260,7 @@
       "sourceName": "existing-chiffres-03.png",
       "sha256": "1915653f4a0ed5b3d48bda4e157b7bb2d8df584c225cfb3f24033d1255fb7cd9",
       "coloredPath": "assets/coloring/colored/apprentissage/323-1-ballon-existing-chiffres-03-png-colored.svg",
-      "coloredSha256": "3d8fc9c2859852e521738e7ec124057bceaead577039634711183aebd5c86a63",
+      "coloredSha256": "975b74f4aa512845cad7b06d1dac2314ed4ffad9571082b235ccf7d01a2e6dfe",
       "format": "svg"
     },
     {
@@ -6278,7 +6278,7 @@
       "sourceName": "existing-chiffres-04.png",
       "sha256": "1d52851084c6ec665b34ecb39d1fbe31fcc1eec23605e242682475c41e21761c",
       "coloredPath": "assets/coloring/colored/apprentissage/324-1-tambour-existing-chiffres-04-png-colored.svg",
-      "coloredSha256": "82a153a7ac3888a7d40f9843925a465ca502af8c082c5b02048c6b009e30dcdf",
+      "coloredSha256": "7587da502e0b8848434b0d4635cc7757defde9b3438a0581c38f3b51fcf24e15",
       "format": "svg"
     },
     {
@@ -6296,7 +6296,7 @@
       "sourceName": "existing-chiffres-05.png",
       "sha256": "4b91e12dedaf0e2f8c5b8f22398fe32dfe6bd297426c1f84ee82844fcee81b53",
       "coloredPath": "assets/coloring/colored/apprentissage/325-le-grand-chiffre-2-existing-chiffres-05-png-colored.svg",
-      "coloredSha256": "c89a88682ca78c18ce50eb7730c454e428989adaf1073513d3100dd8dc8f2991",
+      "coloredSha256": "0ac4e8a818d6d2dec772513a77cb9e6a7c6da41b7ec497fcf6cf7bae22d03d24",
       "format": "svg"
     },
     {
@@ -6314,7 +6314,7 @@
       "sourceName": "existing-chiffres-06.png",
       "sha256": "745b8bf76f291755acfa04c4eb2a4696282dd8e6ce7baec3f6129e7b9a087ed6",
       "coloredPath": "assets/coloring/colored/apprentissage/326-2-poissons-existing-chiffres-06-png-colored.svg",
-      "coloredSha256": "c58f896aaa6182f3cbeaa1a6c87a5e8aee415a535fd9bda770e5935883341678",
+      "coloredSha256": "51513e69fb763b5f359ddfd90a4c877144cb0b87c050e6ce7211a624739e57cd",
       "format": "svg"
     },
     {
@@ -6332,7 +6332,7 @@
       "sourceName": "existing-chiffres-07.png",
       "sha256": "a8999b5f150ed658e9342b06b36657f7e7c513f861aab7cb5f83766910f6cf9d",
       "coloredPath": "assets/coloring/colored/apprentissage/327-2-chaussures-existing-chiffres-07-png-colored.svg",
-      "coloredSha256": "f32314f96a2210366ed9cab712b7c6bbd077a2cf9726a0f030d6af581f9ed276",
+      "coloredSha256": "cf85c0d3795c8ce77d1ff54aba89b62171e83ea66752abca84a7badf2662c22e",
       "format": "svg"
     },
     {
@@ -6350,7 +6350,7 @@
       "sourceName": "existing-chiffres-08.png",
       "sha256": "13cc853fbd930d29b8311d50a78eaa36bf8eb8f5e63b7dac0643762399b8dbb2",
       "coloredPath": "assets/coloring/colored/apprentissage/328-2-oiseaux-existing-chiffres-08-png-colored.svg",
-      "coloredSha256": "c224e4a24b5dabaf4c4f45fb1df81698352d9b41a44530e856a93ab62fc7c160",
+      "coloredSha256": "6fd418374615dfd210ed69dfeb2c32ffd1de11a7ca5d1d09a63192e6f5af3f93",
       "format": "svg"
     },
     {
@@ -6368,7 +6368,7 @@
       "sourceName": "existing-chiffres-09.png",
       "sha256": "3988b8a58c28e43fa44abb1ce99195bc24622e664d3f8d0c040bfe0371cddac5",
       "coloredPath": "assets/coloring/colored/apprentissage/329-le-grand-chiffre-3-existing-chiffres-09-png-colored.svg",
-      "coloredSha256": "1743e4802a5d66ab9f55461eae4bc6b897879e1129f661ceba176af1eb86a508",
+      "coloredSha256": "f93223e9be24a932d7fdc63fe4c24d8e20d890feabc6e879cf45127e80ef163b",
       "format": "svg"
     },
     {
@@ -6386,7 +6386,7 @@
       "sourceName": "existing-chiffres-10.png",
       "sha256": "ca9028c8ed2a9bd4983e0184dde84c5736fec73141a45bafc5c1a79eaa09a25a",
       "coloredPath": "assets/coloring/colored/apprentissage/330-3-mangues-existing-chiffres-10-png-colored.svg",
-      "coloredSha256": "1ad27d5d18b940cd711950872c4cc65398c37f05bd8e7afda9bcebbda5b32a57",
+      "coloredSha256": "affb2ff5e80b18e4c14ddb2d9b67dbe86b32bf87e82e3649410bfb443668552c",
       "format": "svg"
     },
     {
@@ -6404,7 +6404,7 @@
       "sourceName": "existing-chiffres-11.png",
       "sha256": "a073cdc25c99bd1c063935864903ae638c989bc372825fae54614cb7d931ac17",
       "coloredPath": "assets/coloring/colored/apprentissage/331-3-papillons-existing-chiffres-11-png-colored.svg",
-      "coloredSha256": "1a179c35be9a88773061236e841f0d71d23364a388264e5694540423c4da730e",
+      "coloredSha256": "176950f0ea541d0b019c55ae99e46e560dad1bd9c308253ce3663be2ba539928",
       "format": "svg"
     },
     {
@@ -6422,7 +6422,7 @@
       "sourceName": "existing-chiffres-12.png",
       "sha256": "706d9588f69ce123f4c78e85e0ed15ce9420ba6b06706676958198724c317edc",
       "coloredPath": "assets/coloring/colored/apprentissage/332-3-petites-voitures-existing-chiffres-12-png-colored.svg",
-      "coloredSha256": "c69ac250a2591eeafd98367c31af37af353771c72b32ac04033cae53dec17b3f",
+      "coloredSha256": "407ec44a61961b216b1a590ec1f1f82e5c2f9f4370056f4e8c08f7bd5be462d3",
       "format": "svg"
     },
     {
@@ -6440,7 +6440,7 @@
       "sourceName": "existing-formes-01.png",
       "sha256": "0e5eb7d5f112d79c9c1ddaf05548470644ebf41e3c10dbbd08afa016b9107aef",
       "coloredPath": "assets/coloring/colored/apprentissage/333-le-grand-cercle-existing-formes-01-png-colored.svg",
-      "coloredSha256": "21e91ab42ad19e4594854b7628d58461cc49a525a9cd90a88fcdb6c4b5ec2705",
+      "coloredSha256": "1d21650997da47c832af92b459bf4ec4ef46cf077c0c740482e19373fbf66a22",
       "format": "svg"
     },
     {
@@ -6458,7 +6458,7 @@
       "sourceName": "existing-formes-02.png",
       "sha256": "4e8feb81eb9e474081e77d1c0fb536d0c608d1d71e515576b4e3483e54757ba4",
       "coloredPath": "assets/coloring/colored/apprentissage/334-le-carre-bien-droit-existing-formes-02-png-colored.svg",
-      "coloredSha256": "a3124f73c1250d187e88970192c8cf674155913e858eaeffdba4e824c473a730",
+      "coloredSha256": "dadcdcb5997a00c7988775928b264e6fe892583ecfd0cab5d4a252af8a2a19d9",
       "format": "svg"
     },
     {
@@ -6476,7 +6476,7 @@
       "sourceName": "existing-formes-03.png",
       "sha256": "c2a44014fa532cceb39579256da5c8f7afa7469b48c40fc6e8b41f61bbd6d44a",
       "coloredPath": "assets/coloring/colored/apprentissage/335-le-triangle-pointu-existing-formes-03-png-colored.svg",
-      "coloredSha256": "fb24bcc786fdbf9451cc2cd0ce411a22da708b33372c110481b73f390ee2aa4e",
+      "coloredSha256": "d68f9b6b86e73329c572ac8490d351dfbacf5d5ba97dc779c9f2c1d6a1f0f4f6",
       "format": "svg"
     },
     {
@@ -6494,7 +6494,7 @@
       "sourceName": "existing-formes-04.png",
       "sha256": "0605c05103d05f942cad415ec27929db5bd57da30a5e54b828cdee4d2ff4c632",
       "coloredPath": "assets/coloring/colored/apprentissage/336-le-rectangle-allonge-existing-formes-04-png-colored.svg",
-      "coloredSha256": "17c359e029ad65fe16f71628e6fe799449051ee4f8c71a4e23f5d84a478d220c",
+      "coloredSha256": "3295d377605f800207ff5e582d24ebc21c1cca31e31265977b8f24afa8c66d6f",
       "format": "svg"
     },
     {
@@ -6514,7 +6514,7 @@
       "sharpnessBefore": 13.403,
       "sharpnessAfter": 17.159,
       "coloredPath": "assets/coloring/colored/apprentissage/337-le-chiffre-5-extract-002-chatgpt-image-jul-17-2026-07-36-43-pm-008-pn-colored.svg",
-      "coloredSha256": "62eecad90b71329b89651f021cb4f9d0cb8bbedffeaa80b47a63f331005eade6",
+      "coloredSha256": "f1d0f13f863ce163b3fa468e30f770fcb66266e7661e2ca26211237d008091d7",
       "format": "svg"
     },
     {
@@ -6534,7 +6534,7 @@
       "sharpnessBefore": 8.432,
       "sharpnessAfter": 12.069,
       "coloredPath": "assets/coloring/colored/apprentissage/338-le-chiffre-3-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-009-pn-colored.svg",
-      "coloredSha256": "5431da18b480fd9b4b9cab75cb992c4bf9f45498d926dc779b7467ecba5988c7",
+      "coloredSha256": "5cb87829e95b20888ca0dc7f989d51f0dcc178624f5f8fcbd4a21329e304b0b7",
       "format": "svg"
     },
     {
@@ -6554,7 +6554,7 @@
       "sharpnessBefore": 4.957,
       "sharpnessAfter": 5.915,
       "coloredPath": "assets/coloring/colored/apprentissage/339-la-lettre-a-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-010-pn-colored.svg",
-      "coloredSha256": "2ace22b284af530c5c8767d39698faa1f76bee789fa306eeaa3a4305f9367011",
+      "coloredSha256": "e4bb575b95e2c09f288df7d226523ba9fc1593ab9508899613363048c3b99160",
       "format": "svg"
     },
     {
@@ -6574,7 +6574,7 @@
       "sharpnessBefore": 12.067,
       "sharpnessAfter": 15.189,
       "coloredPath": "assets/coloring/colored/apprentissage/340-le-chiffre-2-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-019--colored.svg",
-      "coloredSha256": "cbb156afc8d9e6d1325e5baccef364e218b7e14d078812910f0ff93f315b47b4",
+      "coloredSha256": "b6c2e0dbb488ff3f5362b7338f6304c33a1d16a81f5063bef0a1012f7dd3ed9a",
       "format": "svg"
     },
     {
@@ -6594,7 +6594,7 @@
       "sharpnessBefore": 9.408,
       "sharpnessAfter": 11.79,
       "coloredPath": "assets/coloring/colored/apprentissage/341-la-lettre-a-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-020--colored.svg",
-      "coloredSha256": "98d1928ef31d28559fa09c0a6fba433789e13a3903f449ebefa64365652421f6",
+      "coloredSha256": "808f88541b98b964dffebba64066bc455f4883120ad8a7466feb20cdd8602df5",
       "format": "svg"
     },
     {
@@ -6614,7 +6614,7 @@
       "sharpnessBefore": 9.719,
       "sharpnessAfter": 12.212,
       "coloredPath": "assets/coloring/colored/apprentissage/342-le-chiffre-5-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-019--colored.svg",
-      "coloredSha256": "7a9fc5d91ba5dba956500f7d35e5d8717a34bd58707615bf5507d2b94b451f28",
+      "coloredSha256": "a4e9f96a1b6f408dd4ab486f9d3b6532e4b7390c63fd7f66086795a55f747bc8",
       "format": "svg"
     },
     {
@@ -6634,7 +6634,7 @@
       "sharpnessBefore": 9.714,
       "sharpnessAfter": 12.383,
       "coloredPath": "assets/coloring/colored/apprentissage/343-la-lettre-d-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-020--colored.svg",
-      "coloredSha256": "7073a699fdc75373da080c9cc8f1cffcda2cc76a1fea008b270d3eca252ab411",
+      "coloredSha256": "15540703ec998721aceb1e27bd9a05c724e227b5bc1c832b2665bc72e8b3156d",
       "format": "svg"
     },
     {
@@ -6654,7 +6654,7 @@
       "sharpnessBefore": 10.712,
       "sharpnessAfter": 13.549,
       "coloredPath": "assets/coloring/colored/apprentissage/344-le-cur-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-017--colored.svg",
-      "coloredSha256": "44d9007b94b8200e11a9d64333af64f4014df17682b2e74bce0f38504f3cb645",
+      "coloredSha256": "0e51a942cb1f0c92101748ba14081fd6b9375ebcef863db0e31e117b8e111dcc",
       "format": "svg"
     },
     {
@@ -6674,7 +6674,7 @@
       "sharpnessBefore": 7.854,
       "sharpnessAfter": 9.396,
       "coloredPath": "assets/coloring/colored/apprentissage/345-le-chiffre-1-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-019--colored.svg",
-      "coloredSha256": "fa2a5efd352c2b33c1ea232cce4f2d6831d43503bdd0029dc45469a7977bf5e0",
+      "coloredSha256": "60ece799cf3ea96342fbfa4605bbe416f1759ce55d1dc4325e2d57e9e4389231",
       "format": "svg"
     },
     {
@@ -6694,7 +6694,7 @@
       "sharpnessBefore": 7.699,
       "sharpnessAfter": 9.892,
       "coloredPath": "assets/coloring/colored/apprentissage/346-la-lettre-f-extract-010-chatgpt-image-jul-17-2026-07-37-30-pm-7-020--colored.svg",
-      "coloredSha256": "2d0002ccb224080458724fe7bfaf6426b7b9f3604ff69c2490b04ea2c49e0f5f",
+      "coloredSha256": "e63ae6076ac212bb5b1ddf4bdd04c4d27cb7150f9203f02d0303ba9d1686a108",
       "format": "svg"
     },
     {
@@ -6714,7 +6714,7 @@
       "sharpnessBefore": 8.336,
       "sharpnessAfter": 10.097,
       "coloredPath": "assets/coloring/colored/apprentissage/347-la-note-de-musique-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-017--colored.svg",
-      "coloredSha256": "068a1d71b56b826eea4e34cee6a54449887e7cbb05390c2d8921ab882d09038a",
+      "coloredSha256": "da8a16e4bd97640cd7fecc9f0eb80cda2ed98d989e4d87ea3922ae81e99369c6",
       "format": "svg"
     },
     {
@@ -6734,7 +6734,7 @@
       "sharpnessBefore": 9.748,
       "sharpnessAfter": 12.404,
       "coloredPath": "assets/coloring/colored/apprentissage/348-le-chiffre-6-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-019--colored.svg",
-      "coloredSha256": "4e9b2a5a264f24583f664e5b7f8500350a6dfca6f790d783cbbb8c1b061c5b1e",
+      "coloredSha256": "556973680e84f8fa20fa70e93cd1e52119b60a138b84de930eafb2698987412f",
       "format": "svg"
     },
     {
@@ -6754,7 +6754,7 @@
       "sharpnessBefore": 8.743,
       "sharpnessAfter": 10.959,
       "coloredPath": "assets/coloring/colored/apprentissage/349-la-lettre-h-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-020--colored.svg",
-      "coloredSha256": "b666e486dfb7e3dffdd1adf4aaae72c5b84f13073df84ce0239d349a0c87f547",
+      "coloredSha256": "71d7825787587d9271e39820a9f64d43c35bfc10d63797e98fa3fdfa2022422d",
       "format": "svg"
     },
     {
@@ -6774,7 +6774,7 @@
       "sharpnessBefore": 11.159,
       "sharpnessAfter": 13.956,
       "coloredPath": "assets/coloring/colored/apprentissage/350-le-chiffre-3-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-019--colored.svg",
-      "coloredSha256": "86c48a158057036f41022270a821cfaf003bf0ec20ecc8e9747ce830a388b8cc",
+      "coloredSha256": "54f8315493ec837579fa788f0c7dbe38ee267005c8263b0d67a4e82d01b5394a",
       "format": "svg"
     },
     {
@@ -6794,7 +6794,7 @@
       "sharpnessBefore": 8.656,
       "sharpnessAfter": 10.712,
       "coloredPath": "assets/coloring/colored/apprentissage/351-la-lettre-j-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-020--colored.svg",
-      "coloredSha256": "0fdbe147b42bb9483adb4a79dc1c4d3bd4016e566bc022ade76a6c53e1342d0e",
+      "coloredSha256": "647fb97084d0ba169016de22390ff5f8a7680bb96827b3c0c229ab2ab2e369b8",
       "format": "svg"
     },
     {
@@ -6814,7 +6814,7 @@
       "sharpnessBefore": 11.878,
       "sharpnessAfter": 15.067,
       "coloredPath": "assets/coloring/colored/apprentissage/352-le-chiffre-0-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-015-colored.svg",
-      "coloredSha256": "f4e3dbe31151c38ea76d36d47a34d7c441ca46e261647aeaa46adb7956e494d6",
+      "coloredSha256": "f321b4d9a30aa333fba3bff34e1e16f9d80a7df9d55d87f2f068d59acbfbc4b1",
       "format": "svg"
     },
     {
@@ -6834,7 +6834,7 @@
       "sharpnessBefore": 13.026,
       "sharpnessAfter": 16.172,
       "coloredPath": "assets/coloring/colored/apprentissage/353-la-lettre-k-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-016-colored.svg",
-      "coloredSha256": "f8eb0fba629665e7222d49dbe88c86d23902c4cdeda0b433990be97c7839c951",
+      "coloredSha256": "054213262b0e95125010938f854475eda0cf0644d5306d713fa39bf46d862586",
       "format": "svg"
     },
     {
@@ -6854,7 +6854,7 @@
       "sharpnessBefore": 7.884,
       "sharpnessAfter": 9.585,
       "coloredPath": "assets/coloring/colored/apprentissage/354-letoile-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-029--colored.svg",
-      "coloredSha256": "35595958801819f4aa3d45891c2953585e09ab1d219cad0a06873aa1c38b8d31",
+      "coloredSha256": "a3f3258881b8dccf1e8812becb5e0700cac9953e60da0ba936b6f1b46aff20ab",
       "format": "svg"
     },
     {
@@ -6874,7 +6874,7 @@
       "sharpnessBefore": 8.283,
       "sharpnessAfter": 9.862,
       "coloredPath": "assets/coloring/colored/apprentissage/355-letoile-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-004--colored.svg",
-      "coloredSha256": "79c18c3a73f077069d97675229f3f7136428bb6b62a246fccf62c071a807e990",
+      "coloredSha256": "397af4e918b37a23d4d3bb70ffdb78801e7d444c62ad089f82b16b208ca1fbbe",
       "format": "svg"
     },
     {
@@ -6894,7 +6894,7 @@
       "sharpnessBefore": 6.21,
       "sharpnessAfter": 7.406,
       "coloredPath": "assets/coloring/colored/apprentissage/356-letoile-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-029--colored.svg",
-      "coloredSha256": "b716714753e219db33af8147b628d889723e751d656fe985530f230464cc5956",
+      "coloredSha256": "8d67111492a758fa7392b1a788f7acabf301fef0de557332be6a3f0060f6e7e1",
       "format": "svg"
     },
     {
@@ -6914,7 +6914,7 @@
       "sharpnessBefore": 11.959,
       "sharpnessAfter": 20.83,
       "coloredPath": "assets/coloring/colored/apprentissage/357-le-chiffre-1-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-031--colored.svg",
-      "coloredSha256": "0010487340ab8eedaa3957f2147e8a75f03923055019faff20cbb5561b24f103",
+      "coloredSha256": "d7da27f94d4084db858271697f219375e9e08bbf7d8623351666b2299d962760",
       "format": "svg"
     },
     {
@@ -6934,7 +6934,7 @@
       "sharpnessBefore": 4.199,
       "sharpnessAfter": 5.079,
       "coloredPath": "assets/coloring/colored/apprentissage/358-le-chiffre-2-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-032--colored.svg",
-      "coloredSha256": "45deb943a3e0d8d7d95a9e2da66952e12ddc1a2bde18b6ab5141a67a04b872ac",
+      "coloredSha256": "eb07ca59680dc6ebd12ae0a817fbcab367e50a04a3c1f510d1c0278295e5d4ec",
       "format": "svg"
     },
     {
@@ -6954,7 +6954,7 @@
       "sharpnessBefore": 4.228,
       "sharpnessAfter": 4.977,
       "coloredPath": "assets/coloring/colored/apprentissage/359-le-chiffre-3-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-033--colored.svg",
-      "coloredSha256": "6d7ee5ea48913290432190b204546135ca99e1698f2b581db73ee5a44fd89cda",
+      "coloredSha256": "dca9f0cb05eb2119b67a19881530023ac888f708573511ba8a3e8ae69ae3812c",
       "format": "svg"
     },
     {
@@ -6974,7 +6974,7 @@
       "sharpnessBefore": 4.503,
       "sharpnessAfter": 5.345,
       "coloredPath": "assets/coloring/colored/apprentissage/360-la-lettre-a-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-034--colored.svg",
-      "coloredSha256": "2ab2694a289aa8cd177744a3835b5df05e14b92928bf54ad0afe641663c3b22c",
+      "coloredSha256": "239c908334acb60dd929b7b9faa3ffb6d81d30d269a097846f95b92d76cd393c",
       "format": "svg"
     },
     {
@@ -6992,7 +6992,7 @@
       "sourceName": "existing-metiers-01.png",
       "sha256": "145a9961a3a38538e11397455f270f40c837d20c1a0f244b127b0662d007bae5",
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/361-la-maitresse-decole-existing-metiers-01-png-colored.svg",
-      "coloredSha256": "e8e63165a998aef0648cf3f86c766bfb536846aecac18ed006cdbe22d6264a00",
+      "coloredSha256": "d4bce977c9eb22b60eb66359b1b01613d8a15618b2c41747532e8801e79a87f0",
       "format": "svg"
     },
     {
@@ -7010,7 +7010,7 @@
       "sourceName": "existing-metiers-02.png",
       "sha256": "494207ea3553f33964cc6428236d4f2bede9ff8e0225c5e0c5080db2d20e0d8c",
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/362-le-maitre-decole-existing-metiers-02-png-colored.svg",
-      "coloredSha256": "f2e797706046a54bcd28e8be788fef6bd0e240249dbc86bcde020e7a0611051e",
+      "coloredSha256": "74886491c5f8c77ce5d2348425fbaef38242c9bb58ae35d1524011fadc3a10b5",
       "format": "svg"
     },
     {
@@ -7028,7 +7028,7 @@
       "sourceName": "existing-metiers-03.png",
       "sha256": "1b61fa3913e54bb9dcc4d7178cb1d0a19a926736c086042af8cc160109a31ee2",
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/363-la-medecin-existing-metiers-03-png-colored.svg",
-      "coloredSha256": "d6a7c343b2bbed564f7c6b9e84a2c80189ddd436235157e7054d8c57b47dfbc4",
+      "coloredSha256": "4c1a0ece295abedca7c7bb0a0f0507c47c9a692dc48220a05a948fcff2a5c0d7",
       "format": "svg"
     },
     {
@@ -7046,7 +7046,7 @@
       "sourceName": "existing-metiers-04.png",
       "sha256": "2ee258523a5063aa187f4de05f34da3343e6145f75005fb57ae9e8980c672a90",
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/364-linfirmier-existing-metiers-04-png-colored.svg",
-      "coloredSha256": "5e0be77adce227baec3a2852e902b29b9bbe9bf724eb6aa04855c6163000d520",
+      "coloredSha256": "a0520ae994af073bc6a49a4900f6460fd750207b6cc5607fc5c4d1937e5d329c",
       "format": "svg"
     },
     {
@@ -7066,7 +7066,7 @@
       "sharpnessBefore": 6.618,
       "sharpnessAfter": 8.268,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/365-letoile-extract-003-chatgpt-image-jul-17-2026-07-37-00-pm-008-pn-colored.svg",
-      "coloredSha256": "9faf822d472614eadba3d8d041185c1072e9ac53085bd9928f3b804b456b13c7",
+      "coloredSha256": "ef635682430962021c68d1834877ec2ed2e71421ff0f22f0503938eab25d8d52",
       "format": "svg"
     },
     {
@@ -7086,7 +7086,7 @@
       "sharpnessBefore": 18.568,
       "sharpnessAfter": 23.651,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/366-le-pingouin-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-003--colored.svg",
-      "coloredSha256": "03ef2910c8caff80bdad6f951b99a0dae520cea3baed86544225ebef5bf0237f",
+      "coloredSha256": "7fbe6cecf2fccb36612cb1b72a80208cae7e274e599708ab0f16d3233a21cfd5",
       "format": "svg"
     },
     {
@@ -7106,7 +7106,7 @@
       "sharpnessBefore": 21.253,
       "sharpnessAfter": 28.186,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/367-la-fusee-extract-006-chatgpt-image-jul-17-2026-07-37-28-pm-3-007--colored.svg",
-      "coloredSha256": "22d88acedd369a6abef48c0d3fdaa1dd1910b06cc91aea7c957685350626362b",
+      "coloredSha256": "534f3bcd9b5cfc329c726527ac68906c7b6615bac9568fc85de463821f14d1ab",
       "format": "svg"
     },
     {
@@ -7126,7 +7126,7 @@
       "sharpnessBefore": 22.687,
       "sharpnessAfter": 28.395,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/368-la-soucoupe-volante-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-007--colored.svg",
-      "coloredSha256": "f0b4f07beacb5d70648129e4f1ef236daf2a5e31f8d069c8bec8569482047626",
+      "coloredSha256": "7a9d918073691aeb2214b636914fceb277558f85d459d13c595d058f802d630e",
       "format": "svg"
     },
     {
@@ -7146,7 +7146,7 @@
       "sharpnessBefore": 20.431,
       "sharpnessAfter": 26.554,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/369-le-cerf-volant-extract-008-chatgpt-image-jul-17-2026-07-37-29-pm-5-017--colored.svg",
-      "coloredSha256": "3066880b98c2c08d78d3afd008ac62a10585227fc679810d337b86dbc0553b3c",
+      "coloredSha256": "977c50143d25490fe383445ede2fa0eb7f4112c9c5b30fb127fdfdcd90a6f933",
       "format": "svg"
     },
     {
@@ -7166,7 +7166,7 @@
       "sharpnessBefore": 25.05,
       "sharpnessAfter": 32.669,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/370-le-perroquet-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-003--colored.svg",
-      "coloredSha256": "ef9148e82363c424e7eb193199268abb2066762e38a166352424a17c94d581f1",
+      "coloredSha256": "cc5f4006347b04b03e9df37522f18986d50f6dc7c94d627b6aaf5dbc79215f52",
       "format": "svg"
     },
     {
@@ -7186,7 +7186,7 @@
       "sharpnessBefore": 25.715,
       "sharpnessAfter": 33.49,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/371-la-tente-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-016--colored.svg",
-      "coloredSha256": "a4e5303a3bc669c2b9857e43b6fdb23ff5af18c1dad8852d5439a357b19f15fe",
+      "coloredSha256": "1c46f6f42c386b078ce02d733b1c9f695fddf3201a65ecc9e2a3be1c473013e3",
       "format": "svg"
     },
     {
@@ -7206,7 +7206,7 @@
       "sharpnessBefore": 9.036,
       "sharpnessAfter": 11.812,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/372-le-ballon-extract-011-chatgpt-image-jul-17-2026-07-37-31-pm-8-018--colored.svg",
-      "coloredSha256": "688a9960476531bd2323ee1d34d7321b25c048ee5c8b1eecf1fafdc6f1eb8eed",
+      "coloredSha256": "b77cb25d8c714699d310199079db472f3b67957a271915f77e8abe142d0b833c",
       "format": "svg"
     },
     {
@@ -7226,7 +7226,7 @@
       "sharpnessBefore": 22.846,
       "sharpnessAfter": 29.161,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/373-la-chauve-souris-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-002--colored.svg",
-      "coloredSha256": "8d287d9902cb1251712862ad7d439fb47a48559ffc768fac3774acc57ddd413e",
+      "coloredSha256": "6b8433352e127e0b1d62aa00afb9a28f540f5e2d9da44c5c937c9c2812c78a76",
       "format": "svg"
     },
     {
@@ -7246,7 +7246,7 @@
       "sharpnessBefore": 16.883,
       "sharpnessAfter": 20.983,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/374-letoile-de-mer-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-004--colored.svg",
-      "coloredSha256": "3978b014be738eb41ac2dc2e6a6a9c37bbd082b00d3da2fc5e8d432b272a7995",
+      "coloredSha256": "3031d7bcb913514d4f982eb1045605e41838e0f536e81d8e2a164859b8abaa7c",
       "format": "svg"
     },
     {
@@ -7266,7 +7266,7 @@
       "sharpnessBefore": 14.053,
       "sharpnessAfter": 17.519,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/375-le-skateboard-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-007--colored.svg",
-      "coloredSha256": "3140c7ceb0240fc2478a3ac1e0f2c50b7a60789242130b5978f9f6cd645a4542",
+      "coloredSha256": "a29e27d4e85d6e4f035c98a4f58806de4209f1e54a0a309fa75700d8f84deca1",
       "format": "svg"
     },
     {
@@ -7286,7 +7286,7 @@
       "sharpnessBefore": 26.379,
       "sharpnessAfter": 32.658,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/376-le-piano-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-014--colored.svg",
-      "coloredSha256": "46a952a063e4435f70141984d38ec23b6ecaa639e30a2400bf1b5f2e3c8ca374",
+      "coloredSha256": "5d2d3497152d043ee46fcffdba289ba54ab8674a5e880558a955f830679a0c84",
       "format": "svg"
     },
     {
@@ -7306,7 +7306,7 @@
       "sharpnessBefore": 17.995,
       "sharpnessAfter": 22.511,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/377-le-cadeau-extract-012-chatgpt-image-jul-17-2026-07-37-31-pm-9-018--colored.svg",
-      "coloredSha256": "3c70b2253d6413461d1214a654c2bccfd901e5a4f556802ac24baf0dfa06b98e",
+      "coloredSha256": "6c49cb027f71c58b2e1b5a1c3d9f5dd03487509c99e34f6d4beebe65fd6daa28",
       "format": "svg"
     },
     {
@@ -7326,7 +7326,7 @@
       "sharpnessBefore": 25.997,
       "sharpnessAfter": 31.815,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/378-le-tambour-extract-013-chatgpt-image-jul-17-2026-07-37-32-pm-10-014-colored.svg",
-      "coloredSha256": "1722802368df9174e4ade05c1c6c922b3e0dec5df551ad9c727737d84dd66e23",
+      "coloredSha256": "962cc3d1ff77f508f6e57d9099320d1650113b46160111a0e16032f88b9ea173",
       "format": "svg"
     },
     {
@@ -7346,7 +7346,7 @@
       "sharpnessBefore": 30.097,
       "sharpnessAfter": 41.689,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/379-la-fusee-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-007--colored.svg",
-      "coloredSha256": "642e8e1092245e095e3dbae5846b0a78511a69d9de76ae73763d9f08317e71c9",
+      "coloredSha256": "a1dd4b0a7fc3e9fd43973ae568a29e82be9ae06a26875a2b17442589d50e02cc",
       "format": "svg"
     },
     {
@@ -7366,7 +7366,7 @@
       "sharpnessBefore": 14.534,
       "sharpnessAfter": 19.067,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/380-letoile-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-017--colored.svg",
-      "coloredSha256": "7b5d8d96c3a54d5710eee9f3170e0a984d7f6524ef1c8f228c4ee446f5a34d21",
+      "coloredSha256": "2a5793854627c1c39d79558fc5a4277087b200f89742bb27b0040c215cfb79a0",
       "format": "svg"
     },
     {
@@ -7386,7 +7386,7 @@
       "sharpnessBefore": 29.893,
       "sharpnessAfter": 39.402,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/381-lours-en-peluche-extract-024-chatgpt-image-jul-17-2026-07-53-24-pm-1-020--colored.svg",
-      "coloredSha256": "61ccce056fc2545bfc51426a42ef8f17ff533c854d3524aaef8762b41a0463a5",
+      "coloredSha256": "730f29a9eb152c61ee8d1b221c1efcc6bf5c03c208304b5767abfa9cf44c7187",
       "format": "svg"
     },
     {
@@ -7406,7 +7406,7 @@
       "sharpnessBefore": 12.44,
       "sharpnessAfter": 16.904,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/382-letoile-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-005--colored.svg",
-      "coloredSha256": "bbc1dfa532a9ae8588f7b2a7fba6d0258cf9d1a3d6a610218192705db967af3a",
+      "coloredSha256": "8cb3792ac749d766477ba13e3814be01b95ae584391e004153b8849a18268b7e",
       "format": "svg"
     },
     {
@@ -7426,7 +7426,7 @@
       "sharpnessBefore": 27.783,
       "sharpnessAfter": 35.825,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/383-le-xylophone-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-017--colored.svg",
-      "coloredSha256": "347a7e429cc9584af334706d62614d80dbe53df7c835ea6e5f018b76bb98996a",
+      "coloredSha256": "cb87299093c5d6bbd3bbdb832430a950398a81ba9db68794a2410ae8b2ef41e8",
       "format": "svg"
     },
     {
@@ -7446,7 +7446,7 @@
       "sharpnessBefore": 21.936,
       "sharpnessAfter": 28.455,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/384-lours-en-peluche-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-020--colored.svg",
-      "coloredSha256": "5a4197aa2235019a32def1edfc167c3178a7017cff173e44a7d54c203b08aeea",
+      "coloredSha256": "e80acc75fe0071c4283248dcfbb5438a6f306ac48ac2827e17aed18fc08609fe",
       "format": "svg"
     },
     {
@@ -7466,7 +7466,7 @@
       "sharpnessBefore": 15.234,
       "sharpnessAfter": 19.641,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/385-la-fusee-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-022--colored.svg",
-      "coloredSha256": "455f69339846c32d17133d5ee6f5662c524f01f1ff33d55e6712917b224c048c",
+      "coloredSha256": "058f6bd0a847c2a518fe21ca27f86c4b73e8471076d4b022ec0dca81685ed6bc",
       "format": "svg"
     },
     {
@@ -7486,7 +7486,7 @@
       "sharpnessBefore": 19.155,
       "sharpnessAfter": 23.732,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/386-le-tambour-extract-026-chatgpt-image-jul-17-2026-07-53-25-pm-3-025--colored.svg",
-      "coloredSha256": "43e442cee075f11179931a49015c4f36eda25bfc0b1b09811712647d2587a669",
+      "coloredSha256": "6b6856fb1038d3fd4c5383548db05fe13cbc91c5364d6e10043510a2d02f7aea",
       "format": "svg"
     },
     {
@@ -7506,7 +7506,7 @@
       "sharpnessBefore": 28.606,
       "sharpnessAfter": 37.119,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/387-lours-en-peluche-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-008--colored.svg",
-      "coloredSha256": "13cf1f418332dbcb9f743a4e39037d194edace5c922221f653b28f1bf2b2efc8",
+      "coloredSha256": "ad20476a721e00360c9688e808d6667f711eea4c02cef845f62eadbb903b1d06",
       "format": "svg"
     },
     {
@@ -7526,7 +7526,7 @@
       "sharpnessBefore": 9.368,
       "sharpnessAfter": 12.664,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/388-letoile-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-026--colored.svg",
-      "coloredSha256": "44267e52b78c8fa78988108574bf0c4d393ccc7adb67966f621f96da71bec98f",
+      "coloredSha256": "7c798f8a19659d82712d62c64496d21b0064de274d93519c34b476ae11281725",
       "format": "svg"
     },
     {
@@ -7546,7 +7546,7 @@
       "sharpnessBefore": 19.709,
       "sharpnessAfter": 26.455,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/389-le-cadeau-extract-027-chatgpt-image-jul-17-2026-07-53-25-pm-4-029--colored.svg",
-      "coloredSha256": "98db142ff04e25f0a0f75ad1897ac44fe1be8973a7950c0e85fb0a7516fa335c",
+      "coloredSha256": "eb5739f7c20062a9ad8f6d3b211bd397bd91d9549db078dcdf80bc42a9ee43b9",
       "format": "svg"
     },
     {
@@ -7566,7 +7566,7 @@
       "sharpnessBefore": 23.141,
       "sharpnessAfter": 29.369,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/390-lours-en-peluche-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-008--colored.svg",
-      "coloredSha256": "ae72908142a19ac4bfe2a40c7102c64e8d2314744f5dc423f3e5c364387c5cda",
+      "coloredSha256": "48d4b66d305e8ac7b4ff1a1a5f60201e399e60ed09bd7fadd0d68912694e4040",
       "format": "svg"
     },
     {
@@ -7586,7 +7586,7 @@
       "sharpnessBefore": 14.318,
       "sharpnessAfter": 17.892,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/391-la-fusee-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-010--colored.svg",
-      "coloredSha256": "4771eb816d3bfaa0436449f10126309655b23e6f97a9f0dde9018af7fce245cb",
+      "coloredSha256": "e3c12763ae98329b4bb8de6b43d300c7135f7053750dba9778d027ad34caaf08",
       "format": "svg"
     },
     {
@@ -7606,7 +7606,7 @@
       "sharpnessBefore": 7.682,
       "sharpnessAfter": 9.018,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/392-le-ballon-de-football-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-019--colored.svg",
-      "coloredSha256": "c4d9f633dab2dc4308b2700e19d215de8e17201dbe77c72ac40fa1511ba4f411",
+      "coloredSha256": "666748cd9289dfc7b25d6495dd0487b495169b38bd2e7fb6b6387d42ca833521",
       "format": "svg"
     },
     {
@@ -7626,7 +7626,7 @@
       "sharpnessBefore": 10.655,
       "sharpnessAfter": 13.282,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/393-letoile-extract-028-chatgpt-image-jul-17-2026-07-53-26-pm-5-020--colored.svg",
-      "coloredSha256": "e1a1181bcabafcf0427cb255535d6b90eca0baea1a50dcec1a98ba4f483978f3",
+      "coloredSha256": "916128ba4dde032abca3e78f3edfcbd263d60c7ef077eca5d0f6925737c195ab",
       "format": "svg"
     },
     {
@@ -7646,7 +7646,7 @@
       "sharpnessBefore": 22.067,
       "sharpnessAfter": 25.7,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/394-lours-en-peluche-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-024--colored.svg",
-      "coloredSha256": "7433c2909d8664f88471626adf44eb76243fc88b609a201713fd2ca82c0e2b44",
+      "coloredSha256": "8ee964ec39ea252d45672b44aead70cfeb1a26769108ff18090aa069331ff8c2",
       "format": "svg"
     },
     {
@@ -7666,7 +7666,7 @@
       "sharpnessBefore": 14.612,
       "sharpnessAfter": 17.026,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/395-le-tambour-extract-029-chatgpt-image-jul-17-2026-07-53-26-pm-6-025--colored.svg",
-      "coloredSha256": "dc3b6d3b4c93600544cf6673fd69f2840fd91ab15bc04e3cd00378c337385c11",
+      "coloredSha256": "8a79138e9b151068f4a8b2d7617f48314cb5bd41a96343a8c6bd24f1faf951e1",
       "format": "svg"
     },
     {
@@ -7686,7 +7686,7 @@
       "sharpnessBefore": 15.153,
       "sharpnessAfter": 18.67,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/396-le-cheval-a-bascule-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-007--colored.svg",
-      "coloredSha256": "854efe889e96e7d0caa705b1b6cc9486065bcf00f905a8e1b40b5e95a573c8bd",
+      "coloredSha256": "addd58947f8f8507c7bfd6fb6de911631d9a404675aac187333cf30f61264a37",
       "format": "svg"
     },
     {
@@ -7706,7 +7706,7 @@
       "sharpnessBefore": 27.544,
       "sharpnessAfter": 45.613,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/397-lappareil-photo-extract-030-chatgpt-image-jul-17-2026-07-53-26-pm-7-009--colored.svg",
-      "coloredSha256": "65096b98ab9cdd778d46ce4f9afd2a8e70cea484aa4b50b78067d98640bb8fd6",
+      "coloredSha256": "cc086058ce05846563b516317c8165677a55c515f7f16b0f4e66fa93d82b34ec",
       "format": "svg"
     },
     {
@@ -7726,7 +7726,7 @@
       "sharpnessBefore": 14.453,
       "sharpnessAfter": 17.212,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/398-le-sac-a-dos-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-024--colored.svg",
-      "coloredSha256": "dc84567c3827570065f535b9b3a650341cba9ab6f4f6c1eb3553c97383684caa",
+      "coloredSha256": "4ee8bf2edb8addc49cd2602ca7ddb21d2a10e7fc0035e2cd3d60f16f4cf6b828",
       "format": "svg"
     },
     {
@@ -7746,7 +7746,7 @@
       "sharpnessBefore": 12.446,
       "sharpnessAfter": 14.763,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/399-les-crayons-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-025--colored.svg",
-      "coloredSha256": "983fdfa23e40dd9a6f708b64e703ee04c49f15ef0b389980a79da114dc8a54ca",
+      "coloredSha256": "4aa21af486f21e38d363587f7ec5a89b9a58dca62784e708aee9623458b4f405",
       "format": "svg"
     },
     {
@@ -7766,7 +7766,7 @@
       "sharpnessBefore": 7.68,
       "sharpnessAfter": 9.056,
       "coloredPath": "assets/coloring/colored/loisirs-decouvertes/400-le-ballon-de-plage-extract-031-chatgpt-image-jul-17-2026-07-53-27-pm-8-030--colored.svg",
-      "coloredSha256": "6c7ef70bbb1a953d82f2b0f820674423b3590f132bcfc0330afa3876d7716701",
+      "coloredSha256": "eb6c24ca0293e49a6bb58f67b407a6731982a5ea1a321709ccd43d045a4cdb97",
       "format": "svg"
     }
   ],
@@ -7782,5 +7782,26 @@
     "sourceBytes": 259732436,
     "svgBytes": 32533890,
     "reductionPercent": 87.47
+  },
+  "coloredGuideRegeneration": {
+    "generatedAt": "2026-07-20T04:11:14.030Z",
+    "pipeline": "semantic-color-transfer-v1",
+    "processSize": 512,
+    "vectorizer": {
+      "colors": 16,
+      "pathomit": 24,
+      "adaptivePathomit": [
+        24,
+        16,
+        8
+      ],
+      "ltres": 1.5,
+      "qtres": 1.5,
+      "strokewidth": 0.6
+    },
+    "guides": 400,
+    "source": "active line art plus previous colored guide as semantic map",
+    "nativeSvg": true,
+    "embeddedRaster": false
   }
 }

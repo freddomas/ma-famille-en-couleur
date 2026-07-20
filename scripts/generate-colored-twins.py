@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
 import unicodedata
 from pathlib import Path
 
@@ -230,6 +231,15 @@ def build_contact_sheet(entries: list[dict]) -> None:
 
 
 def main() -> int:
+    # Compatibilité historique : le remplissage raster par composantes a été
+    # remplacé par le pipeline hybride SVG, qui préserve les traits et refuse
+    # les débordements. Les palettes ci-dessus restent la source sémantique du
+    # nouveau générateur Node.
+    return subprocess.call(
+        ["node", str(ROOT / "scripts" / "regenerate-colored-guides.cjs"), "--apply"],
+        cwd=ROOT,
+    )
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args()

@@ -114,8 +114,8 @@
     "previewObjectFit": "contain"
   },
   "invalid": {
-    "counter": 16,
-    "previews": 16,
+    "counter": 14,
+    "previews": 14,
     "error": "Échec : chargement impossible pour assets/coloring/active/image-volontairement-absente.svg",
     "openDisabled": true,
     "printDisabled": true,
@@ -128,9 +128,9 @@
         "source": "network",
         "level": "error",
         "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "timestamp": 1784517408190.508,
+        "timestamp": 1784520830598.127,
         "url": "http://127.0.0.1:8080/assets/coloring/active/image-volontairement-absente.svg",
-        "networkRequestId": "12032.1325"
+        "networkRequestId": "37468.1319"
       }
     },
     {
@@ -138,9 +138,9 @@
         "source": "network",
         "level": "error",
         "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "timestamp": 1784517408514.041,
+        "timestamp": 1784520830916.402,
         "url": "http://127.0.0.1:8080/assets/coloring/active/image-volontairement-absente.svg?asset-retry=1",
-        "networkRequestId": "12032.1326"
+        "networkRequestId": "37468.1320"
       }
     },
     {
@@ -148,9 +148,9 @@
         "source": "network",
         "level": "error",
         "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
-        "timestamp": 1784517409723.288,
+        "timestamp": 1784520832125.043,
         "url": "http://127.0.0.1:8080/assets/coloring/active/image-volontairement-absente.svg?asset-retry=2",
-        "networkRequestId": "12032.1327"
+        "networkRequestId": "37468.1321"
       }
     }
   ],

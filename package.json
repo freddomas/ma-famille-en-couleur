@@ -12,6 +12,7 @@
     "typecheck": "tsc --noEmit",
     "validate": "node scripts/validate-delivery.cjs",
     "dry-run": "powershell -ExecutionPolicy Bypass -File scripts/run-browser-dry-run.ps1 -Headed",
+    "assets:colored": "node scripts/regenerate-colored-guides.cjs --apply",
     "assets:svg": "node scripts/convert-catalogue-assets-to-svg.cjs --apply",
     "assets:archive-png": "node scripts/archive-decommissioned-png.cjs",
     "qa:catalogue-visibility": "node scripts/catalogue-visibility-playwright.cjs",
