@@ -2,10 +2,26 @@ const PAGE_COUNT = 10;
 const ITEMS_PER_PAGE = 4;
 const RANDOM_DRAWING_COUNT = 40;
 const ASSET_LOAD_RETRY_DELAYS = Object.freeze([300, 1200]);
+const PAGE_SWIPE_INTENT_DISTANCE = 12;
+const PAGE_SWIPE_MIN_DISTANCE = 48;
+const PAGE_SWIPE_HORIZONTAL_RATIO = 1.2;
 const CATALOGUE_COVER_IDS = Object.freeze({
   "vehicules-terre": "vehicules-terre-29",
   "loisirs-decouvertes": "loisirs-decouvertes-32",
 });
+
+const pageSwipe = {
+  pointerId: null,
+  startX: 0,
+  startY: 0,
+  deltaX: 0,
+  deltaY: 0,
+  renderedDeltaX: 0,
+  horizontal: false,
+  suppressClickUntil: 0,
+  animation: null,
+  settleTimer: null,
+};
 
 const state = {
   catalogues: [],
@@ -254,6 +270,7 @@ function bindGlobalEvents() {
   document
     .getElementById("next-page")
     ?.addEventListener("click", () => selectPage(state.selectedPage + 1));
+  bindPageSwipe();
   document.getElementById("print-page")?.addEventListener("click", async (event) => {
     isolateAction(event, "print-page");
     const catalogue = selectedCatalogue();
@@ -343,6 +360,231 @@ function bindGlobalEvents() {
     if (event.key === "ArrowLeft") selectPage(state.selectedPage - 1);
     if (event.key === "ArrowRight") selectPage(state.selectedPage + 1);
   });
+}
+
+function bindPageSwipe() {
+  const viewer = document.getElementById("page-viewer");
+  if (!viewer) return;
+
+  viewer.addEventListener("pointerdown", startPageSwipe);
+  viewer.addEventListener("pointermove", movePageSwipe);
+  viewer.addEventListener("pointerup", finishPageSwipe);
+  viewer.addEventListener("pointercancel", cancelPageSwipe);
+  viewer.addEventListener(
+    "click",
+    (event) => {
+      if (Date.now() >= pageSwipe.suppressClickUntil) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    },
+    true,
+  );
+}
+
+function startPageSwipe(event) {
+  if (
+    !["touch", "pen"].includes(event.pointerType)
+    || !event.isPrimary
+    || pageSwipe.pointerId !== null
+    || !document.getElementById("atelier")?.classList.contains("is-catalogue-open")
+  ) {
+    return;
+  }
+
+  pageSwipe.animation?.cancel();
+  pageSwipe.animation = null;
+  clearPageSwipeStyles(event.currentTarget);
+  pageSwipe.pointerId = event.pointerId;
+  pageSwipe.startX = event.clientX;
+  pageSwipe.startY = event.clientY;
+  pageSwipe.deltaX = 0;
+  pageSwipe.deltaY = 0;
+  pageSwipe.renderedDeltaX = 0;
+  pageSwipe.horizontal = false;
+}
+
+function movePageSwipe(event) {
+  if (event.pointerId !== pageSwipe.pointerId) return;
+
+  const deltaX = event.clientX - pageSwipe.startX;
+  const deltaY = event.clientY - pageSwipe.startY;
+  const horizontalDistance = Math.abs(deltaX);
+  const verticalDistance = Math.abs(deltaY);
+
+  if (!pageSwipe.horizontal) {
+    if (
+      verticalDistance >= PAGE_SWIPE_INTENT_DISTANCE
+      && verticalDistance > horizontalDistance
+    ) {
+      clearPageSwipe();
+      return;
+    }
+    if (
+      horizontalDistance < PAGE_SWIPE_INTENT_DISTANCE
+      || horizontalDistance < verticalDistance * PAGE_SWIPE_HORIZONTAL_RATIO
+    ) {
+      return;
+    }
+
+    pageSwipe.horizontal = true;
+    event.currentTarget.classList.add("is-page-swiping");
+  }
+
+  event.preventDefault();
+  pageSwipe.deltaX = deltaX;
+  pageSwipe.deltaY = deltaY;
+  pageSwipe.suppressClickUntil = Date.now() + 500;
+
+  const atBlockedEdge =
+    (deltaX > 0 && state.selectedPage === PAGE_COUNT)
+    || (deltaX < 0 && state.selectedPage === 1);
+  const renderedDeltaX = atBlockedEdge ? deltaX * 0.22 : deltaX;
+  pageSwipe.renderedDeltaX = renderedDeltaX;
+
+  if (!prefersReducedMotion()) {
+    event.currentTarget.style.setProperty("--page-swipe-x", `${renderedDeltaX}px`);
+    event.currentTarget.style.setProperty(
+      "--page-swipe-opacity",
+      String(Math.max(0.72, 1 - Math.abs(renderedDeltaX) / 520)),
+    );
+  }
+}
+
+function finishPageSwipe(event) {
+  if (event.pointerId !== pageSwipe.pointerId) return;
+
+  const viewer = event.currentTarget;
+  const wasHorizontal = pageSwipe.horizontal;
+  const deltaX = pageSwipe.deltaX;
+  const deltaY = pageSwipe.deltaY;
+  const renderedDeltaX = pageSwipe.renderedDeltaX;
+  if (wasHorizontal) pageSwipe.suppressClickUntil = Date.now() + 120;
+
+  if (!wasHorizontal) {
+    clearPageSwipe();
+    return;
+  }
+
+  const threshold = Math.max(
+    PAGE_SWIPE_MIN_DISTANCE,
+    Math.min(88, viewer.clientWidth * 0.14),
+  );
+  const pageDelta = deltaX > 0 ? 1 : -1;
+  const nextPage = state.selectedPage + pageDelta;
+  const canChangePage = nextPage >= 1 && nextPage <= PAGE_COUNT;
+
+  const isHorizontalSwipe =
+    Math.abs(deltaX) >= Math.abs(deltaY) * PAGE_SWIPE_HORIZONTAL_RATIO;
+
+  if (Math.abs(deltaX) >= threshold && isHorizontalSwipe && canChangePage) {
+    clearPageSwipeStyles(viewer);
+    clearPageSwipe();
+    selectPage(nextPage);
+    animateIncomingPage(viewer, pageDelta);
+    return;
+  }
+
+  if (Math.abs(deltaX) >= threshold && isHorizontalSwipe && !canChangePage) {
+    announcePageSwipe(
+      pageDelta > 0
+        ? "Tu es déjà à la dernière page."
+        : "Tu es déjà à la première page.",
+    );
+  }
+  settlePageSwipe(viewer, renderedDeltaX);
+  clearPageSwipe();
+}
+
+function cancelPageSwipe(event) {
+  if (event.pointerId !== pageSwipe.pointerId) return;
+  const viewer = event.currentTarget;
+  const renderedDeltaX = pageSwipe.renderedDeltaX;
+  const wasHorizontal = pageSwipe.horizontal;
+  if (wasHorizontal) pageSwipe.suppressClickUntil = Date.now() + 120;
+  if (wasHorizontal) settlePageSwipe(viewer, renderedDeltaX);
+  clearPageSwipe();
+}
+
+function clearPageSwipe() {
+  pageSwipe.pointerId = null;
+  pageSwipe.startX = 0;
+  pageSwipe.startY = 0;
+  pageSwipe.deltaX = 0;
+  pageSwipe.deltaY = 0;
+  pageSwipe.renderedDeltaX = 0;
+  pageSwipe.horizontal = false;
+}
+
+function clearPageSwipeStyles(viewer) {
+  if (pageSwipe.settleTimer !== null) {
+    window.clearTimeout(pageSwipe.settleTimer);
+    pageSwipe.settleTimer = null;
+  }
+  viewer.classList.remove("is-page-swiping", "is-page-settling");
+  viewer.style.removeProperty("--page-swipe-x");
+  viewer.style.removeProperty("--page-swipe-opacity");
+}
+
+function settlePageSwipe(viewer, renderedDeltaX) {
+  if (prefersReducedMotion()) {
+    clearPageSwipeStyles(viewer);
+    return;
+  }
+
+  viewer.classList.remove("is-page-swiping");
+  viewer.classList.add("is-page-settling");
+  viewer.style.setProperty("--page-swipe-x", `${renderedDeltaX}px`);
+  window.requestAnimationFrame(() => {
+    viewer.style.setProperty("--page-swipe-x", "0px");
+    viewer.style.setProperty("--page-swipe-opacity", "1");
+  });
+  pageSwipe.settleTimer = window.setTimeout(() => {
+    pageSwipe.settleTimer = null;
+    clearPageSwipeStyles(viewer);
+  }, 190);
+}
+
+function animateIncomingPage(viewer, pageDelta) {
+  if (prefersReducedMotion()) return;
+  const sheet = viewer.querySelector(".colouring-sheet");
+  if (!(sheet instanceof HTMLElement) || typeof sheet.animate !== "function") return;
+
+  pageSwipe.animation = sheet.animate(
+    [
+      {
+        opacity: 0.4,
+        transform: `translate3d(${pageDelta > 0 ? "-14%" : "14%"}, 0, 0)`,
+      },
+      { opacity: 1, transform: "translate3d(0, 0, 0)" },
+    ],
+    {
+      duration: 190,
+      easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+    },
+  );
+  pageSwipe.animation.addEventListener(
+    "finish",
+    () => {
+      pageSwipe.animation = null;
+    },
+    { once: true },
+  );
+  pageSwipe.animation.addEventListener(
+    "cancel",
+    () => {
+      pageSwipe.animation = null;
+    },
+    { once: true },
+  );
+}
+
+function prefersReducedMotion() {
+  return window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+}
+
+function announcePageSwipe(message) {
+  const target = document.getElementById("page-swipe-status");
+  if (target) target.textContent = message;
 }
 
 function renderLibrary() {
@@ -1135,6 +1377,7 @@ function selectPage(page) {
   if (nextPage === state.selectedPage) return;
   state.selectedPage = nextPage;
   renderWorkspace();
+  announcePageSwipe(`Page ${nextPage} sur ${PAGE_COUNT}.`);
 }
 
 function renderWorkspace() {

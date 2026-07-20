@@ -316,6 +316,14 @@ export default function Home() {
                   </div>
                 </div>
 
+                <p className="viewer__swipe-hint">
+                  <span aria-hidden="true">→</span>
+                  Balaye à droite pour avancer
+                  <span aria-hidden="true">·</span>
+                  <span aria-hidden="true">←</span>
+                  à gauche pour reculer
+                </p>
+                <p id="page-swipe-status" className="sr-only" aria-live="polite" />
                 <div id="page-viewer" className="page-viewer" />
               </section>
             </div>

@@ -16,6 +16,7 @@
     "assets:svg": "node scripts/convert-catalogue-assets-to-svg.cjs --apply",
     "assets:archive-png": "node scripts/archive-decommissioned-png.cjs",
     "qa:catalogue-visibility": "node scripts/catalogue-visibility-playwright.cjs",
+    "qa:catalogue-swipe": "node scripts/catalogue-swipe-playwright.cjs",
     "qa:image-framing": "node scripts/image-framing-playwright.cjs",
     "astryx": "node node_modules/@astryxdesign/cli/bin/astryx.mjs"
   },

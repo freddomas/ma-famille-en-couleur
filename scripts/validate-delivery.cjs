@@ -205,6 +205,19 @@ async function main() {
   );
   check(/id="coloring-canvas"/.test(pageSource), "Canevas de coloriage absent");
   check(/data-color-flip/.test(appSource), "Commande de retournement absente");
+  check(/bindPageSwipe\(\)/.test(appSource), "Navigation tactile par balayage absente");
+  check(
+    /deltaX > 0 \? 1 : -1/.test(appSource),
+    "Sens du balayage catalogue incorrect",
+  );
+  check(
+    /touch-action:\s*pan-y pinch-zoom/.test(stylesSource),
+    "Le balayage doit préserver le défilement vertical et le zoom",
+  );
+  check(
+    /id="page-swipe-status"/.test(pageSource),
+    "Annonce accessible du changement de page absente",
+  );
   check(/handleColorFlipClick/.test(appSource), "Alternance au clic absente");
   check(/openColoringStudio/.test(appSource), "Ouverture de l’atelier absente");
   check(/startColoringStroke/.test(appSource), "Dessin tactile absent");
