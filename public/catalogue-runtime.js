@@ -5,6 +5,7 @@ const ASSET_LOAD_RETRY_DELAYS = Object.freeze([300, 1200]);
 const PAGE_SWIPE_INTENT_DISTANCE = 12;
 const PAGE_SWIPE_MIN_DISTANCE = 48;
 const PAGE_SWIPE_HORIZONTAL_RATIO = 1.2;
+const MOUSE_POINTER_TYPE = "mouse";
 const CATALOGUE_COVER_IDS = Object.freeze({
   "vehicules-terre": "vehicules-terre-29",
   "loisirs-decouvertes": "loisirs-decouvertes-32",
@@ -12,6 +13,7 @@ const CATALOGUE_COVER_IDS = Object.freeze({
 
 const pageSwipe = {
   pointerId: null,
+  pointerType: null,
   startX: 0,
   startY: 0,
   deltaX: 0,
@@ -370,6 +372,7 @@ function bindPageSwipe() {
   viewer.addEventListener("pointermove", movePageSwipe);
   viewer.addEventListener("pointerup", finishPageSwipe);
   viewer.addEventListener("pointercancel", cancelPageSwipe);
+  viewer.addEventListener("dragstart", (event) => event.preventDefault());
   viewer.addEventListener(
     "click",
     (event) => {
@@ -382,8 +385,10 @@ function bindPageSwipe() {
 }
 
 function startPageSwipe(event) {
+  const isMouse = event.pointerType === MOUSE_POINTER_TYPE;
   if (
-    !["touch", "pen"].includes(event.pointerType)
+    (!isMouse && !["touch", "pen"].includes(event.pointerType))
+    || (isMouse && event.button !== 0)
     || !event.isPrimary
     || pageSwipe.pointerId !== null
     || !document.getElementById("atelier")?.classList.contains("is-catalogue-open")
@@ -395,6 +400,7 @@ function startPageSwipe(event) {
   pageSwipe.animation = null;
   clearPageSwipeStyles(event.currentTarget);
   pageSwipe.pointerId = event.pointerId;
+  pageSwipe.pointerType = event.pointerType;
   pageSwipe.startX = event.clientX;
   pageSwipe.startY = event.clientY;
   pageSwipe.deltaX = 0;
@@ -405,6 +411,13 @@ function startPageSwipe(event) {
 
 function movePageSwipe(event) {
   if (event.pointerId !== pageSwipe.pointerId) return;
+  if (
+    pageSwipe.pointerType === MOUSE_POINTER_TYPE
+    && (event.buttons & 1) !== 1
+  ) {
+    cancelPageSwipe(event);
+    return;
+  }
 
   const deltaX = event.clientX - pageSwipe.startX;
   const deltaY = event.clientY - pageSwipe.startY;
@@ -416,6 +429,7 @@ function movePageSwipe(event) {
       verticalDistance >= PAGE_SWIPE_INTENT_DISTANCE
       && verticalDistance > horizontalDistance
     ) {
+      releasePageSwipeCapture(event.currentTarget, event.pointerId);
       clearPageSwipe();
       return;
     }
@@ -427,6 +441,9 @@ function movePageSwipe(event) {
     }
 
     pageSwipe.horizontal = true;
+    if (pageSwipe.pointerType === MOUSE_POINTER_TYPE) {
+      event.currentTarget.setPointerCapture?.(event.pointerId);
+    }
     event.currentTarget.classList.add("is-page-swiping");
   }
 
@@ -459,6 +476,7 @@ function finishPageSwipe(event) {
   const deltaY = pageSwipe.deltaY;
   const renderedDeltaX = pageSwipe.renderedDeltaX;
   if (wasHorizontal) pageSwipe.suppressClickUntil = Date.now() + 120;
+  releasePageSwipeCapture(viewer, event.pointerId);
 
   if (!wasHorizontal) {
     clearPageSwipe();
@@ -501,12 +519,23 @@ function cancelPageSwipe(event) {
   const renderedDeltaX = pageSwipe.renderedDeltaX;
   const wasHorizontal = pageSwipe.horizontal;
   if (wasHorizontal) pageSwipe.suppressClickUntil = Date.now() + 120;
+  releasePageSwipeCapture(viewer, event.pointerId);
   if (wasHorizontal) settlePageSwipe(viewer, renderedDeltaX);
   clearPageSwipe();
 }
 
+function releasePageSwipeCapture(viewer, pointerId) {
+  if (
+    pageSwipe.pointerType === MOUSE_POINTER_TYPE
+    && viewer.hasPointerCapture?.(pointerId)
+  ) {
+    viewer.releasePointerCapture(pointerId);
+  }
+}
+
 function clearPageSwipe() {
   pageSwipe.pointerId = null;
+  pageSwipe.pointerType = null;
   pageSwipe.startX = 0;
   pageSwipe.startY = 0;
   pageSwipe.deltaX = 0;

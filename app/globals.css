@@ -6374,7 +6374,22 @@ body {
 
 /* Feuilletage tactile du catalogue */
 .viewer__swipe-hint {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.viewer__swipe-hint [aria-hidden="true"] {
+  color: var(--coral);
+  font-size: 1.15rem;
+  line-height: 1;
 }
 
 .page-viewer {
@@ -6383,38 +6398,30 @@ body {
 }
 
 .page-viewer > .colouring-sheet {
+  cursor: grab;
   opacity: var(--page-swipe-opacity, 1);
   transform: translate3d(var(--page-swipe-x, 0), 0, 0);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.page-viewer [data-color-flip] {
+  cursor: grab;
 }
 
 .page-viewer.is-page-swiping > .colouring-sheet {
+  cursor: grabbing;
   will-change: transform, opacity;
+}
+
+.page-viewer.is-page-swiping [data-color-flip] {
+  cursor: grabbing;
 }
 
 .page-viewer.is-page-settling > .colouring-sheet {
   transition:
     transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
     opacity 150ms ease-out;
-}
-
-@media screen and (hover: none) and (pointer: coarse) {
-  .viewer__swipe-hint {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    margin: 0 0 12px;
-    color: var(--ink-soft);
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .viewer__swipe-hint [aria-hidden="true"] {
-    color: var(--coral);
-    font-size: 1.15rem;
-    line-height: 1;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

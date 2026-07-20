@@ -247,7 +247,12 @@ async function main() {
     /\.drawing-card__art\s+\.color-flip-card__inner\s*\{[^}]*overflow:\s*visible/s.test(stylesSource),
     "Le conteneur 3D des guides ne doit pas être aplati par overflow",
   );
-  check(!/pointerType === "mouse"/.test(appSource), "Ancien maintien souris encore actif");
+  check(
+    /MOUSE_POINTER_TYPE = "mouse"/.test(appSource)
+      && /event\.button !== 0/.test(appSource)
+      && /setPointerCapture/.test(appSource),
+    "Glisser avec le bouton gauche de la souris absent",
+  );
   check(!/handleGuidePointerDown/.test(appSource), "Ancien appui long encore actif");
   check(
     !/lastTouchActivation|touchStart\s*=/.test(appSource),

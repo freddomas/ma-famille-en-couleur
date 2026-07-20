@@ -97,6 +97,30 @@ async function dispatchTouchSwipe(page, session, direction, distance = 150) {
   return { box, startX, endX, y, hit, frames };
 }
 
+async function dispatchMouseDrag(page, direction, distance = 180) {
+  const viewer = page.locator("#page-viewer");
+  await viewer.scrollIntoViewIfNeeded();
+  const box = await viewer.boundingBox();
+  assert.ok(box && box.width >= 240 && box.height >= 240, "Zone de glisser invalide.");
+
+  const viewport = page.viewportSize();
+  assert.ok(viewport, "Viewport indisponible.");
+  const centerX = Math.max(120, Math.min(viewport.width - 120, box.x + box.width / 2));
+  const y = Math.max(120, Math.min(viewport.height - 120, box.y + 220));
+  const startX = centerX - (direction === "right" ? distance / 2 : -distance / 2);
+  const endX = centerX + (direction === "right" ? distance / 2 : -distance / 2);
+
+  await page.mouse.move(startX, y);
+  await page.mouse.down({ button: "left" });
+  for (let step = 1; step <= 6; step += 1) {
+    const x = startX + ((endX - startX) * step) / 6;
+    await page.mouse.move(x, y);
+    await delay(12);
+  }
+  await page.mouse.up({ button: "left" });
+  await delay(240);
+}
+
 async function inspectTouchUi(page) {
   return page.evaluate(() => {
     const hint = document.querySelector(".viewer__swipe-hint");
@@ -186,6 +210,57 @@ async function runStandardMotion(browser) {
   return ui;
 }
 
+async function runMouseMotion(browser) {
+  const context = await browser.newContext({
+    viewport: { width: 1440, height: 900 },
+    reducedMotion: "no-preference",
+  });
+  const page = await context.newPage();
+  const consoleErrors = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+  page.on("pageerror", (error) => consoleErrors.push(error.message));
+
+  await openCatalogue(page);
+  assert.equal(await activePage(page), 1);
+
+  await dispatchMouseDrag(page, "right");
+  assert.equal(await activePage(page), 2, "Glisser à droite doit avancer à la page 2.");
+  let ui = await inspectTouchUi(page);
+  assert.equal(ui.pressedCards, 0, "Le glisser souris ne doit retourner aucune carte.");
+
+  await dispatchMouseDrag(page, "left");
+  assert.equal(await activePage(page), 1, "Glisser à gauche doit reculer à la page 1.");
+
+  const firstCard = page.locator("#page-viewer [data-color-flip]").first();
+  await firstCard.click();
+  assert.equal(
+    await firstCard.getAttribute("aria-pressed"),
+    "true",
+    "Un clic simple doit toujours afficher le guide coloré.",
+  );
+  await firstCard.click();
+  assert.equal(
+    await firstCard.getAttribute("aria-pressed"),
+    "false",
+    "Le second clic doit toujours revenir au noir et blanc.",
+  );
+
+  await page.keyboard.press("ArrowRight");
+  assert.equal(await activePage(page), 2, "La navigation clavier droite doit rester active.");
+  await page.keyboard.press("ArrowLeft");
+  assert.equal(await activePage(page), 1, "La navigation clavier gauche doit rester active.");
+
+  ui = await inspectTouchUi(page);
+  assert.equal(ui.hintDisplay, "flex", "L’indice souris doit être visible.");
+  assert.equal(ui.horizontalOverflow, false, "Aucun débordement horizontal attendu.");
+  assert.deepEqual(consoleErrors, [], `Erreurs console : ${consoleErrors.join("\n")}`);
+
+  await context.close();
+  return ui;
+}
+
 async function runReducedMotion(browser) {
   const context = await browser.newContext({
     viewport: { width: 390, height: 844 },
@@ -228,17 +303,22 @@ async function main() {
     await waitForServer(server);
     browser = await chromium.launch({ channel: "chrome", headless: true });
     const standardMotion = await runStandardMotion(browser);
+    const mouseMotion = await runMouseMotion(browser);
     const reducedMotion = await runReducedMotion(browser);
     console.log(JSON.stringify({
       status: "passed",
-      viewport: "390x844",
+      viewports: ["390x844 touch", "1440x900 mouse"],
       gestures: {
         rightAdvances: true,
         leftGoesBack: true,
         firstAndLastPageBounded: true,
         colorFlipSuppressed: true,
+        mouseLeftDrag: true,
+        simpleMouseClickPreserved: true,
+        keyboardPreserved: true,
       },
       standardMotion,
+      mouseMotion,
       reducedMotion,
     }, null, 2));
   } finally {
