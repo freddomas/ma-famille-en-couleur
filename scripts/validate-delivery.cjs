@@ -8,6 +8,7 @@ const {
   buildPages,
   loadEntriesProgressively,
   validateData,
+  assetUrl,
 } = require("../public/catalogue-runtime.js");
 
 const root = path.resolve(__dirname, "..");
@@ -46,6 +47,9 @@ async function main() {
   const packageJson = readJson("package.json");
 
   validateData(data, manifest);
+  assert.equal(assetUrl("assets/coloring/example.png"), "/assets/coloring/example.png");
+  assert.equal(assetUrl("/assets/coloring/example.png"), "/assets/coloring/example.png");
+  assert.equal(assetUrl("https://example.test/example.png"), "https://example.test/example.png");
   assert.equal(data.catalogues.length, 10, "10 catalogues requis");
   assert.equal(manifest.entries.length, 400, "400 actifs requis");
   assert.equal(reserve.entries.length, 80, "80 réserves requises");

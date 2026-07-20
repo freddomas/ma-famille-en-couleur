@@ -1,6 +1,7 @@
 const PAGE_COUNT = 10;
 const ITEMS_PER_PAGE = 4;
 const RANDOM_DRAWING_COUNT = 40;
+const ASSET_LOAD_RETRY_DELAYS = Object.freeze([300, 1200]);
 const CATALOGUE_COVER_IDS = Object.freeze({
   "vehicules-terre": "vehicules-terre-29",
   "loisirs-decouvertes": "loisirs-decouvertes-32",
@@ -67,13 +68,13 @@ async function init() {
     }));
     state.selectedCatalogueId = state.catalogues[0].id;
 
+    bindGlobalEvents();
     renderStats();
     renderHeroDrawing();
     installSurpriseGenerator();
     renderLibrary();
     renderCatalogueMenu();
     renderWorkspace();
-    bindGlobalEvents();
   } catch (error) {
     console.error(error);
     renderAppError(error);
@@ -317,18 +318,8 @@ function bindGlobalEvents() {
   document.addEventListener("click", handleColorFlipClick);
   window.addEventListener("beforeprint", resetColorFlips);
   window.addEventListener("afterprint", clearPrintArea);
-  document.addEventListener(
-    "error",
-    (event) => {
-      const image = event.target;
-      if (!(image instanceof HTMLImageElement) || !image.dataset.assetId) return;
-      const wrapper = image.closest(".drawing-card__art, .catalogue-card__visual");
-      if (wrapper) {
-        wrapper.innerHTML = `<p class="asset-error" role="alert">Image indisponible : ${escapeHtml(image.dataset.assetId)}</p>`;
-      }
-    },
-    true,
-  );
+  document.addEventListener("load", handleAssetLoad, true);
+  document.addEventListener("error", handleAssetLoadError, true);
   document.addEventListener("keydown", (event) => {
     if (document.getElementById("coloring-studio")?.open) return;
     if (
@@ -376,7 +367,7 @@ function renderLibrary() {
           style="--card-accent:${escapeAttribute(catalogue.accent)};--card-soft:${escapeAttribute(catalogue.soft)}"
           aria-label="Ouvrir le catalogue ${escapeAttribute(catalogue.title)}"
         >
-          <span class="catalogue-card__visual">
+              <span class="catalogue-card__visual" data-asset-state="loading">
             <span class="catalogue-card__media">
               ${imageMarkup(catalogueCoverEntry(catalogue), "catalogue-card__image")}
             </span>
@@ -598,14 +589,15 @@ function renderColoringSelection() {
           aria-label="Choisir ${escapeAttribute(entry.title)}"
         >
           <span class="coloring-choice__number" aria-hidden="true">${index + 1}</span>
-          <span class="coloring-choice__image-wrap">
-            <img
-              src="${escapeAttribute(entry.path)}"
-              alt="${escapeAttribute(entry.title)}"
-              data-asset-id="${escapeAttribute(entry.id)}-studio-choice"
-              loading="eager"
-              decoding="async"
-            />
+          <span class="coloring-choice__image-wrap" data-asset-state="loading">
+              <img
+                src="${escapeAttribute(assetUrl(entry.path))}"
+                alt="${escapeAttribute(entry.title)}"
+                data-asset-id="${escapeAttribute(entry.id)}-studio-choice"
+                data-asset-src="${escapeAttribute(assetUrl(entry.path))}"
+                loading="eager"
+                decoding="async"
+              />
           </span>
           <strong>${escapeHtml(entry.title)}</strong>
           <span class="coloring-choice__check" aria-hidden="true">
@@ -632,16 +624,6 @@ function renderColoringSelection() {
     });
   });
 
-  target.querySelectorAll("img").forEach((image) => {
-    image.addEventListener("error", () => {
-      const choice = image.closest(".coloring-choice");
-      if (!choice) return;
-      choice.disabled = true;
-      choice.classList.add("has-error");
-      image.parentElement.innerHTML =
-        '<p class="asset-error" role="alert">Ce dessin est indisponible.</p>';
-    });
-  });
   updateColoringSelectionStatus();
 }
 
@@ -707,7 +689,7 @@ function renderColoringTabs() {
           aria-current="${index === state.coloring.activeIndex ? "true" : "false"}"
           aria-label="Colorier ${escapeAttribute(entry.title)}"
         >
-          <img src="${escapeAttribute(entry.path)}" alt="" aria-hidden="true" />
+          <img src="${escapeAttribute(assetUrl(entry.path))}" alt="" aria-hidden="true" />
           <span>${index + 1}</span>
         </button>
       `,
@@ -859,21 +841,43 @@ async function loadActiveColoring() {
 }
 
 function loadImageElement(image, path) {
+  return loadImageWithRetry(image, path);
+}
+
+function loadImageWithRetry(image, path) {
   return new Promise((resolve, reject) => {
     if (!path) {
       reject(new Error("chemin manquant"));
       return;
     }
-    image.onload = async () => {
-      try {
-        if (typeof image.decode === "function") await image.decode();
-        resolve();
-      } catch (error) {
-        reject(new Error(`${path} ne peut pas être décodée`));
+
+    const source = assetUrl(path);
+    let attempt = 0;
+    const failOrRetry = (reason) => {
+      if (attempt >= ASSET_LOAD_RETRY_DELAYS.length) {
+        reject(new Error(reason));
+        return;
       }
+      const delay = ASSET_LOAD_RETRY_DELAYS[attempt];
+      attempt += 1;
+      window.setTimeout(load, delay);
     };
-    image.onerror = () => reject(new Error(`chargement impossible pour ${path}`));
-    image.src = path;
+    const load = () => {
+      const requestUrl = new URL(source, window.location.origin);
+      if (attempt > 0) requestUrl.searchParams.set("asset-retry", String(attempt));
+      image.onload = async () => {
+        try {
+          if (typeof image.decode === "function") await image.decode();
+          resolve();
+        } catch (error) {
+          failOrRetry(`${path} ne peut pas être décodée`);
+        }
+      };
+      image.onerror = () => failOrRetry(`chargement impossible pour ${path}`);
+      image.src = requestUrl.href;
+    };
+
+    load();
   });
 }
 
@@ -1217,7 +1221,7 @@ function renderSheet(catalogue, pageNumber) {
           .map(
             (entry) => `
               <section class="drawing-card">
-                <div class="drawing-card__art">
+                <div class="drawing-card__art" data-asset-state="loading">
                   ${colorFlipMarkup(entry, "drawing-card__image")}
                 </div>
                 <div class="drawing-card__footer">
@@ -1241,14 +1245,17 @@ function imageMarkup(entry, className) {
   if (!entry?.path) {
     return `<p class="asset-error" role="alert">Chemin d’image manquant.</p>`;
   }
+  const lineArtPath = assetUrl(entry.path);
+  const coloredPath = assetUrl(entry.coloredPath);
   return `
     <img
       class="${escapeAttribute(className)}"
-      src="${escapeAttribute(entry.path)}"
+      src="${escapeAttribute(lineArtPath)}"
       alt="${escapeAttribute(entry.title)}"
       data-asset-id="${escapeAttribute(entry.id)}"
-      data-line-art-src="${escapeAttribute(entry.path)}"
-      data-colored-src="${escapeAttribute(entry.coloredPath || "")}"
+      data-asset-src="${escapeAttribute(lineArtPath)}"
+      data-line-art-src="${escapeAttribute(lineArtPath)}"
+      data-colored-src="${escapeAttribute(coloredPath)}"
       loading="eager"
       decoding="async"
     />
@@ -1259,6 +1266,8 @@ function colorFlipMarkup(entry, imageClass) {
   if (!entry?.path || !entry?.coloredPath) {
     return `<p class="asset-error" role="alert">Paire d’images manquante.</p>`;
   }
+  const lineArtPath = assetUrl(entry.path);
+  const coloredPath = assetUrl(entry.coloredPath);
   return `
     <button
       class="color-flip-card"
@@ -1270,24 +1279,80 @@ function colorFlipMarkup(entry, imageClass) {
       <span class="color-flip-card__inner">
         <img
           class="${escapeAttribute(imageClass)} color-flip-card__face color-flip-card__front"
-          src="${escapeAttribute(entry.path)}"
+          src="${escapeAttribute(lineArtPath)}"
           alt="${escapeAttribute(entry.title)}"
           data-asset-id="${escapeAttribute(entry.id)}"
+          data-asset-src="${escapeAttribute(lineArtPath)}"
           loading="eager"
           decoding="async"
         />
         <img
           class="color-flip-card__image color-flip-card__face color-flip-card__back"
-          src="${escapeAttribute(entry.coloredPath)}"
+          src="${escapeAttribute(coloredPath)}"
           alt=""
           aria-hidden="true"
           data-asset-id="${escapeAttribute(entry.id)}-color"
+          data-asset-src="${escapeAttribute(coloredPath)}"
           loading="eager"
           decoding="async"
         />
       </span>
     </button>
   `;
+}
+
+function assetUrl(path) {
+  const value = String(path || "").trim();
+  if (!value || /^(?:https?:|data:|blob:)/i.test(value)) return value;
+  return `/${value.replace(/^\/+/, "")}`;
+}
+
+function assetWrapper(image) {
+  return image.closest(
+    ".drawing-card__art, .catalogue-card__visual, .coloring-choice__image-wrap",
+  );
+}
+
+function handleAssetLoad(event) {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement) || !image.dataset.assetId) return;
+  image.dataset.assetRetryCount = "0";
+  const wrapper = assetWrapper(image);
+  if (!wrapper) return;
+  const images = [...wrapper.querySelectorAll("img[data-asset-id]")];
+  if (images.length && images.every((item) => item.complete && item.naturalWidth > 0)) {
+    wrapper.dataset.assetState = "ready";
+  }
+}
+
+function handleAssetLoadError(event) {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement) || !image.dataset.assetId) return;
+  const wrapper = assetWrapper(image);
+  const retryCount = Number(image.dataset.assetRetryCount || 0);
+  const source = image.dataset.assetSrc || image.getAttribute("src");
+
+  if (source && retryCount < ASSET_LOAD_RETRY_DELAYS.length) {
+    image.dataset.assetRetryCount = String(retryCount + 1);
+    if (wrapper) wrapper.dataset.assetState = "retrying";
+    window.setTimeout(() => {
+      if (!image.isConnected) return;
+      const retryUrl = new URL(source, window.location.origin);
+      retryUrl.searchParams.set("asset-retry", String(retryCount + 1));
+      image.src = retryUrl.href;
+    }, ASSET_LOAD_RETRY_DELAYS[retryCount]);
+    return;
+  }
+
+  if (wrapper) {
+    wrapper.dataset.assetState = "error";
+    wrapper.innerHTML = `<p class="asset-error" role="alert">Image indisponible après nouvelle tentative : ${escapeHtml(image.dataset.assetId)}</p>`;
+    const choice = wrapper.closest(".coloring-choice");
+    if (choice instanceof HTMLButtonElement) {
+      choice.disabled = true;
+      choice.classList.add("has-error");
+    }
+  }
 }
 
 function handleColorFlipClick(event) {
@@ -1439,19 +1504,7 @@ function cryptoRandomInt(maxExclusive) {
 }
 
 function decodeImage(path) {
-  return new Promise((resolve, reject) => {
-    const image = new Image();
-    image.onload = async () => {
-      try {
-        if (typeof image.decode === "function") await image.decode();
-        resolve();
-      } catch (error) {
-        reject(new Error(`${path} ne peut pas être décodée : ${error.message}`));
-      }
-    };
-    image.onerror = () => reject(new Error(`chargement impossible pour ${path}`));
-    image.src = path;
-  });
+  return loadImageWithRetry(new Image(), path);
 }
 
 function appendSurprisePreview(entry) {
@@ -1589,5 +1642,6 @@ if (typeof module !== "undefined" && module.exports) {
     buildPages,
     loadEntriesProgressively,
     validateData,
+    assetUrl,
   };
 }

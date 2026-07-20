@@ -853,8 +853,8 @@ async function main() {
       .map((event) => event.params);
     const expectedInvalidConsoleErrors = consoleErrors.filter(
       (error) =>
-        error.entry?.url?.endsWith(
-          "/assets/coloring/active/image-volontairement-absente.png",
+        /\/assets\/coloring\/active\/image-volontairement-absente\.png(?:\?asset-retry=[12])?$/.test(
+          error.entry?.url || "",
         ),
     );
     const unexpectedConsoleErrors = consoleErrors.filter(
@@ -862,7 +862,7 @@ async function main() {
         !normalConsoleErrors.includes(error) &&
         !expectedInvalidConsoleErrors.includes(error),
     );
-    assert.equal(expectedInvalidConsoleErrors.length, 1);
+    assert.equal(expectedInvalidConsoleErrors.length, 3);
     assert.deepEqual(unexpectedConsoleErrors, []);
 
     const report = {

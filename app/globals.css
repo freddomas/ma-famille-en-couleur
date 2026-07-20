@@ -70,6 +70,25 @@
   background: #fff;
 }
 
+[data-asset-state="loading"]::after,
+[data-asset-state="retrying"]::after {
+  position: absolute;
+  z-index: var(--layer-sticky);
+  inset: auto var(--spacing-2) var(--spacing-2);
+  padding: var(--spacing-1) var(--spacing-2);
+  border: var(--border-width) solid var(--ink);
+  border-radius: var(--radius-full);
+  background: var(--paper);
+  color: var(--ink);
+  content: "Chargement…";
+  font: var(--font-weight-bold) var(--type-xs)/1 var(--sans);
+  pointer-events: none;
+}
+
+[data-asset-state="retrying"]::after {
+  content: "Nouvelle tentative…";
+}
+
 .color-flip-card img {
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
@@ -2232,6 +2251,7 @@ body.coloring-studio-open {
 }
 
 .coloring-choice__image-wrap {
+  position: relative;
   display: grid;
   aspect-ratio: 1;
   place-items: center;
